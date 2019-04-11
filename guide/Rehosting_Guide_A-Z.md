@@ -45,41 +45,45 @@ determine the mainframe configuration and configure OpenFrame
 accordingly. These configurations include, but are not limited to:
 
 *   COBOL Compilation options
-  *   Mainframe Command:
+
+    *   Mainframe Command:
       ```
       command
       ```
-  *   OpenFrame Command:
+    *   OpenFrame Command:
       ```
       command
       ```
 
 *   JOB Class configuration
-  *   Mainframe Command:
+
+    *   Mainframe Command:
       ```
       command
       ```
-  *   OpenFrame Command:
+    *   OpenFrame Command:
       ```
       command
       ```
 
 *   System Definition configuration
-  *   Mainframe Command:
+
+    *   Mainframe Command:
       ```
       command
       ```
-  *   OpenFrame Command:
+    *   OpenFrame Command:
       ```
       command
       ```
 
 *   IMS/CICS Region configuration
-  *   Mainframe Command:
+
+    *   Mainframe Command:
       ```
       command
       ```
-  *   OpenFrame Command:
+    *   OpenFrame Command:
       ```
       command
       ```
