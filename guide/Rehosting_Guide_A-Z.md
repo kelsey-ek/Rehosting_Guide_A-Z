@@ -1,13 +1,12 @@
-Mainframe Rehosting Guide A-Z
-==============================
+# Mainframe Rehosting Guide A-Z
+
 *The purpose of this document is to create a detailed step-by-step plan
 for rehosting a mainframe to OpenFrame. This document will describe in
 detail the processes needed and complementary scripts and manuals to
 quickly, accurately, and successfully migrate a mainframe system to
 OpenFrame.*
 
-Table of Contents 
-========
+# Table of Contents 
 
 [Pre-Migration](#pre-migration)
 
@@ -27,11 +26,11 @@ Table of Contents
 
 [Running First Batch JOB](#running-first-batch-job)
 
-Pre-Migration
-=============
+# Pre-Migration
 
-Mainframe Environment
----------------------
+
+# Mainframe Environment
+
 
 **Description**: This task requires efforts from the project managers,
 presales architects, and sales team to understand the environment. A
@@ -45,50 +44,50 @@ To further increase efficiency, some mainframe commands can be run to
 determine the mainframe configuration and configure OpenFrame
 accordingly. These configurations include, but are not limited to:
 
--   COBOL Compilation options
-  +   Mainframe Command:
+*   COBOL Compilation options
+  *   Mainframe Command:
       ```
       command
       ```
-  +   OpenFrame Command:
-      ```
-      command
-      ```
-
--   JOB Class configuration
-  +   Mainframe Command:
-      ```
-      command
-      ```
-  +   OpenFrame Command:
+  *   OpenFrame Command:
       ```
       command
       ```
 
--   System Definition configuration
-  +   Mainframe Command:
+*   JOB Class configuration
+  *   Mainframe Command:
       ```
       command
       ```
-  +   OpenFrame Command:
+  *   OpenFrame Command:
       ```
       command
       ```
 
--   IMS/CICS Region configuration
-  +   Mainframe Command:
+*   System Definition configuration
+  *   Mainframe Command:
       ```
       command
       ```
-  +   OpenFrame Command:
+  *   OpenFrame Command:
+      ```
+      command
+      ```
+
+*   IMS/CICS Region configuration
+  *   Mainframe Command:
+      ```
+      command
+      ```
+  *   OpenFrame Command:
       ```
       command
       ```
 
 **Reference Documents: "Post Introduction Questionnaire"**
 
-OpenFrame Environment
-----------------------
+# OpenFrame Environment
+
 <h3>Accessing the Linux Server</h3>
 
 **Prerequisities:**
@@ -107,12 +106,23 @@ OpenFrame Environment
 
 **Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
+<h4>Binary Request</h4>
+
+**Description:** Customer binaries must be requested through IMS. 
+
+**Reference Documents:** "TODO: How to request customer Binaries"
+
+<h4>Licensing</h4>
+
+**Description:** Licenses will have to be issued for the products to fully operate. Production licenses must be requested through 
+
 <h3>Installation</h3>
 
 **Prerequisites:** 
 
+-   Binary Request
 -   Licensing
--   NDA
+-   NDA (Non-Disclosure Agreement)
 -   Server Access
 
 **Reference Documents:
@@ -124,20 +134,18 @@ OpenFrame Environment
 
 **Reference Documents:** "#TODO: How to use tmadmin"
 
-Migration
-=========
+## Migration
 
 **Description**: This step includes migrating datasets and source code.
 There are multiple options for downloading the data from the mainframe.
 
 **Reference Documents:** "How to Source Code Transfer Process"
 
-Datasets
---------
+# Datasets
 
-**Prerequisites**:
+**Prerequisites:**
 
-**Description**: This task can be completed in parallel to the
+**Description:** This task can be completed in parallel to the
 Installation and Discovery stages. This task requires a lot of effort
 and should be handled by no less than two engineers.
 
@@ -149,10 +157,9 @@ project)
 **Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"
 
-Source Code
------------
+# Source Code
 
-**Prerequisites**:
+**Prerequisites:**
 
 Source code such as JCL, COBOL and other Fixed Block data types of LRECL
 80 should be migrated with the -L option in dsmigin
@@ -179,19 +186,17 @@ The below information can be found by running the _dsmigin_ command with no argu
 **Reference Documents: "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"**
 
-Discovery
-=========
+## Discovery
 
-**Prerequisites**:
+**Prerequisites:**
 
 -   Migration (Source Code) -- Complete
 
-**Description**: Once the source code is migrated to the OpenFrame
+**Description:** Once the source code is migrated to the OpenFrame
 server, the files must be sorted into their respective element types for
 analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
 
-OFMiner
--------
+# OFMiner
 
 **Prerequisites:**
 
@@ -208,8 +213,7 @@ analysis document.
 
 **Reference Documents: "How to create an OFMiner report\_v2"**
 
-OpenFrame Configuration
-=======================
+## OpenFrame Configuration
 
 **Prerequisites:**
 
@@ -219,7 +223,7 @@ OpenFrame Configuration
 
 - JOBCLASS
     + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
-    + Where: ${OPENFRAME\_HOME}/config/tjes.conf
+    + Where: ${OPENFRAME_HOME}/config/tjes.conf
     + How: Add a line after the existing JOBCLASS section for additional classes 
     + Example:
     ```
@@ -229,11 +233,9 @@ OpenFrame Configuration
     C=START
     ```
 
-Running First Batch JOB
-=======================
+## Running First Batch JOB
 
 **Prerequisites:**
 
 -   Installation -- Complete
 -   OpenFrame Configuration - Complete
-
