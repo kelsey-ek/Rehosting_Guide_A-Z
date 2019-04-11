@@ -46,12 +46,44 @@ determine the mainframe configuration and configure OpenFrame
 accordingly. These configurations include, but are not limited to:
 
 -   COBOL Compilation options
+  +   Mainframe Command:
+      ```
+      command
+      ```
+  +   OpenFrame Command:
+      ```
+      command
+      ```
 
 -   JOB Class configuration
+  +   Mainframe Command:
+      ```
+      command
+      ```
+  +   OpenFrame Command:
+      ```
+      command
+      ```
 
 -   System Definition configuration
+  +   Mainframe Command:
+      ```
+      command
+      ```
+  +   OpenFrame Command:
+      ```
+      command
+      ```
 
 -   IMS/CICS Region configuration
+  +   Mainframe Command:
+      ```
+      command
+      ```
+  +   OpenFrame Command:
+      ```
+      command
+      ```
 
 **Reference Documents: "Post Introduction Questionnaire"**
 
@@ -90,16 +122,20 @@ OpenFrame Environment
 
 **Description:** OpenFrame comes equipped with some very basic sample JOBs and transactions that can be run and to test the most basic functionality of OpenFrame. After you install OpenFrame, these tests should be run and marked as completed before going any further to ensure the installation was successful.
 
+**Reference Documents:** "#TODO: How to use tmadmin"
+
 Migration
 =========
 
 **Description**: This step includes migrating datasets and source code.
 There are multiple options for downloading the data from the mainframe.
 
-**Reference Documents: "How to Source Code Transfer Process"**
+**Reference Documents:** "How to Source Code Transfer Process"
 
 Datasets
 --------
+
+**Prerequisites**:
 
 **Description**: This task can be completed in parallel to the
 Installation and Discovery stages. This task requires a lot of effort
@@ -110,10 +146,8 @@ project)
 
 \#TODO: Attach data\_dsmigin.sh script
 
-**Prerequisites**:
-
-**Reference Documents: "data\_dsmigin.sh", "data\_dsmigin.conf",
-"ds\_wrap.sh"**
+**Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
+"ds\_wrap.sh"
 
 Source Code
 -----------
@@ -185,7 +219,7 @@ OpenFrame Configuration
 
 - JOBCLASS
     + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
-    + Where: ${OPENFRAME_HOME}/config/tjes.conf
+    + Where: ${OPENFRAME\_HOME}/config/tjes.conf
     + How: Add a line after the existing JOBCLASS section for additional classes 
     + Example:
     ```
