@@ -237,9 +237,70 @@ analysis document.
     C=START
     ```
 
-## Running First Batch JOB
+
+## Source Compilation
+
+**Prerequisites:** 
+
+-   Installation -- Complete
+-   OpenFrame Configuration -- In Progress or Complete
+
+**Description:** In order to compile source code such as COBOL, Assembler (ASM), PL/I, BMS, MFS, DBDs, PSBs, you will need to first complete some configuration. There are many compiler options available to mainframe, and we need to configure OpenFrame to compile source code the same way it is done on the mainframe. 
+
+## Running Batch JOBs
 
 **Prerequisites:**
 
 -   Installation -- Complete
--   OpenFrame Configuration - Complete
+-   OpenFrame Configuration -- Complete
+-   Source Compilation -- Complete
+
+**Description:** Now that your configuration is completed, it's time to start running Batch JOBs. 
+
+## Running Online Transactions
+
+**Prerequisites:** 
+
+-   Installation -- Complete
+-   OpenFrame Configuration -- Complete
+-   Source Compilation -- Complete
+
+**Description:** Online Transactions can be run through a series of interconnected components: WebTerminal and 3270 Gateway (OFGW). In general, a transaction will be running in an online region in OpenFrame. OFGW will interact and translate the messages flowing through from the webtermanal to the region and visa-versa. The end result is an online screen where users can interact and view, modify, or delete information on the underlying database. 
+
+## JOB Stream and Scheduler
+
+**Prerequisities:**
+
+-   Installation -- Complete
+-   OpenFrame Configuration -- Complete
+-   Running Batch JOBs -- In Progress or Complete
+
+**Description:** A mainframe scheduler's purpose is to define which and when JOBs will run. Additionally, logic can be added to the scheduler to determine what subsequent JOBs are to be run based on return codes from previous JOBs. Similar to the mainframe, OpenFrame can also work with most schedulers, so JOBs can be run the same way they run on the mainframe.
+
+## Operations & Maintenance
+
+**Prerequisites:**
+
+-   Installation -- Complete
+-   OpenFrame Configuration -- Complete
+-   Running Batch JOBs -- In Progress or Complete
+
+**Description:** Now that the mainframe has been rehosted to an Open System, you now have the freedom to develop and customize OpenFrame to meet your demands. OpenFrame comes well equipped with many self-managing tools to help organize your environment, while maintaining smooth and reliable operation. In this section, we will go through some useful utilities that OpenFrame comes with by default, and some useful shell scripts to increase efficiency in daily operations.
+
+- Spools
+
+  - Backup
+
+    - auto\_backup\_spool.sh (TODO: Add supporting scripts and Documentation)
+
+  - Restore
+
+- JEUS
+
+  - catdomain (TODO: Add supporting scripts and Documentation)
+
+- BATCH
+
+  - scan\_fix.sh (TODO: Add supporting scripts and Documentation)
+
+
