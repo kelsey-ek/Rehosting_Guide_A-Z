@@ -1,9 +1,6 @@
 General Process Notes:
 
 
-TODO: Add a percentage assignment to each task. This gives the Project Manager a better idea of how many people he/she should assign to each task especially if they are new or have never done a migration before.
-
-
 1. Pre Migration Tasks
 	a. Questionnaire
 	b. Source Transfer (FTP from Mainframe to Linux)
@@ -12,13 +9,10 @@ TODO: Add a percentage assignment to each task. This gives the Project Manager a
 		iii. COBOL
 		iv. COPYBOOK
 		v. CSD
-	c. Installation (for analysis, see 1a.)
+	c. Installation (for analysis)
 	d. Analysis
 		i. OFMiner
 		ii. TBAdmin (To create SCOPE spreadsheet)
-
-1a. Installation
-
 2. Migration
 	a. convcpy (copybooks)
 	b. datasets
@@ -96,22 +90,6 @@ TODO: Add a percentage assignment to each task. This gives the Project Manager a
 	- volume.conf
 	- vtam.conf
 
-3a. Compilation
-	BATCH
-		COBOL
-		ASM
-		PL/I
-	ONLINE
-		OSC
-			COBOL
-			ASSEMBLER
-			BMS
-		OSI
-			COBOL
-			ASSEMBLER
-			MFS
-
-
 4. Security
 	Questions we need to ask:
 		- What type of security is the customer using?
@@ -138,13 +116,6 @@ TODO: Add a percentage assignment to each task. This gives the Project Manager a
 	Once all of the jobs have been successfully tested individually, we need to begin to test them in stream. The JOBs will be run in stream end to end and the output datasets are to be compared for approval.
 
 
-
-7. Operations & Maintenance
-	- Spool
-		- Backup
-			- auto_backup_spool.sh
-		- Restore
-	- 
 
 
 XX. Approval

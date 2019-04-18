@@ -1,245 +1,152 @@
-# Mainframe Rehosting Guide A-Z
-
-*The purpose of this document is to create a detailed step-by-step plan
-for rehosting a mainframe to OpenFrame. This document will describe in
-detail the processes needed and complementary scripts and manuals to
-quickly, accurately, and successfully migrate a mainframe system to
-OpenFrame.*
-
-# Table of Contents 
-
-[Pre-Migration](#pre-migration)
-
-[Mainframe Environment](#mainframe-environment)
-
-[Migration](#migration)
-
-[Datasets](#datasets)
-
-[Source Code](#source-code)
-
-[Installation](#installation)
-
-[Discovery](#discovery)
-
-[OFMiner](#ofminer)
-
-[Running First Batch JOB](#running-first-batch-job)
-
-# Pre-Migration
-
-
-# Mainframe Environment
-
-
-**Description**: This task requires efforts from the project managers,
-presales architects, and sales team to understand the environment. A
-questionnaire is provided after Introduction from sales team. Inside the
-questionnaire, a link is provided to view this as a (potential) customer
-would. This information should be shared to the TFS team to prepare the
-project manager and VP of TFS for the team required to rehost this
-mainframe environment.
-
-To further increase efficiency, some mainframe commands can be run to
-determine the mainframe configuration and configure OpenFrame
-accordingly. These configurations include, but are not limited to:
-
-*   COBOL Compilation options
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-*   JOB Class configuration
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-*   System Definition configuration
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-*   IMS/CICS Region configuration
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-**Reference Documents: "Post Introduction Questionnaire"**
-
-# OpenFrame Environment
-
-<h3>Accessing the Linux Server</h3>
-
-**Prerequisities:**
-
--   Pre-Migration (Mainframe) - Complete
-
-**Description:** This step includes how to access the Linux server. Depending on who built the Linux Server, the steps for completing this will vary.
-
-<h4>Accessing a Linux Server built by TmaxSoft</h4>
-
-**Description:** If the server is built by TmaxSoft, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. 
-
-**Reference Documents:** "TODO: How To Connect To A Server With PuTTY"
-
-<h4>Accessing a Linux Server on the Customer's Private Network</h4>
-
-**Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
-
-<h4>Binary Request</h4>
-
-**Description:** Customer binaries must be requested through IMS. 
-
-**Reference Documents:** "TODO: How to request customer Binaries"
-
-<h4>Licensing</h4>
-
-**Description:** Licenses will have to be issued for the products to fully operate. Production licenses must be requested through 
-
-<h3>Installation</h3>
-
-**Prerequisites:** 
-
--   Binary Request
--   Licensing
--   NDA (Non-Disclosure Agreement)
--   Server Access
-
-**Reference Documents:
-"TmaxSoft\_OpenFrame7\_fix2\_Installation\_V6.22"**
-
-<h4>Verifying Successful Installation</h4>
-
-**Description:** OpenFrame comes equipped with some very basic sample JOBs and transactions that can be run and to test the most basic functionality of OpenFrame. After you install OpenFrame, these tests should be run and marked as completed before going any further to ensure the installation was successful.
-
-**Reference Documents:** "#TODO: How to use tmadmin"
-
-## Migration
-
-**Description**: This step includes migrating datasets and source code.
-There are multiple options for downloading the data from the mainframe.
-
-**Reference Documents:** "How to Source Code Transfer Process"
-
-# Datasets
-
-**Prerequisites:**
-
-**Description:** This task can be completed in parallel to the
-Installation and Discovery stages. This task requires a lot of effort
-and should be handled by no less than two engineers.
-
-\#TODO: Attach ds\_wrap.sh script (Include awk script, include java
-project)
-
-\#TODO: Attach data\_dsmigin.sh script
-
-**Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
-"ds\_wrap.sh"
-
-# Source Code
-
-**Prerequisites:**
-
-Source code such as JCL, COBOL and other Fixed Block data types of LRECL
-80 should be migrated with the -L option in dsmigin
-
-__Note: For US based languages, most can be dsmigin'd with -sosi 6
-option. However, if you are working for a Japanese, Korean, Brazilian --
-Or any other language that may use sosi characters, Please refer to the
-sosi options in the dsmigin command.__
-
-The below information can be found by running the _dsmigin_ command with no arguments:
-```
-6. SOSI type
-   1 = so[EBC]si -> so[ASC]si : Keep SOSI (default)
-   2 = so[EBC]si ->  _[ASC]_  : Convert SOSI to space
-   3 = so[EBC]si -> [ASC]     : Remove SOSI & space padding on the right
-   4 = so[JEF]si -> so[ASC]si : Replace JEF or KEIS SOSI to ASCII SOSI
-   5 = BMS map conversion     : Convert double byte chracters to 0x2E
-   6 = No SOSI conversion     : Perform single byte conversion only
-   7 = so[EBC]si -> [ASC]  __ : Remove SOSI & space padding before 73 column
-   8 = so[EBC]si -> __  [ASC] : Remove SOSI & space padding after 7 column
-   9 = so[EBC]si -> ?[ASC]? : Replace SOSI by cpm map
-```
-
-**Reference Documents: "data\_dsmigin.sh", "data\_dsmigin.conf",
-"ds\_wrap.sh"**
-
-## Discovery
-
-**Prerequisites:**
-
--   Migration (Source Code) -- Complete
-
-**Description:** Once the source code is migrated to the OpenFrame
-server, the files must be sorted into their respective element types for
-analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
-
-# OFMiner
-
-**Prerequisites:**
-
--   Migration (Source Code) -- Complete
-
--   Installation -- Complete
-
-**Description**: OFMiner is a tool used for analyzing elements in scope
-starting from the JCL. It utilizes the Tmax Base, Batch, TACF, and
-Tibero elements to create a detailed document describing what JOBs,
-PROCs, Programs (COBOL, Assembler), and Copybooks are in scope for
-rehosting. Utilizing TBAdmin is a great tool to help create this
-analysis document.
-
-**Reference Documents: "How to create an OFMiner report\_v2"**
-
-## OpenFrame Configuration
-
-**Prerequisites:**
-
--   Migration (Source Code) -- Complete
-
-**Description:** In order for batch JOBs to run correctly, configuration changes must be made environment to environment. Below is a list of the items you will have to modify based on the customer requirements.
-
-- JOBCLASS
-    + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
-    + Where: ${OPENFRAME_HOME}/config/tjes.conf
-    + How: Add a line after the existing JOBCLASS section for additional classes 
-    + Example:
-    ```
-    [JOBCLASS]
-    A=START
-    B=HOLD
-    C=START
-    ```
-
-## Running First Batch JOB
-
-**Prerequisites:**
-
--   Installation -- Complete
--   OpenFrame Configuration - Complete
+General Process Notes:
+
+
+TODO: Add a percentage assignment to each task. This gives the Project Manager a better idea of how many people he/she should assign to each task especially if they are new or have never done a migration before.
+
+
+1. Pre Migration Tasks
+	a. Questionnaire
+	b. Source Transfer (FTP from Mainframe to Linux)
+		i. JCL
+		ii. PROC
+		iii. COBOL
+		iv. COPYBOOK
+		v. CSD
+	c. Installation (for analysis, see 1a.)
+	d. Analysis
+		i. OFMiner
+		ii. TBAdmin (To create SCOPE spreadsheet)
+
+1a. Installation
+
+2. Migration
+	a. convcpy (copybooks)
+	b. datasets
+		i. NON-VSAM
+		ii. VSAM
+	c. source code (FTP from Mainframe to Linux)
+		i. JCL
+		ii. PROC
+		iii. COBOL
+		iv. COPYBOOK
+		v. CSD
+	d. dsmigin
+		i. ds_wrap.sh
+			- PREREQUISITES: This script requires an input file with the names of the datasets that you want to FTP from the mainframe to OpenFrame.
+			a. dsn2ftp.sh
+				formats dataset names for FTP format
+			b. MyFtpJar.jar
+				- Checks the passed file list to see if the list is greater than 0
+				- If the passed filed list is greater than 0, makes a connection to the mainframe
+				- Checks the mainframe for the list of datasets
+				- If the dataset is found, passes the name to tmaxmvsfilelist.txt
+					- If the dataset is migrated, passes the name to tmaxmvsfilelist_migrated.txt
+			c. po-list2lftpcmd.awk
+				- This script formats and writes the commands into the getfiles.sh script in FTP syntax.
+			d. getfiles.sh
+				- This script can be run to physically retreive the datasets created in the input file.
+		ii. data_dsmigin.sh
+			- After FTP'ing the datasets from mainframe to OpenFrame, the datasets are downloaded to the data directory (specified in the configuration file that comes with the data_dsmigin.sh script called data_dsmigin.conf). You will need to pass the base name of the dataset. The base name of the dataset, is the dataset name excluding any GDG version number and/or information created from the po-list2lftpcmd.awk script. 
+				Example: FULL.DATASET.NAME.PO.FB_80
+				- The base name of the above dataset is "FULL.DATASET.NAME"
+			- Additionally, you will have to provide the schema file that you will be using to dsmigin the dataset. If the type of dsmigin you are doing does not require a schema, you can ignore this option. 
+				#TODO: EXAMPLE
+3. OpenFrame Configuration
+	Some of this configuration will have to be done before migration in order to get the analysis from OFMiner. We need to know what configurations are priority and which configurations are not priority so that we can work on them first and figure out the rest as we go.
+	- cpm.conf
+	- dbutil.conf
+	- ds.conf
+	- dstool.conf
+	- ezaci.conf
+	- ezplus.conf
+	- ftp.conf
+	- hidb.conf
+	- idcams.conf
+	- ikjeft01.conf
+	- ims.conf
+	- isrsupc.conf
+	- keyseq.conf
+	- ofosc.seq
+	- ofstudio.conf
+	- ofsys.seq
+	- osc.OSCOIVP1.conf
+	- osc.OSCOIVP1TL.conf
+	- osc.conf
+	- osc.lu.conf
+	- osc.region.list
+	- osc.IMSA.conf
+	- osi.conf
+	- osi.ofsys.seq
+	- osi.ofsys.seq_for_OSI_ONLY
+	- osi.ofsys.seq_orig
+	- print.conf
+	- rc.conf
+	- saf.conf
+	- smf.conf
+	- sms.conf
+	- sort.conf
+	- ssm.IMSADB2T.conf
+	- tacf.conf
+	- textrun.conf
+	- tjclrun.conf
+	- tjes.conf
+	- tjesmgr.conf
+	- tso.conf
+	- unit.conf
+	- volume.conf
+	- vtam.conf
+
+3a. Compilation
+	BATCH
+		COBOL
+		ASM
+		PL/I
+	ONLINE
+		OSC
+			COBOL
+			ASSEMBLER
+			BMS
+		OSI
+			COBOL
+			ASSEMBLER
+			MFS
+
+
+4. Security
+	Questions we need to ask:
+		- What type of security is the customer using?
+			- ACF2
+			- RACF
+			- ...
+		- Do we support the conversion of the mainframe security to OpenFrame TACF?
+		- What are the mainframe commands to dump the current security information so that we can migrate it into TACF
+		- What are the equivalent commands to create the same security restrictions in OpenFrame TACF?
+	Customer Security --> TACF
+
+5. Running Batch JOBs
+	Prerequisities
+		- Configuration
+		- Migration
+		- Security (??)
+	Need to determine the JOB Streams (Order in which the JOBs are run on the mainframe)
+
+	Need to understand how tjesmgr and textrun works
+
+	
+
+6. JOB Stream and Schedule
+	Once all of the jobs have been successfully tested individually, we need to begin to test them in stream. The JOBs will be run in stream end to end and the output datasets are to be compared for approval.
+
+
+
+7. Operations & Maintenance
+	- Spool
+		- Backup
+			- auto_backup_spool.sh
+		- Restore
+	- 
+
+
+XX. Approval
+
+			
