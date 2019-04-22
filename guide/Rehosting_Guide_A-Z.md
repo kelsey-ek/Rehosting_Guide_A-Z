@@ -279,6 +279,8 @@ analysis document.
 
   Specifies the basic settings of OpenFrame/HiDB. In the [GENERAL] section, you can specify:
 
+  <details><summary>See hidb.conf main options</summary>
+
     - COPYBOOK_DIR: Directory fo a copybook that OpenFrame/HiDB and ofschema refer to. COPYBOOK_DIR sets the preferred path used by OpenFrame/HiDB, which refers to copybooks under the subdirectory dbd_name/segment_name or psbpcb_id/senseg_name. 
     - TABLESPACE: Table space in which OpenFrame/hiDB creates segment tables, indexes, and views.
     - HIDB_OBJECT_DIR: Directory under which the hidbmgr tool generates DL/I function code
@@ -320,17 +322,17 @@ analysis document.
       - YES: requests a select query along with LEAD for a DLI GET NEXT IN PARENT request that does not specify a search condition. (Default)
       - NO: Does not use LEAD
 
-In the [DEBUG] section, you can specify:
+  In the [DEBUG] section, you can specify:
 
-  - GENERAL:
-    - YES: Enables the default debugging flags when OpenFrame/HiDB is running.
-    - NO: Disables the default debugging flags when OpenFrame/HiDB is running. (Default)
-  - SHOW_BUFFER: (Enabled when GENERAL is set to YES)
-    - YES: Processing a DL/I statement returns the buffer value of each column.
-    - NO: Processing a DL/I statement does not return the buffer value of each column. (Default)
-  - DISABLE_COMMIT
-    - YES: Indicates that a DL/I operation does not save changes to the database.
-    -NO: Indicates that a DL/I operation saves changes to the database. (Default)
+    - GENERAL:
+      - YES: Enables the default debugging flags when OpenFrame/HiDB is running.
+      - NO: Disables the default debugging flags when OpenFrame/HiDB is running. (Default)
+    - SHOW_BUFFER: (Enabled when GENERAL is set to YES)
+      - YES: Processing a DL/I statement returns the buffer value of each column.
+      - NO: Processing a DL/I statement does not return the buffer value of each column. (Default)
+    - DISABLE_COMMIT
+      - YES: Indicates that a DL/I operation does not save changes to the database.
+      -NO: Indicates that a DL/I operation saves changes to the database. (Default)</details>
 
 * **idcams.conf**
 * **ikjeft01.conf**
