@@ -429,95 +429,95 @@ analysis document.
 
   OSC: used to configure the TSAM and OSC system settings that are common to all OpenFrame OSC regions. This eliminates the need to individually configure duplicate settings in each osc._servername_.conf file 
 
-<details><summary>Click here for more information about osc.conf</summary>
-  <p>
+  <details><summary>Click here for more information about osc.conf</summary>
+    <p>
 
-  - Sections:
+    - Sections:
 
-    - GENERAL: Contains information related to starting up and operating OSC regions. Also contains resource information settings.
-      - SYSTEM_LOGLVL: Sets the log level of the OSC SYSTEM (#TODO: Example Range)
-      - NCS_FILE: Designates a temporary file which stores information used by the Named Counter Service (NCS).
-      - NCS_WRITE_COUNT: Specifies whether to manage the information used in in a disk (AUX), or in memory (MAIN). (Default Value: AUX)
-      - NCS_WRITE_COUNT: Stores a value in NCS_FILE for every specified count and increments a value in a unit specified in a count when NCS_STORAGE=AUX. Specifies a value in multiples of 1 or 10.
-      - XA_TSAM_DB: Specifies OPENINFO value in the DB section of a Tmax configuration file to support TSAM-XA.
-      - ASMTBL: Enables loading ASM tables to shared memory. (Default value: NO)
-      - DBCONN: odbc-section-name in ofsys.conf (#TODO: Create link)
-    - TSAM_CLIENT: Contains connection information used for managing user VSAM data sets in an OSC system.
-      - USERNAME: Username used to connect to TSAM
-      - PASSWORD: Password (plaintext string) used to connect to TSAM. If ENPASSWD is also specified, ENPASSWD will take precedence.
-      - ENPASSWD: Encrypted password (hexadecimal) used to connect to TSAM
-      - DATABASE: Tibero database connection address used by TSAM. TB_SID registered in tbnet_alias.tbr of Tibero is used
+      - GENERAL: Contains information related to starting up and operating OSC regions. Also contains resource information settings.
+        - SYSTEM_LOGLVL: Sets the log level of the OSC SYSTEM (#TODO: Example Range)
+        - NCS_FILE: Designates a temporary file which stores information used by the Named Counter Service (NCS).
+        - NCS_WRITE_COUNT: Specifies whether to manage the information used in in a disk (AUX), or in memory (MAIN). (Default Value: AUX)
+        - NCS_WRITE_COUNT: Stores a value in NCS_FILE for every specified count and increments a value in a unit specified in a count when NCS_STORAGE=AUX. Specifies a value in multiples of 1 or 10.
+        - XA_TSAM_DB: Specifies OPENINFO value in the DB section of a Tmax configuration file to support TSAM-XA.
+        - ASMTBL: Enables loading ASM tables to shared memory. (Default value: NO)
+        - DBCONN: odbc-section-name in ofsys.conf (#TODO: Create link)
+      - TSAM_CLIENT: Contains connection information used for managing user VSAM data sets in an OSC system.
+        - USERNAME: Username used to connect to TSAM
+        - PASSWORD: Password (plaintext string) used to connect to TSAM. If ENPASSWD is also specified, ENPASSWD will take precedence.
+        - ENPASSWD: Encrypted password (hexadecimal) used to connect to TSAM
+        - DATABASE: Tibero database connection address used by TSAM. TB_SID registered in tbnet_alias.tbr of Tibero is used
 
-        Example of TSAM_CLIENT section:
+          Example of TSAM_CLIENT section:
+
+          ```
+          [TSAM_CLIENT]
+          USERNAME=oframe
+          PASSWORD=tmax1234
+          DATABASE=TVSAM
+          ```
+
+      - TSAM_BACKUP: Contains backup connection information that will be used if a connection to TSAM_CLIENT cannot be made
+        - USERNAME: Username used to connect to TSAM
+        - PASSWORD: Password (plaintext string) used to connect to TSAM. If ENPASSWD is also specified, ENPASSWD will take precedence.
+        - ENPASSWD: Encrypted password (hexadecimal), used to connect to TSAM.
+        - DATABASE: Tibero database connection address used by TSAM. The TB_SID registered in the Tibero file; tbnet_alias.tbr is used.
+        - RETRY_COUNT: The number of times to try reconnecting to the backup address, if the connection to TSAM fails.
+        - RETRY_INTERVAL: The interval (in seconds) between attempts to reconnect to the backup server.
+
+        Example of TSAM_BACKUP section:
 
         ```
-        [TSAM_CLIENT]
+        [TSAM_BACKUP]
         USERNAME=oframe
         PASSWORD=tmax1234
         DATABASE=TVSAM
+        RETRY_COUNT=10
+        RETRY_INTERVAL=10
         ```
 
-    - TSAM_BACKUP: Contains backup connection information that will be used if a connection to TSAM_CLIENT cannot be made
-      - USERNAME: Username used to connect to TSAM
-      - PASSWORD: Password (plaintext string) used to connect to TSAM. If ENPASSWD is also specified, ENPASSWD will take precedence.
-      - ENPASSWD: Encrypted password (hexadecimal), used to connect to TSAM.
-      - DATABASE: Tibero database connection address used by TSAM. The TB_SID registered in the Tibero file; tbnet_alias.tbr is used.
-      - RETRY_COUNT: The number of times to try reconnecting to the backup address, if the connection to TSAM fails.
-      - RETRY_INTERVAL: The interval (in seconds) between attempts to reconnect to the backup server.
+      - OSCMCSVR: Contains environment variables related to OSCMCSVR, on OSC system server
+        - REGION: Specifies the number of regions that will use the monitoring function. This number must match the number of regions listed below.
+        - REGION\__regionname_: _regionname_ is replaced by each OSC region name. Designates teh logged areas in the data section fields of the performance record. Each area is givin in the form of 'Offset-Length', and each offset must be specified sequentially.
 
-      Example of TSAM_BACKUP section:
+        Example of OSCMCSVR section:
 
-      ```
-      [TSAM_BACKUP]
-      USERNAME=oframe
-      PASSWORD=tmax1234
-      DATABASE=TVSAM
-      RETRY_COUNT=10
-      RETRY_INTERVAL=10
-      ```
+        ```
+        [OSCMCSVR]
+        REGION=2
+        REGION_OSC00001=0-10,100-30
+        REGION_OSC00002=100-50,200-10,300-65
+        ```
 
-    - OSCMCSVR: Contains environment variables related to OSCMCSVR, on OSC system server
-      - REGION: Specifies the number of regions that will use the monitoring function. This number must match the number of regions listed below.
-      - REGION\__regionname_: _regionname_ is replaced by each OSC region name. Designates teh logged areas in the data section fields of the performance record. Each area is givin in the form of 'Offset-Length', and each offset must be specified sequentially.
+      - OSCSCSVR: Contains environment variables related to oSCSCSVR, an OSC system server
+          - BACKUP: Sets whether or not to back up unexpired scheduling information 
+            - NONE: No Backups. (Default)
+            - TSAM: Back up through a TSAM data set
+          - BACKUP_DATASET: Specifies the data set where the scheduling information that has not expired will be backed up. This item has no effect if the backup item is set to NONE. The data set must be in KSDS format, with a 20 byte key field. Record length can be variable and must be between 20 and 32700 bytes long.
+      - OSCOLSVR: Contains environment variables related to OSCOLSVR, an OSC system server
+        - BUFFERING_SIZE: Specifies the buffering type and buffer size for the service logs. If the field is not specified, buffering is disabled and the size of the default buffer depends on the system. 
+          - LINE: Characters are line buffered and are transmitted when a newline character is encountered.
+          - size: Characters are block buffered and are transmitted in blocks of a specified size (bytes).
+        - FLUSH_INTERNAL: Specifies the interval at which the buffered data are flushed. If the field is specified as 0, the buffered data are flushed immediately.
 
-      Example of OSCMCSVR section:
+        Example of the OSCOLSVR section:
 
-      ```
-      [OSCMCSVR]
-      REGION=2
-      REGION_OSC00001=0-10,100-30
-      REGION_OSC00002=100-50,200-10,300-65
-      ```
+        ```
+        [OSCOLSVR]
+        BUFFER_SIZE=4096
+        FLUSH_INTERVAL=0
+        ```
 
-    - OSCSCSVR: Contains environment variables related to oSCSCSVR, an OSC system server
-        - BACKUP: Sets whether or not to back up unexpired scheduling information 
-          - NONE: No Backups. (Default)
-          - TSAM: Back up through a TSAM data set
-        - BACKUP_DATASET: Specifies the data set where the scheduling information that has not expired will be backed up. This item has no effect if the backup item is set to NONE. The data set must be in KSDS format, with a 20 byte key field. Record length can be variable and must be between 20 and 32700 bytes long.
-    - OSCOLSVR: Contains environment variables related to OSCOLSVR, an OSC system server
-      - BUFFERING_SIZE: Specifies the buffering type and buffer size for the service logs. If the field is not specified, buffering is disabled and the size of the default buffer depends on the system. 
-        - LINE: Characters are line buffered and are transmitted when a newline character is encountered.
-        - size: Characters are block buffered and are transmitted in blocks of a specified size (bytes).
-      - FLUSH_INTERNAL: Specifies the interval at which the buffered data are flushed. If the field is specified as 0, the buffered data are flushed immediately.
+      - OSCOSSVR: Contains environment variables related to OSCOSSVR, an OSC system server
+        - DEPLOY_SOURCE_PATH: Source path of an OSC module to deploy
 
-      Example of the OSCOLSVR section:
+        Example of the OSCOSSVR section:
 
-      ```
-      [OSCOLSVR]
-      BUFFER_SIZE=4096
-      FLUSH_INTERVAL=0
-      ```
-
-    - OSCOSSVR: Contains environment variables related to OSCOSSVR, an OSC system server
-      - DEPLOY_SOURCE_PATH: Source path of an OSC module to deploy
-
-      Example of the OSCOSSVR section:
-
-      ```
-      [OSCOSSVR]
-      DEPLOY_SOURCE_PATH=$OPENFRAME_HOME/rdom
-      ```
-</p></details>
+        ```
+        [OSCOSSVR]
+        DEPLOY_SOURCE_PATH=$OPENFRAME_HOME/rdom
+        ```
+  </p></details>
 
 * **osc.lu.conf**
 * **osc.region.list**
