@@ -394,17 +394,17 @@ analysis document.
 * **tjclrun.conf**
 * **tjes.conf**
 
-- JOBCLASS
-    + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
-    + Where: ${OPENFRAME_HOME}/config/tjes.conf
-    + How: Add a line after the existing JOBCLASS section for additional classes 
-    + Example:
-    ```
-    [JOBCLASS]
-    A=START
-    B=HOLD
-    C=START
-    ```
+  - JOBCLASS
+      + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
+      + Where: ${OPENFRAME_HOME}/config/tjes.conf
+      + How: Add a line after the existing JOBCLASS section for additional classes 
+      + Example:
+      ```
+      [JOBCLASS]
+      A=START
+      B=HOLD
+      C=START
+      ```
 
 * **tjesmgr.conf**
 * **tso.conf**
@@ -412,7 +412,7 @@ analysis document.
 * **volume.conf**
 * **vtam.conf**
 
-Reference Documents:
+**Reference Documents:**
 <details><summary>Click Here for Reference Documents</summary>
 
   * **Base:** OpenFrame_Base_7_Fix#3_Base_Guide_v2.14_en.pdf
