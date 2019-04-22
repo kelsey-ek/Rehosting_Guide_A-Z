@@ -167,6 +167,18 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 **Description**: This step includes migrating source code and datasets.
 There are multiple options for downloading the data from the mainframe.
 
+Below is the ordered list of the assets you will need to migrate from the mainframe to OpenFrame:
+
+  1. JCL
+  2. Procedure (PROC)
+  3. COBOL
+  4. COPYBOOK
+  5. CSD
+  6. Datasets
+    * NON-VSAM
+    * VSAM
+
+
 **Reference Documents:** "How to Source Code Transfer Process"
 
 # Source Code
@@ -246,7 +258,50 @@ analysis document.
 
 -   Migration (Source Code) -- Complete
 
-**Description:** In order for batch JOBs to run correctly, configuration changes must be made environment to environment. Below is a list of the items you will have to modify based on the customer requirements.
+**Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made environment to the environment. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
+
+* cpm.conf
+* dbutil.conf
+* ds.conf
+* dstool.conf
+* ezaci.conf
+* ezplus.conf
+* ftp.conf
+* hidb.conf
+* idcams.conf
+* ikjeft01.conf
+* ims.conf
+* isrsupc.conf
+* keyseq.conf
+* ofosc.seq
+* ofstudio.conf
+* ofsys.seq
+* osc.OSCOIVP1.conf
+* osc.OSCOIVP1TL.conf
+* osc.conf
+* osc.lu.conf
+* osc.region.list
+* osc.IMSA.conf
+* osi.conf
+* osi.ofsys.seq
+* osi.ofsys.seq_for_OSI_ONLY
+* osi.ofsys.seq_orig
+* print.conf
+* rc.conf
+* saf.conf
+* smf.conf
+* sms.conf
+* sort.conf
+* ssm.IMSADB2T.conf
+* tacf.conf
+* textrun.conf
+* tjclrun.conf
+* tjes.conf
+* tjesmgr.conf
+* tso.conf
+* unit.conf
+* volume.conf
+* vtam.conf
 
 - JOBCLASS
     + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
