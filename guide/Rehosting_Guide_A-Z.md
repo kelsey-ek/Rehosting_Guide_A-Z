@@ -355,75 +355,75 @@ analysis document.
 
   OSC: This file contains environment variables that apply to the OSC application server named _servername_. If the OSC application server name is OSC00001, then the file name will become osc.OSC00001.conf. Some of the environment variables in osc._servername_.conf can also be found in the osc.conf file, possibly with different values. Where duplicates exist, the value in the osc._servername_.conf always takes precedence. Below is sections of the OSC._servername_.conf in more detail:
 
-<details><summary>Click here for more information about osc._servername_.conf</summary>
-  <p>
+  <details><summary>Click here for more information about osc._servername_.conf</summary>
+    <p>
 
-  - CPM: Specifies the CCSID number which will be used by the OSC application server and the TN3270 client.
-    - REGION_CCSID: Specifies the CCSID number that the OSC application server will use. A maximum of one CCSID can be specified.
-    - 3270_CCSID: Specifies the CCSID number that the TN3270 emulator will use. A maximum of two CCSIDs can be specified. If a 1-byte character code page and a 2-byte character code page are used together, as with the Japanese language, two CCSIDs must be set together. CCSID is an abbreviation for Coded Character Set Identifier, which is used by IBM to identify a specific encoding of a specific code page. CCSID enables transmission of data between the OSC application server and the TN3270 emulator. The OSC application server uses ASCII strings while the TN3270 emulator uses EBCDIC strings. Therefore, it is necessary for the OSC application to convert strings either to receive or sent them. During the conversation, the server refers to CCSID values specified in the [CPM] section.
-    - The following are the most communly used values
-      - 37: COM EUROPE EBCDIC
-      - 290: JAPANESE EBCDIC
-      - 300: JAPAN DB EBCDIC
-      - 437: USA PC-DATA
-      - 933: KOREAN MIX EBCDIC
-      - 943: JAPAN OPEN
-      - 949: KOREA KS PC-DATA
+    - CPM: Specifies the CCSID number which will be used by the OSC application server and the TN3270 client.
+      - REGION_CCSID: Specifies the CCSID number that the OSC application server will use. A maximum of one CCSID can be specified.
+      - 3270_CCSID: Specifies the CCSID number that the TN3270 emulator will use. A maximum of two CCSIDs can be specified. If a 1-byte character code page and a 2-byte character code page are used together, as with the Japanese language, two CCSIDs must be set together. CCSID is an abbreviation for Coded Character Set Identifier, which is used by IBM to identify a specific encoding of a specific code page. CCSID enables transmission of data between the OSC application server and the TN3270 emulator. The OSC application server uses ASCII strings while the TN3270 emulator uses EBCDIC strings. Therefore, it is necessary for the OSC application to convert strings either to receive or sent them. During the conversation, the server refers to CCSID values specified in the [CPM] section.
+      - The following are the most communly used values
+        - 37: COM EUROPE EBCDIC
+        - 290: JAPANESE EBCDIC
+        - 300: JAPAN DB EBCDIC
+        - 437: USA PC-DATA
+        - 933: KOREAN MIX EBCDIC
+        - 943: JAPAN OPEN
+        - 949: KOREA KS PC-DATA
 
-      For more information about CCSID, visit https://www-01.ibm.com/software/globalization/ccsid/ccsid_registered.html
+        For more information about CCSID, visit https://www-01.ibm.com/software/globalization/ccsid/ccsid_registered.html
 
-      Below is an example of the [CPM] section:
+        Below is an example of the [CPM] section:
 
-      ```
-      [CPM]
-      REGION_CCSID=437
-      3270_CCSID=37
-      ```
+        ```
+        [CPM]
+        REGION_CCSID=437
+        3270_CCSID=37
+        ```
 
-  - CPM_FLAG: Sets CPM flag options used when converting EBCDIC to ASCII or visa versa.
-    - EBCDIC_TO_ASCII: Flag used when converting EBCDIC to ASCII
-      - CPM_CONVERT_SOSI_TO_NULL: convert SOSI to NULL. (Default). 
-      - CPM_CONVERT_SOSI_TO_SPACE: convert SOSI to SPACE.
-    - ASCII_TO_EBCDIC: Flag used when converting ASCII to EBCDIC
-      - CPM_CONVERT_SOSI_TO_NULL: convert SOSI to NULL. (Default).
-      - CPM_CONVERT_SOSI_TO_SPACE: convert SOSI to SPACE
+    - CPM_FLAG: Sets CPM flag options used when converting EBCDIC to ASCII or visa versa.
+      - EBCDIC_TO_ASCII: Flag used when converting EBCDIC to ASCII
+        - CPM_CONVERT_SOSI_TO_NULL: convert SOSI to NULL. (Default). 
+        - CPM_CONVERT_SOSI_TO_SPACE: convert SOSI to SPACE.
+      - ASCII_TO_EBCDIC: Flag used when converting ASCII to EBCDIC
+        - CPM_CONVERT_SOSI_TO_NULL: convert SOSI to NULL. (Default).
+        - CPM_CONVERT_SOSI_TO_SPACE: convert SOSI to SPACE
 
-      Below is an example of the [CPM_FLAG] section:
+        Below is an example of the [CPM_FLAG] section:
 
-      ```
-      [CPM_FLAG]
-      EBCDIC_TO_ASCII=CPM_CONVERT_SOSI_TO_NULL
-      ASCII_TO_EBCDIC=CPM_CONVERT_SOSI_TO_NULL
-      ```
+        ```
+        [CPM_FLAG]
+        EBCDIC_TO_ASCII=CPM_CONVERT_SOSI_TO_NULL
+        ASCII_TO_EBCDIC=CPM_CONVERT_SOSI_TO_NULL
+        ```
 
-  - GENERAL: Contains startup, operation, and resource information for the OSC application server.
-    - ACBLIB_DSNAME: Specifies the name of the data set where ACBLIB information is stored when DL/I is used in OSC.
-    - CBLPSHPOP: Specifies whether or not the PUSH/POP functions will be used for handler information, in cases where other programs are called from in a COBOL program with the CALL command.
-    - CWA_SIZE: Sets the size of the shared memory block where the COmmon Work Area (CWA) information is stored (decimal, bytes).
-    - FREEKB: Specifies whether to disable keyboard lock when shutting down a transaction (Default: NO)
-    - GMTEXT: Sets the message used in GMTRAN (maximum of 246 characters, excluding quotation marks). (Default: 'OpenFrame OSC System')
-    - GMTRAN: Specifies the ID of a transaction to be automatically executed when a terminal connects for the first time (Default: CSGM)
-    - IMSID: Specifies an OSI Control region name that manages DB information when DL/I is used in OSC.
-    - JOBID: Designates the JOB ID for the OSC system. A JOB ID is composed of 3 letters (do not use JOB) and 5 numbers. A unique value must be set in all the regions of OSC, and there must not be a duplicate value. The specified JOB ID is used as a directory name created under the ${OPENFRAME_HOME}/spool directory, when OSC uses spool data. When the SPOOL WRITE command is used, the spool data will be stored in the directory which has the same name as the specified JOBID. When the WRITEQ TD command is used, data will be created in a directory named 'JOBID' and the SPR ID of the server process that executed the command.
-    - JOBNAME: Specifies a JOB name for the OSC region (8 Byte String).
-    - MAPDIR: Specifies the directory where OSC maps will be stored. If no MAPDIR is specified, OSC uses ${OPENFRAME_HOME}/osc/region/{Region name}/map
-    - MC: Specifeis whether or not the Transaction Monitoring function of OSC will be used
-    - MSGCLASS: Specifies the default SYSOUTCLASS of TPEFILE(OUTPUT) among EXTRA TDQ
-    - NOUSE: Specifies modules that will NOT be used by the OSC system. To specify more than one module, seperate module names with commas. 
-      - DL: DL/I function
-      - DS: Data set access function (If specified, file, TSQ, TDQ and Spool cannot be used)
-      - MS: MSC access function.
-      - NC: NCS (Named Counter Server) access function.
-      - SA: SAF (TACF) access function
-      - SP: Spool Access Function
-      - TS: TSQ access function
-      - AS: OFASM module
-  - SAF: Contains security-related environment variables.
-  - SD: Contains environment variables related to system definition data sets used by the OSC application server.
-  - TDQ: Contains environment variables related to the Transient Data Queue (TDQ).
-  - TSQ: Contains environment variables related to the Temporary Storage Queue (TSQ)
-  - TRANCLASS: Contains environment variables related to the Tranclass of a region.
-</p></details>
+    - GENERAL: Contains startup, operation, and resource information for the OSC application server.
+      - ACBLIB_DSNAME: Specifies the name of the data set where ACBLIB information is stored when DL/I is used in OSC.
+      - CBLPSHPOP: Specifies whether or not the PUSH/POP functions will be used for handler information, in cases where other programs are called from in a COBOL program with the CALL command.
+      - CWA_SIZE: Sets the size of the shared memory block where the COmmon Work Area (CWA) information is stored (decimal, bytes).
+      - FREEKB: Specifies whether to disable keyboard lock when shutting down a transaction (Default: NO)
+      - GMTEXT: Sets the message used in GMTRAN (maximum of 246 characters, excluding quotation marks). (Default: 'OpenFrame OSC System')
+      - GMTRAN: Specifies the ID of a transaction to be automatically executed when a terminal connects for the first time (Default: CSGM)
+      - IMSID: Specifies an OSI Control region name that manages DB information when DL/I is used in OSC.
+      - JOBID: Designates the JOB ID for the OSC system. A JOB ID is composed of 3 letters (do not use JOB) and 5 numbers. A unique value must be set in all the regions of OSC, and there must not be a duplicate value. The specified JOB ID is used as a directory name created under the ${OPENFRAME_HOME}/spool directory, when OSC uses spool data. When the SPOOL WRITE command is used, the spool data will be stored in the directory which has the same name as the specified JOBID. When the WRITEQ TD command is used, data will be created in a directory named 'JOBID' and the SPR ID of the server process that executed the command.
+      - JOBNAME: Specifies a JOB name for the OSC region (8 Byte String).
+      - MAPDIR: Specifies the directory where OSC maps will be stored. If no MAPDIR is specified, OSC uses ${OPENFRAME_HOME}/osc/region/{Region name}/map
+      - MC: Specifeis whether or not the Transaction Monitoring function of OSC will be used
+      - MSGCLASS: Specifies the default SYSOUTCLASS of TPEFILE(OUTPUT) among EXTRA TDQ
+      - NOUSE: Specifies modules that will NOT be used by the OSC system. To specify more than one module, seperate module names with commas. 
+        - DL: DL/I function
+        - DS: Data set access function (If specified, file, TSQ, TDQ and Spool cannot be used)
+        - MS: MSC access function.
+        - NC: NCS (Named Counter Server) access function.
+        - SA: SAF (TACF) access function
+        - SP: Spool Access Function
+        - TS: TSQ access function
+        - AS: OFASM module
+    - SAF: Contains security-related environment variables.
+    - SD: Contains environment variables related to system definition data sets used by the OSC application server.
+    - TDQ: Contains environment variables related to the Transient Data Queue (TDQ).
+    - TSQ: Contains environment variables related to the Temporary Storage Queue (TSQ)
+    - TRANCLASS: Contains environment variables related to the Tranclass of a region.
+  </p></details>
 
 * **osc.conf**
 
