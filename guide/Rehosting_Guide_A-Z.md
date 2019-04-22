@@ -432,6 +432,34 @@ Reference Documents:
 
 **Description:** In order to compile source code such as COBOL, Assembler (ASM), PL/I, BMS, MFS, DBDs, PSBs, you will need to first complete some configuration. There are many compiler options available to mainframe, and we need to configure OpenFrame to compile source code the same way it is done on the mainframe. 
 
+<h3>COBOL</h3>
+
+#TODO
+
+<h3>Assembler</h3>
+
+#TODO
+
+<h3>PL/I</h3>
+
+#TODO
+
+<h3>BMS</h3>
+
+#TODO
+
+<h3>MFS</h3>
+
+#TODO
+
+<h3>DBD</h3>
+
+#TODO
+
+<h3>PSB</h3>
+
+#TODO
+
 ## Running Batch JOBs
 
 **Prerequisites:**
@@ -440,7 +468,23 @@ Reference Documents:
 -   OpenFrame Configuration -- Complete
 -   Source Compilation -- Complete
 
-**Description:** Now that your configuration is completed, it's time to start running Batch JOBs. 
+**Description:** Now that your configuration is completed, it's time to start running Batch JOBs. There are many different ways a BATCH JOB can be submitted, please see the sections below for whichever method suits you best. In most cases, the customer will prefer to use OFManager, so getting familiar with submitting JOBs through OFManager is recommended.
+
+<h3>Tjesmgr</h3>
+
+#TODO
+
+<h3>Textrun</h3>
+
+#TODO
+
+<h3>OFManager</h3>
+
+#TODO
+
+<h3>OFStudio</h3>
+
+#TODO
 
 ## Running Online Transactions
 
@@ -452,6 +496,14 @@ Reference Documents:
 
 **Description:** Online Transactions can be run through a series of interconnected components: WebTerminal and 3270 Gateway (OFGW). In general, a transaction will be running in an online region in OpenFrame. OFGW will interact and translate the messages flowing through from the webtermanal to the region and visa-versa. The end result is an online screen where users can interact and view, modify, or delete information on the underlying database. 
 
+<h3>OSC</h3>
+
+#TODO
+
+<h3>OSI</h3>
+
+#TODO
+
 ## JOB Stream and Scheduler
 
 **Prerequisities:**
@@ -462,6 +514,14 @@ Reference Documents:
 
 **Description:** A mainframe scheduler's purpose is to define which and when JOBs will run. Additionally, logic can be added to the scheduler to determine what subsequent JOBs are to be run based on return codes from previous JOBs. Similar to the mainframe, OpenFrame can also work with most schedulers, so JOBs can be run the same way they run on the mainframe.
 
+<h3>Control-M</h3>
+
+#TODO
+
+<h3>Autosys</h3>
+
+#TODO
+
 ## Operations & Maintenance
 
 **Prerequisites:**
@@ -471,6 +531,8 @@ Reference Documents:
 -   Running Batch JOBs -- In Progress or Complete
 
 **Description:** Now that the mainframe has been rehosted to an Open System, you now have the freedom to develop and customize OpenFrame to meet your demands. OpenFrame comes well equipped with many self-managing tools to help organize your environment, while maintaining smooth and reliable operation. In this section, we will go through some useful utilities that OpenFrame comes with by default, and some useful shell scripts to increase efficiency in daily operations.
+
+<h3>Useful Scripts</h3>
 
 - Spools
 
@@ -487,5 +549,9 @@ Reference Documents:
 - BATCH
 
   - scan\_fix.sh (TODO: Add supporting scripts and Documentation)
+
+<h3>Patching OpenFrame</h3>
+
+
 
 
