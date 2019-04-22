@@ -400,11 +400,13 @@ analysis document.
 
 Reference Documents:
 <details><summary>Click Here for Reference Documents</summary>
+
   * **Base:** OpenFrame_Base_7_Fix#3_Base_Guide_v2.14_en.pdf
   * **OSI:** OpenFrame_OSI_7.1_Administrator's_Guide_V2.1.1_en.pdf
   * **OSC:** OpenFrame_OSC_7_Fix#3_Administrator's_Guide_v2.1.5_en.pdf
   * **TACF:** OpenFrame_TACF_7_Fix#3_Administrator's_Guide_v2.1.4_en.pdf
   * **HiDB:** OpenFrame_HiDB_7.1_HiDB_Guide_v2.1.4_en.pdf
+  
 </details>
 
 - JOBCLASS
