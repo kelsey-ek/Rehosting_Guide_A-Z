@@ -175,9 +175,9 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
   4. COPYBOOK
   5. CSD
   6. Datasets
-  
-    * NON-VSAM
-    * VSAM
+
+    - NON-VSAM
+    - VSAM
 
 
 **Reference Documents:** "How to Source Code Transfer Process"
