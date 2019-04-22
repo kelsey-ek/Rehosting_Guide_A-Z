@@ -260,6 +260,8 @@ analysis document.
 
 **Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made environment to the environment. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
 
+**Note:** You can read more about each of these configuration files based on the reference documents mentioned below.
+
 * **cpm.conf**
 
   Base: The cpm.conf configuration file contains the settings for conversion process from Mainframe to OpenFrame.
@@ -274,9 +276,68 @@ analysis document.
 * **ezplus.conf**
 * **ftp.conf**
 * **hidb.conf**
+
+  Specifies the basic settings of OpenFrame/HiDB. In the [GENERAL] section, you can specify:
+
+    - COPYBOOK_DIR: Directory fo a copybook that OpenFrame/HiDB and ofschema refer to. COPYBOOK_DIR sets the preferred path used by OpenFrame/HiDB, which refers to copybooks under the subdirectory dbd_name/segment_name or psbpcb_id/senseg_name. 
+    - TABLESPACE: Table space in which OpenFrame/hiDB creates segment tables, indexes, and views.
+    - HIDB_OBJECT_DIR: Directory under which the hidbmgr tool generates DL/I function code
+    - FIX_DATA_ERROR:
+      - YES: Indicates that when an invalid data is encountered while the hidbmgr tool generates a DL/I statement, the data is set as the default value (for example, binary: 0) and no error is thrown
+      - NO: Indicates that when an invalid data is encountered while the hidbmgr generates a DL/I statement, an error is processed and the program is terminated. (Default)
+    - NO_INDEX_TABLE: 
+      - YES: Indicates that secondary indexes are stored in the same table as the target segment table. The target and source segments must be identical, and you cannot change the index segment directly on the segment table
+      - NO: Indicates that secondary indexes are stored in seperate index segment table. (Default)
+    - IGNORE_FILLER: 
+      - YES: Indicates that the dbdgen tool does not create a FILLER column, and that FILLER is not processed by the DL/I function created by the psbgen tool.
+      - NO: Indicates that the dbdgen tool creates a FILLER column, and the FILLER is processed by the DL/I function. (Default)
+    - COMMIT_INTERVAL: Maximum count that HiDB performs a DL/I function before commit. Set to a number from 0. If set to 0, commit is performed once when the database session ends. (Default: 0)
+    - RESOLVE_HINT_DIR: Directory where the index hint mapping information is to be used when using the user-defined index hint in the select API of the DL/I library created by the dligen command of the hidbmgr tool.
+    - FIRST_FETCH_COUNT: FIRST_ROWS hint value in the select API of the DL/I library created by the dligen command of the hidbmgr tool. Set to a number from 0. If set to 0, the FIRST_ROWS hint is not used (Default: 10)
+    - GU_PREDICT_FAILURE_THRESHOLD: Number of consecutive failed GET UNIQUE. Set to a number from 0. If GET UNIQUE fails consecutively as many times as the set number, an appropriate select query is requested. (Default: 0)
+    - #TODO: FIX THIS SENTENCE: GU_PREDICT_FAILURE_RESET: Number of consecutive success GET UNIQUE. Set to a number from 0. If GET UNIQUE success consecutively as many as the set number when the select query executed because GU_PREDICT_FAILURE_THRESHOLD is reached, it operates normally (Default: 0)
+    - HIDB_ALTER_KEYSEQ: 
+      - YES: Allows the user of a user-defined sorting order when defininig virtual columns and indexes in the database or when using a where condition for a select query. This setting is not recommended. 
+      - NO: Performs the binary sort order. (Default)
+    - DATABASE_CHARSET: Character set name that corresponds to the setting in the original database when using ALTER_KEYSEQ
+    - EBCDIC_CHARSET: Character set name that corresponds to the user-desired sort order when using ALTER_KEYSEQ.
+    - OF_CHARSET: System local value for multi-byte character processing.
+    - IGNORE_AUTH_CHECK: 
+      - YES: integrates with TACF to use it's user authentication.
+      - NO: does not use TACF user authentication. (Default)
+    - FETCH_COL_DEFAULT_VALUE: Hex value of the character to be set when the data fetched from the select API of the DL/I library created by the dligen command of the hidbmgr tool is null. (Default: 0x00)
+    - RESET_APPBUF_IF_GET_FAIL: 
+      - YES: sets the buffer data passed from the application to null when the DLI GET command fails. (Default)
+      - NO: Does not change teh buffer data when the DLI GET command fails.
+    - SKIP_POSITIONING_IF_GET_FAIL: 
+      - YES: Does not specify the location of the last segment accessed when the DLI GET command fails. This setting is not recommended.
+      - NO: Does not change the buffer data when the DLI GET command fails. (Default)
+    - HiDB_IMPORT_DIR: Directory path to store data when using high-speed loading of hdload and hidbptmgr tools
+    - USE_LEAD_FOR_GN: 
+      - YES: Requests a select query along with LEAD for a DLI GET NEXT request that does not specify a search condition. (Default)
+      - NO: Does not use LEAD
+    - USE_LEAD_FOR_GNP: 
+      - YES: requests a select query along with LEAD for a DLI GET NEXT IN PARENT request that does not specify a search condition. (Default)
+      - NO: Does not use LEAD
+
+In the [DEBUG] section, you can specify:
+
+  - GENERAL:
+    - YES: Enables the default debugging flags when OpenFrame/HiDB is running.
+    - NO: Disables the default debugging flags when OpenFrame/HiDB is running. (Default)
+  - SHOW_BUFFER: (Enabled when GENERAL is set to YES)
+    - YES: Processing a DL/I statement returns the buffer value of each column.
+    - NO: Processing a DL/I statement does not return the buffer value of each column. (Default)
+  - DISABLE_COMMIT
+    - YES: Indicates that a DL/I operation does not save changes to the database.
+    -NO: Indicates that a DL/I operation saves changes to the database. (Default)
+
 * **idcams.conf**
 * **ikjeft01.conf**
 * **ims.conf**
+
+  HiDB: Used to configure control block data sets used in the DB/DC system. More specifically, allows for configuration of the default library data set and volume serial that define DBD control blocks, PSB control blocks, DAB control blocks, and ACB control blocks.
+
 * **isrsupc.conf**
 * **keyseq.conf**
 * **ofosc.seq**
@@ -286,12 +347,17 @@ analysis document.
   Base: Contains general system settings for OpenFrame (Mainly those regarding the system directory structure)
 
 
-* **osc.OSCOIVP1.conf**
-* **osc.OSCOIVP1TL.conf**
+* **osc._servername_.conf**
+
+  OSC: This file contains environment variables that apply to the OSC application server named _servername_. If the OSC application server name is OSC00001, then the file name will become osc.OSC00001.conf. Some of the environment variables in osc._servername_.conf can also be found in the osc.conf file, possibly with different values. Where duplicates exist, the value in the osc._servername_.conf always takes precedence. 
+
 * **osc.conf**
+
+  OSC: used to configure the TSAM and OSC system settings that are common to all OpenFrame OSC regions. This eliminates the need to individually configure duplicate settings in each osc._servername_.conf file 
+
 * **osc.lu.conf**
 * **osc.region.list**
-* **osc.<IMSID>.conf**
+* **osc._IMSID_.conf**
 
   OSI: Configuration file where items to be applied by IMSID in the OSI system are configured. If the actual environment configuration file name's IMSID is IMSA, then the file will be named "osi.IMSA.conf"
 
@@ -310,12 +376,16 @@ analysis document.
 * **saf.conf**
 
   Base: Contains the OpenFrame System Access control settings
+  TACF: Specifies the basic information necessary for operations of TACF, specifies the authentication method used in TACF, specifies the configurations needed in SASVR, Specifies an output message for a previous user-defined error code when checking a password in a user created function (saf_exit).
 
 * **smf.conf**
 * **sms.conf**
 * **sort.conf**
 * **ssm.IMSADB2T.conf**
 * **tacf.conf**
+
+  TACF: When TACF is installed, the TACF configuration file tacf.conf is generated. This file contains basic TACF configuration information, specifies resource information for TACF ODBC connection, specifies whether TACF will check the group that users belong to when they attempt to access resources, and specifies to control whether RACF allows users to access datasets whos profiles are not registered in TACF.
+
 * **textrun.conf**
 * **tjclrun.conf**
 * **tjes.conf**
@@ -329,6 +399,9 @@ Reference Documents:
   
   * **Base:** OpenFrame_Base_7_Fix#3_Base_Guide_v2.14_en.pdf
   * **OSI:** OpenFrame_OSI_7.1_Administrator's_Guide_V2.1.1_en.pdf
+  * **OSC:** OpenFrame_OSC_7_Fix#3_Administrator's_Guide_v2.1.5_en.pdf
+  * **TACF:** OpenFrame_TACF_7_Fix#3_Administrator's_Guide_v2.1.4_en.pdf
+  * **HiDB:** OpenFrame_HiDB_7.1_HiDB_Guide_v2.1.4_en.pdf
 
 - JOBCLASS
     + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
