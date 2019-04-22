@@ -175,6 +175,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
   4. COPYBOOK
   5. CSD
   6. Datasets
+  
     * NON-VSAM
     * VSAM
 
@@ -406,7 +407,7 @@ Reference Documents:
   * **OSC:** OpenFrame_OSC_7_Fix#3_Administrator's_Guide_v2.1.5_en.pdf
   * **TACF:** OpenFrame_TACF_7_Fix#3_Administrator's_Guide_v2.1.4_en.pdf
   * **HiDB:** OpenFrame_HiDB_7.1_HiDB_Guide_v2.1.4_en.pdf
-  
+
 </details>
 
 - JOBCLASS
