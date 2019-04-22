@@ -426,7 +426,9 @@ analysis document.
   OSC: used to configure the TSAM and OSC system settings that are common to all OpenFrame OSC regions. This eliminates the need to individually configure duplicate settings in each osc._servername_.conf file 
 
 <details><summary>Click here for more information about osc.conf</summary>
+  
     - Sections:
+
       - GENERAL: Contains information related to starting up and operating OSC regions. Also contains resource information settings.
         - SYSTEM_LOGLVL: Sets the log level of the OSC SYSTEM (#TODO: Example Range)
         - NCS_FILE: Designates a temporary file which stores information used by the Named Counter Service (NCS).
