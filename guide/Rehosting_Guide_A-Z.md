@@ -260,13 +260,13 @@ analysis document.
 
 **Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made environment to the environment. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
 
-* cpm.conf
+* **cpm.conf**
 
   Base: The cpm.conf configuration file contains the settings for conversion process from Mainframe to OpenFrame.
 
-* dbutil.conf
-* ds.conf
-* dstool.conf
+* **dbutil.conf**
+* **ds.conf**
+* **dstool.conf**
 
   Base: Contains settings for dataset related tool programs such as Command section in OFManager
 
