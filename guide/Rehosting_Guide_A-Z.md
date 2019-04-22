@@ -399,12 +399,12 @@ analysis document.
       + Where: ${OPENFRAME_HOME}/config/tjes.conf
       + How: Add a line after the existing JOBCLASS section for additional classes 
       + Example:
-      ```
+      <pre>
       [JOBCLASS]
       A=START
       B=HOLD
-      C=START
-      ```
+      <b>C=START</b>
+      </pre>
 
 * **tjesmgr.conf**
 * **tso.conf**
