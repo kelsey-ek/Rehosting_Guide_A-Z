@@ -403,8 +403,7 @@ analysis document.
       [JOBCLASS]
       A=START
       B=HOLD
-      <b>C=START</b>
-      </pre>
+      <b>C=START</b></pre>
 
 * **tjesmgr.conf**
 * **tso.conf**
