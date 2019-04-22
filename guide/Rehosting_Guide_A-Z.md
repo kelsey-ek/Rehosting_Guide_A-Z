@@ -262,49 +262,73 @@ analysis document.
 
 * cpm.conf
 
-  **Description:** The cpm.conf configuration file contains the settings for conversion process from Mainframe to OpenFrame.
-  
+  Base: The cpm.conf configuration file contains the settings for conversion process from Mainframe to OpenFrame.
+
 * dbutil.conf
 * ds.conf
 * dstool.conf
-* ezaci.conf
-* ezplus.conf
-* ftp.conf
-* hidb.conf
-* idcams.conf
-* ikjeft01.conf
-* ims.conf
-* isrsupc.conf
-* keyseq.conf
-* ofosc.seq
-* ofstudio.conf
-* ofsys.seq
-* osc.OSCOIVP1.conf
-* osc.OSCOIVP1TL.conf
-* osc.conf
-* osc.lu.conf
-* osc.region.list
-* osc.IMSA.conf
-* osi.conf
-* osi.ofsys.seq
-* osi.ofsys.seq_for_OSI_ONLY
-* osi.ofsys.seq_orig
-* print.conf
-* rc.conf
-* saf.conf
-* smf.conf
-* sms.conf
-* sort.conf
-* ssm.IMSADB2T.conf
-* tacf.conf
-* textrun.conf
-* tjclrun.conf
-* tjes.conf
-* tjesmgr.conf
-* tso.conf
-* unit.conf
-* volume.conf
-* vtam.conf
+
+  Base: Contains settings for dataset related tool programs such as Command section in OFManager
+
+* **ezaci.conf**
+* **ezplus.conf**
+* **ftp.conf**
+* **hidb.conf**
+* **idcams.conf**
+* **ikjeft01.conf**
+* **ims.conf**
+* **isrsupc.conf**
+* **keyseq.conf**
+* **ofosc.seq**
+* **ofstudio.conf**
+* **ofsys.seq**
+
+  Base: Contains general system settings for OpenFrame (Mainly those regarding the system directory structure)
+
+
+* **osc.OSCOIVP1.conf**
+* **osc.OSCOIVP1TL.conf**
+* **osc.conf**
+* **osc.lu.conf**
+* **osc.region.list**
+* **osc.<IMSID>.conf**
+
+  OSI: Configuration file where items to be applied by IMSID in the OSI system are configured. If the actual environment configuration file name's IMSID is IMSA, then the file will be named "osi.IMSA.conf"
+
+* **osi.conf**
+
+  OSI: Configuration File which is mutually referred to in all the modules of the OSI system. It configures all the items which will be mutually applied to all the server types supported in OSI
+
+* **osi.ofsys.seq**
+
+  OSI: In the OSI system, the tmax servers which will start when osiboot is performed by specifying the name of Base, Batch and TACF, servers excluding the system server (control region), can be selected. Each server of the TN3270 Gateway is included.
+
+* **osi.ofsys.seq_for_OSI_ONLY**
+* **osi.ofsys.seq_orig**
+* **print.conf**
+* **rc.conf**
+* **saf.conf**
+
+  Base: Contains the OpenFrame System Access control settings
+
+* **smf.conf**
+* **sms.conf**
+* **sort.conf**
+* **ssm.IMSADB2T.conf**
+* **tacf.conf**
+* **textrun.conf**
+* **tjclrun.conf**
+* **tjes.conf**
+* **tjesmgr.conf**
+* **tso.conf**
+* **unit.conf**
+* **volume.conf**
+* **vtam.conf**
+
+Reference Documents:
+  
+  * **Base:** OpenFrame_Base_7_Fix#3_Base_Guide_v2.14_en.pdf
+  * **OSI:** OpenFrame_OSI_7.1_Administrator's_Guide_V2.1.1_en.pdf
 
 - JOBCLASS
     + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
