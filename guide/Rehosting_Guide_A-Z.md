@@ -426,7 +426,8 @@ analysis document.
   OSC: used to configure the TSAM and OSC system settings that are common to all OpenFrame OSC regions. This eliminates the need to individually configure duplicate settings in each osc._servername_.conf file 
 
 <details><summary>Click here for more information about osc.conf</summary>
-  
+  <p>
+
     - Sections:
 
       - GENERAL: Contains information related to starting up and operating OSC regions. Also contains resource information settings.
@@ -512,7 +513,7 @@ analysis document.
         [OSCOSSVR]
         DEPLOY_SOURCE_PATH=$OPENFRAME_HOME/rdom
         ```
-</details>
+</p></details>
 
 * **osc.lu.conf**
 * **osc.region.list**
