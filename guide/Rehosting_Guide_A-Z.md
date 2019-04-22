@@ -393,6 +393,19 @@ analysis document.
 * **textrun.conf**
 * **tjclrun.conf**
 * **tjes.conf**
+
+- JOBCLASS
+    + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
+    + Where: ${OPENFRAME_HOME}/config/tjes.conf
+    + How: Add a line after the existing JOBCLASS section for additional classes 
+    + Example:
+    ```
+    [JOBCLASS]
+    A=START
+    B=HOLD
+    C=START
+    ```
+
 * **tjesmgr.conf**
 * **tso.conf**
 * **unit.conf**
@@ -409,19 +422,6 @@ Reference Documents:
   * **HiDB:** OpenFrame_HiDB_7.1_HiDB_Guide_v2.1.4_en.pdf
 
 </details>
-
-- JOBCLASS
-    + What: Specifies what a JOB should do when submitted on OpenFrame. (START, HOLD, etc)
-    + Where: ${OPENFRAME_HOME}/config/tjes.conf
-    + How: Add a line after the existing JOBCLASS section for additional classes 
-    + Example:
-    ```
-    [JOBCLASS]
-    A=START
-    B=HOLD
-    C=START
-    ```
-
 
 ## Source Compilation
 
