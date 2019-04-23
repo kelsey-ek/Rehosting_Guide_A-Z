@@ -100,7 +100,9 @@ SELECT p.PROGRAM_NAME, c.CALL_NAME
 FROM PROGRAM p, CALL_STATEMENT c
 WHERE p.PROGRAM_ID=c.PROGRAM_ID;
 ```
-	- Once you've run the query once, you need to continuously run it until you run out of submodules found. Your next iteration will look slightly different.
+	- Once you've run the query once, you need to continuously 
+	run it until you run out of submodules found. Your next 
+	iteration will look slightly different.
 
 ```sql
 -- Second Iteration to the last iteration
