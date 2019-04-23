@@ -19,7 +19,7 @@ Tmaxsoft will provide a sample JCL to transfer the source code. The client will 
 - Modify JCL to connect to the Linux Server
 
 Below is the aforementioned Sample JCL
-<pre><i>The customer will have to modify the portions in <b><del>bold strikethrough</del></b> text</i></pre>
+<i>The customer will have to modify the portions in <b><del>bold strikethrough</del></b> text</i>
 
 <pre>//USER001  JOB ,CARTER,MSGLEVEL=(1,1)
 //FTPSTP1  EXEC PGM=FTP,REGION=2048K,
