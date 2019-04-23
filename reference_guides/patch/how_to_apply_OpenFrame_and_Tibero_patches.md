@@ -1,4 +1,6 @@
-**How to Apply Tibero and OpenFrame Patches (Table of Contents)** {#how-to-apply-tibero-and-openframe-patches-table-of-contents .TOCHeading}
+# **How to Apply OpenFrame and Tibero Patches**
+
+**Table of Contents**
 =================================================================
 
 [**General Patch Notes** 1](#general-patch-notes)
