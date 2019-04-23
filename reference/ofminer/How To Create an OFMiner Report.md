@@ -78,28 +78,28 @@ Once you've created the CUSTOMER.COBLIB, move all the "Missing COBOL" to the COB
 
 **Description:** Now that you have all of the source code copied into OFMiner, you are ready to start generating your report. (#TODO: Optimize the SQL commands). For right now, I have some sample queries you can run to get the report generated.
 
-	- To get the JOB NAME, PROC NAME, STEP NAME, PROGRAM NAME, DATASET NAME, and DATASET DISPOSITION, run the following SQL command in TBAdmin. If you're unsure about connecting to Tibero via TBAdmin, please see the TBAdmin reference document. 
+- To get the JOB NAME, PROC NAME, STEP NAME, PROGRAM NAME, DATASET NAME, and DATASET DISPOSITION, run the following SQL command in TBAdmin. If you're unsure about connecting to Tibero via TBAdmin, please see the TBAdmin reference document. 
 
-		```sql
-		-- JCLs with PROCEDURES
-		SELECT a.JCL_NAME, b.PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
-		FROM MVS_JCL a, MVS_JCL_PROCEDURE b, MVS_JCL_STEP c, MVS_JCL_DD d
-		WHERE c.JOB_ID=a.ID and c.PROC_ID=b.ID and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
+```sql
+-- JCLs with PROCEDURES
+SELECT a.JCL_NAME, b.PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
+FROM MVS_JCL a, MVS_JCL_PROCEDURE b, MVS_JCL_STEP c, MVS_JCL_DD d
+WHERE c.JOB_ID=a.ID and c.PROC_ID=b.ID and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
 
-		-- JCLs WITHOUT PROCEDURES
-		SELECT a.JCL_NAME, 'NOPROC' as PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
-		FROM MVS_JCL a, MVS_JCL_STEP c, MVS_JCL_DD d
-		WHERE c.JOB_ID=a.ID and c.PROC_ID=-1 and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
-		```
+-- JCLs WITHOUT PROCEDURES
+SELECT a.JCL_NAME, 'NOPROC' as PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
+FROM MVS_JCL a, MVS_JCL_STEP c, MVS_JCL_DD d
+WHERE c.JOB_ID=a.ID and c.PROC_ID=-1 and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
+```
 
-	- To get the Call Tree, you will need to run the following SQL query:
+- To get the Call Tree, you will need to run the following SQL query:
 
-		```sql
-		-- First Iteration
-		SELECT p.PROGRAM_NAME, c.CALL_NAME
-		FROM PROGRAM p, CALL_STATEMENT c
-		WHERE p.PROGRAM_ID=c.PROGRAM_ID;
-		```
+```sql
+-- First Iteration
+SELECT p.PROGRAM_NAME, c.CALL_NAME
+FROM PROGRAM p, CALL_STATEMENT c
+WHERE p.PROGRAM_ID=c.PROGRAM_ID;
+```
 
 
 
