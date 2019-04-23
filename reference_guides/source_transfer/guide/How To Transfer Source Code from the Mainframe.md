@@ -19,6 +19,7 @@ Tmaxsoft will provide a sample JCL to transfer the source code. The client will 
 - Modify JCL to connect to the Linux Server
 
 Below is the aforementioned Sample JCL
+
 <i>The customer will have to modify the portions in <b><del>bold strikethrough</del></b> text</i>
 
 <pre>//USER001  JOB ,CARTER,MSGLEVEL=(1,1)
@@ -37,3 +38,6 @@ mput *
 /*
 ```</pre>
 
+## Option 2. SCP from ON PREMISE server to OFFSITE Linux server
+
+If the Linux server is off premise (NOT in the customer's private network) there are some additional steps required. <b>First, Option 1 must be completed to an ON SITE FTP server (Any server which can freely FTP outside of the network)</b>. Once the source code is on the FTP server, the files can be SCP'd (Secure Copied) using freewares such as WinSCP or FileZilla.
