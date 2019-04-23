@@ -74,4 +74,8 @@ Once you have created a New Site, fill in the information for connecting to the 
 
 ![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_session.png "New Session")
 
+Lastly, once you have connected, simply click and drag the source directories from one machine to the other. Please reference the image below:
+
+![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/WinSCP%20Transfer.png "Transfer")
+
 
