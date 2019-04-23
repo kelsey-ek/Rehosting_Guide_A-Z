@@ -55,6 +55,8 @@ mkdir CUSTOMER.JCLLIB
 
 After you analyze, you can go to the missing resources section on the left hand side of the screen. Under this section, you will find missing procedures and you will use this list for step 6. 
 
+![alt-text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference/ofminer/reference_images/Edit-OFMiner%20JCL%20Analyze.jpg) "Analyze JCL"
+
 6. Create a PDS (or multiple) for the in-scope PROCs
 
 **Description:** Now that you have analyzed the JCL, you're most likely missing a few Procedures (PROCs). This is how we determine what is in scope and what isn't. Similar to steps 2-5, you need to create a PDS for the in-scope PROCs and sync so OFMiner can detect them. Additionally, you are most likely noticing that all of the programs executed in the JCL and in the PROCs are noted as missing. We will address this in the following steps.
