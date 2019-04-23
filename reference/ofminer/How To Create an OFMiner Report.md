@@ -53,6 +53,8 @@ mkdir CUSTOMER.JCLLIB
 	- Utility Discovery
 	- Dataset Discovery
 
+After you analyze, you can go to the missing resources section on the left hand side of the screen. Under this section, you will find missing procedures and you will use this list for step 6. 
+
 6. Create a PDS (or multiple) for the in-scope PROCs
 
 **Description:** Now that you have analyzed the JCL, you're most likely missing a few Procedures (PROCs). This is how we determine what is in scope and what isn't. Similar to steps 2-5, you need to create a PDS for the in-scope PROCs and sync so OFMiner can detect them. Additionally, you are most likely noticing that all of the programs executed in the JCL and in the PROCs are noted as missing. We will address this in the following steps.
@@ -68,9 +70,40 @@ mkdir CUSTOMER.COBLIB
 
 Once you've created the CUSTOMER.COBLIB, move all the "Missing COBOL" to the COBLIB, SYNC, and analyze.
 
-8. Repeat steps 2-7 until you no longer have any missing source.
+8. Repeat steps 2-7 and add PROCs and COBOL until you no longer have any missing source.
 
-**Description:** In most cases, you will always have some missing source because customer's sometimes lose the source and only have the compiled load modules, but this gives us the opportunity to identify and address these. 
+**Description:** In most cases, you will always have some missing source because customer's sometimes lose the source and only have the compiled load modules, but this gives us the opportunity to identify and address these. The most important step is gathering all of the in-scope JCL and adding it to the repository so you know exactly what is required from there.
 
+9. Generate the report using SQL
+
+**Description:** Now that you have all of the source code copied into OFMiner, you are ready to start generating your report. (#TODO: Optimize the SQL commands). For right now, I have some sample queries you can run to get the report generated.
+
+	- To get the JOB NAME, PROC NAME, STEP NAME, PROGRAM NAME, DATASET NAME, and DATASET DISPOSITION, run the following SQL command in TBAdmin. If you're unsure about connecting to Tibero via TBAdmin, please see the TBAdmin reference document. 
+
+		```sql
+		-- JCLs with PROCEDURES
+		SELECT a.JCL_NAME, b.PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
+		FROM MVS_JCL a, MVS_JCL_PROCEDURE b, MVS_JCL_STEP c, MVS_JCL_DD d
+		WHERE c.JOB_ID=a.ID and c.PROC_ID=b.ID and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
+
+		-- JCLs WITHOUT PROCEDURES
+		SELECT a.JCL_NAME, 'NOPROC' as PROC_NAME, c.STEP_NAME, c.PROGRAM_NAME, d.DATASET_NAME, d.DISP
+		FROM MVS_JCL a, MVS_JCL_STEP c, MVS_JCL_DD d
+		WHERE c.JOB_ID=a.ID and c.PROC_ID=-1 and c.ID=d.STEP_ID and d.DATASET_NAME is not null;
+		```
+
+	- To get the Call Tree, you will need to run the following SQL query:
+
+		```sql
+		-- First Iteration
+		SELECT p.PROGRAM_NAME, c.CALL_NAME
+		FROM PROGRAM p, CALL_STATEMENT c
+		WHERE p.PROGRAM_ID=c.PROGRAM_ID;
+		```
+
+
+
+
+**Reference Documents:** TBAdmin Guide
 
 
