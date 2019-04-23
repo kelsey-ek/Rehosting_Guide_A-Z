@@ -18,9 +18,11 @@ Tmaxsoft will provide a sample JCL to transfer the source code. The client will 
 - Gather source code and prepare all in scope libraries for FTP
 - Modify JCL to connect to the Linux Server
 
-Below is the aforementioned Sample JCL
+Below is the aforementioned Sample JCL. In summary what it does is, Connects using the Username and Password provided. It sets the FTP type to ASCII and changes directory on the target server to the modified directory. Then, it changes directory to the PDS specified by the lcd (local change directory) statement. mput * will put everything in the pds on the mainframe to the directory on the target server. 
 
 <i>The customer will have to modify the portions in <b><del>bold strikethrough</del></b> text</i>
+
+1. <b>Modify the Sample JCL
 
 <pre>//USER001  JOB ,CARTER,MSGLEVEL=(1,1)
 //FTPSTP1  EXEC PGM=FTP,REGION=2048K,
@@ -28,8 +30,8 @@ Below is the aforementioned Sample JCL
 //SYSPRINT DD SYSOUT=*
 //SYSOUT   DD SYSOUT=*
 //INPUT    DD  *
-USER
-PSSWD
+<b><del>USERNAME</del></b>
+<b><del>PASSWORD</del></b>
 ascii
 prompt
 cd '<b><del>destination full directory path</del></b>'
@@ -38,6 +40,36 @@ mput *
 /*
 ```</pre>
 
+2. Create the target directory structure
+
+To help the rehosting team cut down time on the discovery stage, it is best to transfer all of the source code in a structured manner. TmaxSoft highly recommends sorting the source code by type (JCL, COBOL, ASSEMBLER, etc). Below is an example structure:
+
+- src/JCL
+- src/PROC
+- src/COBOL
+- src/ASSEMBLER
+- src/COPYBOOK
+- src/DCLGEN
+- src/PSB
+- src/DBD
+- ...
+
+During the discovery stage, OFMiner really only needs JCL, PROC, COBOL, ASSEMBLER, COPYBOOK, so these should be prioritized, but everything else can be transferred in parallel to the discovery stage.
+
+3. Submit the JCL
+
+Since we are transferring Source Code, and not datasets, we can transfer in ascii mode which will allow OFMiner to read the files as regular text. Once the source code is transferred, the rehosting team will begin the discovery stage. 
+
 ## Option 2. SCP from ON PREMISE server to OFFSITE Linux server
 
 If the Linux server is off premise (NOT in the customer's private network) there are some additional steps required. <b>First, Option 1 must be completed to an ON SITE FTP server (Any server which can freely FTP outside of the network)</b>. Once the source code is on the FTP server, the files can be SCP'd (Secure Copied) using freewares such as WinSCP or FileZilla.
+
+You can download WinSCP for free here: 
+
+When you open WinSCP, it will ask you for a New Site. Please reference the image below:
+![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_site.png "New Site")
+
+Once you have created a New Site, fill in the information for connecting to the server. Please reference the image below:
+![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_session.png "New Session")
+
+
