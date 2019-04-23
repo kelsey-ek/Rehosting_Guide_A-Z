@@ -22,28 +22,28 @@ _The purpose of this guide is to describe the steps needed to create a report th
 
 _Find the shortened version of the steps below this section_
 
-1. Receive a list of in-scope JCL's from the customer
+1. **Receive a list of in-scope JCL's from the customer**
 
 **Description:** The customer defines what is in scope and what is not. OFMiner is simply a tool to help you determine what elements need to be rehosted to satisfy the requirements of the scope. 
 
-2. Create a PDS (or multiple) for the in-scope JCL
+2. **Create a PDS (or multiple) for the in-scope JCL**
 
 **Description:** For OFMiner analysis, you don't need to go through pdsgen or dscreate to create a PDS. Simply make a directory using Linux commands **mkdir**.  
 
-```
+```sh
 cd $OFMINER_HOME/repository/JCL
 mkdir CUSTOMER.JCLLIB
 ```
 
-3. Copy all of the in-scope JCL to the newly created JCLLIB
+3. **Copy all of the in-scope JCL to the newly created JCLLIB**
 
 **Description:** Once all of the JCL has been moved to $OFMINER_HOME/repository/JCL/CUSTOMER.JCLLIB, OFMiner can then detect the JCL and analyze it.
 
-4. Sync OFMiner
+4. **Sync OFMiner**
 
 **Description:** For OFMiner to be able to detect the JCLs, you have to SYNC the repository with the OFMiner application. Please refer to the image "Edit-OFMiner SYNC". In general, whenever you add new source code to the repository, you need to SYNC for it to show up in OFMiner. 
 
-5. Analyze the JCL
+5. **Analyze the JCL**
 
 **Description:** Now that the JCL is SYNC'd into OFMiner, you can analyze the JCL to parse the JCL. The parsing process includes:
 	
@@ -57,26 +57,26 @@ After you analyze, you can go to the missing resources section on the left hand 
 
 ![alt-text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference/ofminer/reference_images/Edit-OFMiner%20JCL%20Analyze.jpg "Analyze JCL") 
 
-6. Create a PDS (or multiple) for the in-scope PROCs
+6. **Create a PDS (or multiple) for the in-scope PROCs**
 
 **Description:** Now that you have analyzed the JCL, you're most likely missing a few Procedures (PROCs). This is how we determine what is in scope and what isn't. Similar to steps 2-5, you need to create a PDS for the in-scope PROCs and sync so OFMiner can detect them. Additionally, you are most likely noticing that all of the programs executed in the JCL and in the PROCs are noted as missing. We will address this in the following steps.
 
-7. Create a PDS (or multiple) for the in-scope COBOL programs
+7. **Create a PDS (or multiple) for the in-scope COBOL programs**
 
 **Description:** Again, exactly like step 6 and step 2, you need to create a PDS for the in-scope COBOL programs. Follow the steps below:
 
-```
+```sh
 cd $OFMINER_HOME/repository/COBOL
 mkdir CUSTOMER.COBLIB
 ```
 
 Once you've created the CUSTOMER.COBLIB, move all the "Missing COBOL" to the COBLIB, SYNC, and analyze.
 
-8. Repeat steps 2-7 and add PROCs and COBOL until you no longer have any missing source.
+8. **Repeat steps 2-7 and add PROCs and COBOL until you no longer have any missing source.**
 
 **Description:** In most cases, you will always have some missing source because customer's sometimes lose the source and only have the compiled load modules, but this gives us the opportunity to identify and address these. The most important step is gathering all of the in-scope JCL and adding it to the repository so you know exactly what is required from there.
 
-9. Generate the report using SQL
+9. **Generate the report using SQL**
 
 **Description:** Now that you have all of the source code copied into OFMiner, you are ready to start generating your report. (#TODO: Optimize the SQL commands). For right now, I have some sample queries you can run to get the report generated.
 
@@ -115,6 +115,24 @@ AND p.PROGRAM_ID in (
 'test_program3'
 )
 ```
+
+10. **Export to Excel**
+
+Now that you have all the information you need, export it to excel using the small excel icon at the bottom right hand side of TBAdmin. Now you can share this spreadsheet with your rehosting team and the customer to confirm the scope of the project. From here, you now know exactly which source needs to be rehosted into OpenFrame and you can avoid migrating anything unnecessarily.
+
+**TL;DR (TOO LONG, DIDN'T READ)**
+
+1. Create PDS's for Source code in $OFMINER_HOME/repository
+2. Copy source code to the PDS's
+3. Sync OFMiner whenever adding new source
+4. Analyze Source in this order:
+	- JCL
+	- PROC
+	- COBOL
+	- COPYBOOK
+5. Recurse until there is no more missing
+6. Query using TBAdmin
+7. Format the report by exporting to Excel
 
 **Reference Documents:** (#TODO:) TBAdmin Guide
 
