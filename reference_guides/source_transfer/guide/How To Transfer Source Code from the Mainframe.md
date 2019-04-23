@@ -64,7 +64,7 @@ Since we are transferring Source Code, and not datasets, we can transfer in asci
 
 If the Linux server is off premise (NOT in the customer's private network) there are some additional steps required. **First, Option 1 must be completed to an ON SITE FTP server (Any server which can freely FTP outside of the network)**. Once the source code is on the FTP server, the files can be SCP'd (Secure Copied) using freewares such as WinSCP or FileZilla.
 
-You can download WinSCP for free here: 
+You can download WinSCP for free here: https://winscp.net/eng/download.php
 
 When you open WinSCP, it will ask you for a New Site. Please reference the image below:
 
