@@ -98,10 +98,8 @@ To apply Tibero patch, OpenFrame must be downed.
 
     a.  Unlink the old tibero directory
 ```sh
-cd /opt/tmaxdb*
-
-unlink tibero6*
-
+cd /opt/tmaxdb
+unlink tibero6
 ln -s ${PATCH\_DIRECTORY}/\${PRODUCT\_DIRECTORY}/\${IDENTIFIER}/tibero6 tibero6
 ```
 
