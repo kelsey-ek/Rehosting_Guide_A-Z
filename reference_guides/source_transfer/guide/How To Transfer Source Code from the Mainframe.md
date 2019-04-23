@@ -66,10 +66,14 @@ If the Linux server is off premise (NOT in the customer's private network) there
 
 You can download WinSCP for free here: 
 
-When you open WinSCP, it will ask you for a New Site. Please reference the image below:
+When you open WinSCP, it will ask you for a New Site. 
+
+Please reference the image below:
 ![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_site.png "New Site")
 
-Once you have created a New Site, fill in the information for connecting to the server. Please reference the image below:
+Once you have created a New Site, fill in the information for connecting to the server. 
+
+Please reference the image below:
 ![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_session.png "New Session")
 
 
