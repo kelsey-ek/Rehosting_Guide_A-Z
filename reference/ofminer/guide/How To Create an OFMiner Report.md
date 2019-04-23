@@ -42,6 +42,10 @@ mkdir CUSTOMER.JCLLIB
 
 **Description:** For OFMiner to be able to detect the JCLs, you have to SYNC the repository with the OFMiner application. Please refer to the image "Edit-OFMiner SYNC". In general, whenever you add new source code to the repository, you need to SYNC for it to show up in OFMiner. 
 
+Please refer to the below picture on where you can find the SYNC button.
+
+![alt-text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference/ofminer/reference_images/Edit-OFMiner%20SYNC.png "SYNC")
+
 5. **Analyze the JCL**
 
 **Description:** Now that the JCL is SYNC'd into OFMiner, you can analyze the JCL to parse the JCL. The parsing process includes:
