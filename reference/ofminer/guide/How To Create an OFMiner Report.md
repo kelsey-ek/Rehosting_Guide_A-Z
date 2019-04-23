@@ -4,7 +4,6 @@ _The purpose of this guide is to describe the steps needed to create a report th
 
 **Prerequisites:**
 	
-	- Source Code Transfer - Complete
 	- Installation - Complete
 
 **Description:** OFMiner uses a directory structure in $OFMINER_HOME to sort the in-scope elements. The analysis will start with the JCLs and work it's way all the way down to the Copybooks. The steps for completing this will be highlighted below. The directory structure looks like the following:
