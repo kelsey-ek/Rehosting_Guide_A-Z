@@ -20,7 +20,7 @@ _The purpose of this guide is to describe the steps needed to create a report th
 
 ## Steps
 
-_Find the shortened version of the steps below this section_
+_Find the shortened version of the steps below in the TL;DR section_
 
 1. **Receive a list of in-scope JCL's from the customer**
 
