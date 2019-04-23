@@ -1,5 +1,9 @@
 # **How to Apply OpenFrame and Tibero Patches**
 
+For this guide, you will most likely find the supporting script ofpatch.sh very useful.
+Please find the link below:
+https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/patch/scripts/ofpatch.sh
+
 **Table of Contents**
 =================================================================
 
