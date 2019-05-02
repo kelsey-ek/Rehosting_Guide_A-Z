@@ -68,14 +68,14 @@ You can download WinSCP for free here: https://winscp.net/eng/download.php
 
 When you open WinSCP, it will ask you for a New Site. Please reference the image below:
 
-![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_site.png "New Site")
+![alt text](./../reference_pictures/new_site.png "New Site")
 
 Once you have created a New Site, fill in the information for connecting to the server. Please reference the image below:
 
-![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/new_session.png "New Session")
+![alt text](./../reference_pictures/new_session.png "New Session")
 
 Lastly, once you have connected, simply click and drag the source directories from one machine to the other. Please reference the image below:
 
-![alt text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference_guides/source_transfer/reference_pictures/WinSCP%20Transfer.png "Transfer")
+![alt text](./../reference_pictures/WinSCP%20Transfer.png "Transfer")
 
 
