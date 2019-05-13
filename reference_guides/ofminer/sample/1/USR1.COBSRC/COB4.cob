@@ -1,0 +1,29 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. COB4.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+         SELECT IN-FILE
+               ASSIGN TO 'IFILE1'.
+       DATA DIVISION.
+       FILE SECTION.
+      *
+       FD IN-FILE
+          BLOCK CONTAINS 0 RECORDS
+          RECORD CONTAINS 80 CHARACTERS.
+      *
+       01 IN-REC.
+       COPY  COPY1.
+       WORKING-STORAGE SECTION.
+       01 DATA01 PIC X(80).
+       PROCEDURE DIVISION.
+
+           OPEN INPUT IN-FILE
+           READ IN-FILE
+
+           MOVE IN-REC TO DATA01
+           DISPLAY 'DATA01: [' DATA01 ']'
+           CLOSE IN-FILE
+           GOBACK.
+
