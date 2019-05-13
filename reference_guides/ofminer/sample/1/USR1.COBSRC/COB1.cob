@@ -18,7 +18,7 @@
        INPUT-OUTPUT                             SECTION.
       *---------------------------------------------------------------
        FILE-CONTROL.
-            SELECT OUT-FILE   ASSIGN        TO  OUTDD
+            SELECT OUT-FILE   ASSIGN        TO  OFILE1
                               ORGANIZATION  IS  SEQUENTIAL
                               FILE STATUS   IS  WK-OUTDD-STATUS.
       *===============================================================
@@ -37,6 +37,7 @@
 
       *===============================================================
        WORKING-STORAGE                          SECTION.
+       01    WK-OUTDD-STATUS                    PIC  X(002).
 
       *===============================================================
       *  PROGRAM   ROUTINE
@@ -45,6 +46,8 @@
       *---------------------------------------------------------------
            CALL    'COB2'.
            OPEN    OUTPUT                       OUT-FILE.
+
+           MOVE    'COB1' TO OUT-REC.
            WRITE   OUT-REC. 
            CLOSE   OUT-FILE. 
            CALL    'COB3'.
