@@ -44,7 +44,7 @@ mkdir CUSTOMER.JCLLIB
 
 Please refer to the below picture on where you can find the SYNC button.
 
-![alt-text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference/ofminer/reference_images/Edit-OFMiner%20SYNC.png "SYNC")
+![alt-text](./../reference_images/Edit-OFMiner%20SYNC.png "SYNC")
 
 5. **Analyze the JCL**
 
@@ -58,7 +58,7 @@ Please refer to the below picture on where you can find the SYNC button.
 
 After you analyze, you can go to the missing resources section on the left hand side of the screen. Under this section, you will find missing procedures and you will use this list for step 6. 
 
-![alt-text](https://github.com/tmaxsoft-us/Rehosting_Guide_A-Z/blob/master/reference/ofminer/reference_images/Edit-OFMiner%20JCL%20Analyze.jpg "Analyze JCL") 
+![alt-text](./../reference_images/Edit-OFMiner%20JCL%20Analyze.jpg "Analyze JCL") 
 
 6. **Create a PDS (or multiple) for the in-scope PROCs**
 
