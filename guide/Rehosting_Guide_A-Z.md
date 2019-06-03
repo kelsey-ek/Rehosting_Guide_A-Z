@@ -26,10 +26,8 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [Running First Batch JOB](#running-first-batch-job)
 
-# Pre-Migration
 
-
-# Mainframe Environment
+# Pre-Migration: Mainframe Environment
 
 
 **Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. In almost every case, the customer has most likely changed some configurations to suit their needs. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To do these, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
@@ -80,7 +78,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Reference Documents: "Post Introduction Questionnaire"**
 
-# OpenFrame Environment
+# Pre-Migration: OpenFrame Environment
 
 <h3>Accessing the Linux Server</h3>
 
