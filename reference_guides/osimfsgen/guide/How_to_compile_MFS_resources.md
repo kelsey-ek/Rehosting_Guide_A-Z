@@ -2,11 +2,11 @@
 
 _The purpose of this document is to describe how to properly compile and update MFS (Message Format Service) resources on OpenFrame. The steps that will be provided in this guide include compilation through osimfsgen, copying the machine code - compiled MFS to the inactive library using dfsuocu0, and preparing/commiting the changes using the IMS commands._
 
-## **Staging PDS and Active/Inactive PDS**
+## **Background Information: Staging PDS and Active/Inactive PDS**
 
 In an IMS system, the MFS (Message Format Service) resources have a staging PDS and an active/inactive PDS. The purpose of this structure is to be able to dynamically allocate new MFS resources and updates to existing MFS resources without having to bring the online regions down. 
 
-## **Steps**
+## **Steps for Compiling MFS Resources**
 	
 	1. Compile the MFS using osimfsgen
 	osimfsgen (From OpenFrame_Common_7_Fix#3_Tool_Reference_Guide_v2.1.5_en.pdf)
