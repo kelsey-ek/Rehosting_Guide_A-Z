@@ -350,7 +350,8 @@ analysis document.
       - NO: Processing a DL/I statement does not return the buffer value of each column. (Default)
     - DISABLE_COMMIT
       - YES: Indicates that a DL/I operation does not save changes to the database.
-      -NO: Indicates that a DL/I operation saves changes to the database. (Default)</p></details>
+      -NO: Indicates that a DL/I operation saves changes to the database. (Default)</p>
+    </details>
 
 * **idcams.conf**
 * **ikjeft01.conf**
