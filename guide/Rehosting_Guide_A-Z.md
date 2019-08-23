@@ -30,51 +30,15 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 # Pre-Migration: Mainframe Environment
 
 
-**Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. In almost every case, the customer has most likely changed some configurations to suit their needs. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To do these, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
+**Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. Every customer has changed some configurations to suit their needs - There is no mainframe that is exactly like another. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To accomplish this, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
 
-*   COBOL Compilation options
+*   COBOL Compilation Options
 
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
+*   JOB Class Configuration
 
-*   JOB Class configuration
+*   System Definitions
 
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-*   System Definition configuration
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
-
-*   IMS/CICS Region configuration
-
-    *   Mainframe Command:
-      ```
-      command
-      ```
-    *   OpenFrame Command:
-      ```
-      command
-      ```
+*   IMS And/Or CICS Region Configuration
 
 **Reference Documents: "Post Introduction Questionnaire"**
 
@@ -94,7 +58,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Reference Documents:** "TODO: How To Connect To A Server With PuTTY"
 
-<h4>Accessing a Linux Server on the Customer's Private Network</h4>
+<h5>Accessing a Linux Server on the Customer's Private Network</h5>
 
 **Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
@@ -270,9 +234,17 @@ analysis document.
 
 ### ONLINE
 
-<h4>OSC (OpenFrame System for CICS)</h4>
+<h4>OSC Configuration (OpenFrame System for CICS)</h4>
 
-<h4>OSI (OpenFrame System for IMS)</h4>
+**Description:** Online Resources on the mainframe are defined in System Definitions Macro Files. For OpenFrame to access the resources, they must be defined in OpenFrame's System Definitions (OSD). Before loading the System Definitions, we need a VSAM dataset to load them into. 
+
+Step 1.) Create the VSAM Dataset
+
+```
+idcams define -t CL -n OSC.SDMAKE.TEST -o KS -k 18,0 -b 32768 -l 128,32760 -s 1024,128,128 -v DEFVOL
+```
+
+<h4>OSI Configuration (OpenFrame System for IMS)</h4>
 
 ### Configuration Files
 
