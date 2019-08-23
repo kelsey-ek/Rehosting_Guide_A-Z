@@ -282,6 +282,12 @@ oscrtsddump -r <region> <file>
 
 Dynamic Modules, such as Cobol programs can modified during OSC uptime, but the integrity of a transaction in progress must be preserved. Therefore, when an online COBOL program is modified and recompiled, it is not updated in OSC until the osctdlupdate command is run. This tool registers and updates dynamic modules within OSC regions.
 
+Dynamic Modules include:
+
+* BMS (Basic Map Support)
+
+* COBOL 
+
 ```
 osctdlupdate <region> <module>
   - <region>   : Specifies an OSC region name
