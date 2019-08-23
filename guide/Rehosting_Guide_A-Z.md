@@ -120,7 +120,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Description:** Licenses will have to be issued for the products to fully operate. Production licenses must be requested through the Global Planning Team. For the licenses, we will need to know the hostname of the server, and in some cases we will also need to know how many cpu's are being used on the server. If you want to know what information you will need for each license, you can go to www.technet.tmaxsoft.com, then click on Demo License Request. This will ask you to fill out a form for each license. The required fields will describe what information you need to know to request the binary.
 
-<h3>Installation</h3>
+##Installation
 
 **Prerequisites:** 
 
@@ -257,9 +257,28 @@ analysis document.
 
 -   Migration (Source Code) -- Complete
 
-**Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made environment to the environment. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
+**Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made to the environment to match the Mainframe specifications. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
 
-**Note:** You can read more about each of these configuration files based on the reference documents mentioned below.
+**Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
+
+### BATCH
+  **Prerequisites:** 
+
+  - Installation (Complete)
+
+**Description:** 
+
+### ONLINE
+
+<h4>OSC (OpenFrame System for CICS)</h4>
+
+<h4>OSI (OpenFrame System for IMS)</h4>
+
+### Configuration Files
+
+**Location of these files:** $OPENFRAME_HOME/config
+
+<details><summary>Click here to see the configuration files</summary>
 
 * **cpm.conf**
 
@@ -567,7 +586,7 @@ analysis document.
 * **tso.conf**
 * **unit.conf**
 * **volume.conf**
-* **vtam.conf**
+* **vtam.conf**</details>
 
 **Reference Documents:**
 <details><summary>Click Here for Reference Documents</summary>
@@ -711,4 +730,4 @@ analysis document.
 
 
 
-
+#Running First Batch JOB
