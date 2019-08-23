@@ -264,7 +264,7 @@ oscsddump -r <region> <output_file_name>
 
   -r <region>  : OSC region name from where datasets will be exported.
 
-  -  \<file>    : Specifies the name of the macro file to be created. If a file with this name already exists, it will be overwritten.
+  \<file>    : Specifies the name of the macro file to be created. If a file with this name already exists, it will be overwritten.
 
 
 
