@@ -250,6 +250,8 @@ Step 2.) Load the VSAM Dataset with the System Definitions File from the Mainfra
 oscsdgen -c -d OSC.SDMAKE.TEST [MACRO_FILE]
 ```
 
+<h5>oscsddump</h5>
+
 It should be noted that OpenFrame comes with a utility ```oscsddump``` which can be used to dump the OpenFrame System Definitions (OSD) to a regular file. This regular file can then be used to add or modify the existing OSD's. Each region has it's own dataset, and you can dump the OSD by specifying the region name or the vsam dataset.
 
 ```
@@ -263,6 +265,7 @@ oscsddump -r <region> <output_file_name>
                  If a file with this name already exists, it 
                  will be overwritten.
 ```
+<h5>oscrtsddump</h5>
 
 Similar to oscsddump, OpenFrame has an oscrtsddump utility which can dump the System Definitions from the GRPLIST stored in the runtime. 
 
@@ -274,6 +277,17 @@ oscrtsddump -r <region> <file>
                  If a file with this name already exists, it 
                  will be overwritten.
 ```
+
+<h5>osctdlupdate</h5>
+
+Dynamic Modules, such as Cobol programs can modified during OSC uptime, but the integrity of a transaction in progress must be preserved. Therefore, when an online COBOL program is modified and recompiled, it is not updated in OSC until the osctdlupdate command is run. This tool registers and updates dynamic modules within OSC regions.
+
+```
+osctdlupdate <region> <module>
+  - <region>   : Specifies an OSC region name
+
+  - <module>   : Specifies an application module name
+``` 
 
 <h4>OSI Configuration (OpenFrame System for IMS)</h4>
 
