@@ -236,7 +236,7 @@ analysis document.
 
 <h4>OSC Configuration (OpenFrame System for CICS)</h4>
 
-**Description:** Online Resources on the mainframe are defined in System Definitions Macro Files. For OpenFrame to access the resources, they must be defined in OpenFrame's System Definitions (OSD). Before loading the System Definitions, we need a VSAM dataset to load them into. 
+**Description:** Online Resources on the mainframe are defined in System Definitions Macro Files. For OpenFrame to access the resources, they must be defined in OpenFrame's System Definitions (OSD). Before loading the System Definitions, we need a VSAM dataset to load them into. However, loading all of System Definitions into the run time memory would be unnecessary, so only the System Definitions in the GRPLIST are added. 
 
 Step 1.) Create the VSAM Dataset
 
@@ -260,6 +260,17 @@ oscsddump -r <region> <output_file_name>
   -r <region>  : OSC region name from where datasets will be exported.
 
   -  <file>    : Specifies the name of the macro file to be created. 
+                 If a file with this name already exists, it 
+                 will be overwritten.
+```
+
+Similar to oscsddump, OpenFrame has an oscrtsddump utility which can dump the System Definitions from the GRPLIST stored in the runtime. 
+
+```
+oscrtsddump -r <region> <file>
+  -r <region>  : Specifies an OSC region name
+
+  - <file>     : Specifies the name of the macro file to be created.
                  If a file with this name already exists, it 
                  will be overwritten.
 ```
