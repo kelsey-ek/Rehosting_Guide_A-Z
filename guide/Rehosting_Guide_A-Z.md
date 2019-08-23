@@ -254,18 +254,15 @@ It should be noted that OpenFrame comes with a utility ```oscsddump``` which can
 
 ```
 oscsddump -d <dataset> <output_file_name>
-```
-
-```
 oscsddump -r <region> <output_file_name>
-```
+
 
   -d <dataset> : The name of the OSC SD dataset to be exported
 
   -r <region>  : OSC region name from where datasets will be exported.
 
-  \<file>    : Specifies the name of the macro file to be created. If a file with this name already exists, it will be overwritten.
-
+  -  <file>    : Specifies the name of the macro file to be created. If a file with this name already exists, it will be overwritten.
+```
 
 
 <h4>OSI Configuration (OpenFrame System for IMS)</h4>
