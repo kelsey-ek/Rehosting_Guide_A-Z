@@ -244,6 +244,22 @@ Step 1.) Create the VSAM Dataset
 idcams define -t CL -n OSC.SDMAKE.TEST -o KS -k 18,0 -b 32768 -l 128,32760 -s 1024,128,128 -v DEFVOL
 ```
 
+Step 2.) Load the VSAM Dataset with the System Definitions File from the Mainframe
+
+```
+oscsdgen -c -d OSC.SDMAKE.TEST [MACRO_FILE]
+```
+
+It should be noted that OpenFrame comes with a utility ```oscsddump``` which can be used to dump the OpenFrame System Definitions (OSD) to a regular file. This regular file can then be used to add or modify the existing OSD's. Each region has it's own dataset, and you can dump the OSD by specifying the region name or the vsam dataset.
+
+```
+oscsddump -d <dataset> <output_file_name>
+```
+
+```
+oscsddump -r <region> <output_file_name>
+```
+
 <h4>OSI Configuration (OpenFrame System for IMS)</h4>
 
 ### Configuration Files
