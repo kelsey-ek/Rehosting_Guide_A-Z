@@ -303,28 +303,32 @@ osctdlupdate <region> <module>
 
   <details><summary>COLOR</summary>
 
-  - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
+    - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
 
-  - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
+    - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
 
   </details>
 
   <details><summary>CTRL</summary>
 
-  - Sets characterstics of all maps included in mapsets.
+    - Sets characterstics of all maps included in mapsets.
 
-  - One of the following options can be entered
+    - One of the following options can be entered
 
-    - PRINT: Prints transferred map data
+      - PRINT: Prints transferred map data
     
-    - LENGTH: Sets the maximum number of characters for a row transferred to a printer.
+      - LENGTH: Sets the maximum number of characters for a row transferred to a printer.
 
-    - FREEKB: Releases the keyboard lock when transferring maps.
+      - FREEKB: Releases the keyboard lock when transferring maps.
 
-    - ALARM: Sends an alarm if an alarm is sent to the TN3270 terminal.
+      - ALARM: Sends an alarm if an alarm is sent to the TN3270 terminal.
 
-    - FRSET: Resets the MDT bits of all fiends including in maps when transferring maps.
+      - FRSET: Resets the MDT bits of all fiends including in maps when transferring maps.
   </details>
+
+  <details><summary>HLIGHT</summary>
+
+
 
 </details>
 
