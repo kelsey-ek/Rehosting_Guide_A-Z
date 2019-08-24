@@ -303,9 +303,10 @@ osctdlupdate <region> <module>
 
   <details><summary>COLOR</summary>
 
-  - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
+    - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
 
-  - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
+    - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
+  
   </details>
 
   <details><summary>CTRL</summary>
@@ -327,7 +328,7 @@ osctdlupdate <region> <module>
 
   <details><summary>HLIGHT</summary>
 
-
+  </details>
 
 </details>
 
