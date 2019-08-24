@@ -301,13 +301,15 @@ osctdlupdate <region> <module>
 
 <details><summary>Click here to see what Keywords can be specified for the DFHMSD macro command</summary>
 
-COLOR 
+  <details><summary>COLOR</summary>
 
   - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
 
   - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
 
-CTRL
+  </details>
+
+  <details><summary>CTRL</summary>
 
   - Sets characterstics of all maps included in mapsets.
 
@@ -322,6 +324,7 @@ CTRL
     - ALARM: Sends an alarm if an alarm is sent to the TN3270 terminal.
 
     - FRSET: Resets the MDT bits of all fiends including in maps when transferring maps.
+  </details>
 
 </details>
 
