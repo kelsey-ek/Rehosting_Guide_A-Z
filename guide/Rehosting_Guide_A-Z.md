@@ -295,6 +295,42 @@ osctdlupdate <region> <module>
   - <module>   : Specifies an application module name
 ``` 
 
+<h5>Understanding Basic Map Support (BMS) Files</h5>
+
+* DFHMSD - Declares a mapset
+
+<details><summary>Click here to see what Keywords can be specified for the DFHMSD macro command</summary>
+
+COLOR 
+
+  - specifies the basic color for the mapset. Users can choose one of the following: DEFAULT, BLUE, RED, PINK, GREEN, TURGOISE, YELLOW, or NEUTRAL
+
+  - COLOR for DFHMDF or DFHMDI is already set; the color set for DFHMSD has the lowest priority.
+
+CTRL
+
+  - Sets characterstics of all maps included in mapsets.
+
+  - One of the following options can be entered
+
+    - PRINT: Prints transferred map data
+    
+    - LENGTH: Sets the maximum number of characters for a row transferred to a printer.
+
+    - FREEKB: Releases the keyboard lock when transferring maps.
+
+    - ALARM: Sends an alarm if an alarm is sent to the TN3270 terminal.
+
+    - FRSET: Resets the MDT bits of all fiends including in maps when transferring maps.
+
+</details>
+
+* DFHMDI - Declares a map
+
+* DFHMDF - Declares a field
+
+
+
 <h4>OSI Configuration (OpenFrame System for IMS)</h4>
 
 ### Configuration Files
