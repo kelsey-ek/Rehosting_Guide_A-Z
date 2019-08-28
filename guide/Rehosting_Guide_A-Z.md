@@ -242,7 +242,9 @@ analysis document.
 
   <details><summary> Click here for the C code </summary>
 
-    ```/******************************************************************************/
+    ```
+
+    /******************************************************************************/
     /* password check */
     /******************************************************************************/
     int customer_saf_exit_password(char *userid, char *password, int count, char
@@ -294,8 +296,10 @@ analysis document.
     /*  Must have atleast 1 numeric in between. */
     if ( digit_cnt < 1 ) return SAF_EXIT_ERR_INVALID_PASSWORD6;
     
-    return 0;```
-    
+    return 0;
+
+    ```
+
   </details>
 
 ### BATCH
