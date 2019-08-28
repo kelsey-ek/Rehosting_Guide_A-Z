@@ -832,6 +832,8 @@ osctdlupdate <region> <module>
 
 ### Add User (AU)
 
+<details><summary>Click here for ADDUSER (AU) Example</summary>
+
 - Example: Adding a user with the following attributes:
 
   - Username     : TMAX1234
@@ -844,6 +846,8 @@ osctdlupdate <region> <module>
 ```
 ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGRP('SYS1') OPERATIONS 
 ```
+
+</details>
 
 ### Alter User (ALU)
 
