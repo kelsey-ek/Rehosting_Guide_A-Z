@@ -240,7 +240,7 @@ analysis document.
 
     Modify the C program used for libsafexit.so. An example is provided below:
 
-<details><summary> Click here for the C code </summary>
+    <details><summary> Click here for the C code </summary>
 
 ```
 /******************************************************************************/
@@ -298,7 +298,7 @@ if ( digit_cnt < 1 ) return SAF_EXIT_ERR_INVALID_PASSWORD6;
 return 0;
 ```
 
-</details>
+    </details>
 
 ### BATCH
   **Prerequisites:** 
