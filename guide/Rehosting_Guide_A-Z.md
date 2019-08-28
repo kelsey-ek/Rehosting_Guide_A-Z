@@ -830,9 +830,11 @@ osctdlupdate <region> <module>
 
 ## TACF
 
-### ADDGROUP (AG)
+**Description:** Below are the most commonly used TACF commands. All of the commands can be run from the command line or through OFManager. If you use the command line option, you need to log in to ```tacfmgr``` as a SPECIAL user
 
-<details><summary>Example</summary>
+### ADDGROUP (AG) [Add Group]
+
+<details><summary>Example: Add Group with Superior Group</summary>
 
 - Example: Adding a Group with the following attributes:
 
@@ -846,9 +848,9 @@ ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
 
 </details>
 
-### ADDUSER (AU)
+### ADDUSER (AU) [Add User]
 
-<details><summary>Example</summary>
+<details><summary>Example: Add User with Operations attribute</summary>
 
 - Example: Adding a user with the following attributes:
 
@@ -865,9 +867,38 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 
 </details>
 
-### Alter User (ALU)
+### ADDSD (AD) [Add System Definition]
 
+<details><summary>Example: Add System Definition with Universal Access NONE</summary>
 
+- Example: Adding a System Definition with the following attributes:
+
+  - Group Name    : $GROUP
+  - Owner         : $OWNER
+  - Superior Group: SYS1
+
+```
+ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNIT(D) VOLUME(DEFVOL)
+```
+
+</details>
+
+### ALTUSER (ALU) [Alter User]
+
+<details><summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
+
+- Example: Alter the TMAX1234 user's password and give SPECIAL attribute
+
+  - User Name     : TMAX1234
+  - Data          : <Changed to NODATA>
+  - Password      : NEWPASS1
+  - Special Attr  : SPECIAL
+
+```
+ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
+```
+
+</details>
 
 ## BATCH
 
