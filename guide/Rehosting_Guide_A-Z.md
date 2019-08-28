@@ -137,6 +137,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
   4. COPYBOOK
   5. CSD
   6. Datasets
+  7. Security
 
     - NON-VSAM
     - VSAM
@@ -203,7 +204,6 @@ analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
 **Prerequisites:**
 
 -   Migration (Source Code) -- Complete
-
 -   Installation -- Complete
 
 **Description**: OFMiner is a tool used for analyzing elements in scope
@@ -220,15 +220,88 @@ analysis document.
 **Prerequisites:**
 
 -   Migration (Source Code) -- Complete
+-   Installation -- (Complete)
 
 **Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made to the environment to match the Mainframe specifications. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
 
 **Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
 
+### TACF
+
+**Prerequisites:** 
+
+-   Installation -- (Complete)
+
+**Description:** TACF (Tmax Access Control Facility) is responsible for handling user authentication, resource access control, and logging resource access statistics. TACF protects the system from unauthorized users by managing a list of registered users and system authorities within Tibero. TACF alsorecords user and resource access histories as logs, which are used as source data for statistical information. 
+
+**What you need to know:** 
+
+-   How to change the password rules for TACF
+
+  - Modify the C program used for libsafexit.so. An example is provided below:
+
+  <details><summary> Click here for the C code </summary>
+    ```
+    /******************************************************************************/
+    /* password check */
+    /******************************************************************************/
+    int customer_saf_exit_password(char *userid, char *password, int count, char
+    *history[])
+    {
+    int i;
+    int userid_len = 0;
+    int password_len = 0;
+    int upper_cnt = 0;
+    int lower_cnt = 0;
+    int digit_cnt = 0;
+    int special_cnt = 0;
+    
+    /*  Must not be one of 5 prior paswords */
+    password_len = strlen(password);
+    userid_len = strlen(userid);
+    
+    /*  have exactly 8 characters */
+    if ( MAX_PW_LEN != password_len ) return SAF_EXIT_ERR_INVALID_PASSWORD;
+    
+    /*  not be an old password  <-tacf*/
+    for( i = 0; i < count; i++ ) {
+    if( ! strcmp(password, history[i]) ) return SAF_EXIT_ERR_INVALID_PASSWORD1;
+    }
+    
+    /*  count */
+    for ( i = 0; i < password_len; i++){
+        if ( password[i] >= 'a' && password[i] <= 'z' ){lower_cnt ++;continue;}
+        if ( password[i] >= 'A' && password[i] <= 'Z' ){upper_cnt ++;continue;}
+        if ( password[i] >= '0' && password[i] <= '9' ){digit_cnt ++;continue;}
+        special_cnt++;
+    }
+    
+    /* beginning and ending with an alpha character. */
+        if ( !( (password[0] >= 'a' && password[0] <= 'z') ||
+               (password[0] >= 'A' && password[0] <= 'Z')))
+               return SAF_EXIT_ERR_INVALID_PASSWORD2;
+        if ( !( (password[MAX_PW_LEN-1] >= 'a' && password[MAX_PW_LEN-1] <= 'z') ||
+              (password[MAX_PW_LEN-1] >= 'A' && password[MAX_PW_LEN-1] <= 'Z')))
+               return SAF_EXIT_ERR_INVALID_PASSWORD3;
+    
+    
+    /*  Must have atleast 1 numeric in between. */
+    if ( digit_cnt == 0 ) return SAF_EXIT_ERR_INVALID_PASSWORD4;
+    
+    /* Any other rule = Special characters are not allowed in the password */
+    if ( (lower_cnt + upper_cnt + digit_cnt) != MAX_PW_LEN )return SAF_EXIT_ERR_INVALID_PASSWORD5;
+    
+    /*  Must have atleast 1 numeric in between. */
+    if ( digit_cnt < 1 ) return SAF_EXIT_ERR_INVALID_PASSWORD6;
+    
+    return 0;
+    ```
+  </details>
+
 ### BATCH
   **Prerequisites:** 
 
-  - Installation (Complete)
+  - Installation -- (Complete)
 
 **Description:** 
 
