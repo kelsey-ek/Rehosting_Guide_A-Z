@@ -836,11 +836,9 @@ osctdlupdate <region> <module>
 
 <details><summary>Example: Add Group with Superior Group</summary>
 
-- Example: Adding a Group with the following attributes:
-
-  - Group Name    : $GROUP
-  - Owner         : $OWNER
-  - Superior Group: SYS1
+- Group Name    : $GROUP
+- Owner         : $OWNER
+- Superior Group: SYS1
 
 ```
 ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
@@ -852,14 +850,12 @@ ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
 
 <details><summary>Example: Add User with Operations attribute</summary>
 
-- Example: Adding a user with the following attributes:
-
-  - Username     : TMAX1234
-  - Password     : TMAXPASS
-  - Name         : Tmax Soft
-  - Owner        : ROOT
-  - Default Group: SYS1
-  - Special Attr : Operations
+- Username     : TMAX1234
+- Password     : TMAXPASS
+- Name         : Tmax Soft
+- Owner        : ROOT
+- Default Group: SYS1
+- Special Attr : Operations
 
 ```
 ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGRP('SYS1') OPERATIONS 
@@ -871,11 +867,9 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 
 <details><summary>Example: Add System Definition with Universal Access NONE</summary>
 
-- Example: Adding a System Definition with the following attributes:
-
-  - Group Name    : $GROUP
-  - Owner         : $OWNER
-  - Superior Group: SYS1
+- Group Name    : $GROUP
+- Owner         : $OWNER
+- Superior Group: SYS1
 
 ```
 ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNIT(D) VOLUME(DEFVOL)
@@ -887,12 +881,10 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 
 <details><summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
 
-- Example: Alter the TMAX1234 user's password and give SPECIAL attribute
-
-  - User Name     : TMAX1234
-  - Data          : <Changed to NODATA>
-  - Password      : NEWPASS1
-  - Special Attr  : SPECIAL
+- User Name     : TMAX1234
+- Data          : <Changed to NODATA>
+- Password      : NEWPASS1
+- Special Attr  : SPECIAL
 
 ```
 ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
