@@ -238,12 +238,17 @@ analysis document.
 
 -   How to change the password rules for TACF
 
-    Modify the customer_saf_exit_password function found in the C program used to create the library file libsafexit.so. An example is provided below:
+    Create a C program using the saf_exit.h header file located in $OPENFRAME_HOME/include. An example function is provided below:
 
 <details><summary> Click here for the C code </summary>
 
 ```
-code
+int customer_saf_exit_password(char *userid, char password, int count, char *history[])
+{
+  
+  <Add Logic Here using the above pointers>
+
+}
 ```
 
 </details>
