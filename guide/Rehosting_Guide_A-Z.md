@@ -24,7 +24,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [OFMiner](#ofminer)
 
-[OpenFrame Configuration](#configuration)
+[OpenFrame Configuration](#openframe-configuration)
 
 [Running First Batch JOB](#running-first-batch-job)
 
