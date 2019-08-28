@@ -24,7 +24,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [OFMiner](#ofminer)
 
-[OpenFrame Configuration](##OpenFrame-Configuration)
+[OpenFrame Configuration](#configuration)
 
 [Running First Batch JOB](#running-first-batch-job)
 
@@ -84,7 +84,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Description:** Licenses will have to be issued for the products to fully operate. Production licenses must be requested through the Global Planning Team. For the licenses, we will need to know the hostname of the server, and in some cases we will also need to know how many cpu's are being used on the server. If you want to know what information you will need for each license, you can go to www.technet.tmaxsoft.com, then click on Demo License Request. This will ask you to fill out a form for each license. The required fields will describe what information you need to know to request the binary.
 
-##Installation
+# Installation
 
 **Prerequisites:** 
 
@@ -124,7 +124,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
   - "#TODO: How to Submit Sample JCL"
   - "#TODO: How to connect to Online Test Region"
 
-## Migration
+# Migration
 
 **Description**: This step includes migrating source code and datasets.
 There are multiple options for downloading the data from the mainframe.
@@ -189,7 +189,7 @@ project)
 **Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"
 
-## Discovery
+# Discovery
 
 **Prerequisites:**
 
@@ -215,7 +215,7 @@ analysis document.
 
 **Reference Documents: "How to create an OFMiner report\_v2"**
 
-## OpenFrame Configuration
+# OpenFrame Configuration
 
 **Prerequisites:**
 
@@ -226,7 +226,7 @@ analysis document.
 
 **Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
 
-### TACF
+## TACF
 
 **Prerequisites:** 
 
@@ -300,14 +300,14 @@ return 0;
 
 </details>
 
-### BATCH
+## BATCH
   **Prerequisites:** 
 
   - Installation -- (Complete)
 
 **Description:** 
 
-### ONLINE
+## ONLINE
 
 <h4>OSC Configuration (OpenFrame System for CICS)</h4>
 
