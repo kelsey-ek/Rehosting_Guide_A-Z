@@ -9,21 +9,14 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 # Table of Contents 
 
 [Pre-Migration](#pre-migration)
-
 [Mainframe Environment](#mainframe-environment)
-
 [Migration](#migration)
-
 [Datasets](#datasets)
-
 [Source Code](#source-code)
-
 [Installation](#installation)
-
 [Discovery](#discovery)
-
 [OFMiner](#ofminer)
-
+[OpenFrame Configuration](#configuration)
 [Running First Batch JOB](#running-first-batch-job)
 
 
@@ -238,9 +231,9 @@ analysis document.
 
 -   How to change the password rules for TACF
 
-    Modify the C program used for libsafexit.so. An example is provided below:
+    Modify the customer_saf_exit_password function found in the C program used to create the library file libsafexit.so. An example is provided below:
 
-    <details><summary> Click here for the C code </summary>
+<details><summary> Click here for the C code </summary>
 
 ```
 /******************************************************************************/
@@ -298,7 +291,7 @@ if ( digit_cnt < 1 ) return SAF_EXIT_ERR_INVALID_PASSWORD6;
 return 0;
 ```
 
-    </details>
+</details>
 
 ### BATCH
   **Prerequisites:** 
