@@ -830,9 +830,25 @@ osctdlupdate <region> <module>
 
 ## TACF
 
-### Add User (AU)
+### ADDGROUP (AG)
 
-<details><summary>Click here for ADDUSER (AU) Example</summary>
+<details><summary>Example</summary>
+
+- Example: Adding a Group with the following attributes:
+
+  - Group Name    : $GROUP
+  - Owner         : $OWNER
+  - Superior Group: SYS1
+
+```
+ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
+```
+
+</details>
+
+### ADDUSER (AU)
+
+<details><summary>Example</summary>
 
 - Example: Adding a user with the following attributes:
 
