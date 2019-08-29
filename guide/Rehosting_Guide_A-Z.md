@@ -954,6 +954,8 @@ ${patch_dir}/
 
 ### OFCOBOL
 
+<details><summary>Steps</summary>
+
 OFCOBOL patches generally come in the form of entire directories. 
 
 Steps:
@@ -997,5 +999,7 @@ ofcob --version
 After applying the patch, the original issue reported in the IMS ticket should be retested.
 
 **Step 8.** Receive confirmation from the Customer.
+
+</details>
 
 ## Tibero
