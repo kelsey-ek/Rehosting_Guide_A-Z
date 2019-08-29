@@ -26,9 +26,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [OpenFrame Configuration](#openframe-configuration)
 
-[Running First Batch JOB](#running-first-batch-job)
-
 [Operation And Administration](#operation-and-administration)
+
+[Applying Patches](#applying-patches)
 
 # Pre-Migration: Mainframe Environment
 
@@ -824,8 +824,6 @@ osctdlupdate <region> <module>
 
 <h3>Patching OpenFrame</h3>
 
-# Running First Batch JOB
-
 # Operation and Administration
 
 ## TACF
@@ -896,3 +894,43 @@ ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 
 ## ONLINE
 
+# Applying Patches
+
+General Notes:
+
+1. A Patch directory (from here on out refered to as ${patch_dir}) should be created somewhere. In general, we create a PATCH directory inside of the _tmaxsw_ folder, then we create directories for each of the products.
+
+The end product should look like:
+
+```
+${patch_dir}/
+
+  OFCOBOL/
+
+  PROSORT/
+
+  OFASM/
+```
+
+2. Once a patch is downloaded, it should be ftp'd to the ${patch_dir} and placed in the appropriate folder in regards to the IMS ticket. i.e. If the IMS ticket category is OFCOBOL, the patch should go in the ${patch_dir}/OFCOBOL.
+
+3. Create a directory inside ${patch_dir}/${product} with the IMS ticket number and the date. 
+
+## OpenFrame
+
+### OFCOBOL
+
+OFCOBOL patches generally come in the form of entire directories. 
+
+Steps:
+
+1. Unlink the current OFCOBOL directory
+
+```
+cd $OFCOBOL_HOME/..
+unlink OFCOBOL
+```
+
+2. Download the patch to the 
+
+## Tibero
