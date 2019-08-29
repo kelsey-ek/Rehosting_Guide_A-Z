@@ -4,7 +4,7 @@
 for rehosting a mainframe to OpenFrame. This document will describe in
 detail the processes needed and complementary scripts and manuals to
 quickly, accurately, and successfully migrate a mainframe system to
-OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience.*
+OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience. Hopefully, this document becomes something any engineer or rehosting technical team member can use and find helpful.*
 
 # Table of Contents 
 
@@ -24,11 +24,13 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [OFMiner](#ofminer)
 
-[Running First Batch JOB](#running-first-batch-job)
+[OpenFrame Configuration](#openframe-configuration)
 
+[Operation And Administration](#operation-and-administration)
+
+[Applying Patches](#applying-patches)
 
 # Pre-Migration: Mainframe Environment
-
 
 **Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. Every customer has changed some configurations to suit their needs - There is no mainframe that is exactly like another. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To accomplish this, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
 
@@ -44,7 +46,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 # Pre-Migration: OpenFrame Environment
 
-<h3>Accessing the Linux Server</h3>
+## Accessing the Linux Server
 
 **Prerequisities:**
 
@@ -52,17 +54,17 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Description:** This step includes how to access the Linux server. Depending on who built the Linux Server, the steps for completing this will vary.
 
-<h4>Accessing a Linux Server built by Rehosting Team</h4>
+### Accessing a Linux Server built by Rehosting Team
 
 **Description:** If the server is built by the rehosting team, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. However, if access to a VDI is required first, please refer to the "Accessing a Linux Server on the Customer's Private Network" section. 
 
 **Reference Documents:** "TODO: How To Connect To A Server With PuTTY"
 
-<h5>Accessing a Linux Server on the Customer's Private Network</h5>
+<h4>Accessing a Linux Server on the Customer's Private Network</h4>
 
 **Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
-<h4>Binary Request</h4>
+### Binary Request
 
 **Prerequisites:** 
 
@@ -74,7 +76,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Reference Documents:** "TODO: How to request customer Binaries"
 
-<h4>Licensing</h4>
+### Licensing
 
 **Prerequisites:** 
 
@@ -84,7 +86,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Description:** Licenses will have to be issued for the products to fully operate. Production licenses must be requested through the Global Planning Team. For the licenses, we will need to know the hostname of the server, and in some cases we will also need to know how many cpu's are being used on the server. If you want to know what information you will need for each license, you can go to www.technet.tmaxsoft.com, then click on Demo License Request. This will ask you to fill out a form for each license. The required fields will describe what information you need to know to request the binary.
 
-##Installation
+***
+
+# Installation
 
 **Prerequisites:** 
 
@@ -98,7 +102,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 **Reference Documents:
 "TmaxSoft\_OpenFrame7\_fix2\_Installation\_V6.22"**
 
-<h4>Verifying Successful Installation</h4>
+## Verifying Successful Installation
 
 **Prerequisites:** 
 
@@ -124,25 +128,28 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
   - "#TODO: How to Submit Sample JCL"
   - "#TODO: How to connect to Online Test Region"
 
-## Migration
+***
+
+# Migration
 
 **Description**: This step includes migrating source code and datasets.
 There are multiple options for downloading the data from the mainframe.
 
 Below is the ordered list of the assets you will need to migrate from the mainframe to OpenFrame:
 
-  1. JCL
-  2. Procedure (PROC)
-  3. COBOL
-  4. COPYBOOK
-  5. CSD
-  6. Datasets
-
-    - NON-VSAM
-    - VSAM
-
+1. JCL
+2. Procedure (PROC)
+3. COBOL
+4. COPYBOOK
+5. CSD
+6. Datasets
+   - NON-VSAM
+   - VSAM
+7. Security
 
 **Reference Documents:** "How to Source Code Transfer Process"
+
+***
 
 # Source Code
 
@@ -155,7 +162,7 @@ option. However, if you are working for a Japanese, Korean, Brazilian --
 Or any other language that may use sosi characters, Please refer to the
 sosi options in the dsmigin command.__
 
-The below information can be found by running the _dsmigin_ command with no arguments:
+The below information can be found by running the ```dsmigin``` command with no arguments:
 ```
 6. SOSI type
    1 = so[EBC]si -> so[ASC]si : Keep SOSI (default)
@@ -171,6 +178,8 @@ The below information can be found by running the _dsmigin_ command with no argu
 
 **Reference Documents: "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"**
+
+***
 
 # Datasets
 
@@ -188,7 +197,9 @@ project)
 **Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"
 
-## Discovery
+***
+
+# Discovery
 
 **Prerequisites:**
 
@@ -198,12 +209,13 @@ project)
 server, the files must be sorted into their respective element types for
 analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
 
+***
+
 # OFMiner
 
 **Prerequisites:**
 
 -   Migration (Source Code) -- Complete
-
 -   Installation -- Complete
 
 **Description**: OFMiner is a tool used for analyzing elements in scope
@@ -215,24 +227,54 @@ analysis document.
 
 **Reference Documents: "How to create an OFMiner report\_v2"**
 
-## OpenFrame Configuration
+***
+
+# OpenFrame Configuration
 
 **Prerequisites:**
 
 -   Migration (Source Code) -- Complete
+-   Installation -- (Complete)
 
 **Description:** In order for batch JOBs and Online Transactions to run correctly, configuration changes must be made to the environment to match the Mainframe specifications. Below is a list of the items you may or may not have to modify based on the customer's mainframe configuration:
 
 **Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
 
-### BATCH
+## TACF
+
+**Prerequisites:** 
+
+-   Installation -- (Complete)
+
+**Description:** TACF (Tmax Access Control Facility) is responsible for handling user authentication, resource access control, and logging resource access statistics. TACF protects the system from unauthorized users by managing a list of registered users and system authorities within Tibero. TACF alsorecords user and resource access histories as logs, which are used as source data for statistical information. 
+
+**What you need to know:** 
+
+-   How to change the password rules for TACF
+
+    Create a C program using the saf_exit.h header file located in $OPENFRAME_HOME/include. An example function is provided below:
+
+<details><summary> Click here for the C code </summary>
+
+```
+int customer_saf_exit_password(char *userid, char password, int count, char *history[])
+{
+  
+  <Add Logic Here using the above pointers>
+
+}
+```
+
+</details>
+
+## BATCH
   **Prerequisites:** 
 
-  - Installation (Complete)
+  - Installation -- (Complete)
 
 **Description:** 
 
-### ONLINE
+## ONLINE
 
 <h4>OSC Configuration (OpenFrame System for CICS)</h4>
 
@@ -794,6 +836,241 @@ osctdlupdate <region> <module>
 
 <h3>Patching OpenFrame</h3>
 
+# Operation and Administration
 
+## TACF
 
-#Running First Batch JOB
+**Description:** Below are the most commonly used TACF commands. All of the commands can be run from the command line or through OFManager. If you use the command line option, you need to log in to ```tacfmgr``` as a SPECIAL user
+
+### ADDGROUP (AG) [Add Group]
+
+<details><summary>Example: Add Group with Superior Group</summary>
+
+- Group Name    : $GROUP
+- Owner         : $OWNER
+- Superior Group: SYS1
+```
+ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
+```
+
+</details>
+
+### ADDUSER (AU) [Add User]
+
+<details><summary>Example: Add User with Operations attribute</summary>
+
+- Username     : TMAX1234
+- Password     : TMAXPASS
+- Name         : Tmax Soft
+- Owner        : ROOT
+- Default Group: SYS1
+- Special Attr : Operations
+```
+ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGRP('SYS1') OPERATIONS 
+```
+
+</details>
+
+### ADDSD (AD) [Add System Definition]
+
+<details><summary>Example: Add System Definition with Universal Access NONE</summary>
+
+- Group Name    : $GROUP
+- Owner         : $OWNER
+- Superior Group: SYS1
+```
+ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNIT(D) VOLUME(DEFVOL)
+```
+
+</details>
+
+### ALTUSER (ALU) [Alter User]
+
+<details><summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
+
+- User Name     : TMAX1234
+- Data          : <Changed to NODATA>
+- Password      : NEWPASS1
+- Special Attr  : SPECIAL
+```
+ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
+```
+
+</details>
+
+## BATCH
+
+## ONLINE
+
+***
+
+# Applying Patches
+
+**General Notes:**
+
+1. A Patch directory (from here on out refered to as ${patch_dir}) should be created somewhere. In general, we create a PATCH directory inside of the _tmaxsw_ folder, then we create directories for each of the products.
+
+  The end product should look like:
+
+```
+${patch_dir}/
+  OFCOBOL/
+  PROSORT/
+  OFASM/
+```
+
+2. Once a patch is downloaded, it should be ftp'd to the ${patch_dir} and placed in the appropriate folder in regards to the IMS ticket. i.e. If the IMS ticket category is OFCOBOL, the patch should go in the ${patch_dir}/OFCOBOL.
+
+3. Create a directory inside ${patch_dir}/${product} with the IMS ticket number and the date. 
+
+  The end product should look something like this:
+
+```
+${patch_dir}/
+  OFCOBOL/
+    IMS123456_20190828/
+      libgeneric.so
+      FTP
+      tmadmin
+    IMS654321_20190829/
+      libgeneric2.so
+  PROSORT/
+    IMS987654_20190829/
+      prosort/
+    IMS456789_20190830/
+      prosort/
+  OFASM/
+    IMS242424_20190830/
+      ofasm/
+```
+
+## OpenFrame
+
+### OFCOBOL
+
+<details><summary>Steps</summary>
+
+OFCOBOL patches generally come in the form of entire directories. 
+
+**Step 1.** Unlink the current OFCOBOL directory
+<pre>
+cd <i>${OFCOBOL_HOME}</i>
+cd ..
+unlink OFCOBOL
+</pre>
+**Step 2.** Download the patch to the <i>${patch_dir}/OFCOBOL/${ims_date}</i> directory
+
+**Step 3.** Unpack the patch file
+<pre>
+tar -xzvf <i>${patch_file}</i>.tar.gz
+</pre>
+**Step 4.** There are two ways to manage directory-type patches. What I mean by directory-type patches, is patches that come in the form of full directories. You can either create a symbolic link to the path noted in step 2 or you can delete the existing OFCOBOL folder and replace it with a copy from the directory noted in step 2.
+
+   - **Step 4a.** Symbolic link: 
+<pre>
+cd /opt/tmaxapp
+ln -s <i>${patch_dir}/OFCOBOL/${ims_date}</i> OFCOBOL
+</pre>
+
+   - **Step 4b.** Create a copy:
+<pre>
+cd /opt/tmaxapp
+rm -r OFCOBOL
+cp -r <i>${patch_dir}/OFCOBOL/${ims_date}</i>/OFCOBOL .
+</pre>
+**Step 5.** Copy the old license directory to the new patched directory.
+<pre>
+cp -r <i>${OFCOBOL_BACKUP}</i>/license <i>${OFCOBOL_HOME}</i>
+</pre>
+**Step 6.** Check the current version to ensure that the patch was successful
+<pre>
+ofcob --version
+</pre>
+**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in the IMS ticket should be retested.
+
+**Step 8.** Receive confirmation from the Customer that the patch was successful.
+
+</details>
+
+### PROSORT
+
+<details><summary>Steps</summary>
+
+Prosort patches generally come in the form of entire directories, but may also include some library files. In this guide, we will explain how to handle both.
+
+**Step 1.** Unlink the current Prosort directory
+
+<pre>
+  cd <i>${PROSORT_HOME}</i>
+  cd ..
+  unlink PROSORT
+</pre>
+
+**Step 2.** Download the patch to the <i>${patch_dir}/PROSORT/${ims_date}</i> directory
+
+**Step 3.** Unpack the patch file
+
+<pre>
+  tar -xzvf <i>${patch_file}.tar.gz</i>
+</pre>
+
+  You may notice there are some library files here like so:
+
+<pre>
+  patch_file.tar.gz
+  prosort/
+  libfile1.so
+  libfile2.so
+</pre>
+
+  If not, ignore **Step 6.**
+
+**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
+
+  - **Step 4a.** Symbolic link
+
+  <pre>
+    cd <i>${PROSORT_HOME}</i>
+    cd ..
+    unlink prosort
+    ln -s ${patch_dir}/PROSORT/${ims_date} prosort
+  </pre>
+
+  - **Step 4b.** Create a copy
+
+  <pre>
+    cd <i>${PROSORT_HOME}</i>
+    cd ..
+    rm -r prosort
+    cp -r <i>${patch_dir}/PROSORT/${ims_date}/prosort</i> .
+  </pre>
+
+**Step 5.** Copy the old license directory to the new patched directory
+
+<pre>
+  cp -r <i>${PROSORT_BACKUP}/license ${PROSORT_HOME}</i>
+</pre>
+
+**Step 6.** If there are library files, make sure to add them to <i>${OPENFRAME_HOME}/lib</i> directory.
+
+<pre>
+  cp <i>${patch_dir}/PROSORT/${ims_date}/prosort/lib* ${OPENFRAME_HOME}/lib/.</i>
+</pre>
+
+**Step 7.** Check the current version to ensure that the patch was successful
+
+<pre>
+  prosort -v
+</pre>
+
+**Step 8.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in th e IMS ticket should be retested
+
+**Step 9.** Receive confirmation from the customer.
+
+</details>
+
+## Tibero
