@@ -1016,7 +1016,7 @@ Prosort patches generally come in the form of entire directories, but may also i
   tar -xzvf <i>${patch_file}.tar.gz</i>
 </pre>
 
-...You may notice there are some library files here like so:
+  You may notice there are some library files here like so:
 
 <pre>
   prosort/
@@ -1024,7 +1024,7 @@ Prosort patches generally come in the form of entire directories, but may also i
   libfile2.so
 </pre>
 
-...If not, ignore **Step 6.**
+  If not, ignore **Step 6.**
 
 **Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
 
