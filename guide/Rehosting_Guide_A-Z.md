@@ -971,17 +971,17 @@ unlink OFCOBOL
 tar -xzvf <i>${patch_file}</i>.tar.gz
 </pre>
 **4.** There are two ways to manage directory-type patches. What I mean by directory-type patches, is patches that come in the form of full directories. You can either create a symbolic link to the path noted in step 2 or you can delete the existing OFCOBOL folder and replace it with a copy from the directory noted in step 2.
-   **4a.** Symbolic link: 
-  <pre>
-  cd /opt/tmaxapp
-  ln -s <i>${patch_dir}/${product}/${ims_date}</i> OFCOBOL
-  </pre>
-   **4b.** Create a copy:
-  <pre>
-  cd /opt/tmaxapp
-  rm -r OFCOBOL
-  cp <i>${patch_dor}/${product}/${ims_date}</i>/OFCOBOL .
-  </pre>
+    **4a.** Symbolic link: 
+    <pre>
+    cd /opt/tmaxapp
+    ln -s <i>${patch_dir}/${product}/${ims_date}</i> OFCOBOL
+    </pre>
+    **4b.** Create a copy:
+    <pre>
+    cd /opt/tmaxapp
+    rm -r OFCOBOL
+    cp <i>${patch_dor}/${product}/${ims_date}</i>/OFCOBOL .
+    </pre>
 **5.** Copy the old license directory to the new patched directory.
 <pre>
 cp -r <i>${OFCOBOL_BACKUP}</i>/license <i>${OFCOBOL_HOME}</i>
