@@ -975,22 +975,22 @@ tar -xzvf ${patch_file}.tar.gz
   cp ${patch_dor}/${product}/${ims_date}/OFCOBOL .
   ```
 
-5. Copy the old license directory to the new patched directory.
+**5.** Copy the old license directory to the new patched directory.
 
 ```
 cp -r ${OFCOBOL_BACKUP}/license ${OFCOBOL_HOME}
 ```
 
-6. Check the current version to ensure that the patch was successful
+**6.** Check the current version to ensure that the patch was successful
 
 ```
 ofcob --version
 ```
 
-7. Test the patch - Did it resolve the issue the patch was created for in the first place?
+**7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
 
 After applying the patch, the original issue reported in the IMS ticket should be retested.
 
-8. Receive confirmation from the Customer.
+**8.** Receive confirmation from the Customer.
 
 ## Tibero
