@@ -1073,4 +1073,71 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 </details>
 
+## OFASM
+
+<details><summary>Steps</summary>
+
+OFASM patches generally come in the form of entire directories, but may also include some library files. In this guide, we will explain how to handle both.
+
+**Step 1.** Unlink the current OFASM directory
+
+<pre>
+  cd <i>${OFASM_HOME}</i>
+  cd ..
+  unlink OFASM
+</pre>
+
+**Step 2.** Download the patch to the <i>${patch_dir}/OFASM/${ims_date}</i> directory
+
+**Step 3.** Unpack the patch file
+
+<pre>
+  tar -xzvf <i>${patch_file}.tar.gz</i>
+</pre>
+
+<pre>
+  patch_file.tar.gz
+  OFASM/
+</pre>
+
+**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
+
+  - **Step 4a.** Symbolic link
+
+  <pre>
+    cd <i>${OFASM_HOME}</i>
+    cd ..
+    unlink OFASM
+    ln -s ${patch_dir}/OFASM/${ims_date} prosort
+  </pre>
+
+  - **Step 4b.** Create a copy
+
+  <pre>
+    cd <i>${OFASM_HOME}</i>
+    cd ..
+    rm -r OFASM
+    cp -r <i>${patch_dir}/OFASM/${ims_date}/OFASM</i> .
+  </pre>
+
+**Step 5.** Copy the old license directory to the new patched directory
+
+<pre>
+  cp -r <i>${OFASM_BACKUP}/license ${OFASM_HOME}</i>
+</pre>
+
+**Step 6.** Check the current version to ensure that the patch was successful
+
+<pre>
+  ofasm -v
+</pre>
+
+**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in th e IMS ticket should be retested
+
+**Step 8.** Receive confirmation from the customer.
+
+</details>
+
 ## Tibero
