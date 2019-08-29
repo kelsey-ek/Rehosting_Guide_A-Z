@@ -958,36 +958,36 @@ OFCOBOL patches generally come in the form of entire directories.
 
 Steps:
 **1.** Unlink the current OFCOBOL directory
-```
-cd $OFCOBOL_HOME
+<pre>
+cd <i>${OFCOBOL_HOME}</i>
 cd ..
 unlink OFCOBOL
-```
-**2.** Download the patch to the ${patch_dir}/${product}/${ims_date} directory
+</pre>
+**2.** Download the patch to the <i>${patch_dir}/${product}/${ims_date}</i> directory
 **3.** Unpack the patch file
-```
-tar -xzvf ${patch_file}.tar.gz
-```
+<pre>
+tar -xzvf <i>${patch_file}</i>.tar.gz
+</pre>
 **4.** There are two ways to manage directory-type patches. What I mean by directory-type patches, is patches that come in the form of full directories. You can either create a symbolic link to the path noted in step 2 or you can delete the existing OFCOBOL folder and replace it with a copy from the directory noted in step 2.
    **4a.** Symbolic link: 
-  ```
+  <pre>
   cd /opt/tmaxapp
   ln -s <i>${patch_dir}/${product}/${ims_date}</i> OFCOBOL
-  ```
+  </pre>
    **4b.** Create a copy:
-  ```
+  <pre>
   cd /opt/tmaxapp
   rm -r OFCOBOL
-  cp ${patch_dor}/${product}/${ims_date}/OFCOBOL .
-  ```
+  cp <i>${patch_dor}/${product}/${ims_date}</i>/OFCOBOL .
+  </pre>
 **5.** Copy the old license directory to the new patched directory.
-```
-cp -r ${OFCOBOL_BACKUP}/license ${OFCOBOL_HOME}
-```
+<pre>
+cp -r <i>${OFCOBOL_BACKUP}</i>/license <i>${OFCOBOL_HOME}</i>
+</pre>
 **6.** Check the current version to ensure that the patch was successful
-```
+<pre>
 ofcob --version
-```
+</pre>
 **7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
 
 After applying the patch, the original issue reported in the IMS ticket should be retested.
