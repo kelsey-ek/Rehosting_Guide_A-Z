@@ -876,6 +876,7 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 ### ADDSD (AD) [Add System Definition]
 
 <details><summary>Example: Add System Definition with Universal Access NONE</summary>
+
 - Group Name    : $GROUP
 - Owner         : $OWNER
 - Superior Group: SYS1
