@@ -916,6 +916,42 @@ ${patch_dir}/
 
 3. Create a directory inside ${patch_dir}/${product} with the IMS ticket number and the date. 
 
+The end product should look something like this:
+
+```
+${patch_dir}/
+
+  OFCOBOL/
+
+    IMS123456_20190828/
+
+      libgeneric.so
+
+      FTP
+
+      tmadmin
+
+    IMS654321_20190829/
+
+      libgeneric2.so
+
+  PROSORT/
+
+    IMS987654_20190829/
+
+      prosort/
+
+    IMS456789_20190830/
+
+      prosort/
+
+  OFASM/
+
+    IMS242424_20190830/
+
+      ofasm/
+```
+
 ## OpenFrame
 
 ### OFCOBOL
