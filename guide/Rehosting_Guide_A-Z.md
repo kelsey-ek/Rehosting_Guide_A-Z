@@ -151,6 +151,8 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 
 **Reference Documents:** "How to Source Code Transfer Process"
 
+***
+
 # Source Code
 
 **Prerequisites:**
@@ -179,6 +181,8 @@ The below information can be found by running the _dsmigin_ command with no argu
 **Reference Documents: "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"**
 
+***
+
 # Datasets
 
 **Prerequisites:**
@@ -195,6 +199,8 @@ project)
 **Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
 "ds\_wrap.sh"
 
+***
+
 # Discovery
 
 **Prerequisites:**
@@ -204,6 +210,8 @@ project)
 **Description:** Once the source code is migrated to the OpenFrame
 server, the files must be sorted into their respective element types for
 analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
+
+***
 
 # OFMiner
 
@@ -220,6 +228,8 @@ rehosting. Utilizing TBAdmin is a great tool to help create this
 analysis document.
 
 **Reference Documents: "How to create an OFMiner report\_v2"**
+
+***
 
 # OpenFrame Configuration
 
@@ -897,6 +907,8 @@ ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 ## BATCH
 
 ## ONLINE
+
+***
 
 # Applying Patches
 
