@@ -973,7 +973,9 @@ cp -r ${OFCOBOL_BACKUP}/license ${OFCOBOL_HOME}
 ofcob --version
 ```
 **7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
 After applying the patch, the original issue reported in the IMS ticket should be retested.
+
 **8.** Receive confirmation from the Customer.
 
 ## Tibero
