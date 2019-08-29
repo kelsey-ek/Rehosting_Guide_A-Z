@@ -896,11 +896,11 @@ ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 
 # Applying Patches
 
-General Notes:
+**General Notes:**
 
 1. A Patch directory (from here on out refered to as ${patch_dir}) should be created somewhere. In general, we create a PATCH directory inside of the _tmaxsw_ folder, then we create directories for each of the products.
 
-The end product should look like:
+  The end product should look like:
 
 ```
 ${patch_dir}/
@@ -913,7 +913,7 @@ ${patch_dir}/
 
 3. Create a directory inside ${patch_dir}/${product} with the IMS ticket number and the date. 
 
-The end product should look something like this:
+  The end product should look something like this:
 
 ```
 ${patch_dir}/
@@ -945,10 +945,52 @@ Steps:
 1. Unlink the current OFCOBOL directory
 
 ```
-cd $OFCOBOL_HOME/..
+cd $OFCOBOL_HOME
+cd ..
 unlink OFCOBOL
 ```
 
-2. Download the patch to the 
+2. Download the patch to the ${patch_dir}/${product}/${ims_date} directory
+
+3. Unpack the patch file
+
+```
+tar -xzvf ${patch_file}.tar.gz
+```
+
+4. There are two ways to manage directory-type patches. What I mean by directory-type patches, is patches that come in the form of full directories. You can either create a symbolic link to the path noted in step 2 or you can delete the existing OFCOBOL folder and replace it with a copy from the directory noted in step 2.
+
+  4a. Symbolic link: 
+
+  ```
+  cd /opt/tmaxapp
+  ln -s ${patch_dir}/${product}/${ims_date} OFCOBOL
+  ```
+
+  4b. Create a copy:
+
+  ```
+  cd /opt/tmaxapp
+  rm -r OFCOBOL
+  cp ${patch_dor}/${product}/${ims_date}/OFCOBOL .
+  ```
+
+5. Copy the old license directory to the new patched directory.
+
+```
+cp -r ${OFCOBOL_BACKUP}/license ${OFCOBOL_HOME}
+```
+
+6. Check the current version to ensure that the patch was successful
+
+```
+ofcob --version
+```
+
+7. Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in the IMS ticket should be retested.
+
+8. Receive confirmation from the Customer.
 
 ## Tibero
