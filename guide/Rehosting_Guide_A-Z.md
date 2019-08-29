@@ -972,7 +972,7 @@ tar -xzvf ${patch_file}.tar.gz
    **4a.** Symbolic link: 
   ```
   cd /opt/tmaxapp
-  ln -s ${patch_dir}/${product}/${ims_date} OFCOBOL
+  ln -s <i>${patch_dir}/${product}/${ims_date}</i> OFCOBOL
   ```
    **4b.** Create a copy:
   ```
