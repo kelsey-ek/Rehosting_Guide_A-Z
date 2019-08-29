@@ -1008,7 +1008,7 @@ Prosort patches generally come in the form of entire directories, but may also i
   unlink PROSORT
 </pre>
 
-**Step 2.** Download the patch to the <i>${patch_dir}/PROSORT/${ims_date} directory
+**Step 2.** Download the patch to the <i>${patch_dir}/PROSORT/${ims_date}</i> directory
 
 **Step 3.** Unpack the patch file
 
@@ -1069,5 +1069,7 @@ Prosort patches generally come in the form of entire directories, but may also i
 After applying the patch, the original issue reported in th e IMS ticket should be retested
 
 **Step 9.** Receive confirmation from the customer.
+
+</details>
 
 ## Tibero
