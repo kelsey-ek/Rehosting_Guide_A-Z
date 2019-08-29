@@ -4,7 +4,7 @@
 for rehosting a mainframe to OpenFrame. This document will describe in
 detail the processes needed and complementary scripts and manuals to
 quickly, accurately, and successfully migrate a mainframe system to
-OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience.*
+OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience. Hopefully, this document becomes something any engineer or rehosting technical team member can use and find helpful.*
 
 # Table of Contents 
 
@@ -162,7 +162,7 @@ option. However, if you are working for a Japanese, Korean, Brazilian --
 Or any other language that may use sosi characters, Please refer to the
 sosi options in the dsmigin command.__
 
-The below information can be found by running the _dsmigin_ command with no arguments:
+The below information can be found by running the ```dsmigin``` command with no arguments:
 ```
 6. SOSI type
    1 = so[EBC]si -> so[ASC]si : Keep SOSI (default)
@@ -952,15 +952,13 @@ ${patch_dir}/
 
 OFCOBOL patches generally come in the form of entire directories. 
 
-Steps:
-
 **Step 1.** Unlink the current OFCOBOL directory
 <pre>
 cd <i>${OFCOBOL_HOME}</i>
 cd ..
 unlink OFCOBOL
 </pre>
-**Step 2.** Download the patch to the <i>${patch_dir}/${product}/${ims_date}</i> directory
+**Step 2.** Download the patch to the <i>${patch_dir}/OFCOBOL/${ims_date}</i> directory
 
 **Step 3.** Unpack the patch file
 <pre>
@@ -971,14 +969,14 @@ tar -xzvf <i>${patch_file}</i>.tar.gz
    - **Step 4a.** Symbolic link: 
 <pre>
 cd /opt/tmaxapp
-ln -s <i>${patch_dir}/${product}/${ims_date}</i> OFCOBOL
+ln -s <i>${patch_dir}/OFCOBOL/${ims_date}</i> OFCOBOL
 </pre>
 
    - **Step 4b.** Create a copy:
 <pre>
 cd /opt/tmaxapp
 rm -r OFCOBOL
-cp <i>${patch_dor}/${product}/${ims_date}</i>/OFCOBOL .
+cp -r <i>${patch_dir}/OFCOBOL/${ims_date}</i>/OFCOBOL .
 </pre>
 **Step 5.** Copy the old license directory to the new patched directory.
 <pre>
@@ -992,8 +990,84 @@ ofcob --version
 
 After applying the patch, the original issue reported in the IMS ticket should be retested.
 
-**Step 8.** Receive confirmation from the Customer.
+**Step 8.** Receive confirmation from the Customer that the patch was successful.
 
 </details>
+
+### PROSORT
+
+<details><summary>Steps</summary>
+
+Prosort patches generally come in the form of entire directories, but may also include some library files. In this guide, we will explain how to handle both.
+
+**Step 1.** Unlink the current Prosort directory
+
+<pre>
+  cd <i>${PROSORT_HOME}</i>
+  cd ..
+  unlink PROSORT
+</pre>
+
+**Step 2.** Download the patch to the <i>${patch_dir}/PROSORT/${ims_date} directory
+
+**Step 3.** Unpack the patch file
+
+<pre>
+  tar -xzvf <i>${patch_file}.tar.gz</i>
+</pre>
+
+...You may notice there are some library files here like so:
+
+<pre>
+  prosort/
+  libfile1.so
+  libfile2.so
+</pre>
+
+...If not, ignore **Step 6.**
+
+**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
+
+  - **Step 4a.** Symbolic link
+
+  <pre>
+    cd <i>${PROSORT_HOME}</i>
+    cd ..
+    unlink prosort
+    ln -s ${patch_dir}/PROSORT/${ims_date} prosort
+  </pre>
+
+  - **Step 4b.** Create a copy
+
+  <pre>
+    cd <i>${PROSORT_HOME}</i>
+    cd ..
+    rm -r prosort
+    cp -r <i>${patch_dir}/PROSORT/${ims_date}/prosort</i> .
+  </pre>
+
+**Step 5.** Copy the old license directory to the new patched directory
+
+<pre>
+  cp -r <i>${PROSORT_BACKUP}/license ${PROSORT_HOME}</i>
+</pre>
+
+**Step 6.** If there are library files, make sure to add them to <i>${OPENFRAME_HOME}/lib</i> directory.
+
+<pre>
+  cp <i>${patch_dir}/PROSORT/${ims_date}/prosort/lib* ${OPENFRAME_HOME}/lib/.</i>
+</pre>
+
+**Step 7.** Check the current version to ensure that the patch was successful
+
+<pre>
+  prosort -v
+</pre>
+
+**Step 8.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in th e IMS ticket should be retested
+
+**Step 9.** Receive confirmation from the customer.
 
 ## Tibero
