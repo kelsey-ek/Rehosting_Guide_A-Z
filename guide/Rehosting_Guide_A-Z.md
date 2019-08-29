@@ -957,6 +957,7 @@ ${patch_dir}/
 OFCOBOL patches generally come in the form of entire directories. 
 
 Steps:
+
 **1.** Unlink the current OFCOBOL directory
 <pre>
 cd <i>${OFCOBOL_HOME}</i>
@@ -964,6 +965,7 @@ cd ..
 unlink OFCOBOL
 </pre>
 **2.** Download the patch to the <i>${patch_dir}/${product}/${ims_date}</i> directory
+
 **3.** Unpack the patch file
 <pre>
 tar -xzvf <i>${patch_file}</i>.tar.gz
