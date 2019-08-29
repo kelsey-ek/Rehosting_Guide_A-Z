@@ -137,17 +137,15 @@ There are multiple options for downloading the data from the mainframe.
 
 Below is the ordered list of the assets you will need to migrate from the mainframe to OpenFrame:
 
-  1. JCL
-  2. Procedure (PROC)
-  3. COBOL
-  4. COPYBOOK
-  5. CSD
-  6. Datasets
-  7. Security
-
-    - NON-VSAM
-    - VSAM
-
+1. JCL
+2. Procedure (PROC)
+3. COBOL
+4. COPYBOOK
+5. CSD
+6. Datasets
+   - NON-VSAM
+   - VSAM
+7. Security
 
 **Reference Documents:** "How to Source Code Transfer Process"
 
