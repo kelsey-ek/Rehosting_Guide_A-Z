@@ -904,11 +904,8 @@ The end product should look like:
 
 ```
 ${patch_dir}/
-
   OFCOBOL/
-
   PROSORT/
-
   OFASM/
 ```
 
@@ -920,35 +917,20 @@ The end product should look something like this:
 
 ```
 ${patch_dir}/
-
   OFCOBOL/
-
     IMS123456_20190828/
-
       libgeneric.so
-
       FTP
-
       tmadmin
-
     IMS654321_20190829/
-
       libgeneric2.so
-
   PROSORT/
-
     IMS987654_20190829/
-
       prosort/
-
     IMS456789_20190830/
-
       prosort/
-
   OFASM/
-
     IMS242424_20190830/
-
       ofasm/
 ```
 
