@@ -1019,6 +1019,7 @@ Prosort patches generally come in the form of entire directories, but may also i
   You may notice there are some library files here like so:
 
 <pre>
+  patch_file.tar.gz
   prosort/
   libfile1.so
   libfile2.so
