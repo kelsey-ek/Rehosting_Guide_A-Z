@@ -849,7 +849,6 @@ osctdlupdate <region> <module>
 - Group Name    : $GROUP
 - Owner         : $OWNER
 - Superior Group: SYS1
-
 ```
 ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
 ```
@@ -866,7 +865,6 @@ ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
 - Owner        : ROOT
 - Default Group: SYS1
 - Special Attr : Operations
-
 ```
 ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGRP('SYS1') OPERATIONS 
 ```
@@ -894,7 +892,6 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 - Data          : <Changed to NODATA>
 - Password      : NEWPASS1
 - Special Attr  : SPECIAL
-
 ```
 ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 ```
