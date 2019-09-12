@@ -10,7 +10,7 @@ _When writing a technical document to describe a problem to a coworker or custom
 	- Describe what the job/transaction/tool is about
 	- Provide related binaries & versions
 
-2. Symptoms & Replicate the error
+2. Symptoms & Replicating the error
 
 	- Show the problem, but do not provide an opinion
 	- Show how you can replicate the error
@@ -31,3 +31,26 @@ _When writing a technical document to describe a problem to a coworker or custom
 	- Ask about a workaround
 		- Can this be easily solved by changing one or two things?
 
+# Example:
+
+### Subject: Request for STRING operation related function, runtime performance improvement
+
+1. Background
+
+Runtime performance of the XYZ123 program is slower than mainframe. This is impacting the amount of time it takes for the TESTJOB to run. 
+
+<pre>
+	ofcob --version
+	OpenFrame COBOL Compiler 4
+	Revision: 617
+	CommitID: 4e454dd
+</pre>
+
+2. Symptoms & Replicating the Error
+
+We found that the runtime performance of STRING processing related functions such as UNSTRING and INSPECT is slow. In particular, the longer the length of the source string, the slower the performance of the run-time. In my opinion, performance degradation occurs when allocating and copying unnecessary buffers.
+
+3. Solution
+
+This is a function of OpenFrame COBOL Compiler that should be working correctly, but is not. Please provide a patch.
+You can refer the XYZ123.20190912.cbl and callgrind_out.18640 for more details.
