@@ -185,17 +185,19 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 **Prerequisites:**
 
-**Description:** This task can be completed in parallel to the
-Installation and Discovery stages. This task requires a lot of effort
-and should be handled by no less than two engineers.
+**Description:** This task can be completed in parallel to the Installation and Discovery stages. This task requires a lot of effort and should be handled by no less than two engineers. We are currently in the process for standardizing how we are downloading datasets from the Mainframe to OpenFrame. Every mainframe is different, but a process should be created to standardize the process for each environment.
 
-\#TODO: Attach ds\_wrap.sh script (Include awk script, include java
-project)
+Standard Process:
 
-\#TODO: Attach data\_dsmigin.sh script
+  1. Customer needs to provide the copybooks. Each dataset has a corresponding copybook. There is no way for OpenFrame engineers to know which copybooks map to which datasets. The customer should provide a spreadsheet with the mapping. If the customer does not provide the copybooks, we can use OFMiner to generate the copybooks, but we cannot guarantee the integrity of the data using this method. 
 
-**Reference Documents:** "data\_dsmigin.sh", "data\_dsmigin.conf",
-"ds\_wrap.sh"
+  2. An excel spreadsheet should be maintained with the names of the datasets, corresponding copybooks, RECFM, LRECL, BLKSIZE, DSORG, VOLSER, VSAM (KSDS/ESDS/RRDS), KEYOFF, KEYLEN, MAXLRECL, AVGLRECL, CISIZE, IGNORE (Should this dataset be ignored when trying to retrieve from the mainframe), FTP (Yes or No - Should this dataset be FTP'd), FTPDATE, FTPTIME, DSMIGIN, DSMIGINDATE, DSMIGINTIME
+
+  3. Once the excel spreadsheet is created a script should be used to parse the spreadsheet and the dsmigin commands are created.
+
+  With one customer, we are accomplishing this using 1 script called dsmigin.py. This python program queries the mainframe by connecting through linux ftp. After ensuring that the dataset is not migrated (archived), it will retrieve the dataset using the FTP command. The user can also pass options to execute the dsmigin command after retrieving the datasets.
+
+**Reference Documents:** #TODO: attach dsmigin.py after removing customer references
 
 ***
 
