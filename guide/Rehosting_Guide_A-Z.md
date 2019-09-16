@@ -409,7 +409,7 @@ osctdlupdate <region> <module>
 
   <details><summary>See hidb.conf main options</summary>
 
-    <p>- COPYBOOK_DIR: Directory fo a copybook that OpenFrame/HiDB and ofschema refer to. COPYBOOK_DIR sets the preferred path used by OpenFrame/HiDB, which refers to copybooks under the subdirectory dbd_name/segment_name or psbpcb_id/senseg_name. 
+    <pre>- COPYBOOK_DIR: Directory fo a copybook that OpenFrame/HiDB and ofschema refer to. COPYBOOK_DIR sets the preferred path used by OpenFrame/HiDB, which refers to copybooks under the subdirectory dbd_name/segment_name or psbpcb_id/senseg_name. 
     - TABLESPACE: Table space in which OpenFrame/hiDB creates segment tables, indexes, and views.
     - HIDB_OBJECT_DIR: Directory under which the hidbmgr tool generates DL/I function code
     - FIX_DATA_ERROR:
@@ -460,7 +460,7 @@ osctdlupdate <region> <module>
       - NO: Processing a DL/I statement does not return the buffer value of each column. (Default)
     - DISABLE_COMMIT
       - YES: Indicates that a DL/I operation does not save changes to the database.
-      -NO: Indicates that a DL/I operation saves changes to the database. (Default)</p>
+      -NO: Indicates that a DL/I operation saves changes to the database. (Default)</pre>
     </details>
 
 * **idcams.conf**
