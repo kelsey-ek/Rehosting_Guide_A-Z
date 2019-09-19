@@ -151,7 +151,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 
 ***
 
-# Source Code
+## Source Code
 
 **Prerequisites:**
 
@@ -181,13 +181,13 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 ***
 
-# Datasets
+## Datasets
 
 **Prerequisites:**
 
 **Description:** This task can be completed in parallel to the Installation and Discovery stages. This task requires a lot of effort and should be handled by no less than two engineers. We are currently in the process for standardizing how we are downloading datasets from the Mainframe to OpenFrame. Every mainframe is different, but a process should be created to standardize the process for each environment.
 
-Standard Process:
+Standard Process (NON-VSAM):
 
   1. Customer needs to provide the copybooks. Each dataset has a corresponding copybook. There is no way for OpenFrame engineers to know which copybooks map to which datasets. The customer should provide a spreadsheet with the mapping. If the customer does not provide the copybooks, we can use OFMiner to generate the copybooks, but we cannot guarantee the integrity of the data using this method. 
 
@@ -213,7 +213,7 @@ analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
 
 ***
 
-# OFMiner
+## OFMiner
 
 **Prerequisites:**
 
