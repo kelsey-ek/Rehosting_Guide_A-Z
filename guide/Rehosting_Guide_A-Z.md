@@ -187,7 +187,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 **Description:** This task can be completed in parallel to the Installation and Discovery stages. This task requires a lot of effort and should be handled by no less than two engineers. We are currently in the process for standardizing how we are downloading datasets from the Mainframe to OpenFrame. Every mainframe is different, but a process should be created to standardize the process for each environment.
 
-Standard Process (NON-VSAM):
+### Standard Process (NON-VSAM):
 
   1. Customer needs to provide the copybooks. Each dataset has a corresponding copybook. There is no way for OpenFrame engineers to know which copybooks map to which datasets. The customer should provide a spreadsheet with the mapping. If the customer does not provide the copybooks, we can use OFMiner to generate the copybooks, but we cannot guarantee the integrity of the data using this method. 
 
@@ -196,6 +196,18 @@ Standard Process (NON-VSAM):
   3. Once the excel spreadsheet is created a script should be used to parse the spreadsheet and the dsmigin commands are created.
 
   With one customer, we are accomplishing this using 1 script called dsmigin.py. This python program queries the mainframe by connecting through linux ftp. After ensuring that the dataset is not migrated (archived), it will retrieve the dataset using the FTP command. The user can also pass options to execute the dsmigin command after retrieving the datasets.
+
+### VSAM Process
+
+  1. Unload VSAM files on Mainframe to Flat (PS) files.
+
+  2. FTP the datasets from Mainframe to OpenFrame server
+
+  3. Listcat the VSAM file on the Mainframe to obtain the attributes of the VSAM
+
+  4. Use the attributes from Listcat to Create the empty VSAM file on OpenFrame (idcams define cluster)
+
+  5. Use idcams repro. As input, use the unloaded flat file, and as output, use the empty VSAM on OpenFrame
 
 **Reference Documents:** #TODO: attach dsmigin.py after removing customer references
 
