@@ -12,17 +12,19 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [Mainframe Environment](#mainframe-environment)
 
-[Migration](#migration)
-
-[Datasets](#datasets)
-
-[Source Code](#source-code)
+[OpenFrame Environment](#openframe-environment)
 
 [Installation](#installation)
 
 [Discovery](#discovery)
 
 [OFMiner](#ofminer)
+
+[Migration](#migration)
+
+[Datasets](#datasets)
+
+[Source Code](#source-code)
 
 [OpenFrame Configuration](#openframe-configuration)
 
