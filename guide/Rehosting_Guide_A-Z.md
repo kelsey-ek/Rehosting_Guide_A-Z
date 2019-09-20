@@ -10,9 +10,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [Pre-Migration](#pre-migration)
 
-[Pre-Migration: Mainframe Environment](#pre-migration:-mainframe-environment)
+[Mainframe Environment](#mainframe-environment)
 
-[Pre-Migration: OpenFrame Environment](#pre-migration:-openframe-environment)
+[OpenFrame Environment](#openframe-environment)
 
 [Installation](#installation)
 
@@ -32,7 +32,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [Applying Patches](#applying-patches)
 
-# Pre-Migration: Mainframe Environment
+# Pre-Migration
+
+## Mainframe Environment
 
 **Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. Every customer has changed some configurations to suit their needs - There is no mainframe that is exactly like another. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To accomplish this, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
 
@@ -46,9 +48,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Reference Documents: "Post Introduction Questionnaire"**
 
-# Pre-Migration: OpenFrame Environment
+## OpenFrame Environment
 
-## Accessing the Linux Server
+### Accessing the Linux Server
 
 **Prerequisities:**
 
@@ -56,17 +58,17 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Description:** This step includes how to access the Linux server. Depending on who built the Linux Server, the steps for completing this will vary.
 
-### Accessing a Linux Server built by Rehosting Team
+#### Accessing a Linux Server built by Rehosting Team
 
 **Description:** If the server is built by the rehosting team, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. However, if access to a VDI is required first, please refer to the "Accessing a Linux Server on the Customer's Private Network" section. 
 
 **Reference Documents:** "TODO: How To Connect To A Server With PuTTY"
 
-<h4>Accessing a Linux Server on the Customer's Private Network</h4>
+<h5>Accessing a Linux Server on the Customer's Private Network</h5>
 
 **Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
-### Binary Request
+#### Binary Request
 
 **Prerequisites:** 
 
@@ -78,7 +80,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Reference Documents:** "TODO: How to request customer Binaries"
 
-### Licensing
+#### Licensing
 
 **Prerequisites:** 
 
