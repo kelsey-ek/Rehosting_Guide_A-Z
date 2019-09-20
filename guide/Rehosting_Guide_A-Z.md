@@ -127,11 +127,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Prerequisites:**
 
--   Migration (Source Code) -- Complete
+-   Installation -- Complete
 
-**Description:** Once the source code is migrated to the OpenFrame
-server, the files must be sorted into their respective element types for
-analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
+**Description:** To avoid risk, we need to make sure there are no third party applications that we cannot support in OpenFrame. The majority of the Discovery should happen before the project even begins. OFMiner is a tool that can be utilized during a PoC stage to help identify some of these potential risks. In order to analyze using OFMiner, you will have to complete installation as well as Migrate the source code. The customer may not always give you full access to the source code at this stage, so it's important to understand the rules before copying anything off the mainframe. 
 
 ***
 
@@ -174,7 +172,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 
 ***
 
-## Source Code
+## Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
 
 **Prerequisites:**
 
