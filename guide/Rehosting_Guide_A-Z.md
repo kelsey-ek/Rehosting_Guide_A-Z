@@ -10,9 +10,9 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 [Pre-Migration](#pre-migration)
 
-[Mainframe Environment](#mainframe-environment)
+[Pre-Migration: Mainframe Environment](#mainframe-environment)
 
-[OpenFrame Environment](#openframe-environment)
+[Pre-Migration: OpenFrame Environment](#openframe-environment)
 
 [Installation](#installation)
 
