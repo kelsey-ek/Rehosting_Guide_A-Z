@@ -130,6 +130,36 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 ***
 
+# Discovery
+
+**Prerequisites:**
+
+-   Migration (Source Code) -- Complete
+
+**Description:** Once the source code is migrated to the OpenFrame
+server, the files must be sorted into their respective element types for
+analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
+
+***
+
+## OFMiner
+
+**Prerequisites:**
+
+-   Migration (Source Code) -- Complete
+-   Installation -- Complete
+
+**Description**: OFMiner is a tool used for analyzing elements in scope
+starting from the JCL. It utilizes the Tmax Base, Batch, TACF, and
+Tibero elements to create a detailed document describing what JOBs,
+PROCs, Programs (COBOL, Assembler), and Copybooks are in scope for
+rehosting. Utilizing TBAdmin is a great tool to help create this
+analysis document.
+
+**Reference Documents: "How to create an OFMiner report\_v2"**
+
+***
+
 # Migration
 
 **Description**: This step includes migrating source code and datasets.
@@ -210,36 +240,6 @@ The below information can be found by running the ```dsmigin``` command with no 
   5. Use idcams repro. As input, use the unloaded flat file, and as output, use the empty VSAM on OpenFrame
 
 **Reference Documents:** #TODO: attach dsmigin.py after removing customer references
-
-***
-
-# Discovery
-
-**Prerequisites:**
-
--   Migration (Source Code) -- Complete
-
-**Description:** Once the source code is migrated to the OpenFrame
-server, the files must be sorted into their respective element types for
-analysis (JCL, PROC, COBOL, COPYBOOK, CSD)
-
-***
-
-## OFMiner
-
-**Prerequisites:**
-
--   Migration (Source Code) -- Complete
--   Installation -- Complete
-
-**Description**: OFMiner is a tool used for analyzing elements in scope
-starting from the JCL. It utilizes the Tmax Base, Batch, TACF, and
-Tibero elements to create a detailed document describing what JOBs,
-PROCs, Programs (COBOL, Assembler), and Copybooks are in scope for
-rehosting. Utilizing TBAdmin is a great tool to help create this
-analysis document.
-
-**Reference Documents: "How to create an OFMiner report\_v2"**
 
 ***
 
