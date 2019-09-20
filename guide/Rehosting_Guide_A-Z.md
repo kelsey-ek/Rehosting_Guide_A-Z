@@ -9,17 +9,14 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 # Table of Contents 
 
 - [Pre-Migration](#pre-migration)
-
-  *[Mainframe Environment](#mainframe-environment)
-  *[OpenFrame Environment](#openframe-environment)
+  * [Mainframe Environment](#mainframe-environment)
+  * [OpenFrame Environment](#openframe-environment)
 - [Installation](#installation)
 - [Discovery](#discovery)
-
-    *[OFMiner](#ofminer)
+    * [OFMiner](#ofminer)
 - [Migration](#migration)
-
-    *[Datasets](#datasets)
-    *[Source Code](#source-code)
+    * [Datasets](#datasets)
+    * [Source Code](#source-code)
 - [OpenFrame Configuration](#openframe-configuration)
 - [Operation And Administration](#operation-and-administration)
 - [Applying Patches](#applying-patches)
