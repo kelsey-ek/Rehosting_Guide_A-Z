@@ -951,6 +951,28 @@ ${patch_dir}/
 
 ## OpenFrame
 
+*General Notes:* 
+
+1. Compilers and Prosort are patched the same way (for the most part). Therefore, OFASM, OFCOBOL, OFPLI, and Prosort follow the same general process, but for completeness sake, they are all explicitly listed below.
+
+2. ofpatch.sh is a shell script which can be utilized to quickly and easily patch library, binary, and utilities. It utilizes the <pre>offile</pre> command to test what kind of file it's patching, places it in the correct place, and then creates a symbolic link to the new file. In essence, this is what it does:
+
+Before:
+<pre>
+  libfile.so
+</pre>
+
+Execution:
+<pre>
+  ofpatch.sh -n 000001 libfile.2.so
+</pre>
+
+After:
+<pre>
+  libfile.so --> libfile.2.so   (this is a symbolic link to the new library file)
+  libfile.so                    (this is a backup of the old file)
+</pre>
+
 ### OFCOBOL
 
 <details><summary>Steps</summary>
@@ -1078,7 +1100,7 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 </details>
 
-## OFASM
+### OFASM
 
 <details><summary>Steps</summary>
 
@@ -1144,5 +1166,74 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 **Step 8.** Receive confirmation from the customer.
 
 </details>
+
+### OFPLI
+
+<details><summary>Steps</summary>
+
+OFPLI patches generally come in the form of entire directories.
+
+**Step 1.** Unlink the current OFPLI directory
+
+<pre>
+  cd <i>${OFPLI_HOME}</i>
+  cd ..
+  unlink OFASM
+</pre>
+
+**Step 2.** Download the patch to the <i>${patch_dir}/OFPLI/${ims_date}</i> directory
+
+**Step 3.** Unpack the patch file
+
+<pre>
+  tar -xzvf <i>${patch_file}.tar.gz</i>
+</pre>
+
+<pre>
+  patch_file.tar.gz
+  OFPLI/
+</pre>
+
+**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
+
+  - **Step 4a.** Symbolic link
+
+  <pre>
+    cd <i>${OFPLI_HOME}</i>
+    cd ..
+    unlink OFPLI
+    ln -s ${patch_dir}/OFPLI/${ims_date} prosort
+  </pre>
+
+  - **Step 4b.** Create a copy
+
+  <pre>
+    cd <i>${OFPLI_HOME}</i>
+    cd ..
+    rm -r OFPLI
+    cp -r <i>${patch_dir}/OFPLI/${ims_date}/OFPLI</i> .
+  </pre>
+
+**Step 5.** Copy the old license directory to the new patched directory
+
+<pre>
+  cp -r <i>${OFPLI_BACKUP}/license ${OFPLI_HOME}</i>
+</pre>
+
+**Step 6.** Check the current version to ensure that the patch was successful
+
+<pre>
+  ofpli --version
+</pre>
+
+**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in th e IMS ticket should be retested
+
+**Step 8.** Receive confirmation from the customer.
+
+### OpenFrame Base
+
+OpenFrame Base patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
 
 ## Tibero
