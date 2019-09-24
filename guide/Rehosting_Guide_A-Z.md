@@ -1238,4 +1238,24 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 OpenFrame Base patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
 
+_See General Notes section for Patching OpenFrame for instructions with ofpatch.sh_
+
+If you choose not to use ofpatch.sh, you can also manually patch library files, binary files, and utility files the same way.
+
+1. Move the original file to {file_name}.bk{date}
+
+2. Copy the patch file to the correct location
+  - Library Files go to $OPENFRAME_HOME/lib
+  - Binary Files go to $OPENFRAME_HOME/bin
+  - Utility Files go to $OPENFRAME_HOME/util
+
+3. Create a symbolic link from the new file to the original name
+
+Example:
+<pre>
+  ln -s {patch_file} {original_file}
+  Real Example:
+  ln -s tmadmin.000001.20190923 tmadmin
+</pre>
+
 ## Tibero
