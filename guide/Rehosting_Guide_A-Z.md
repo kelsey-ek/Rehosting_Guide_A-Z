@@ -1232,6 +1232,8 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 **Step 8.** Receive confirmation from the customer.
 
+</details>
+
 ### OpenFrame Base
 
 OpenFrame Base patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
