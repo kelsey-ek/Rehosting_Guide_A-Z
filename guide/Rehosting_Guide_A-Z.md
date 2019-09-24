@@ -955,7 +955,7 @@ ${patch_dir}/
 
 1. Compilers and Prosort are patched the same way (for the most part). Therefore, OFASM, OFCOBOL, OFPLI, and Prosort follow the same general process, but for completeness sake, they are all explicitly listed below.
 
-2. OpenFrame Base, OSI, HiDB, and TACF generally come in the form of individual library, binary, and utility files. These can all be patched the same way.
+2. OpenFrame Base, Core(TMAX), OSI, HiDB, and TACF generally come in the form of individual library, binary, and utility files. These can all be patched the same way.
 
 3. ofpatch.sh is a shell script which can be utilized to quickly and easily patch library, binary, and utilities. It utilizes the <pre>offile</pre> command to test what kind of file it's patching, places it in the correct place, and then creates a symbolic link to the new file. In essence, this is what it does:
 
@@ -1240,7 +1240,7 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 </details>
 
-### OpenFrame Base / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
+### OpenFrame Base / Core(TMAX) / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
 
 <details><summary>Steps</summary>
 
