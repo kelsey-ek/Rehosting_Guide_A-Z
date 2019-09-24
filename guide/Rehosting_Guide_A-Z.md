@@ -1240,6 +1240,8 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 ### OpenFrame Base
 
+<details><summary>Steps</summary>
+
 OpenFrame Base patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
 
 _See General Notes section for Patching OpenFrame for instructions with ofpatch.sh_
@@ -1261,5 +1263,7 @@ Example:
   Real Example:
   ln -s tmadmin.000001.20190923 tmadmin
 </pre>
+
+</details>
 
 ## Tibero
