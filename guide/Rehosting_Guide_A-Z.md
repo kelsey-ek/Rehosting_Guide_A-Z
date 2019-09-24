@@ -973,6 +973,10 @@ After:
   libfile.so                    (this is a backup of the old file)
 </pre>
 
+3. It's recommended that you keep track of the patches thoroughly. You can accomplish this by doing 2 things:
+  - Add the IMS ticket number which the patch was supplied through in the name of the file. For most of the examples below, we will use 000001 as the IMS ticket number.
+  - Add the date to the patch file name so you can tell when the patch was applied.
+
 ### OFCOBOL
 
 <details><summary>Steps</summary>
