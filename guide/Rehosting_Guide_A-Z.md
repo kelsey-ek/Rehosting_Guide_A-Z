@@ -55,7 +55,7 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 <h5>Accessing a Linux Server on the Customer's Private Network</h5>
 
-**Description:** If the server is built by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
+**Description:** If the server is built on-site by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
 #### Binary Request
 
@@ -1142,6 +1142,81 @@ OFASM patches generally come in the form of entire directories, but may also inc
 After applying the patch, the original issue reported in th e IMS ticket should be retested
 
 **Step 8.** Receive confirmation from the customer.
+
+</details>
+
+### OFPLI
+
+<details><summary>Steps</summary>
+
+  OFPLI patches generally come in the form of full directories
+
+  **Step 1.** Unlink the current OFPLI directory
+
+<pre>
+  cd <i>${OFPLI_HOME}</i>
+  cd ..
+  unlink OFPLI
+</pre>
+
+**Step 2.** Download the patch to the <i>${patch_dir}/OFPLI/${ims_date}</i> directory
+
+**Step 3.** Unpack the patch file
+
+<pre>
+  tar -xzvf <i>${patch_file}.tar.gz</i>
+</pre>
+
+<pre>
+  patch_file.tar.gz
+  OFPLI/
+</pre>
+
+**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
+
+  - **Step 4a.** Symbolic link
+
+  <pre>
+    cd <i>${OFPLI_HOME}</i>
+    cd ..
+    unlink OFPLI
+    ln -s ${patch_dir}/OFPLI/${ims_date} prosort
+  </pre>
+
+  - **Step 4b.** Create a copy
+
+  <pre>
+    cd <i>${OFPLI}</i>
+    cd ..
+    rm -r OFPLI
+    cp -r <i>${patch_dir}/OFPLI/${ims_date}/OFPLI</i> .
+  </pre>
+
+**Step 5.** Copy the old license directory to the new patched directory
+
+<pre>
+  cp -r <i>${OFPLI_BACKUP}/license ${OFPLI_HOME}</i>
+</pre>
+
+**Step 6.** Check the current version to ensure that the patch was successful
+
+<pre>
+  ofpli --version
+</pre>
+
+**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
+
+After applying the patch, the original issue reported in th e IMS ticket should be retested
+
+</details>
+
+### TMAX
+
+<details><summary>Steps</summary>
+
+  OpenFrame Core (TMAX) patches often come in the form of library fies. Once unpacked, they can be patched similar to any other library files
+
+  **Step1.** After unpacking the patch file, you may find a library file. 
 
 </details>
 
