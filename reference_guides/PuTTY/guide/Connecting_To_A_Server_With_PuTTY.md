@@ -6,6 +6,6 @@
 
 	Link for download: [Download Here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-	Reference Image: [alt-text](../reference_images/PuTTY_Installer.PNG)
+	Reference Image: ![alt-text](../reference_images/PuTTY_Installer.PNG "Picture")
 
 2. 
