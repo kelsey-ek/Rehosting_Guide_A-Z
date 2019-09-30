@@ -1272,9 +1272,9 @@ Example:
 
 ### OFMiner
 
-  OFMiner patches come in .war files. The current OFMINER_HOME must be backed up before patching. Additionally, the managed server containing OFMiner should be offline while patching, and rebooted afterwards. After patching, some sql queries must be run to update the tables in Tibero which OFMiner uses to store meta data. 
-
 <details><summary>Steps</summary>
+
+  OFMiner patches come in .war files. The current OFMINER_HOME must be backed up before patching. Additionally, the managed server containing OFMiner should be offline while patching, and rebooted afterwards. After patching, some sql queries must be run to update the tables in Tibero which OFMiner uses to store meta data. 
 
 1. Shutdown Jeus Managed Server where OFMiner is deployed
 
