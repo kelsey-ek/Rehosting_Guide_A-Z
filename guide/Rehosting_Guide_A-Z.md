@@ -1330,4 +1330,6 @@ Example:
 
 8. Logon and re-analyze.
 
+</details>
+
 ## Tibero
