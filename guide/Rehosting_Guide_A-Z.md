@@ -147,7 +147,8 @@ PROCs, Programs (COBOL, Assembler), and Copybooks are in scope for
 rehosting. Utilizing TBAdmin is a great tool to help create this
 analysis document.
 
-**Reference Documents: "How to create an OFMiner report\_v2"**
+**Reference Documents: ["How to create an OFMiner report\_v2"](../reference_guides/ofminer/guide/How\ To\ Create\ an\ OFMiner\ Report.md)**
+
 
 ***
 
