@@ -137,14 +137,14 @@ OpenFrame. Most importantly, this document aims to be understandable at any leve
 
 **Prerequisites:**
 
--   Migration (Source Code) -- Complete
+-   Migration (Source Code) -- In Progress or Complete
 -   Installation -- Complete
 
 **Description**: OFMiner is a tool used for analyzing elements in scope
 starting from the JCL. It utilizes the Tmax Base, Batch, TACF, and
 Tibero elements to create a detailed document describing what JOBs,
-PROCs, Programs (COBOL, Assembler), and Copybooks are in scope for
-rehosting. Utilizing TBAdmin is a great tool to help create this
+PROCs, Programs (COBOL, Assembler), Datasets and Copybooks are in scope for
+rehosting. Utilizing TBAdmin is a great supplementary tool to help create this
 analysis document.
 
 [**Reference Documents: How to Create an OFMiner Report**](../reference_guides/ofminer/guide/How_to_Create_an_OFMiner_Report.md)
@@ -174,8 +174,6 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 ***
 
 ## Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
-
-**Prerequisites:**
 
 **Description:** Source Code Transfer should begin with JCL as it is the starting point for the JOBs. In many cases, a JCL will EXEC a PROC so the PROCs should also be prioritized. The second priority should be the COBOL programs that are EXEC'd in the JCL and the PROCs. Identifying and transferring COBOL programs may be a recursive task because a COBOL program can call another COBOL program referred to as a submodule. These submodules can also call other submodules, hence the recursiveness of this task. Additionally, COBOL programs can call COPYBOOKS to define the datasets, and these COPYBOOKS can reference other COPYBOOKS. Transferring these, are tertiary priority. You will need all of these elements to complete the Analysis step using OFMiner. Once the Source Code is migrated to OpenFrame, JOBs and Online Transactions can be submitted just as they were on the mainframe. In the mainframe, an edittor is used to modify the source code. In OpenFrame, we have many options. One option is through OFStudio which is TmaxSoft's version of eclipse. This allows you to modify source code and push to a git repository to maintain your source code. Another option would be to use the command line directly and modify the source code through an edittor such as Vi, Vim, or Nano. When migrating Source code, it's important to use the -L option to create the linux new line delimiter. The third option would be to use the spfedit tool which allows you to use mainframe commands to be able to edit a dataset or member of a pds. 
 
