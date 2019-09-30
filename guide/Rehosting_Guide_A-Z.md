@@ -1270,4 +1270,64 @@ Example:
 
 ### JEUS
 
+### OFMiner
+
+  OFMiner patches come in .war files. The current OFMINER_HOME must be backed up before patching. Additionally, the managed server containing OFMiner should be offline while patching, and rebooted afterwards. After patching, some sql queries must be run to update the tables in Tibero which OFMiner uses to store meta data. 
+
+<details><summary>Steps</summary>
+
+1. Shutdown Jeus Managed Server where OFMiner is deployed
+
+2. Create a backup of the current OFMINER_HOME directory
+
+  <pre>
+
+    cd ${OFMINER_HOME}
+    cd ..
+    cp -r ${OFMINER_HOME} OFMINER.BK.${DATE}
+
+  </pre>
+
+3. Unzip .war file. 
+
+<pre>
+
+  unzip ${patch_file.war}
+
+</pre>
+
+4. Copy the properties, repository, and license folder from the backup to the newly decompressed OFMiner.
+
+<pre>
+
+  cp -r OFMINER.BK.${DATE}/properties ${OFMINER_HOME}/.
+  cp -r OFMINER.BK.${DATE}/repository ${OFMINER_HOME}/.
+  cp -r OFMINER.BK.${DATE}/license ${OFMINER_HOME}/.
+
+</pre>
+
+5. Run the DROP, CREATE, INSERT sql queries included with the patch
+
+<pre>
+
+  cd ${OFMINER_HOME}/scripts
+  tbsql ${tibero_user}/${tibero_user_password}@DROP.sql
+  tbsql ${tibero_user}/${tibero_user_password}@CREATE.sql
+  tbsql ${tibero_user}/${tibero_user_password}@INSERT.sql
+
+</pre>
+
+6. Reboot Managed Server 
+
+<pre>
+
+  jeusadmin -u ${jeus_admin} -p ${jeus_password}
+  >> startManagedServer -s ${ofminer_server_name}
+
+</pre>
+
+7. Erase your browser's cache.
+
+8. Logon and re-analyze.
+
 ## Tibero
