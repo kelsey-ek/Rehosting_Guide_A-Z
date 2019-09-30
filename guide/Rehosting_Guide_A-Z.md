@@ -47,9 +47,7 @@
 
 **Description:** If the server is built by the rehosting team, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. However, if access to a VDI is required first, please refer to the "Accessing a Linux Server on the Customer's Private Network" section. 
 
-**Reference Documents:** "TODO: How To Connect To A Server With PuTTY"
-
-<h5>Accessing a Linux Server on the Customer's Private Network</h5>
+#### Accessing a Linux Server on the Customer's Private Network
 
 **Description:** If the server is built on-site by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
