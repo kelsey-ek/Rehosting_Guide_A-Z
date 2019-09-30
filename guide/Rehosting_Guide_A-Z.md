@@ -951,6 +951,34 @@ ${patch_dir}/
 
 ## OpenFrame
 
+*General Notes:* 
+
+1. Compilers and Prosort are patched the same way (for the most part). Therefore, OFASM, OFCOBOL, OFPLI, and Prosort follow the same general process, but for completeness sake, they are all explicitly listed below.
+
+2. OpenFrame Base, Core(TMAX), OSI, HiDB, and TACF generally come in the form of individual library, binary, and utility files. These can all be patched the same way.
+
+3. ofpatch.sh is a shell script which can be utilized to quickly and easily patch library, binary, and utilities. It utilizes the <pre>offile</pre> command to test what kind of file it's patching, places it in the correct place, and then creates a symbolic link to the new file. In essence, this is what it does:
+
+Before:
+<pre>
+  libfile.so
+</pre>
+
+Execution:
+<pre>
+  ofpatch.sh -n 000001 libfile.2.so
+</pre>
+
+After:
+<pre>
+  libfile.so --> libfile.2.so   (this is a symbolic link to the new library file)
+  libfile.so                    (this is a backup of the old file)
+</pre>
+
+4. It's recommended that you keep track of the patches thoroughly. You can accomplish this by doing 2 things:
+  - Add the IMS ticket number which the patch was supplied through in the name of the file. For most of the examples below, we will use 000001 as the IMS ticket number.
+  - Add the date to the patch file name so you can tell when the patch was applied.
+
 ### OFCOBOL
 
 <details><summary>Steps</summary>
@@ -1078,7 +1106,7 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 </details>
 
-## OFASM
+### OFASM
 
 <details><summary>Steps</summary>
 
@@ -1186,7 +1214,7 @@ After applying the patch, the original issue reported in th e IMS ticket should 
   - **Step 4b.** Create a copy
 
   <pre>
-    cd <i>${OFPLI}</i>
+    cd <i>${OFPLI_HOME}</i>
     cd ..
     rm -r OFPLI
     cp -r <i>${patch_dir}/OFPLI/${ims_date}/OFPLI</i> .
@@ -1208,16 +1236,38 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 After applying the patch, the original issue reported in th e IMS ticket should be retested
 
+**Step 8.** Receive confirmation from the customer.
+
 </details>
 
-### TMAX
+### OpenFrame Base / Core(TMAX) / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
 
 <details><summary>Steps</summary>
 
-  OpenFrame Core (TMAX) patches often come in the form of library fies. Once unpacked, they can be patched similar to any other library files
+OpenFrame Base / OSI / HiDB / TACF patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
 
-  **Step1.** After unpacking the patch file, you may find a library file. 
+_See General Notes section for Patching OpenFrame for instructions with ofpatch.sh_
+
+If you choose not to use ofpatch.sh, you can also manually patch library files, binary files, and utility files the same way.
+
+1. Move the original file to {file_name}.bk{date}
+
+2. Copy the patch file to the correct location
+  - Library Files go to $OPENFRAME_HOME/lib
+  - Binary Files go to $OPENFRAME_HOME/bin
+  - Utility Files go to $OPENFRAME_HOME/util
+
+3. Create a symbolic link from the new file to the original name
+
+Example:
+<pre>
+  ln -s {patch_file} {original_file}
+  Real Example:
+  ln -s tmadmin.000001.20190923 tmadmin
+</pre>
 
 </details>
+
+### JEUS
 
 ## Tibero
