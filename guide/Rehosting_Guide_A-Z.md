@@ -1,10 +1,6 @@
 # Mainframe Rehosting Guide A-Z
 
-*The purpose of this document is to create a detailed step-by-step plan
-for rehosting a mainframe to OpenFrame. This document will describe in
-detail the processes needed and complementary scripts and manuals to
-quickly, accurately, and successfully migrate a mainframe system to
-OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience. Hopefully, this document becomes something any engineer or rehosting technical team member can use and find helpful.*
+*The purpose of this document is to create a detailed step-by-step plan for rehosting a mainframe to OpenFrame. This document will describe in detail the processes needed and complementary scripts and manuals to quickly, accurately, and successfully migrate a mainframe system to OpenFrame. Most importantly, this document aims to be understandable at any level of Mainframe/OpenFrame experience. Hopefully, this document becomes something any engineer or rehosting technical team member can use and find helpful. Obviously, we cannot describe how to migrate an entire mainframe in just 10 steps, otherwise everyone would do it, but hopefully we can utilize this document and continuously modify it to suit our needs and satisfy our hunger to know more and be better at what we do.*
 
 # Table of Contents 
 
