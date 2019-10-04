@@ -972,6 +972,14 @@ After:
   - Add the IMS ticket number which the patch was supplied through in the name of the file. For most of the examples below, we will use 000001 as the IMS ticket number.
   - Add the date to the patch file name so you can tell when the patch was applied.
 
+### ofpatch.sh
+
+ofpatch.sh is a shell script created by SQA2 team leader. This script checks the type of patch file to be installed, unlinks the current version, copies the new patch to the correct directory (either bin/util/lib), and creates a symbolic link to the new version. 
+
+**It should be noted that only bin files, lib files, and util files can be patched using ofpatch.sh**
+
+[**Reference Documents: ofpatch.sh**](../reference_guides/patch/scripts/ofpatch.sh)
+
 ### OFCOBOL
 
 <details><summary>Steps</summary>
@@ -1233,11 +1241,11 @@ After applying the patch, the original issue reported in th e IMS ticket should 
 
 </details>
 
-### OpenFrame Base / Core(TMAX) / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
+### OpenFrame Base / OpenFrame Batch / Core(TMAX) / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
 
 <details><summary>Steps</summary>
 
-OpenFrame Base / OSI / HiDB / TACF patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
+OpenFrame Base / OpenFrame Batch / OSI / HiDB / TACF patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
 
 _See General Notes section for Patching OpenFrame for instructions with ofpatch.sh_
 
