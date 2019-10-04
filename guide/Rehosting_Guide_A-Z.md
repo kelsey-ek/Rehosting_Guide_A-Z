@@ -982,9 +982,11 @@ _**IMPORTANT NOTE: Only core servers, bin files, lib files, and util files can b
 
 **Step 1.** Make sure that ofpatch.sh is stored somewhere in your $PATH. Make sure to check your .bash_profile and that ofpatch.sh is stored in a directory mentioned in the $PATH variable.
 
-**Step 2.** use ```ofpatch.sh -h``` to see the usage of the script.
+**Step 2.** Decompress the patch file if it comes in a compressed form. (zip, tar, tar.gz, etc)
 
-**Step 3.** Execute the script by following the syntax below:
+**Step 3.** use ```ofpatch.sh -h``` to see the usage of the script.
+
+**Step 4.** Execute the script by following the syntax below:
 
 <pre>
   ofpatch.sh -n ${IMS}_${DATE} ${PATCH_FILE}
