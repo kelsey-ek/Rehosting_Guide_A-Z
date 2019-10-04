@@ -832,8 +832,6 @@ osctdlupdate <region> <module>
 
   - scan\_fix.sh (TODO: Add supporting scripts and Documentation)
 
-<h3>Patching OpenFrame</h3>
-
 # Operation and Administration
 
 ## TACF
