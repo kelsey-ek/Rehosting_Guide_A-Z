@@ -974,9 +974,21 @@ After:
 
 ### ofpatch.sh
 
-ofpatch.sh is a shell script created by SQA2 team leader. This script checks the type of patch file to be installed, unlinks the current version, copies the new patch to the correct directory (either bin/util/lib), and creates a symbolic link to the new version. 
+ofpatch.sh is a shell script created by SQA2 team leader. This script checks the type of patch file to be installed, unlinks the current version, copies the new patch to the correct directory (either core server, bin/util/lib), and creates a symbolic link to the new version. 
 
-_**IMPORTANT NOTE: Only bin files, lib files, and util files can be patched using ofpatch.sh**_
+_**IMPORTANT NOTE: Only core servers, bin files, lib files, and util files can be patched using ofpatch.sh**_
+
+#### How to use ofpatch.sh
+
+**Step 1.** Make sure that ofpatch.sh is stored somewhere in your $PATH. Make sure to check your .bash_profile and that ofpatch.sh is stored in a directory mentioned in the $PATH variable.
+
+**Step 2.** use ```ofpatch.sh -h``` to see the usage of the script.
+
+**Step 3.** Execute the script by following the syntax below:
+
+<pre>
+  ofpatch.sh -n ${IMS}_${DATE} ${PATCH_FILE}
+</pre>
 
 [**Reference Documents: ofpatch.sh**](../reference_guides/patch/scripts/ofpatch.sh)
 
