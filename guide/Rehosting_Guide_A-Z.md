@@ -215,13 +215,21 @@ The below information can be found by running the ```dsmigin``` command with no 
 
   1. Unload VSAM files on Mainframe to Flat (PS) files.
 
-  2. FTP the datasets from Mainframe to OpenFrame server
+  2. FTP the unloaded Flat datasets from Mainframe to OpenFrame server
 
-  3. Listcat the VSAM file on the Mainframe to obtain the attributes of the VSAM
+  3. Listcat the VSAM file on the Mainframe to obtain the attributes of the VSAM and store this information in another dataset
 
-  4. Use the attributes from Listcat to Create the empty VSAM file on OpenFrame (idcams define cluster)
+  4. FTP the listcat information from the Mainframe to OpenFrame
 
-  5. Use idcams repro. As input, use the unloaded flat file, and as output, use the empty VSAM on OpenFrame
+  5. Use the attributes from Listcat to Create the empty VSAM file on OpenFrame (idcams define cluster)
+
+  6. Migrate the flat file into OpenFrame
+
+  7. Use idcams repro. As input, use the unloaded, then migrated flat file, and as output, use the empty VSAM on OpenFrame
+
+  <pre>
+    idcams repro -i ${INPUT_FILE} -o ${OUTPUT_FILE} -r ${TYPE_OF_VSAM}
+  </pre>
 
 **Reference Documents:** #TODO: attach dsmigin.py after removing customer references
 
