@@ -16,7 +16,7 @@
 	
 	![alt-text](./reference_images/installer_screen_1.PNG "Screen 1")
 
-4. Click Okay
+4. Click Next
 
 	![alt-text](./reference_images/installer_screen_2.PNG "Screen 2")
 
