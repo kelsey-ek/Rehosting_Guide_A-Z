@@ -8,9 +8,9 @@ In an IMS system, the MFS (Message Format Service) resources have a staging PDS 
 
 If you're a visual learner, here's what's happening:
 
-![alt-text](./newmfs1 "BEFORE")
+![alt-text](./reference_images/newmfs1 "BEFORE")
 
-![alt-text](./newmfs2 "AFTER")
+![alt-text](./reference_images/newmfs2 "AFTER")
 
 ## **Steps for Compiling MFS Resources**
 	
