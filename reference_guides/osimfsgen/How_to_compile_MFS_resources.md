@@ -6,6 +6,12 @@ _The purpose of this document is to describe how to properly compile and update 
 
 In an IMS system, the MFS (Message Format Service) resources have a staging PDS and an active/inactive PDS. The purpose of this structure is to be able to dynamically allocate new MFS resources and updates to existing MFS resources without having to bring the online regions down. 
 
+If you're a visual learner, here's what's happening:
+
+![alt-text](./newmfs1 "BEFORE")
+
+![alt-text](./newmfs2 "AFTER")
+
 ## **Steps for Compiling MFS Resources**
 	
 	1. Compile the MFS using osimfsgen
