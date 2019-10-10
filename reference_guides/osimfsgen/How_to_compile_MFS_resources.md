@@ -8,7 +8,11 @@ In an IMS system, the MFS (Message Format Service) resources have a staging PDS 
 
 If you're a visual learner, here's what's happening:
 
+BEFORE:
+
 ![alt-text](./reference_images/newmfs1.PNG "BEFORE")
+
+AFTER:
 
 ![alt-text](./reference_images/newmfs2.PNG "AFTER")
 
