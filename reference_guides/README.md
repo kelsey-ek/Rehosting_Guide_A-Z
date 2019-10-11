@@ -5,6 +5,9 @@ The purpose of this directory is to hold all of the reference documents mentione
 ## Topics
 
 - debugging
+
+	- [Debugging S11 Errors](./debugging/Debugging.md "Debugging S11 Errors")
+
 - documentation
 - installation 
 - jeus
@@ -13,8 +16,8 @@ The purpose of this directory is to hold all of the reference documents mentione
 - osc
 - osi
 
-	- [osimfsgen](./osi/osimfsgen/How_to_compile_MFS_resources.md "How to Compile MFS Resources")
-	
+	- [osimfsgen - How to Compile MFS Resources](./osi/osimfsgen/How_to_compile_MFS_resources.md "How to Compile MFS Resources")
+
 - patch
 - PuTTY
 - source_transfer
