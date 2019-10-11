@@ -2,7 +2,7 @@
 The purpose of this directory is to hold all of the reference documents mentioned in the guide
 
 
-## Main Topics
+## Topics
 
 - debugging
 - documentation
@@ -12,6 +12,9 @@ The purpose of this directory is to hold all of the reference documents mentione
 - ofminer
 - osc
 - osi
+
+	- [osimfsgen](./osi/osimfsgen/How_to_compile_MFS_resources.md "How to Compile MFS Resources")
+	
 - patch
 - PuTTY
 - source_transfer
