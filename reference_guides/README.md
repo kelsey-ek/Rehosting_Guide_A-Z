@@ -9,7 +9,13 @@ The purpose of this directory is to hold all of the reference documents mentione
 	- [Debugging S11 Errors](./debugging/Debugging.md "Debugging S11 Errors")
 
 - documentation
+
+	- [Writing a Technical Document](./Writing_a_Technical_Document.md "Tips on writing a formal technical document")
+
 - installation 
+
+	- [TmaxSoft_OpenFrame7_fix2_Installation_V6.22](./TmaxSoft_OpenFrame7_fix2_Installation_V6.22.md "Installation Guide")
+
 - jeus
 - ofobol
 - ofminer
