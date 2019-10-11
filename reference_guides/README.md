@@ -19,6 +19,9 @@ The purpose of this directory is to hold all of the reference documents mentione
 - jeus
 - ofobol
 - ofminer
+
+	- [How to Create an OFMiner Report](./ofminer/How_to_Create_an_OFMiner_Report.md "Create an OFMiner Report")
+
 - osc
 - osi
 
