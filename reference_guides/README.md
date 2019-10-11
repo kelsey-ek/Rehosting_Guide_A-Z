@@ -34,7 +34,7 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 - source_transfer
 
-	- [How to transfer source code from Mainframe to OpenFrame](./source_transfer/How%20to%20Transfer%20Source%20Code%20from%20the%20Mainframe.md)
+	- [How to transfer source code from Mainframe to OpenFrame](./source_transfer/How%20To%20Transfer%20Source%20Code%20from%20the%20Mainframe.md)
 
 - tacf
 - webterminal
