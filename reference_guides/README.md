@@ -19,7 +19,10 @@ The purpose of this directory is to hold all of the reference documents mentione
 	- [osimfsgen - How to Compile MFS Resources](./osi/osimfsgen/How_to_compile_MFS_resources.md "How to Compile MFS Resources")
 
 - patch
-- PuTTY
+- general_linux_knowledge
+
+	- [PuTTY - How to install PuTTY & How to Connect to a Server](./PuTTY/Connecting_To_A_Server_With_Putty.md "Install and Connect to Server")
+
 - source_transfer
 - tacf
 - webterminal
