@@ -6,7 +6,7 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 - debugging
 
-	- [Debugging S11 Errors](./debugging/debugging/Debugging.md "Debugging S11 Errors")
+	- [Debugging S11 Errors](./debugging/debugging/Debugging_S11_Error.md "Debugging S11 Errors")
 
 - documentation
 
