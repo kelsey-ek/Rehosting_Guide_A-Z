@@ -1,5 +1,9 @@
 # TACF Commands
 
+Below, you will find all of the most common TACF related commands.
+
+**_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.1_en_**
+
 ### ADDGROUP (AG) [Add Group]
 
 <details><summary>Example: Add Group with Superior Group</summary>
@@ -44,7 +48,8 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 
 ### ALTUSER (ALU) [Alter User]
 
-<details><summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
+<details>
+	<summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
 
 - User Name     : TMAX1234
 - Data          : <Changed to NODATA>
@@ -53,5 +58,4 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 ```
 ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 ```
-
 </details>
