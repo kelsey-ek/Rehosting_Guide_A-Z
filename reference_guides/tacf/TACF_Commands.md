@@ -5,10 +5,13 @@ Below, you will find all of the most common TACF related commands.
 ## Table of Contents
 
 - [ADD GROUP](#addgroup)
+- [ALTER GROUP](#altgroup)
 - [ADD USER](#adduser)
+- [ALTER USER](#altuser)
 - [ADD System Definition](#addsd)
+- [ALTER System Definition](#altdsd)
 
-**_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.1_en_**
+**_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.4_en_**
 
 ***
 
@@ -73,7 +76,11 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 
 ***
 
-### ALTUSER (ALU) [Alter User]
+### ALTUSER
+
+TACF Command: **ALU**
+
+Functionality: Alter a user. Modify a permissions and user's details.
 
 <details>
 	<summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
@@ -100,7 +107,6 @@ Functionality: Registers a discrete dataset profile or a generic dataset profile
 
 - Group Name    : $GROUP
 - Owner         : $OWNER
-- Superior Group: SYS1
 ```
 ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNIT(D) VOLUME(DEFVOL)
 ```
@@ -108,3 +114,19 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 
 ***
 
+### ALTDSD
+
+TACF Command: **ALD**
+
+Functionality: Modifies a specified dataset profile.
+
+<details>
+	<summary>Example: Alter System Definition with Universal Access READ</summary>
+
+- Group Name 	: $GROUP
+- Owner 		: $OWNER
+```
+ALD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(READ) UNIT(D) VOLUME(DEFVOL)
+```
+
+</details>
