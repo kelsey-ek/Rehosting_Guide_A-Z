@@ -40,13 +40,12 @@ Functionality: Alter a group profile. If you have a group, but want to alter som
 <details>
 	<summary>Example: Alter a Group's Superior Group to another</summary>
 
-	- Group Name 	: $GROUP
-	- Owner 		: $OWNER
-	- Superior Group: NEWGRP1
-	
-	```
-	ALTGROUP $GROUP OWNER('$OWNER') SUPGROUP('NEWGRP1')
-	```
+- Group Name 	: $GROUP
+- Owner 		: $OWNER
+- Superior Group: NEWGRP1
+```
+ALTGROUP $GROUP OWNER('$OWNER') SUPGROUP('NEWGRP1')
+```
 
 </details>
 
