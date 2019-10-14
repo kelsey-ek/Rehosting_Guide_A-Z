@@ -43,6 +43,7 @@ Functionality: Alter a group profile. If you have a group, but want to alter som
 	- Group Name 	: $GROUP
 	- Owner 		: $OWNER
 	- Superior Group: NEWGRP1
+	
 	```
 	ALTGROUP $GROUP OWNER('$OWNER') SUPGROUP('NEWGRP1')
 	```
