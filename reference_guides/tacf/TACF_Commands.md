@@ -10,7 +10,10 @@ Below, you will find all of the most common TACF related commands.
 
 **_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.1_en_**
 
-### ADDGROUP (AG) [Add Group]
+### ADDGROUP
+
+TACF Command: AG 
+Functionality: Add a TACF group
 
 <details>
 	<summary>Example: Add Group with Superior Group</summary>
