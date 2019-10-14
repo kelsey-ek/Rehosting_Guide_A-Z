@@ -4,7 +4,7 @@ Below, you will find all of the most common TACF related commands.
 
 ## Table of Contents
 
-- [ADD GROUP](#addgroup)
+- [ADD GROUP](#addgroup-(ag)-\[addgroup\])
 - [ADD USER](#adduser)
 - [ADD System Definition](#addsd)
 
