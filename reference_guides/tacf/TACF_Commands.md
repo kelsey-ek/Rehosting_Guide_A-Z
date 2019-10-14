@@ -13,7 +13,8 @@ Below, you will find all of the most common TACF related commands.
 ### ADDGROUP
 
 TACF Command: AG 
-Functionality: Add a TACF group
+
+Functionality: Add a TACF group. The purpose of adding groups is to predefine a set of rules and be able to apply them to multiple users without having to redefine the same set of specified rules over and over again. Instead, we can apply a set of rules to a group, and assign a user to a group which will inherit those rules.
 
 <details>
 	<summary>Example: Add Group with Superior Group</summary>
