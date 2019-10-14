@@ -2,6 +2,8 @@
 
 Below, you will find all of the most common TACF related commands.
 
+**_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.4_en_**
+
 ## Table of Contents
 
 - [ADD GROUP](#addgroup)
@@ -10,8 +12,6 @@ Below, you will find all of the most common TACF related commands.
 - [ALTER USER](#altuser)
 - [ADD System Definition](#addsd)
 - [ALTER System Definition](#altdsd)
-
-**_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.4_en_**
 
 ***
 
