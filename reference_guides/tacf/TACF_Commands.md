@@ -10,6 +10,8 @@ Below, you will find all of the most common TACF related commands.
 
 **_This guide is based on the OpenFrame TACF 7.0_Administrator's Guide 2.1.1_en_**
 
+***
+
 ### ADDGROUP
 
 TACF Command: AG 
@@ -27,6 +29,8 @@ ADDGROUP ('$GROUP') OWNER('$OWNER') SUPGROUP('SYS1')
 ```
 </details>
 
+***
+
 ### ADDUSER (AU) [Add User]
 
 <details>
@@ -43,6 +47,8 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 ```
 </details>
 
+***
+
 ### ADDSD (AD) [Add System Definition]
 
 <details>
@@ -55,6 +61,8 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNIT(D) VOLUME(DEFVOL)
 ```
 </details>
+
+***
 
 ### ALTUSER (ALU) [Alter User]
 
@@ -69,3 +77,6 @@ ADDSD ('$NAME') AUDIT($AUTHORITY) DATA('$COMMENT') OWNER('$NAME') UACC(NONE) UNI
 ALTUSER (TMAX1234) NODATA PASSWORD('NEWPASS1') SPECIAL
 ```
 </details>
+
+***
+
