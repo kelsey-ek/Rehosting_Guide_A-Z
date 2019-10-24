@@ -7,7 +7,7 @@
 - [Pre-Migration](#1.-pre-migration)
   * [Mainframe Environment](#1.1-mainframe-environment)
   * [OpenFrame Environment](#1.2-openframe-environment)
-    - [Accessing the Linux Server](#1.2.1-accessing-the-linux-server)
+    - [Accessing the Linux Server](#121-accessing-the-linux-server)
 - [Installation](#installation)
 - [Discovery](#discovery)
     * [OFMiner](#ofminer)
