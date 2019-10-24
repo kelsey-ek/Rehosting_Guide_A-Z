@@ -80,7 +80,7 @@ ADDUSER ('TMAX1234') PASSWORD('TMAXPASS') NAME('Tmax Soft') OWNER('ROOT') DFLTGR
 
 TACF Command: **ALU**
 
-Functionality: Alter a user. Modify a permissions and user's details.
+Functionality: Alter a user. Modify a User's permissions and details.
 
 <details>
 	<summary>Example: Alter the TMAX1234 user's password and give SPECIAL attribute</summary>
