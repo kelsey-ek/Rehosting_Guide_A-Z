@@ -856,4 +856,4 @@ osctdlupdate <region> <module>
 
 # Applying Patches
 
-[**Reference Guide: How to Apply Patches**](./reference_guides/patch/How_to_apply_patches.md "Learn how to apply patches")
+[**Reference Guide: How to Apply Patches**](./reference_guides/patch/How_to_Apply_Patches.md "Learn how to apply patches")
