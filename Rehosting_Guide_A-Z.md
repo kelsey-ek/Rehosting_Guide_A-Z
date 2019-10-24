@@ -5,7 +5,7 @@
 # Table of Contents 
 
 - [Pre-Migration](#1.-pre-migration)
-  * [Mainframe Environment](#1.1-mainframe-environment)
+  * [Mainframe Environment](#11-mainframe-environment)
   * [OpenFrame Environment](#1.2-openframe-environment)
     - [Accessing the Linux Server](#121-accessing-the-linux-server)
 - [Installation](#installation)
