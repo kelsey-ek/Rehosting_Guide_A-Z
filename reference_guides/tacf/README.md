@@ -4,10 +4,10 @@ This folder contains TACF related scripts and information regarding commands wit
 
 ## Topics:
 
-- tacfmigin 
+- [tacfmigin](./tacfmigin/How_to_use_tacfmigin.md "How to use tacfmigin")
 
 	Contains a script called tacfmigin with header files as well as a guide on how to correctly use the script.
 
-- TACF_Commands
+- [TACF_Commands](./TACF_Commands.md "TACF Commands")
 
 	Contains examples of TACF Commands. Additional information regarding the commands can be found from the manuals.
