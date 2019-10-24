@@ -4,7 +4,7 @@
 
 # Table of Contents 
 
-- [Pre-Migration](#pre-migration)
+- [Pre-Migration](#1.0-pre-migration)
   * [Mainframe Environment](#mainframe-environment)
   * [OpenFrame Environment](#openframe-environment)
 - [Installation](#installation)
@@ -17,7 +17,7 @@
 - [Operation And Administration](#operation-and-administration)
 - [Applying Patches](#applying-patches)
 
-# Pre-Migration
+# 1.0 Pre-Migration
 
 ## Mainframe Environment
 
