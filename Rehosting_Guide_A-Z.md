@@ -44,15 +44,15 @@
 
 **Description:** This step includes how to access the Linux server. Depending on who built the Linux Server, the steps for completing this will vary.
 
-#### Accessing a Linux Server built by Rehosting Team
+#### 1.2.1.1 Accessing a Linux Server built by Rehosting Team
 
 **Description:** If the server is built by the rehosting team, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. However, if access to a VDI is required first, please refer to the "Accessing a Linux Server on the Customer's Private Network" section. 
 
-#### Accessing a Linux Server on the Customer's Private Network
+#### 1.2.1.2 Accessing a Linux Server on the Customer's Private Network
 
 **Description:** If the server is built on-site by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
-#### Binary Request
+#### 1.2.1.3 Binary Request
 
 **Prerequisites:** 
 
@@ -64,7 +64,7 @@
 
 **Reference Documents:** "TODO: How to request customer Binaries"
 
-#### Licensing
+#### 1.2.1.4 Licensing
 
 **Prerequisites:** 
 
@@ -76,7 +76,7 @@
 
 ***
 
-# Installation
+# 2. Installation
 
 **Prerequisites:** 
 
@@ -90,7 +90,7 @@
 **Reference Documents:
 "TmaxSoft\_OpenFrame7\_fix2\_Installation\_V6.22"**
 
-## Verifying Successful Installation
+## 2.1 Verifying Successful Installation
 
 **Prerequisites:** 
 
@@ -118,7 +118,7 @@
 
 ***
 
-# Discovery
+# 3. Discovery
 
 **Prerequisites:**
 
@@ -128,7 +128,7 @@
 
 ***
 
-## OFMiner
+## 3.1 OFMiner
 
 **Prerequisites:**
 
@@ -147,7 +147,7 @@ analysis document.
 
 ***
 
-# Migration
+# 4. Migration
 
 **Description**: This step includes migrating source code and datasets.
 There are multiple options for downloading the data from the mainframe.
@@ -168,7 +168,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 
 ***
 
-## Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
+## 4.1 Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
 
 **Description:** Source Code Transfer should begin with JCL as it is the starting point for the JOBs. In many cases, a JCL will EXEC a PROC so the PROCs should also be prioritized. The second priority should be the COBOL programs that are EXEC'd in the JCL and the PROCs. Identifying and transferring COBOL programs may be a recursive task because a COBOL program can call another COBOL program referred to as a submodule. These submodules can also call other submodules, hence the recursiveness of this task. Additionally, COBOL programs can call COPYBOOKS to define the datasets, and these COPYBOOKS can reference other COPYBOOKS. Transferring these, are tertiary priority. You will need all of these elements to complete the Analysis step using OFMiner. Once the Source Code is migrated to OpenFrame, JOBs and Online Transactions can be submitted just as they were on the mainframe. In the mainframe, an edittor is used to modify the source code. In OpenFrame, we have many options. One option is through OFStudio which is TmaxSoft's version of eclipse. This allows you to modify source code and push to a git repository to maintain your source code. Another option would be to use the command line directly and modify the source code through an edittor such as Vi, Vim, or Nano. When migrating Source code, it's important to use the -L option to create the linux new line delimiter. The third option would be to use the spfedit tool which allows you to use mainframe commands to be able to edit a dataset or member of a pds. 
 
@@ -196,13 +196,13 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 ***
 
-## Datasets
+## 4.2 Datasets
 
 **Prerequisites:**
 
 **Description:** This task can be completed in parallel to the Installation and Discovery stages. This task requires a lot of effort and should be handled by no less than two engineers. We are currently in the process for standardizing how we are downloading datasets from the Mainframe to OpenFrame. Every mainframe is different, but a process should be created to standardize the process for each environment.
 
-### Standard Process (NON-VSAM):
+### 4.2.1 Standard Process (NON-VSAM):
 
   1. Customer needs to provide the copybooks. Each dataset has a corresponding copybook. There is no way for OpenFrame engineers to know which copybooks map to which datasets. The customer should provide a spreadsheet with the mapping. If the customer does not provide the copybooks, we can use OFMiner to generate the copybooks, but we cannot guarantee the integrity of the data using this method. 
 
@@ -212,7 +212,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
   With one customer, we are accomplishing this using 1 script called dsmigin.py. This python program queries the mainframe by connecting through linux ftp. After ensuring that the dataset is not migrated (archived), it will retrieve the dataset using the FTP command. The user can also pass options to execute the dsmigin command after retrieving the datasets.
 
-### VSAM Process
+### 4.2.2 VSAM Process
 
   1. Unload VSAM files on Mainframe to Flat (PS) files.
 
@@ -236,7 +236,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 ***
 
-# OpenFrame Configuration
+# 5. OpenFrame Configuration
 
 **Prerequisites:**
 
@@ -247,7 +247,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 **Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
 
-## TACF
+## 5.1 TACF
 
 **Prerequisites:** 
 
@@ -274,16 +274,16 @@ int customer_saf_exit_password(char *userid, char password, int count, char *his
 
 </details>
 
-## BATCH
+## 5.2 BATCH
   **Prerequisites:** 
 
   - Installation -- (Complete)
 
 **Description:** 
 
-## ONLINE
+## 5.3 ONLINE
 
-<h4>OSC Configuration (OpenFrame System for CICS)</h4>
+### 5.3.1 OSC Configuration (OpenFrame System for CICS)
 
 **Description:** Online Resources on the mainframe are defined in System Definitions Macro Files. For OpenFrame to access the resources, they must be defined in OpenFrame's System Definitions (OSD). Before loading the System Definitions, we need a VSAM dataset to load them into. However, loading all of System Definitions into the run time memory would be unnecessary, so only the System Definitions in the GRPLIST are added. 
 
@@ -299,7 +299,7 @@ Step 2.) Load the VSAM Dataset with the System Definitions File from the Mainfra
 oscsdgen -c -d OSC.SDMAKE.TEST [MACRO_FILE]
 ```
 
-<h5>oscsddump</h5>
+#### 5.3.1.1 oscsddump
 
 It should be noted that OpenFrame comes with a utility ```oscsddump``` which can be used to dump the OpenFrame System Definitions (OSD) to a regular file. This regular file can then be used to add or modify the existing OSD's. Each region has it's own dataset, and you can dump the OSD by specifying the region name or the vsam dataset.
 
@@ -314,7 +314,7 @@ oscsddump -r <region> <output_file_name>
                  If a file with this name already exists, it 
                  will be overwritten.
 ```
-<h5>oscrtsddump</h5>
+#### 5.3.1.2 oscrtsddump
 
 Similar to oscsddump, OpenFrame has an oscrtsddump utility which can dump the System Definitions from the GRPLIST stored in the runtime. 
 
@@ -327,7 +327,7 @@ oscrtsddump -r <region> <file>
                  will be overwritten.
 ```
 
-<h5>osctdlupdate</h5>
+#### 5.3.1.3 osctdlupdate
 
 Dynamic Modules, such as Cobol programs can modified during OSC uptime, but the integrity of a transaction in progress must be preserved. Therefore, when an online COBOL program is modified and recompiled, it is not updated in OSC until the osctdlupdate command is run. This tool registers and updates dynamic modules within OSC regions.
 
@@ -344,7 +344,7 @@ osctdlupdate <region> <module>
   - <module>   : Specifies an application module name
 ``` 
 
-<h5>Understanding Basic Map Support (BMS) Files</h5>
+<h5>5.3.1.3.1 Understanding Basic Map Support (BMS) Files</h5>
 
 * DFHMSD - Declares a mapset
 
@@ -387,9 +387,9 @@ osctdlupdate <region> <module>
 
 
 
-<h4>OSI Configuration (OpenFrame System for IMS)</h4>
+### 5.3.2 OSI Configuration (OpenFrame System for IMS)
 
-### Configuration Files
+## 5.4 Configuration Files
 
 **Location of these files:** $OPENFRAME_HOME/config
 
@@ -714,7 +714,7 @@ osctdlupdate <region> <module>
 
 </details>
 
-## Source Compilation
+## 6. Source Compilation
 
 **Prerequisites:** 
 
