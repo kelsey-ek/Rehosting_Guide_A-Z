@@ -84,13 +84,15 @@ tacfmgr -iROOT/${TACF_ROOT_PASSWORD} < RDEFINE.scr
 8. Change the RDEFINE commands to RALTER and run RALTER.scr
 
 	1.
-```bash
-sed "s/^RDEFINE/RALTER/" RDEFINE.scr > RALTER.scr
-```
+
+		```bash
+		sed "s/^RDEFINE/RALTER/" RDEFINE.scr > RALTER.scr
+		```
 	2.
-```
-tacfmgr -iROOT/${TACF_ROOT_PASSWORD} < RALTER.scr
-```
+
+		```
+		tacfmgr -iROOT/${TACF_ROOT_PASSWORD} < RALTER.scr
+		```
 
 9. Run PERMIT.scr
 
