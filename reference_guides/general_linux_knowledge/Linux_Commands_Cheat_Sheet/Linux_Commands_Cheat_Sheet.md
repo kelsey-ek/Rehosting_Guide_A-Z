@@ -18,6 +18,9 @@
 	1. [mv - Use mv to Rename a file](#example-41-use-move-to-rename-a-file)
 	2. [mv - Move a File to a Directory](#example-42-move-a-file-to-directory)
 	3. [mv - Move a Directory to a Directory](#example-43-move-a-directory-to-directory)
+5. [rm - Remove](#5-rm-remove)
+	1. [rm - Remove a File](#example-51-remove-a-file)
+	2. [rm - Remove a Directory](#example-52-remove-a-directory)
 
 ## 1. ls (List Files and Directories)
 
@@ -289,3 +292,25 @@ mv ${directory} ${directory2}
 ```
 
 ![alt-text](./reference_images/mv_directory.PNG "Move a Directory Into Another")
+
+## 5. rm (Remove)
+
+**Description:** Use this command with caution!! Anything you remove cannot be undone, if you're unsure, take a backup first, then remove it. 
+
+### Example 5.1) Remove a file
+
+```bash
+rm ${file}
+```
+
+![alt-text](./reference_images/rm_file.PNG "Remove a file")
+
+### Example 5.2) Remove a Directory
+
+By passing the ```-r``` flag, we are going to recursively move all the files inside a directory, as well as the directory itself. **_This is an extremely dangerous command. You should Double-Triple check what you are removing before you execute this command_**
+
+```bash
+rm -r ${directory}
+```
+
+![alt-text](./reference_images/rm_directory.PNG "Remove Directory")
