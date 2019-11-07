@@ -22,6 +22,8 @@
 	1. [rm - Remove a File](#example-51-remove-a-file)
 	2. [rm - Remove a Directory](#example-52-remove-a-directory)
 	3. [rmdir - Remove an Empty Directory](#example-53-remove-an-empty-directory)
+6. [\* - Wildcards](#6-wildcards)
+	
 
 ## 1. ls (List Files and Directories)
 
@@ -322,6 +324,30 @@ If you try to use this command on a non-empty directory, you will receive an err
 
 ![alt-text](./reference_images/rmdir.PNG "Remove Empty Directory")
 
-## \* (Wildcards)
+## 6. \* (Wildcards)
 
 Wildcards can be very useful for modifying or moving many files in a single command. It can be slightly dangerous, however, if you are attempting to remove files. Just be sure you know what you're removing before removing it. You can always list or echo out 
+
+### Example 6.1) List files Ending in .txt
+
+```bash
+ls *.txt
+```
+
+![alt-text](./reference_images/ls_star_txt.PNG "ls *.txt")
+
+### Example 6.2) List files Starting with YSW.
+
+```bash
+ls YSW.*
+```
+
+![alt-text](./reference_images/ls_YSW_star.PNG "ls YSW.*")
+
+### Example 6.3) Move All Files From Current Directory to Another Directory
+
+```bash
+mv * ${directory}
+```
+
+![alt-text](./reference_images/mv_star_directory.PNG "mv * directory")
