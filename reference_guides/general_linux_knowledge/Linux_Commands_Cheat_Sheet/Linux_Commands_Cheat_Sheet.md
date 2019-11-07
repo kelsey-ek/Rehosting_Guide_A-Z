@@ -276,7 +276,7 @@ mv ${file} ${target}
 mv ${file} ${directory}/.
 ```
 
-![alt-text](./reference_images/mv_to_directory "Move File to Directory")
+![alt-text](./reference_images/mv_to_directory.PNG "Move File to Directory")
 
 ### Example 3.3) Move a Directory to Directory
 
