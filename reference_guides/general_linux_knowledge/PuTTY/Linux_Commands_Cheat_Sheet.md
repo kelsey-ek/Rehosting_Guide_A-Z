@@ -12,6 +12,7 @@
 **Description:** This command displays the files and directories located inside the directory you are currently in. You can add additional options to increase the amount of information displayed.
 
 <details><summary>Click Here for ls Usage</summary>
+	```
 	Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -134,6 +135,7 @@ Exit status:
 
 GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
 For complete documentation, run: info coreutils 'ls invocation'
+```
 </details>
 
 ### Example 1.1) Basic Usage (ls)
