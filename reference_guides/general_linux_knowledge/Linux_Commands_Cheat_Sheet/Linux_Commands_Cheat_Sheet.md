@@ -144,7 +144,7 @@ For&nbsp;complete&nbsp;documentation,&nbsp;run:&nbsp;info&nbsp;coreutils&nbsp;'l
 ls
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/basic_ls.PNG "Basic Usage")
+![alt-text](./reference_images/basic_ls.PNG "Basic Usage")
 
 ### Example 1.2) Long Listing (ls -l)
 
@@ -154,7 +154,7 @@ Adding ```-l``` to the command will create a Long Listing. By using the ```-l```
 ls -l
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/ls_l.PNG "Long Listing")
+![alt-text](./reference_images/ls_l.PNG "Long Listing")
 
 ### Example 1.3) Long Listing based on time and reversed
 
@@ -168,7 +168,7 @@ This is a really useful way of listing files in a directory, because the latest 
 ls -lrt
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/ls_lrt.PNG "Long Listing - Time Based, Reverse Ordered")
+![alt-text](./reference_images/ls_lrt.PNG "Long Listing - Time Based, Reverse Ordered")
 
 ## 2. cd (Change Directory)
 
@@ -182,7 +182,7 @@ If you know exactly where your target directory is, meaning you know the entire 
 cd /home/mkoziel/Desktop
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/cd_full_path.PNG "Change Directory to Fully Qualified Path")
+![alt-text](./reference_images/cd_full_path.PNG "Change Directory to Fully Qualified Path")
 
 ### Example 2.2) Change Directory Up to Relative Path
 
@@ -192,7 +192,7 @@ If you want to go back one directory, you can pass ```..``` in your path. Let's 
 cd ..
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/cd_back_one.PNG "Change Directory One Level Up")
+![alt-text](./reference_images/cd_back_one.PNG "Change Directory One Level Up")
 
 **Note: The ```~``` character is a synonym for home directory. Since I am using the mkoziel user, and my home directory is defined as /home/mkoziel, linux substituted the full path /home/mkoziel to ~**
 
@@ -204,7 +204,7 @@ If you want to move to the Desktop directory from the home directory, instead of
 cd ${directory}
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/cd_down_one.PNG "Change Directory One Level Down")
+![alt-text](./reference_images/cd_down_one.PNG "Change Directory One Level Down")
 
 ### Example 2.4) Change Directory Combining Down and Up
 
@@ -214,5 +214,5 @@ Let's say you're currently in the Documents directory, but you meant to type Des
 cd ../${directory}
 ```
 
-![alt-text](./reference_images/linux_cheat_sheet_images/cd_up_down.PNG "Change Directory down and up")
+![alt-text](./reference_images/cd_up_down.PNG "Change Directory down and up")
 
