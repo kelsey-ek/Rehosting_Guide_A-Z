@@ -29,6 +29,9 @@
 7. [ln - Link](#7-ln-link)
 	1. [ln - Create a Symbolic Link](#example-71-create-a-symbolic-link)
 	2. [ln - Create a Hard Link](#example-72-create-a-hard-link)
+8. [tar.gz - Compress](#8-targz-compress)
+	1. [tar.gz - Compress a Directory](#example-81-compress-a-directory)
+	2. [tar.gz - Decompress a tar.gz file](#example-82-decompress-a-targz-file)
 
 
 ## 1. ls (List Files and Directories)
@@ -384,4 +387,24 @@ ln ${file} ${link}
 Unlink the Symbolic Link, a Hard Link will create another file that modifies both the new file and the linked file.
 
 ![alt-text](./reference_images/ln_file2.PNG "Hard Link to File2.txt")
+
+## 8. tar.gz (Compress)
+
+**Description:** Here we are using multiple compression tools to reduce the size of files and directories. This is very useful for transferring them to other servers via ftp or email so they don't take up as much space and time.
+
+### Example 8.1) Compress a Directory
+
+```bash
+tar -czvf ${target} ${directory}
+```
+
+![alt-text](./reference_images/tar_compress.PNG "Compress a Directory")
+
+### Example 8.2) Decompress a .tar.gz file
+
+```bash
+tar -xzvf ${target}
+```
+
+![alt-text](./reference_images/tar_decompress.PNG "Decompress a tar.gz file")
 
