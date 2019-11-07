@@ -13,8 +13,8 @@ ls
 
 ### Example 1. Basic Usage (ls)
 
-![alt-text](./reference_images/linux_commands_cheat_sheet_images/basic_ls.PNG "Basic Usage")
+![alt-text](./reference_images/linux_cheat_sheet_images/basic_ls.PNG "Basic Usage")
 
 ### Example 2. Long Listing (ls -l)
 
-![alt-text](./reference_images/linux_commands_cheat_sheet_images/ls_l.PNG "Long Listing")
+![alt-text](./reference_images/linux_cheat_sheet_images/ls_l.PNG "Long Listing")
