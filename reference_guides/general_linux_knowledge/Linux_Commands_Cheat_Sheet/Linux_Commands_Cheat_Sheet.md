@@ -266,7 +266,7 @@ cp -r ${directory} ${copy}
 
 **Description:** Move a file or directory with this command from one location to another, or the same location but with a new name.
 
-### Example 3.1) Use Move to Rename a file
+### Example 4.1) Use Move to Rename a file
 
 ```bash
 mv ${file} ${target}
@@ -274,7 +274,7 @@ mv ${file} ${target}
 
 ![alt-text](./reference_images/mv_rename.PNG "Rename a File")
 
-### Example 3.2) Move a File to Directory
+### Example 4.2) Move a File to Directory
 
 ```bash
 mv ${file} ${directory}/.
@@ -282,7 +282,7 @@ mv ${file} ${directory}/.
 
 ![alt-text](./reference_images/mv_to_directory.PNG "Move File to Directory")
 
-### Example 3.3) Move a Directory to Directory
+### Example 4.3) Move a Directory to Directory
 
 ```bash
 mv ${directory} ${directory2}
