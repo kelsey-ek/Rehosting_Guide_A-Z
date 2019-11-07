@@ -220,4 +220,26 @@ cd ../${directory}
 
 ![alt-text](./reference_images/cd_up_down.PNG "Change Directory down and up")
 
-## 3. 
+## 3. cp (copy)
+
+**Description:** This is the command you will use to copy files and directories. The target file name you give can include a fully qualified, or relative path to place the target file or directory at the desired directory path.
+
+### Example 3.1) Basic Usage (Copy a File)
+
+The most basic usage of the ```cp``` command is copying a to the current working directory with a new name. A very useful application of this command is to creating a backup file.
+
+```bash
+cp ${file} ${copy}
+```
+
+![alt-text](./reference_images/cp_basic.PNG "Create a Backup of a File")
+
+### Example 3.2) Copy a File from One Directory to Another
+
+By adding a relative (or fully qualified path) to the target file name, we can place the file in that directory while copying it.
+
+```bash
+cp ${file} ${path}/${copy}
+```
+
+![alt-text](./reference_images/cp_to_directory.PNG "Creating a New File in Different Directory")
