@@ -4,8 +4,12 @@
 
 1. [ls - List Files and Directories](#1-ls-list-files-and-directories)
 	1. [ls - Basic Usage](#example-11-basic-usage-ls)
-	- [ls - Long Listing](#example-12-long-listing-ls--l)
-	- [ls - Long Listing Time Based Reverse Order](#example-13-long-listing-based-on-time-and-reversed)
+	2. [ls - Long Listing](#example-12-long-listing-ls--l)
+	3. [ls - Long Listing Time Based Reverse Order](#example-13-long-listing-based-on-time-and-reversed)
+2. [cd - Change Directory](#2-cd-change-directory)
+	1. [cd - Fully Qualified Path](#example-21-change-directory-to-fully-qualified-path)
+	2. [cd - Up to Relative Path](#example-22-change-directory-up-to-relative-path)
+	3. [cd - Down to relative Path](#example-23-change-directory-down-to-relative-path)
 
 ## 1. ls (List Files and Directories)
 
@@ -216,3 +220,4 @@ cd ../${directory}
 
 ![alt-text](./reference_images/cd_up_down.PNG "Change Directory down and up")
 
+## 3. 
