@@ -4,7 +4,7 @@
 
 - [ls - List Files and Directories](#1-ls-list-files-and-directories)
 	- [ls - Basic Usage](#example-11-basic-usage-ls)
-	- [ls - Long Listing](#example-12-long-listing-ls)
+	- [ls - Long Listing](#example-12-long-listing-ls--l)
 
 ## 1. ls (List Files and Directories)
 
