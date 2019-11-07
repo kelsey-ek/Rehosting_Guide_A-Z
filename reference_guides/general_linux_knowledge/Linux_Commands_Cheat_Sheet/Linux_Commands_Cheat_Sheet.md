@@ -14,6 +14,10 @@
 	1. [cp - Basic Usage](#example-31-basic-usage-copy-a-file)
 	2. [cp - Copy a File From One Directory to Another](#example-32-copy-a-file-from-one-directory-to-another)
 	3. [cp - Copy a Directory](#example-33-copy-a-directory)
+4. [mv - Move](#mv-move)
+	1. [mv - Use mv to Rename a file](#example-31-use-move-to-rename-a-file)
+	2. [mv - Move a File to a Directory](#example-32-move-a-file-to-directory)
+	3. [mv - Move a Directory to a Directory](#example-33-move-a-directory-to-directory)
 
 ## 1. ls (List Files and Directories)
 
