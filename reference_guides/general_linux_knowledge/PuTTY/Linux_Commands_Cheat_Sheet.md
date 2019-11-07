@@ -13,130 +13,130 @@
 
 <details>
 	<summary>Click Here for ls Usage</summary>
-		<div class="data">
-Usage: ls [OPTION]... [FILE]...
-List information about the FILEs (the current directory by default).
-Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+		<pre>
+Usage:&nbspls&nbsp[OPTION]...&nbsp[FILE]...
+List&nbspinformation&nbspabout&nbspthe&nbspFILEs&nbsp(the&nbspcurrent&nbspdirectory&nbspby&nbspdefault).
+Sort&nbspentries&nbspalphabetically&nbspif&nbspnone&nbspof&nbsp-cftuvSUX&nbspnor&nbsp--sort&nbspis&nbspspecified.
 
-Mandatory arguments to long options are mandatory for short options too.
-  -a, --all                  do not ignore entries starting with .
-  -A, --almost-all           do not list implied . and ..
-      --author               with -l, print the author of each file
-  -b, --escape               print C-style escapes for nongraphic characters
-      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
-                               '--block-size=M' prints sizes in units of
-                               1,048,576 bytes; see SIZE format below
-  -B, --ignore-backups       do not list implied entries ending with ~
-  -c                         with -lt: sort by, and show, ctime (time of last
-                               modification of file status information);
-                               with -l: show ctime and sort by name;
-                               otherwise: sort by ctime, newest first
-  -C                         list entries by columns
-      --color[=WHEN]         colorize the output; WHEN can be 'never', 'auto',
-                               or 'always' (the default); more info below
-  -d, --directory            list directories themselves, not their contents
-  -D, --dired                generate output designed for Emacs' dired mode
-  -f                         do not sort, enable -aU, disable -ls --color
-  -F, --classify             append indicator (one of */=>@|) to entries
-      --file-type            likewise, except do not append '*'
-      --format=WORD          across -x, commas -m, horizontal -x, long -l,
-                               single-column -1, verbose -l, vertical -C
-      --full-time            like -l --time-style=full-iso
-  -g                         like -l, but do not list owner
-      --group-directories-first
-                             group directories before files;
-                               can be augmented with a --sort option, but any
-                               use of --sort=none (-U) disables grouping
-  -G, --no-group             in a long listing, don't print group names
-  -h, --human-readable       with -l, print sizes in human readable format
-                               (e.g., 1K 234M 2G)
-      --si                   likewise, but use powers of 1000 not 1024
-  -H, --dereference-command-line
-                             follow symbolic links listed on the command line
-      --dereference-command-line-symlink-to-dir
-                             follow each command line symbolic link
-                               that points to a directory
-      --hide=PATTERN         do not list implied entries matching shell PATTERN
-                               (overridden by -a or -A)
-      --indicator-style=WORD  append indicator with style WORD to entry names:
-                               none (default), slash (-p),
-                               file-type (--file-type), classify (-F)
-  -i, --inode                print the index number of each file
-  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
-  -k, --kibibytes            default to 1024-byte blocks for disk usage
-  -l                         use a long listing format
-  -L, --dereference          when showing file information for a symbolic
-                               link, show information for the file the link
-                               references rather than for the link itself
-  -m                         fill width with a comma separated list of entries
-  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
-  -N, --literal              print raw entry names (don't treat e.g. control
-                               characters specially)
-  -o                         like -l, but do not list group information
-  -p, --indicator-style=slash
-                             append / indicator to directories
-  -q, --hide-control-chars   print ? instead of nongraphic characters
-      --show-control-chars   show nongraphic characters as-is (the default,
-                               unless program is 'ls' and output is a terminal)
-  -Q, --quote-name           enclose entry names in double quotes
-      --quoting-style=WORD   use quoting style WORD for entry names:
-                               literal, locale, shell, shell-always, c, escape
-  -r, --reverse              reverse order while sorting
-  -R, --recursive            list subdirectories recursively
-  -s, --size                 print the allocated size of each file, in blocks
-  -S                         sort by file size
-      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
-                               time (-t), version (-v), extension (-X)
-      --time=WORD            with -l, show time as WORD instead of default
-                               modification time: atime or access or use (-u)
-                               ctime or status (-c); also use specified time
-                               as sort key if --sort=time
-      --time-style=STYLE     with -l, show times using style STYLE:
-                               full-iso, long-iso, iso, locale, or +FORMAT;
-                               FORMAT is interpreted like in 'date'; if FORMAT
-                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies
-                               to non-recent files and FORMAT2 to recent files;
-                               if STYLE is prefixed with 'posix-', STYLE
-                               takes effect only outside the POSIX locale
-  -t                         sort by modification time, newest first
-  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
-  -u                         with -lt: sort by, and show, access time;
-                               with -l: show access time and sort by name;
-                               otherwise: sort by access time
-  -U                         do not sort; list entries in directory order
-  -v                         natural sort of (version) numbers within text
-  -w, --width=COLS           assume screen width instead of current value
-  -x                         list entries by lines instead of by columns
-  -X                         sort alphabetically by entry extension
-  -1                         list one file per line
+Mandatory&nbsparguments&nbspto&nbsplong&nbspoptions&nbspare&nbspmandatory&nbspfor&nbspshort&nbspoptions&nbsptoo.
+&nbsp&nbsp-a,&nbsp--all&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbspignore&nbspentries&nbspstarting&nbspwith&nbsp.
+&nbsp&nbsp-A,&nbsp--almost-all&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbsplist&nbspimplied&nbsp.&nbspand&nbsp..
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l,&nbspprint&nbspthe&nbspauthor&nbspof&nbspeach&nbspfile
+&nbsp&nbsp-b,&nbsp--escape&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint&nbspC-style&nbspescapes&nbspfor&nbspnongraphic&nbspcharacters
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--block-size=SIZE&nbsp&nbsp&nbsp&nbsp&nbsp&nbspscale&nbspsizes&nbspby&nbspSIZE&nbspbefore&nbspprinting&nbspthem;&nbspe.g.,
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'--block-size=M'&nbspprints&nbspsizes&nbspin&nbspunits&nbspof
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1,048,576&nbspbytes;&nbspsee&nbspSIZE&nbspformat&nbspbelow
+&nbsp&nbsp-B,&nbsp--ignore-backups&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbsplist&nbspimplied&nbspentries&nbspending&nbspwith&nbsp~
+&nbsp&nbsp-c&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-lt:&nbspsort&nbspby,&nbspand&nbspshow,&nbspctime&nbsp(time&nbspof&nbsplast
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspmodification&nbspof&nbspfile&nbspstatus&nbspinformation);
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l:&nbspshow&nbspctime&nbspand&nbspsort&nbspby&nbspname;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspotherwise:&nbspsort&nbspby&nbspctime,&nbspnewest&nbspfirst
+&nbsp&nbsp-C&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplist&nbspentries&nbspby&nbspcolumns
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--color[=WHEN]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolorize&nbspthe&nbspoutput;&nbspWHEN&nbspcan&nbspbe&nbsp'never',&nbsp'auto',
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspor&nbsp'always'&nbsp(the&nbspdefault);&nbspmore&nbspinfo&nbspbelow
+&nbsp&nbsp-d,&nbsp--directory&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplist&nbspdirectories&nbspthemselves,&nbspnot&nbsptheir&nbspcontents
+&nbsp&nbsp-D,&nbsp--dired&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspgenerate&nbspoutput&nbspdesigned&nbspfor&nbspEmacs'&nbspdired&nbspmode
+&nbsp&nbsp-f&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbspsort,&nbspenable&nbsp-aU,&nbspdisable&nbsp-ls&nbsp--color
+&nbsp&nbsp-F,&nbsp--classify&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspappend&nbspindicator&nbsp(one&nbspof&nbsp*/=>@|)&nbspto&nbspentries
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--file-type&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplikewise,&nbspexcept&nbspdo&nbspnot&nbspappend&nbsp'*'
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--format=WORD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspacross&nbsp-x,&nbspcommas&nbsp-m,&nbsphorizontal&nbsp-x,&nbsplong&nbsp-l,
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsingle-column&nbsp-1,&nbspverbose&nbsp-l,&nbspvertical&nbsp-C
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--full-time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplike&nbsp-l&nbsp--time-style=full-iso
+&nbsp&nbsp-g&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplike&nbsp-l,&nbspbut&nbspdo&nbspnot&nbsplist&nbspowner
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--group-directories-first
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspgroup&nbspdirectories&nbspbefore&nbspfiles;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcan&nbspbe&nbspaugmented&nbspwith&nbspa&nbsp--sort&nbspoption,&nbspbut&nbspany
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspuse&nbspof&nbsp--sort=none&nbsp(-U)&nbspdisables&nbspgrouping
+&nbsp&nbsp-G,&nbsp--no-group&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspin&nbspa&nbsplong&nbsplisting,&nbspdon't&nbspprint&nbspgroup&nbspnames
+&nbsp&nbsp-h,&nbsp--human-readable&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l,&nbspprint&nbspsizes&nbspin&nbsphuman&nbspreadable&nbspformat
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(e.g.,&nbsp1K&nbsp234M&nbsp2G)
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--si&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplikewise,&nbspbut&nbspuse&nbsppowers&nbspof&nbsp1000&nbspnot&nbsp1024
+&nbsp&nbsp-H,&nbsp--dereference-command-line
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfollow&nbspsymbolic&nbsplinks&nbsplisted&nbspon&nbspthe&nbspcommand&nbspline
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--dereference-command-line-symlink-to-dir
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfollow&nbspeach&nbspcommand&nbspline&nbspsymbolic&nbsplink
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthat&nbsppoints&nbspto&nbspa&nbspdirectory
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--hide=PATTERN&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbsplist&nbspimplied&nbspentries&nbspmatching&nbspshell&nbspPATTERN
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(overridden&nbspby&nbsp-a&nbspor&nbsp-A)
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--indicator-style=WORD&nbsp&nbspappend&nbspindicator&nbspwith&nbspstyle&nbspWORD&nbspto&nbspentry&nbspnames:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnone&nbsp(default),&nbspslash&nbsp(-p),
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfile-type&nbsp(--file-type),&nbspclassify&nbsp(-F)
+&nbsp&nbsp-i,&nbsp--inode&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint&nbspthe&nbspindex&nbspnumber&nbspof&nbspeach&nbspfile
+&nbsp&nbsp-I,&nbsp--ignore=PATTERN&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbsplist&nbspimplied&nbspentries&nbspmatching&nbspshell&nbspPATTERN
+&nbsp&nbsp-k,&nbsp--kibibytes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdefault&nbspto&nbsp1024-byte&nbspblocks&nbspfor&nbspdisk&nbspusage
+&nbsp&nbsp-l&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspuse&nbspa&nbsplong&nbsplisting&nbspformat
+&nbsp&nbsp-L,&nbsp--dereference&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwhen&nbspshowing&nbspfile&nbspinformation&nbspfor&nbspa&nbspsymbolic
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplink,&nbspshow&nbspinformation&nbspfor&nbspthe&nbspfile&nbspthe&nbsplink
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreferences&nbsprather&nbspthan&nbspfor&nbspthe&nbsplink&nbspitself
+&nbsp&nbsp-m&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfill&nbspwidth&nbspwith&nbspa&nbspcomma&nbspseparated&nbsplist&nbspof&nbspentries
+&nbsp&nbsp-n,&nbsp--numeric-uid-gid&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplike&nbsp-l,&nbspbut&nbsplist&nbspnumeric&nbspuser&nbspand&nbspgroup&nbspIDs
+&nbsp&nbsp-N,&nbsp--literal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint&nbspraw&nbspentry&nbspnames&nbsp(don't&nbsptreat&nbspe.g.&nbspcontrol
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcharacters&nbspspecially)
+&nbsp&nbsp-o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplike&nbsp-l,&nbspbut&nbspdo&nbspnot&nbsplist&nbspgroup&nbspinformation
+&nbsp&nbsp-p,&nbsp--indicator-style=slash
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspappend&nbsp/&nbspindicator&nbspto&nbspdirectories
+&nbsp&nbsp-q,&nbsp--hide-control-chars&nbsp&nbsp&nbspprint&nbsp?&nbspinstead&nbspof&nbspnongraphic&nbspcharacters
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--show-control-chars&nbsp&nbsp&nbspshow&nbspnongraphic&nbspcharacters&nbspas-is&nbsp(the&nbspdefault,
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspunless&nbspprogram&nbspis&nbsp'ls'&nbspand&nbspoutput&nbspis&nbspa&nbspterminal)
+&nbsp&nbsp-Q,&nbsp--quote-name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspenclose&nbspentry&nbspnames&nbspin&nbspdouble&nbspquotes
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--quoting-style=WORD&nbsp&nbsp&nbspuse&nbspquoting&nbspstyle&nbspWORD&nbspfor&nbspentry&nbspnames:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspliteral,&nbsplocale,&nbspshell,&nbspshell-always,&nbspc,&nbspescape
+&nbsp&nbsp-r,&nbsp--reverse&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreverse&nbsporder&nbspwhile&nbspsorting
+&nbsp&nbsp-R,&nbsp--recursive&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplist&nbspsubdirectories&nbsprecursively
+&nbsp&nbsp-s,&nbsp--size&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint&nbspthe&nbspallocated&nbspsize&nbspof&nbspeach&nbspfile,&nbspin&nbspblocks
+&nbsp&nbsp-S&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsort&nbspby&nbspfile&nbspsize
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--sort=WORD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsort&nbspby&nbspWORD&nbspinstead&nbspof&nbspname:&nbspnone&nbsp(-U),&nbspsize&nbsp(-S),
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsptime&nbsp(-t),&nbspversion&nbsp(-v),&nbspextension&nbsp(-X)
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--time=WORD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l,&nbspshow&nbsptime&nbspas&nbspWORD&nbspinstead&nbspof&nbspdefault
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspmodification&nbsptime:&nbspatime&nbspor&nbspaccess&nbspor&nbspuse&nbsp(-u)
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspctime&nbspor&nbspstatus&nbsp(-c);&nbspalso&nbspuse&nbspspecified&nbsptime
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspas&nbspsort&nbspkey&nbspif&nbsp--sort=time
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--time-style=STYLE&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l,&nbspshow&nbsptimes&nbspusing&nbspstyle&nbspSTYLE:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfull-iso,&nbsplong-iso,&nbspiso,&nbsplocale,&nbspor&nbsp+FORMAT;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFORMAT&nbspis&nbspinterpreted&nbsplike&nbspin&nbsp'date';&nbspif&nbspFORMAT
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspis&nbspFORMAT1<newline>FORMAT2,&nbspthen&nbspFORMAT1&nbspapplies
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspto&nbspnon-recent&nbspfiles&nbspand&nbspFORMAT2&nbspto&nbsprecent&nbspfiles;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif&nbspSTYLE&nbspis&nbspprefixed&nbspwith&nbsp'posix-',&nbspSTYLE
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsptakes&nbspeffect&nbsponly&nbspoutside&nbspthe&nbspPOSIX&nbsplocale
+&nbsp&nbsp-t&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsort&nbspby&nbspmodification&nbsptime,&nbspnewest&nbspfirst
+&nbsp&nbsp-T,&nbsp--tabsize=COLS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspassume&nbsptab&nbspstops&nbspat&nbspeach&nbspCOLS&nbspinstead&nbspof&nbsp8
+&nbsp&nbsp-u&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-lt:&nbspsort&nbspby,&nbspand&nbspshow,&nbspaccess&nbsptime;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith&nbsp-l:&nbspshow&nbspaccess&nbsptime&nbspand&nbspsort&nbspby&nbspname;
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspotherwise:&nbspsort&nbspby&nbspaccess&nbsptime
+&nbsp&nbsp-U&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdo&nbspnot&nbspsort;&nbsplist&nbspentries&nbspin&nbspdirectory&nbsporder
+&nbsp&nbsp-v&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnatural&nbspsort&nbspof&nbsp(version)&nbspnumbers&nbspwithin&nbsptext
+&nbsp&nbsp-w,&nbsp--width=COLS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspassume&nbspscreen&nbspwidth&nbspinstead&nbspof&nbspcurrent&nbspvalue
+&nbsp&nbsp-x&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplist&nbspentries&nbspby&nbsplines&nbspinstead&nbspof&nbspby&nbspcolumns
+&nbsp&nbsp-X&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsort&nbspalphabetically&nbspby&nbspentry&nbspextension
+&nbsp&nbsp-1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsplist&nbspone&nbspfile&nbspper&nbspline
 
-SELinux options:
+SELinux&nbspoptions:
 
-  --lcontext                 Display security context.   Enable -l. Lines
-                             will probably be too wide for most displays.
-  -Z, --context              Display security context so it fits on most
-                             displays.  Displays only mode, user, group,
-                             security context and file name.
-  --scontext                 Display only security context and file name.
-      --help     display this help and exit
-      --version  output version information and exit
+&nbsp&nbsp--lcontext&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDisplay&nbspsecurity&nbspcontext.&nbsp&nbsp&nbspEnable&nbsp-l.&nbspLines
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwill&nbspprobably&nbspbe&nbsptoo&nbspwide&nbspfor&nbspmost&nbspdisplays.
+&nbsp&nbsp-Z,&nbsp--context&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDisplay&nbspsecurity&nbspcontext&nbspso&nbspit&nbspfits&nbspon&nbspmost
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdisplays.&nbsp&nbspDisplays&nbsponly&nbspmode,&nbspuser,&nbspgroup,
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsecurity&nbspcontext&nbspand&nbspfile&nbspname.
+&nbsp&nbsp--scontext&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDisplay&nbsponly&nbspsecurity&nbspcontext&nbspand&nbspfile&nbspname.
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--help&nbsp&nbsp&nbsp&nbsp&nbspdisplay&nbspthis&nbsphelp&nbspand&nbspexit
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--version&nbsp&nbspoutput&nbspversion&nbspinformation&nbspand&nbspexit
 
-SIZE is an integer and optional unit (example: 10M is 10*1024*1024).  Units
-are K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).
+SIZE&nbspis&nbspan&nbspinteger&nbspand&nbspoptional&nbspunit&nbsp(example:&nbsp10M&nbspis&nbsp10*1024*1024).&nbsp&nbspUnits
+are&nbspK,&nbspM,&nbspG,&nbspT,&nbspP,&nbspE,&nbspZ,&nbspY&nbsp(powers&nbspof&nbsp1024)&nbspor&nbspKB,&nbspMB,&nbsp...&nbsp(powers&nbspof&nbsp1000).
 
-Using color to distinguish file types is disabled both by default and
-with --color=never.  With --color=auto, ls emits color codes only when
-standard output is connected to a terminal.  The LS_COLORS environment
-variable can change the settings.  Use the dircolors command to set it.
+Using&nbspcolor&nbspto&nbspdistinguish&nbspfile&nbsptypes&nbspis&nbspdisabled&nbspboth&nbspby&nbspdefault&nbspand
+with&nbsp--color=never.&nbsp&nbspWith&nbsp--color=auto,&nbspls&nbspemits&nbspcolor&nbspcodes&nbsponly&nbspwhen
+standard&nbspoutput&nbspis&nbspconnected&nbspto&nbspa&nbspterminal.&nbsp&nbspThe&nbspLS_COLORS&nbspenvironment
+variable&nbspcan&nbspchange&nbspthe&nbspsettings.&nbsp&nbspUse&nbspthe&nbspdircolors&nbspcommand&nbspto&nbspset&nbspit.
 
-Exit status:
- 0  if OK,
- 1  if minor problems (e.g., cannot access subdirectory),
- 2  if serious trouble (e.g., cannot access command-line argument).
+Exit&nbspstatus:
+&nbsp0&nbsp&nbspif&nbspOK,
+&nbsp1&nbsp&nbspif&nbspminor&nbspproblems&nbsp(e.g.,&nbspcannot&nbspaccess&nbspsubdirectory),
+&nbsp2&nbsp&nbspif&nbspserious&nbsptrouble&nbsp(e.g.,&nbspcannot&nbspaccess&nbspcommand-line&nbspargument).
 
-GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-For complete documentation, run: info coreutils 'ls invocation'
-		</div>
+GNU&nbspcoreutils&nbsponline&nbsphelp:&nbsp<http://www.gnu.org/software/coreutils/>
+For&nbspcomplete&nbspdocumentation,&nbsprun:&nbspinfo&nbspcoreutils&nbsp'ls&nbspinvocation'
+		</pre>
 </details>
 
 ### Example 1.1) Basic Usage (ls)
