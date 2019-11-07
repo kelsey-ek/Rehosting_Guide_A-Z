@@ -4,9 +4,10 @@
 
 # Table of Contents 
 
-- [Pre-Migration](#pre-migration)
-  * [Mainframe Environment](#mainframe-environment)
-  * [OpenFrame Environment](#openframe-environment)
+- [Pre-Migration](#1.-pre-migration)
+  * [Mainframe Environment](#11-mainframe-environment)
+  * [OpenFrame Environment](#1.2-openframe-environment)
+    - [Accessing the Linux Server](#121-accessing-the-linux-server)
 - [Installation](#installation)
 - [Discovery](#discovery)
     * [OFMiner](#ofminer)
@@ -17,9 +18,9 @@
 - [Operation And Administration](#operation-and-administration)
 - [Applying Patches](#applying-patches)
 
-# Pre-Migration
+# 1. Pre-Migration
 
-## Mainframe Environment
+## 1.1 Mainframe Environment
 
 **Description**: Understanding the mainframe environment is crucial to rehosting it to OpenFrame. Once a customer is interested in rehosting, the technical details are discussed between TmaxSoft and the Customer. TmaxSoft can gather most of the critical information through a questionnaire (TODO: see reference document "Post Introduction Questionnaire"). This initial questionnaire is vital to determining the feasability of rehosting the mainframe to OpenFrame. Every customer has changed some configurations to suit their needs - There is no mainframe that is exactly like another. One of the most important tasks to rehosting a mainframe is configuring OpenFrame the same way the mainframe was configured. To accomplish this, we need to have the customer run some commands on the mainframe so we can see the results and adjust OpenFrame accordingly. A few examples are below, but this will be looked into more detail in the Configuration section.
 
@@ -33,9 +34,9 @@
 
 [**Reference Documents: Post Introduction Questionnaire**](https://forms.tmaxsoft.com/tmaxsoftglobal/form/OpenFrame/formperma/dcfCXyB1IY7ohnkCgnTe7-oGBi6i7rLDSXecQr7_QG8)
 
-## OpenFrame Environment
+## 1.2 OpenFrame Environment
 
-### Accessing the Linux Server
+### 1.2.1 Accessing the Linux Server
 
 **Prerequisities:**
 
@@ -43,15 +44,15 @@
 
 **Description:** This step includes how to access the Linux server. Depending on who built the Linux Server, the steps for completing this will vary.
 
-#### Accessing a Linux Server built by Rehosting Team
+#### 1.2.1.1 Accessing a Linux Server built by Rehosting Team
 
 **Description:** If the server is built by the rehosting team, **most likely**, there is no VDI (Virtual Desktop Infrastructure) required. The server can be accessed via PuTTY. Please refer to the Reference Documents. However, if access to a VDI is required first, please refer to the "Accessing a Linux Server on the Customer's Private Network" section. 
 
-#### Accessing a Linux Server on the Customer's Private Network
+#### 1.2.1.2 Accessing a Linux Server on the Customer's Private Network
 
 **Description:** If the server is built on-site by the customer, they are **most likely** using a private network which must first be accessed via VPN (Virtual Private Network) software such as CISCO Any Connect. Instructions on accessing the server must be provided by the customer. 
 
-#### Binary Request
+#### 1.2.1.3 Binary Request
 
 **Prerequisites:** 
 
@@ -63,7 +64,7 @@
 
 **Reference Documents:** "TODO: How to request customer Binaries"
 
-#### Licensing
+#### 1.2.1.4 Licensing
 
 **Prerequisites:** 
 
@@ -75,7 +76,7 @@
 
 ***
 
-# Installation
+# 2. Installation
 
 **Prerequisites:** 
 
@@ -89,7 +90,7 @@
 **Reference Documents:
 "TmaxSoft\_OpenFrame7\_fix2\_Installation\_V6.22"**
 
-## Verifying Successful Installation
+## 2.1 Verifying Successful Installation
 
 **Prerequisites:** 
 
@@ -117,7 +118,7 @@
 
 ***
 
-# Discovery
+# 3. Discovery
 
 **Prerequisites:**
 
@@ -127,7 +128,7 @@
 
 ***
 
-## OFMiner
+## 3.1 OFMiner
 
 **Prerequisites:**
 
@@ -146,7 +147,7 @@ analysis document.
 
 ***
 
-# Migration
+# 4. Migration
 
 **Description**: This step includes migrating source code and datasets.
 There are multiple options for downloading the data from the mainframe.
@@ -167,7 +168,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
 
 ***
 
-## Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
+## 4.1 Source Code (JCL, Procedures, COBOLs, COPYBOOKs)
 
 **Description:** Source Code Transfer should begin with JCL as it is the starting point for the JOBs. In many cases, a JCL will EXEC a PROC so the PROCs should also be prioritized. The second priority should be the COBOL programs that are EXEC'd in the JCL and the PROCs. Identifying and transferring COBOL programs may be a recursive task because a COBOL program can call another COBOL program referred to as a submodule. These submodules can also call other submodules, hence the recursiveness of this task. Additionally, COBOL programs can call COPYBOOKS to define the datasets, and these COPYBOOKS can reference other COPYBOOKS. Transferring these, are tertiary priority. You will need all of these elements to complete the Analysis step using OFMiner. Once the Source Code is migrated to OpenFrame, JOBs and Online Transactions can be submitted just as they were on the mainframe. In the mainframe, an edittor is used to modify the source code. In OpenFrame, we have many options. One option is through OFStudio which is TmaxSoft's version of eclipse. This allows you to modify source code and push to a git repository to maintain your source code. Another option would be to use the command line directly and modify the source code through an edittor such as Vi, Vim, or Nano. When migrating Source code, it's important to use the -L option to create the linux new line delimiter. The third option would be to use the spfedit tool which allows you to use mainframe commands to be able to edit a dataset or member of a pds. 
 
@@ -195,13 +196,13 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 ***
 
-## Datasets
+## 4.2 Datasets
 
 **Prerequisites:**
 
 **Description:** This task can be completed in parallel to the Installation and Discovery stages. This task requires a lot of effort and should be handled by no less than two engineers. We are currently in the process for standardizing how we are downloading datasets from the Mainframe to OpenFrame. Every mainframe is different, but a process should be created to standardize the process for each environment.
 
-### Standard Process (NON-VSAM):
+### 4.2.1 Standard Process (NON-VSAM):
 
   1. Customer needs to provide the copybooks. Each dataset has a corresponding copybook. There is no way for OpenFrame engineers to know which copybooks map to which datasets. The customer should provide a spreadsheet with the mapping. If the customer does not provide the copybooks, we can use OFMiner to generate the copybooks, but we cannot guarantee the integrity of the data using this method. 
 
@@ -211,7 +212,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
   With one customer, we are accomplishing this using 1 script called dsmigin.py. This python program queries the mainframe by connecting through linux ftp. After ensuring that the dataset is not migrated (archived), it will retrieve the dataset using the FTP command. The user can also pass options to execute the dsmigin command after retrieving the datasets.
 
-### VSAM Process
+### 4.2.2 VSAM Process
 
   1. Unload VSAM files on Mainframe to Flat (PS) files.
 
@@ -235,7 +236,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 ***
 
-# OpenFrame Configuration
+# 5. OpenFrame Configuration
 
 **Prerequisites:**
 
@@ -246,7 +247,7 @@ The below information can be found by running the ```dsmigin``` command with no 
 
 **Note:** You can read more about each of these configuration files based on the reference documents and manuals mentioned below.
 
-## TACF
+## 5.1 TACF
 
 **Prerequisites:** 
 
@@ -273,16 +274,16 @@ int customer_saf_exit_password(char *userid, char password, int count, char *his
 
 </details>
 
-## BATCH
+## 5.2 BATCH
   **Prerequisites:** 
 
   - Installation -- (Complete)
 
 **Description:** 
 
-## ONLINE
+## 5.3 ONLINE
 
-<h4>OSC Configuration (OpenFrame System for CICS)</h4>
+### 5.3.1 OSC Configuration (OpenFrame System for CICS)
 
 **Description:** Online Resources on the mainframe are defined in System Definitions Macro Files. For OpenFrame to access the resources, they must be defined in OpenFrame's System Definitions (OSD). Before loading the System Definitions, we need a VSAM dataset to load them into. However, loading all of System Definitions into the run time memory would be unnecessary, so only the System Definitions in the GRPLIST are added. 
 
@@ -298,7 +299,7 @@ Step 2.) Load the VSAM Dataset with the System Definitions File from the Mainfra
 oscsdgen -c -d OSC.SDMAKE.TEST [MACRO_FILE]
 ```
 
-<h5>oscsddump</h5>
+#### 5.3.1.1 oscsddump
 
 It should be noted that OpenFrame comes with a utility ```oscsddump``` which can be used to dump the OpenFrame System Definitions (OSD) to a regular file. This regular file can then be used to add or modify the existing OSD's. Each region has it's own dataset, and you can dump the OSD by specifying the region name or the vsam dataset.
 
@@ -313,7 +314,7 @@ oscsddump -r <region> <output_file_name>
                  If a file with this name already exists, it 
                  will be overwritten.
 ```
-<h5>oscrtsddump</h5>
+#### 5.3.1.2 oscrtsddump
 
 Similar to oscsddump, OpenFrame has an oscrtsddump utility which can dump the System Definitions from the GRPLIST stored in the runtime. 
 
@@ -326,7 +327,7 @@ oscrtsddump -r <region> <file>
                  will be overwritten.
 ```
 
-<h5>osctdlupdate</h5>
+#### 5.3.1.3 osctdlupdate
 
 Dynamic Modules, such as Cobol programs can modified during OSC uptime, but the integrity of a transaction in progress must be preserved. Therefore, when an online COBOL program is modified and recompiled, it is not updated in OSC until the osctdlupdate command is run. This tool registers and updates dynamic modules within OSC regions.
 
@@ -343,7 +344,7 @@ osctdlupdate <region> <module>
   - <module>   : Specifies an application module name
 ``` 
 
-<h5>Understanding Basic Map Support (BMS) Files</h5>
+<h5>5.3.1.3.1 Understanding Basic Map Support (BMS) Files</h5>
 
 * DFHMSD - Declares a mapset
 
@@ -386,9 +387,9 @@ osctdlupdate <region> <module>
 
 
 
-<h4>OSI Configuration (OpenFrame System for IMS)</h4>
+### 5.3.2 OSI Configuration (OpenFrame System for IMS)
 
-### Configuration Files
+## 5.4 Configuration Files
 
 **Location of these files:** $OPENFRAME_HOME/config
 
@@ -713,7 +714,7 @@ osctdlupdate <region> <module>
 
 </details>
 
-## Source Compilation
+## 6. Source Compilation
 
 **Prerequisites:** 
 
@@ -856,447 +857,4 @@ osctdlupdate <region> <module>
 
 # Applying Patches
 
-**General Notes:**
-
-1. A Patch directory (from here on out refered to as ${patch_dir}) should be created somewhere. In general, we create a PATCH directory inside of the _tmaxsw_ folder, then we create directories for each of the products.
-
-  The end product should look like:
-
-```
-${patch_dir}/
-  OFCOBOL/
-  PROSORT/
-  OFASM/
-```
-
-2. Once a patch is downloaded, it should be ftp'd to the ${patch_dir} and placed in the appropriate folder in regards to the IMS ticket. i.e. If the IMS ticket category is OFCOBOL, the patch should go in the ${patch_dir}/OFCOBOL.
-
-3. Create a directory inside ${patch_dir}/${product} with the IMS ticket number and the date. 
-
-  The end product should look something like this:
-
-```
-${patch_dir}/
-  OFCOBOL/
-    IMS123456_20190828/
-      libgeneric.so
-      FTP
-      tmadmin
-    IMS654321_20190829/
-      libgeneric2.so
-  PROSORT/
-    IMS987654_20190829/
-      prosort/
-    IMS456789_20190830/
-      prosort/
-  OFASM/
-    IMS242424_20190830/
-      ofasm/
-```
-
-## OpenFrame
-
-*General Notes:* 
-
-1. Compilers and Prosort are patched the same way (for the most part). Therefore, OFASM, OFCOBOL, OFPLI, and Prosort follow the same general process, but for completeness sake, they are all explicitly listed below.
-
-2. OpenFrame Base, Core(TMAX), OSI, HiDB, and TACF generally come in the form of individual library, binary, and utility files. These can all be patched the same way.
-
-3. ofpatch.sh is a shell script which can be utilized to quickly and easily patch library, binary, and utilities. It utilizes the <pre>offile</pre> command to test what kind of file it's patching, places it in the correct place, and then creates a symbolic link to the new file. In essence, this is what it does:
-
-Before:
-<pre>
-  libfile.so
-</pre>
-
-Execution:
-<pre>
-  ofpatch.sh -n 000001 libfile.2.so
-</pre>
-
-After:
-<pre>
-  libfile.so --> libfile.2.so   (this is a symbolic link to the new library file)
-  libfile.so                    (this is a backup of the old file)
-</pre>
-
-4. It's recommended that you keep track of the patches thoroughly. You can accomplish this by doing 2 things:
-  - Add the IMS ticket number which the patch was supplied through in the name of the file. For most of the examples below, we will use 000001 as the IMS ticket number.
-  - Add the date to the patch file name so you can tell when the patch was applied.
-
-### ofpatch.sh
-
-ofpatch.sh is a shell script created by SQA2 team leader. This script checks the type of patch file to be installed, unlinks the current version, copies the new patch to the correct directory (either core server, bin/util/lib), and creates a symbolic link to the new version. 
-
-_**IMPORTANT NOTE: Only core servers, bin files, lib files, and util files can be patched using ofpatch.sh**_
-
-#### How to use ofpatch.sh
-
-**Step 1.** Make sure that ofpatch.sh is stored somewhere in your $PATH. Make sure to check your .bash_profile and that ofpatch.sh is stored in a directory mentioned in the $PATH variable.
-
-**Step 2.** Decompress the patch file if it comes in a compressed form. (zip, tar, tar.gz, etc)
-
-**Step 3.** use ```ofpatch.sh -h``` to see the usage of the script.
-
-**Step 4.** Execute the script by following the syntax below:
-
-<pre>
-  ofpatch.sh -n ${IMS}_${DATE} ${PATCH_FILE}
-</pre>
-
-[**Reference Documents: ofpatch.sh**](../reference_guides/patch/scripts/ofpatch.sh)
-
-### OFCOBOL
-
-<details><summary>Steps</summary>
-
-OFCOBOL patches generally come in the form of entire directories. 
-
-**Step 1.** Unlink the current OFCOBOL directory
-<pre>
-cd <i>${OFCOBOL_HOME}</i>
-cd ..
-unlink OFCOBOL
-</pre>
-**Step 2.** Download the patch to the <i>${patch_dir}/OFCOBOL/${ims_date}</i> directory
-
-**Step 3.** Unpack the patch file
-<pre>
-tar -xzvf <i>${patch_file}</i>.tar.gz
-</pre>
-**Step 4.** There are two ways to manage directory-type patches. What I mean by directory-type patches, is patches that come in the form of full directories. You can either create a symbolic link to the path noted in step 2 or you can delete the existing OFCOBOL folder and replace it with a copy from the directory noted in step 2.
-
-   - **Step 4a.** Symbolic link: 
-<pre>
-cd /opt/tmaxapp
-ln -s <i>${patch_dir}/OFCOBOL/${ims_date}</i> OFCOBOL
-</pre>
-
-   - **Step 4b.** Create a copy:
-<pre>
-cd /opt/tmaxapp
-rm -r OFCOBOL
-cp -r <i>${patch_dir}/OFCOBOL/${ims_date}</i>/OFCOBOL .
-</pre>
-**Step 5.** Copy the old license directory to the new patched directory.
-<pre>
-cp -r <i>${OFCOBOL_BACKUP}</i>/license <i>${OFCOBOL_HOME}</i>
-</pre>
-**Step 6.** Check the current version to ensure that the patch was successful
-<pre>
-ofcob --version
-</pre>
-**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
-
-After applying the patch, the original issue reported in the IMS ticket should be retested.
-
-**Step 8.** Receive confirmation from the Customer that the patch was successful.
-
-</details>
-
-### PROSORT
-
-<details><summary>Steps</summary>
-
-Prosort patches generally come in the form of entire directories, but may also include some library files. In this guide, we will explain how to handle both.
-
-**Step 1.** Unlink the current Prosort directory
-
-<pre>
-  cd <i>${PROSORT_HOME}</i>
-  cd ..
-  unlink PROSORT
-</pre>
-
-**Step 2.** Download the patch to the <i>${patch_dir}/PROSORT/${ims_date}</i> directory
-
-**Step 3.** Unpack the patch file
-
-<pre>
-  tar -xzvf <i>${patch_file}.tar.gz</i>
-</pre>
-
-  You may notice there are some library files here like so:
-
-<pre>
-  patch_file.tar.gz
-  prosort/
-  libfile1.so
-  libfile2.so
-</pre>
-
-  If not, ignore **Step 6.**
-
-**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
-
-  - **Step 4a.** Symbolic link
-
-  <pre>
-    cd <i>${PROSORT_HOME}</i>
-    cd ..
-    unlink prosort
-    ln -s ${patch_dir}/PROSORT/${ims_date} prosort
-  </pre>
-
-  - **Step 4b.** Create a copy
-
-  <pre>
-    cd <i>${PROSORT_HOME}</i>
-    cd ..
-    rm -r prosort
-    cp -r <i>${patch_dir}/PROSORT/${ims_date}/prosort</i> .
-  </pre>
-
-**Step 5.** Copy the old license directory to the new patched directory
-
-<pre>
-  cp -r <i>${PROSORT_BACKUP}/license ${PROSORT_HOME}</i>
-</pre>
-
-**Step 6.** If there are library files, make sure to add them to <i>${OPENFRAME_HOME}/lib</i> directory.
-
-<pre>
-  cp <i>${patch_dir}/PROSORT/${ims_date}/prosort/lib* ${OPENFRAME_HOME}/lib/.</i>
-</pre>
-
-**Step 7.** Check the current version to ensure that the patch was successful
-
-<pre>
-  prosort -v
-</pre>
-
-**Step 8.** Test the patch - Did it resolve the issue the patch was created for in the first place?
-
-After applying the patch, the original issue reported in th e IMS ticket should be retested
-
-**Step 9.** Receive confirmation from the customer.
-
-</details>
-
-### OFASM
-
-<details><summary>Steps</summary>
-
-OFASM patches generally come in the form of entire directories, but may also include some library files. In this guide, we will explain how to handle both.
-
-**Step 1.** Unlink the current OFASM directory
-
-<pre>
-  cd <i>${OFASM_HOME}</i>
-  cd ..
-  unlink OFASM
-</pre>
-
-**Step 2.** Download the patch to the <i>${patch_dir}/OFASM/${ims_date}</i> directory
-
-**Step 3.** Unpack the patch file
-
-<pre>
-  tar -xzvf <i>${patch_file}.tar.gz</i>
-</pre>
-
-<pre>
-  patch_file.tar.gz
-  OFASM/
-</pre>
-
-**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
-
-  - **Step 4a.** Symbolic link
-
-  <pre>
-    cd <i>${OFASM_HOME}</i>
-    cd ..
-    unlink OFASM
-    ln -s ${patch_dir}/OFASM/${ims_date} prosort
-  </pre>
-
-  - **Step 4b.** Create a copy
-
-  <pre>
-    cd <i>${OFASM_HOME}</i>
-    cd ..
-    rm -r OFASM
-    cp -r <i>${patch_dir}/OFASM/${ims_date}/OFASM</i> .
-  </pre>
-
-**Step 5.** Copy the old license directory to the new patched directory
-
-<pre>
-  cp -r <i>${OFASM_BACKUP}/license ${OFASM_HOME}</i>
-</pre>
-
-**Step 6.** Check the current version to ensure that the patch was successful
-
-<pre>
-  ofasm -v
-</pre>
-
-**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
-
-After applying the patch, the original issue reported in th e IMS ticket should be retested
-
-**Step 8.** Receive confirmation from the customer.
-
-</details>
-
-### OFPLI
-
-<details><summary>Steps</summary>
-
-  OFPLI patches generally come in the form of full directories
-
-  **Step 1.** Unlink the current OFPLI directory
-
-<pre>
-  cd <i>${OFPLI_HOME}</i>
-  cd ..
-  unlink OFPLI
-</pre>
-
-**Step 2.** Download the patch to the <i>${patch_dir}/OFPLI/${ims_date}</i> directory
-
-**Step 3.** Unpack the patch file
-
-<pre>
-  tar -xzvf <i>${patch_file}.tar.gz</i>
-</pre>
-
-<pre>
-  patch_file.tar.gz
-  OFPLI/
-</pre>
-
-**Step 4.** Create symbolic link, or delete and replace the prosort folder with a copy from the <i>${patch_file}</i>
-
-  - **Step 4a.** Symbolic link
-
-  <pre>
-    cd <i>${OFPLI_HOME}</i>
-    cd ..
-    unlink OFPLI
-    ln -s ${patch_dir}/OFPLI/${ims_date} prosort
-  </pre>
-
-  - **Step 4b.** Create a copy
-
-  <pre>
-    cd <i>${OFPLI_HOME}</i>
-    cd ..
-    rm -r OFPLI
-    cp -r <i>${patch_dir}/OFPLI/${ims_date}/OFPLI</i> .
-  </pre>
-
-**Step 5.** Copy the old license directory to the new patched directory
-
-<pre>
-  cp -r <i>${OFPLI_BACKUP}/license ${OFPLI_HOME}</i>
-</pre>
-
-**Step 6.** Check the current version to ensure that the patch was successful
-
-<pre>
-  ofpli --version
-</pre>
-
-**Step 7.** Test the patch - Did it resolve the issue the patch was created for in the first place?
-
-After applying the patch, the original issue reported in th e IMS ticket should be retested
-
-**Step 8.** Receive confirmation from the customer.
-
-</details>
-
-### OpenFrame Base / OpenFrame Batch / Core(TMAX) / OpenFrame OSI / OpenFrame HiDB / OpenFrame TACF
-
-<details><summary>Steps</summary>
-
-OpenFrame Base / OpenFrame Batch / OSI / HiDB / TACF patches generally come in the form of library files and binary files. We can utilize ofpatch.sh to patch these quickly and easily.
-
-_See General Notes section for Patching OpenFrame for instructions with ofpatch.sh_
-
-If you choose not to use ofpatch.sh, you can also manually patch library files, binary files, and utility files the same way.
-
-1. Move the original file to {file_name}.bk{date}
-
-2. Copy the patch file to the correct location
-  - Library Files go to $OPENFRAME_HOME/lib
-  - Binary Files go to $OPENFRAME_HOME/bin
-  - Utility Files go to $OPENFRAME_HOME/util
-
-3. Create a symbolic link from the new file to the original name
-
-Example:
-<pre>
-  ln -s {patch_file} {original_file}
-  Real Example:
-  ln -s tmadmin.000001.20190923 tmadmin
-</pre>
-
-</details>
-
-### JEUS
-
-### OFMiner
-
-<details><summary>Steps</summary>
-
-  OFMiner patches come in .war files. The current OFMINER_HOME must be backed up before patching. Additionally, the managed server containing OFMiner should be offline while patching, and rebooted afterwards. After patching, some sql queries must be run to update the tables in Tibero which OFMiner uses to store meta data. 
-
-1. Shutdown Jeus Managed Server where OFMiner is deployed
-
-2. Create a backup of the current OFMINER_HOME directory
-
-  <pre>
-
-    cd ${OFMINER_HOME}
-    cd ..
-    cp -r ${OFMINER_HOME} OFMINER.BK.${DATE}
-
-  </pre>
-
-3. Unzip .war file. 
-
-<pre>
-
-  unzip ${patch_file.war}
-
-</pre>
-
-4. Copy the properties, repository, and license folder from the backup to the newly decompressed OFMiner.
-
-<pre>
-
-  cp -r OFMINER.BK.${DATE}/properties ${OFMINER_HOME}/.
-  cp -r OFMINER.BK.${DATE}/repository ${OFMINER_HOME}/.
-  cp -r OFMINER.BK.${DATE}/license ${OFMINER_HOME}/.
-
-</pre>
-
-5. Run the DROP, CREATE, INSERT sql queries included with the patch
-
-<pre>
-
-  cd ${OFMINER_HOME}/scripts
-  tbsql ${tibero_user}/${tibero_user_password}@DROP.sql
-  tbsql ${tibero_user}/${tibero_user_password}@CREATE.sql
-  tbsql ${tibero_user}/${tibero_user_password}@INSERT.sql
-
-</pre>
-
-6. Reboot Managed Server 
-
-<pre>
-
-  jeusadmin -u ${jeus_admin} -p ${jeus_password}
-  >> startManagedServer -s ${ofminer_server_name}
-
-</pre>
-
-7. Erase your browser's cache.
-
-8. Logon and re-analyze.
-
-</details>
-
-## Tibero
+[**Reference Guide: How to Apply Patches**](./reference_guides/patch/How_to_Apply_Patches.md "Learn how to apply patches")
