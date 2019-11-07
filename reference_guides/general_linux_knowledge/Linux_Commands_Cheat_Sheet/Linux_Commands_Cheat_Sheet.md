@@ -2,8 +2,8 @@
 
 # Table of Contents
 
-- [ls - List Files and Directories](#1-ls-list-files-and-directories)
-	- [ls - Basic Usage](#example-11-basic-usage-ls)
+1. [ls - List Files and Directories](#1-ls-list-files-and-directories)
+	1. [ls - Basic Usage](#example-11-basic-usage-ls)
 	- [ls - Long Listing](#example-12-long-listing-ls--l)
 	- [ls - Long Listing Time Based Reverse Order](#example-13-long-listing-based-on-time-and-reversed)
 
