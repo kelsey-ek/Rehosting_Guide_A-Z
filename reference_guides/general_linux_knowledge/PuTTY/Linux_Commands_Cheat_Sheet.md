@@ -16,5 +16,8 @@ ls
 ![alt-text](./reference_images/linux_cheat_sheet_images/basic_ls.PNG "Basic Usage")
 
 ### Example 2. Long Listing (ls -l)
+```bash
+ls -l
+```
 
 ![alt-text](./reference_images/linux_cheat_sheet_images/ls_l.PNG "Long Listing")
