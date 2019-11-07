@@ -26,6 +26,9 @@
 	1. [\* - List Files Ending in .txt](#example-61-list-files-ending-in-txt)
 	2. [\* - List Files Starting with YSW](#example-62-list-files-starting-with-ysw)
 	3. [\* - Move All Files from Current Directory to Another Directory](#example-63-move-all-files-from-current-directory-to-another-directory)
+7. [ln - Link](#7-ln-link)
+	1. [ln - Create a Symbolic Link](#example-71-create-a-symbolic-link)
+	2. [ln - Create a Hard Link](#example-72-create-a-hard-link)
 
 
 ## 1. ls (List Files and Directories)
@@ -354,3 +357,31 @@ mv * ${directory}
 ```
 
 ![alt-text](./reference_images/mv_star_directory.PNG "mv * directory")
+
+## 7. ln (Link)
+
+**Description:** Use ```ln``` to create a link from a file or directory, to another. This is used frequently when patching because instead of renaming new files, we can create a symbolic link to the file regardless of it's new name.
+
+### Example 7.1) Create a Symbolic Link
+
+```bash
+ln -s ${file} ${link}
+```
+
+In the example below, we create a file called file1.txt, but it's inside a directory called _all_ which is inside another directory called _new\_files_. We want to be able to view the contents of the file, as well as modify the file from our home directory, without having to pass the path or going into both directories. So we create a symbolic link so we can access the file from the home directory similar to a how a shortcut would operate.
+
+Additionally, we do not want to create a new file, but when we access the link, we want to modify the original file. In the command, the ```-s``` stands for Symbolic or Soft link.
+
+![alt-text](./reference_images/ln_file1.PNG "Symbolic Link to File1.txt")
+
+
+### Example 7.2) Create a Hard Link
+
+```bash
+ln ${file} ${link}
+```
+
+Unlink the Symbolic Link, a Hard Link will create another file that modifies both the new file and the linked file.
+
+![alt-text](./reference_images/ln_file2.PNG "Hard Link to File2.txt")
+
