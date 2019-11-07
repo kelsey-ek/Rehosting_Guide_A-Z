@@ -13,7 +13,7 @@
 
 <details>
 	<summary>Click Here for ls Usage</summary>
-<pre>
+		<pre>
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -21,7 +21,7 @@ Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 Mandatory arguments to long options are mandatory for short options too.
   -a, --all                  do not ignore entries starting with .
   -A, --almost-all           do not list implied . and ..
-      --author               with -l, print the author of each file
+      <t>--author               with -l, print the author of each file
   -b, --escape               print C-style escapes for nongraphic characters
       --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
                                '--block-size=M' prints sizes in units of
