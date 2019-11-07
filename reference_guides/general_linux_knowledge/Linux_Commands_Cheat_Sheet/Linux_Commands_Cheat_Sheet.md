@@ -21,6 +21,7 @@
 5. [rm - Remove](#5-rm-remove)
 	1. [rm - Remove a File](#example-51-remove-a-file)
 	2. [rm - Remove a Directory](#example-52-remove-a-directory)
+	3. [rmdir - Remove an Empty Directory](#example-53-remove-an-empty-directory)
 
 ## 1. ls (List Files and Directories)
 
@@ -320,3 +321,7 @@ rm -r ${directory}
 If you try to use this command on a non-empty directory, you will receive an error. However, if you know the directory is empty, you can use this command. It is safer than using ```rm -r```
 
 ![alt-text](./reference_images/rmdir.PNG "Remove Empty Directory")
+
+## \* (Wildcards)
+
+Wildcards can be very useful for modifying or moving many files in a single command. It can be slightly dangerous, however, if you are attempting to remove files. Just be sure you know what you're removing before removing it. You can always list or echo out 
