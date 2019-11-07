@@ -22,8 +22,11 @@
 	1. [rm - Remove a File](#example-51-remove-a-file)
 	2. [rm - Remove a Directory](#example-52-remove-a-directory)
 	3. [rmdir - Remove an Empty Directory](#example-53-remove-an-empty-directory)
-6. [\* - Wildcards](#6-wildcards)
-	
+6. [\* - Wildcards](#6--wildcards)
+	1. [\* - List Files Ending in .txt](#example-61-list-files-ending-in-txt)
+	2. [\* - List Files Starting with YSW](#example-62-list-files-starting-with-ysw)
+	3. [\* - Move All Files from Current Directory to Another Directory](#example-63-move-all-files-from-current-directory-to-another-directory)
+
 
 ## 1. ls (List Files and Directories)
 
