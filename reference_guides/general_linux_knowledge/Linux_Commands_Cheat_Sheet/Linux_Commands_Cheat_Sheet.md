@@ -307,10 +307,16 @@ rm ${file}
 
 ### Example 5.2) Remove a Directory
 
-By passing the ```-r``` flag, we are going to recursively move all the files inside a directory, as well as the directory itself. **_This is an extremely dangerous command. You should Double-Triple check what you are removing before you execute this command_**
+By passing the ```-r``` flag, we are going to recursively move all the files inside a directory, as well as the directory itself. **_This can be an extremely dangerous command. You should Double-Triple check what you are removing before you execute this command_**
 
 ```bash
 rm -r ${directory}
 ```
 
 ![alt-text](./reference_images/rm_directory.PNG "Remove Directory")
+
+### Example 5.3) Remove an Empty Directory
+
+If you try to use this command on a non-empty directory, you will receive an error. However, if you know the directory is empty, you can use this command. It is safer than using ```rm -r```
+
+![alt-text](./reference_images/rmdir.PNG "Remove Empty Directory")
