@@ -243,3 +243,14 @@ cp ${file} ${path}/${copy}
 ```
 
 ![alt-text](./reference_images/cp_to_directory.PNG "Creating a New File in Different Directory")
+
+### Example 3.3) Copy a Directory
+
+By adding the ```-r``` option, which stands for recursive, we can copy all files in a directory as well as the directory itself
+
+```bash
+cp -r ${directory} ${copy}
+```
+
+![alt-text](./reference_images/cp_directory.PNG "Copying a Directory")
+
