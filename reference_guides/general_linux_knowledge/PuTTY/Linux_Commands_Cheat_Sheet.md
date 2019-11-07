@@ -170,3 +170,41 @@ ls -lrt
 
 ![alt-text](./reference_images/linux_cheat_sheet_images/ls_lrt.PNG "Long Listing - Time Based, Reverse Ordered")
 
+## 2. cd (Change Directory)
+
+**Description:** This command allows you to change your current working directory. Similar to double clicking a folder in a windows machine, this command will move your current position to a new directory. 
+
+### Example 2.1) Change Directory to Fully Qualified Path
+
+If you know exactly where your target directory is, meaning you know the entire path starting from the root directory (/), you can pass the entire path and you will be moved to that directory.
+
+```bash
+cd /home/mkoziel/Desktop
+```
+
+![alt-text](./reference_images/linux_cheat_sheet_images/cd_full_path.PNG "Change Directory to Fully Qualified Path")
+
+### Example 2.2) Change Directory Up to Relative Path
+
+If you want to go back one directory, you can pass ```..``` in your path. Let's say you're in **/home/mkoziel/Desktop** but you want to go back to the **/home/mkoziel** directory, you can use the following command:
+
+```bash
+cd ..
+```
+
+![alt-text](./reference_images/linux_cheat_sheet_images/cd_back_one.PNG "Change Directory One Level Up")
+
+**Note: The ```~``` character is a synonym for home directory. Since I am using the mkoziel user, and my home directory is defined as /home/mkoziel, linux substituted the full path /home/mkoziel to ~**
+
+### Example 2.3) Change Directory Down to Relative Path
+
+If you want to move to the Desktop directory from the home directory, instead of passing the fully qualified path, you can just type the relative path.
+
+![alt-text](./reference_images/linux_cheat_sheet_images/cd_down_one.PNG "Change Directory One Level Down")
+
+### Example 2.4) Change Directory Combining Down and Up
+
+Let's say you're currently in the Documents directory, but you meant to type Desktop instead. We can move one directory up, and one directory down at the same time.
+
+![alt-text](./reference_images/linux_cheat_sheet_images/cd_up_down.PNG "Change Directory down and up")
+
