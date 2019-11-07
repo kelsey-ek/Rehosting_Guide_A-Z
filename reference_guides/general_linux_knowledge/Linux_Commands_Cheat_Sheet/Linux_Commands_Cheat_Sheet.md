@@ -407,4 +407,3 @@ tar -xzvf ${target}
 ```
 
 ![alt-text](./reference_images/tar_decompress.PNG "Decompress a tar.gz file")
-
