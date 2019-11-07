@@ -10,6 +10,10 @@
     1. [cd - Fully Qualified Path](#example-21-change-directory-to-fully-qualified-path)
     2. [cd - Up to Relative Path](#example-22-change-directory-up-to-relative-path)
     3. [cd - Down to relative Path](#example-23-change-directory-down-to-relative-path)
+3. [cp - Copy Files and Directories](#3-cp-copy)
+	1. [cp - Basic Usage](#example-31-basic-usage-copy-a-file)
+	2. [cp - Copy a File From One Directory to Another](#example-32-copy-a-file-from-one-directory-to-another)
+	3. [cp - Copy a Directory](#example-33-copy-a-directory)
 
 ## 1. ls (List Files and Directories)
 
