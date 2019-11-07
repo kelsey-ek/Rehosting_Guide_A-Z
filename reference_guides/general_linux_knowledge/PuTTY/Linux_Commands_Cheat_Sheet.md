@@ -200,11 +200,19 @@ cd ..
 
 If you want to move to the Desktop directory from the home directory, instead of passing the fully qualified path, you can just type the relative path.
 
+```bash
+cd ${directory}
+```
+
 ![alt-text](./reference_images/linux_cheat_sheet_images/cd_down_one.PNG "Change Directory One Level Down")
 
 ### Example 2.4) Change Directory Combining Down and Up
 
-Let's say you're currently in the Documents directory, but you meant to type Desktop instead. We can move one directory up, and one directory down at the same time.
+Let's say you're currently in the Documents directory, but you meant to type Desktop instead. We can move one directory up, and one directory down at the same time. If you wanted to go back multiple directories, you would add ```../``` for as many directories you want to go back.
+
+```bash
+cd ../${directory}
+```
 
 ![alt-text](./reference_images/linux_cheat_sheet_images/cd_up_down.PNG "Change Directory down and up")
 
