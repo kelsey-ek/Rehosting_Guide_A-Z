@@ -6,7 +6,13 @@ Follow this guide to build a new OSC Region.
 
 1. [Check Resources of SD Macro File](#Check-the-resources-of-the-region-from-the-sd-macro-file)
 2. [Build the region and configure it in TMAX configuration](#build-the-region-and-configure-it-in-tmax-configuration)
-3. 
+3. [Generate Online System VSAM Files TDQ, TSQ, SD for the Region](#generate-online-system-vsam-files-tdq-tsq-sd-for-the-region)
+4. [Create and edit Online Region Configuration Files](#create-and-edit-online-region-configuration-files-copy---rename---edit)
+5. [Create MAPDIR, TBLDIR, TDLDIR Directory for the Region](#create-mapdir-tbldir-tdldir-directory-for-the-region)
+6. [Modify the TDL Configuration File for the Region](#modify-the-tdl-configuration-file-for-the-region)
+7. [Create the Region Memory](#create-the-region-memory)
+8. [Add the Region to the Region List for Booting the Region when using oscboot](#add-the-region-to-the-region-list-for-booting-the-region-up-when-using-oscboot)
+9. [Reboot OpenFrame to Verify](#reboot-openframe-to-make-the-region-server-setting-effective-and-start-the-region-server)
 
 ## Steps
 
