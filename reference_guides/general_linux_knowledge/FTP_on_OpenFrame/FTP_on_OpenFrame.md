@@ -112,7 +112,6 @@ LFTP is very similar to FTP except that it's made especially for Linux FTP. You 
 	   -d: enable debugging
 </details>
 
-Below is a link to the LFTP Manual which describes, in detail, how to use the LFTP functionality.
-
+Here is a link to the LFTP Manual which describes, in detail, how to use the LFTP functionality:
 	[CLICK ME](https://lftp.yar.ru/lftp-man.html)
 
