@@ -113,5 +113,6 @@ LFTP is very similar to FTP except that it's made especially for Linux FTP. You 
 </details>
 
 Below is a link to the LFTP Manual which describes, in detail, how to use the LFTP functionality.
+
 	[CLICK ME](https://lftp.yar.ru/lftp-man.html)
 
