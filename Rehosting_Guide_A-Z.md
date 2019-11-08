@@ -652,6 +652,11 @@ osctdlupdate <region> <module>
   </p></details>
 
 * **osc.lu.conf**
+* **osc._REGION_.conf** 
+  <details>
+    <summary>Click here for more details about osc._REGION_.conf</summary>
+      SYSID=NAME - NAME MUST BE UNIQUE
+  </details>
 * **osc.region.list**
 * **osc._IMSID_.conf**
 
