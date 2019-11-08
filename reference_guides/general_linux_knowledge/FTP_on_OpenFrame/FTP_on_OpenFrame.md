@@ -89,3 +89,29 @@ When GET'ing a file, you are transferring the file from the remote server, to th
 GET ${file} ${target_name}
 ```
 
+## LFTP Command Line
+
+LFTP is very similar to FTP except that it's made especially for Linux FTP. You are able to pass multiple commands in a single line, and the syntaxing is slightly different. Please refer to the below link for LFTP usage.
+
+<details>
+	<summary>
+		Click Here for LFTP Usage
+	</summary>
+	[mkoziel@ofdemo ~]$ ftp -h
+
+	Usage: { ftp | pftp } [-Apinegvtd] [hostname]
+	   -A: enable active mode
+	   -p: enable passive mode (default for ftp and pftp)
+	   -i: turn off prompting during mget
+	   -n: inhibit auto-login
+	   -e: disable readline support, if present
+	   -g: disable filename globbing
+	   -m: don't force data channel interface to the same as control channel
+	   -v: verbose mode
+	   -t: enable packet tracing [nonfunctional]
+	   -d: enable debugging
+</details>
+
+Below is a link to the LFTP Manual which describes, in detail, how to use the LFTP functionality.
+	[CLICK ME](https://lftp.yar.ru/lftp-man.html)
+
