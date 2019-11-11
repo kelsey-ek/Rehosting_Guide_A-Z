@@ -840,7 +840,7 @@ osctdlupdate <region> <module>
 
 - JEUS
 
-  - catdomain (TODO: Add supporting scripts and Documentation)
+  - [catdomain](./reference_guides/openframe_scripts/catdomain/documentation/README.md)
 
 - BATCH
 
