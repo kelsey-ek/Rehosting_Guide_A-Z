@@ -12,3 +12,5 @@ usage: sh catdomain.sh
 ```
 
 To set the script up properly, you may need to change lines 9-25 to match the server names and application names given during the time of installation.
+
+You can find the source code here: [Link to Source](../source/catdomain.sh)
