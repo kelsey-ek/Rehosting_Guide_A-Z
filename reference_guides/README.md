@@ -44,7 +44,7 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 - general_linux_knowledge
 
-	- [PuTTY - How to install PuTTY & How to Connect to a Server](./general_linux_knowledge/PuTTY/Connecting_To_A_Server_With_PuTTY.md "Install and Connect to Server")
+	- [General Linux Knowledge](./general_linux_knowledge/ "General Linux Knowledge")
 
 - source_transfer
 
