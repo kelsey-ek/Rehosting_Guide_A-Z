@@ -12,6 +12,7 @@ Below are some of the most commonly used commands that can make modifying and na
 	- [2.2 Move the Cursor to Beginning of Line](#22-move-the-cursor-to-beginning-of-line)
 	- [2.3 Move the Cursor to End of File](#23-move-the-cursor-to-end-of-file)
 	- [2.4 Move the Cursor to Beginning of File](#24-move-the-cursor-to-beginning-of-file)
+	- [2.5 Move the Cursor to Line 25](#25-move-the-cursor-to-line-25)
 - [3. Insert Mode](#3-insert-mode)
 	- [3.1 Insert Mode at Current Position](#31-insert-mode-at-current-position)
 	- [3.2 Insert Mode at End of Line](#32-insert-mode-at-end-of-line)
@@ -73,6 +74,10 @@ or
 #### 2.4 Move the Cursor to Beginning of File
 
 ```:1```
+
+#### 2.5 Move the Cursor to Line 25
+
+```:25```
 
 ### 3. Insert Mode
 
