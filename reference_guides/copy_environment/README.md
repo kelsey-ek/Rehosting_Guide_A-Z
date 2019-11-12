@@ -61,22 +61,33 @@ tbboot
 
 6. Verify
 
+Connect to Tibero
+
+```bash
+tbsql ${tibero_user}/${tibero_password}
+```
+
 Create a test table in the new environment.
 
 ```sql
-#TODO
+CREATE TABLE TEST(DUMMY VARCHAR (1));
 ```
 
-Insert something into the table
+ Insert something into the table. Here we are using the letter T to symbolize that it is a TEST environment. In case we are setting up multiple new environments, we would assign a value that would represent each environment. For example:
+
+ - T - Test
+ - D - DEV
+ - U - UAT
+ - P - PROD
 
 ```sql
-#TODO
+INSERT INTO TEST VALUES ('T');
 ```
 
 Connect from old server to new server to check the values in the database
 
 ```sql
-#TODO
+SELECT * FROM TEST;
 ```
 
 ### Application(OpenFrame) Server
