@@ -59,13 +59,30 @@ sed "s/FOO/BAR/" file.txt
 ```
 
 <details>
-	<summary>Click here for Result</summary>
+	<summary>Click here for the Result</summary>
 
 ```
 BAR 123 ABC BAR
 BAR 123 ABC FOO
 BAR BAR FOO BAR
 BAR BAR BAR FOO
+```
+</details>
+
+Now let's try again with the ```g``` tag on the end.
+
+```bash
+sed "s/FOO/BAR/g" file.txt
+```
+
+<details>
+	<summary>Click Here for the Result</summary>
+
+```
+BAR 123 ABC BAR
+BAR 123 ABC BAR
+BAR BAR BAR BAR
+BAR BAR BAR BAR
 ```
 </details>
 
