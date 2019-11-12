@@ -5,6 +5,8 @@ SED is a very powerful tool which can be used to filter and transform text. Occa
 ## Table of Contents
 
 - [1. General SED Knowledge And First Example](#1-general-sed-knowledge-and-first-example)
+	- [1.1 Sections Breakdown](#11-sections-breakdown)
+	- [1.2 Try it Yourself](#12-try-it-yourself)
 
 ### 1. General SED Knowledge And First Example
 
@@ -27,7 +29,7 @@ In the above command, the sections are delimited by **/**
 
 Let's break it down further.
 
-#### Sections
+#### 1.1 Sections Breakdown
 
 1. Substitute is the most commonly used command. For the purpose of this document, this is the main command we will focus on.
 
@@ -37,7 +39,7 @@ Let's break it down further.
 
 4. Notice how I said **all instances of FOO** this is because we added the ```g``` command at the end of our command. This means do a global replacement. If we neglected the ```g```, only the first instance of FOO per line would be replaced.
 
-#### Try it yourself
+#### 1.2 Try it Yourself
 
 Click [Here](./examples/example1/file.txt) for a sample file.
 
