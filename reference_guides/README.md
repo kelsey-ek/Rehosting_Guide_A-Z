@@ -26,12 +26,22 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 	- [How to Create an OFMiner Report](./ofminer/How_to_Create_an_OFMiner_Report.md "Create an OFMiner Report")
 
+- openframe_scripts
+
+	- [catdomain](./openframe_scripts/catdomain/documentation/README.md "catdomain")
+
 - osc
+
+	- [Build Region](./osc/build_region/osc_region_build_guide.md "How to Build an OSC Region")
+
 - osi
 
 	- [osimfsgen - How to Compile MFS Resources](./osi/osimfsgen/How_to_compile_MFS_resources.md "How to Compile MFS Resources")
 
 - patch
+
+	- [How to Apply Patches](./patch/How_to_Apply_Patches.md "How to Apply Patches")
+
 - general_linux_knowledge
 
 	- [PuTTY - How to install PuTTY & How to Connect to a Server](./general_linux_knowledge/PuTTY/Connecting_To_A_Server_With_PuTTY.md "Install and Connect to Server")
@@ -41,4 +51,10 @@ The purpose of this directory is to hold all of the reference documents mentione
 	- [How to transfer source code from Mainframe to OpenFrame](./source_transfer/How%20To%20Transfer%20Source%20Code%20from%20the%20Mainframe.md)
 
 - tacf
+
+	- [TACF Commands](./tacf/TACF_Commands.md "TACF Commands")
+
+	- [How to Use tacfmigin](./tacf/tacfmigin/How_to_use_tacfmigin.md "How to Use tacfmigin")
+
+
 - webterminal
