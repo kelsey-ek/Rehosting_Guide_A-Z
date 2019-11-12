@@ -46,21 +46,21 @@ vim ${file}
 
 The directional keys are **H J K and L**
 
-**J** - UP
+_**J**_ - UP
 
-**K** - DOWN
+_**K**_ - DOWN
 
-**H** - LEFT
+_**H**_ - LEFT
 
-**L** - RIGHT
+_**L**_ - RIGHT
 
 #### 2.1 Move the Cursor to End of Line
 
-**$**
+_**$**_
 
 #### 2.2 Move the Cursor to Beginning of Line
 
-**0** 
+_**0**_
 
 or 
 
