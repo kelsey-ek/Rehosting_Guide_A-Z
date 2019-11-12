@@ -16,10 +16,11 @@ sed "s/FOO/BAR/g" file.text
 
 In the above command, the sections are delimited by **/**
 
-|Section|Meaning|
-|```s```|substitute|
-|```FOO```|search for FOO|
-|```BAR```|replace FOO with BAR|
-|```g```|GLOBALLY|
+| Section | Meaning               |
+|---------|-----------------------|
+|```s```  |  substitute           |
+|```FOO```|  search for FOO       |
+|```BAR```|  replace FOO with BAR |
+|```g```  |  GLOBALLY             |
 
 
