@@ -46,57 +46,57 @@ vim ${file}
 
 The directional keys are **H J K and L**
 
-_**J**_ - UP
+```J - UP```
 
-_**K**_ - DOWN
+```K - DOWN```
 
-_**H**_ - LEFT
+```H - LEFT```
 
-_**L**_ - RIGHT
+```L - RIGHT```
 
 #### 2.1 Move the Cursor to End of Line
 
-_**$**_
+```$```
 
 #### 2.2 Move the Cursor to Beginning of Line
 
-_**0**_
+```0```
 
 or 
 
-**^**
+```^```
 
 #### 2.3 Move the Cursor to End of File
 
-**G**
+```G```
 
 #### 2.4 Move the Cursor to Beginning of File
 
-**:1**
+```:1```
 
 ### 3. Insert Mode
 
-To begin typing and backspacing, you need to be in insert mode. Once you are in insert mode, you no longer use the **H J K L** keys to navigate, instead, use the arrow keys. There are several ways to get into insert mode:
+To begin typing and backspacing, you need to be in insert mode. Once you are in insert mode, you no longer use the ```H J K L``` keys to navigate, instead, use the arrow keys. There are several ways to get into insert mode:
 
 #### 3.1 Insert mode at Current Position
 
-**i**
+```i```
 
 #### 3.2 Insert Mode at End of Line
 
 This is how you can quickly append to the end of a line
 
-**A**
+```A```
 
 ### 4. Deleting
 
 #### 4.1 Delete a Line
 
-**dd**
+```dd```
 
 #### 4.2 Delete a Character on Cursor Position
 
-**x**
+```x```
 
 #### 4.3 Deleting in Insert Mode
 
@@ -104,7 +104,7 @@ While in Insert Mode, you can use ```backspace``` or ```delete``` to remove text
 
 ### 5. Find a Pattern
 
-**/${pattern}**
+```/${pattern}```
 
 Where ${pattern} is the text you want to search for. For example, if you want to search for OPENFRAME the command would be like below:
 
@@ -114,39 +114,39 @@ Where ${pattern} is the text you want to search for. For example, if you want to
 
 #### 5.1 Go to Next Occurance of Pattern
 
-**n**
+```n```
 
 ### 6. Copy and Pasting
 
 #### 6.1 Copy a Line
 
-**Y**
+```Y```
 
 #### 6.2 Paste the Line Above Cursor Position
 
-**P**
+```P```
 
 #### 6.3 Paste the Line Below Cursor Position
 
-**p**
+```p```
 
 ### 7. Saving and Exitting
 
 The below commands can be written one at a time, or together. For Example: 
 
-**:w**
+```:w```
 
 or 
 
-**:wq**
+```:wq```
 
 #### 7.1 Save Changes
 
-**:w**
+```:w```
 
 #### 7.2 Quit
 
-**:q**
+```:q```
 
 If you have already made changes to the file, it will give you a warning
 
@@ -154,8 +154,8 @@ If you have already made changes to the file, it will give you a warning
 
 In order to quite without saving, you must add an exclamation mark (!) to force quit.
 
-**:q!**
+```:q!```
 
 As stated in Section 7, you can save changes and quit at the same time, by passing both **w** and **q**
 
-**:wq**
+```:wq```
