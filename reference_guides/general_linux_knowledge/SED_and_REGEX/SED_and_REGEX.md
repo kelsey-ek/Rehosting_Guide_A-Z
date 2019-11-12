@@ -4,7 +4,9 @@ SED is a very powerful tool which can be used to filter and transform text. Occa
 
 ## Table of Contents
 
-### General SED Knowledge
+- [1. General SED Knowledge And First Example](#1-general-sed-knowledge-and-first-example)
+
+### 1. General SED Knowledge And First Example
 
 SED can be very confusing to look at and read. I recommend breaking down each section and reading each section individually.
 
