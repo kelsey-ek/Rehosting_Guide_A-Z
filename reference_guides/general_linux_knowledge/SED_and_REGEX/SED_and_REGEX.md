@@ -39,8 +39,29 @@ Let's break it down further.
 
 Click [Here](./examples/example1/file.txt) for a sample file.
 
-Then run the above command without ```g```
+Or copy and paste this into a text file
+
+```
+FOO 123 ABC BAR
+FOO 123 ABC FOO
+FOO BAR FOO BAR
+BAR BAR FOO FOO
+```
+
+Then run the above command without ```g```.
 
 ```bash
 sed "s/FOO/BAR/" file.txt
 ```
+
+<details>
+	<summary>Click here for Result</summary>
+
+```
+BAR 123 ABC BAR
+BAR 123 ABC FOO
+BAR BAR FOO BAR
+BAR BAR BAR FOO
+```
+</details>
+
