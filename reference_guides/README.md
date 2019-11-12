@@ -6,7 +6,7 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 - copy_environment
 
-	- [Copy and Environment](./copy_environment/README.md "Copy an Environment")
+	- [Copy an Environment](./copy_environment/README.md "Copy an Environment")
 
 - debugging
 
