@@ -61,6 +61,12 @@ lcd ${target_dir}
 ascii | binary
 ```
 
+6. (Optional) When transferring VB (Variable Block) datasets, specify RDW or NORDW for FB Datasets. RDW stands for Record Descriptor Word which describes how long the specific record is if it's Variable Block.
+
+```bash
+quote site rdw | quote site nordw
+```
+
 At this point, you are ready to issue a PUT or GET command.
 
 #### PUT
