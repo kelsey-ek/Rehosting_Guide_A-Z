@@ -12,7 +12,7 @@ SED is a very powerful tool which can be used to filter and transform text. Occa
 	- [2.2 Section Breakdown](#22-section-breakdown)
 	- [2.3 Try it Yourself](#23-try-it-yourself)
 
-### 1. General SED Knowledge And First Example
+## 1. General SED Knowledge And First Example
 
 SED can be very confusing to look at and read. I recommend breaking down each section and reading each section individually.
 
@@ -33,7 +33,7 @@ In the above command, the sections are delimited by **/**
 
 Let's break it down further.
 
-#### 1.1 Section Breakdown
+### 1.1 Section Breakdown
 
 1. Substitute is the most commonly used command. For the purpose of this document, this is the main command we will focus on.
 
@@ -43,7 +43,7 @@ Let's break it down further.
 
 4. Notice how I said **all instances of FOO** this is because we added the ```g``` command at the end of our command. This means do a global replacement. If we neglected the ```g```, only the first instance of FOO per line would be replaced.
 
-#### 1.2 Try it Yourself
+### 1.2 Try it Yourself
 
 Click [Here](./examples/example1/file.txt) for a sample file.
 
@@ -90,17 +90,17 @@ BAR BAR BAR BAR
 ```
 </details>
 
-### 2. Regular Expressions
+## 2. Regular Expressions
 
 Regular expressions allow us to match general cases. What's meant by "general cases" is that we may know a section of text contains upper and lower case letters, but we are not sure which order they are in. In these cases, we can use regular expressions to describe patterns.
 
-#### 2.1 Example
+### 2.1 Example
 
 ```bash
 sed "s/[a-zA-Z]\{3\}/123/g" file.txt
 ```
 
-#### 2.2 Section Breakdown
+### 2.2 Section Breakdown
 
 1. ```sed  "s/"``` substitute using sed
 
@@ -119,7 +119,7 @@ sed "s/[a-zA-Z]\{3\}/123/g" file.txt
 
 4. ```/g" file.txt``` make this change globally for __file.txt__
 
-#### 2.3 Try it Yourself
+### 2.3 Try it Yourself
 
 <details>
 	<summary>Click Here for the Result</summary>
@@ -131,3 +131,49 @@ sed "s/[a-zA-Z]\{3\}/123/g" file.txt
 123 123 123 123
 ```
 </details>
+
+## 3. Creating Match Groups
+
+We can create some match groups to print some fields, but not others. 
+
+### 3.1 Example
+
+Assume you have a file (we'll call it file2.txt) with the following text
+
+```
+NAME='BOB'
+ADDRESS='123 Street'
+PHONE='111-222-333'
+SSN='123 45 6789'
+DESCRIPTION='Brown Hair Blue Eyes 6-foot tall'
+```
+
+If we want to remove the single quotation marks around the fields to have an output like:
+
+```
+NAME=BOB
+ADDRESS=123 Street
+PHONE=111-222-333
+SSN=123 45 6789
+DESCRIPTION=Brown Hair Blue Eyes 6-foot tall
+```
+
+You would use the below command:
+
+```bash
+sed "s/\([a-zA-Z]*\)='\([a-zA-Z0-9\ \-]*\)'/\1=\2/g" file2.txt
+```
+
+### 3.2 Section Breakdown
+
+1. ```sed "s/``` substitute using sed
+
+2. ```\([a-zA-Z]*\)``` Create the first group. Groups are denoted by \( \). This group matches any letter both lower or upper case any number of times.
+
+3. ```='``` After group 1, we are expecting an equal sign (=) followed by a single quotation mark (')
+
+4. ```\([a-zA-Z0-9\ \-]*\)``` Create the second group. This group matches any letter, number, spaces, or hyphens. The asterisk (\*) denotes that there can be __zero or more__ matches to this expression.
+
+5. ```'``` Ends section 3 - This is the closing single quote.
+
+6. ```/\1=\2/g" file2.txt``` The \1 and \2 mean group 1 and group 2 respectively. So we are replacing the matched regular expression with group1=group2.
