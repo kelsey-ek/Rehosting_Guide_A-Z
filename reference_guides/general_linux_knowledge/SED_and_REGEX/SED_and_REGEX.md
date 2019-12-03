@@ -5,8 +5,12 @@ SED is a very powerful tool which can be used to filter and transform text. Occa
 ## Table of Contents
 
 - [1. General SED Knowledge And First Example](#1-general-sed-knowledge-and-first-example)
-	- [1.1 Sections Breakdown](#11-sections-breakdown)
+	- [1.1 Section Breakdown](#11-section-breakdown)
 	- [1.2 Try it Yourself](#12-try-it-yourself)
+- [2. Regular Expressions](#2-regular-expressions)
+	- [2.1 Example](#21-example)
+	- [2.2 Section Breakdown](#22-section-breakdown)
+	- [2.3 Try it Yourself](#23-try-it-yourself)
 
 ### 1. General SED Knowledge And First Example
 
@@ -86,7 +90,7 @@ BAR BAR BAR BAR
 ```
 </details>
 
-### 2.0 Regular Expressions
+### 2. Regular Expressions
 
 Regular expressions allow us to match general cases. What's meant by "general cases" is that we may know a section of text contains upper and lower case letters, but we are not sure which order they are in. In these cases, we can use regular expressions to describe patterns.
 
@@ -104,12 +108,12 @@ sed "s/[a-zA-Z]\{3\}/123/g" file.txt
 
 	This would match the following cases:
 
-		| Before  | After  |
-		|---------|--------|
-		|   abc   |  123   |
-		|   Abc   |  123   |
-		|   aBc   |  123   |
-		|  aaabc  |  123bc |
+| Before  | After  |
+|---------|--------|
+|   abc   |  123   |
+|   Abc   |  123   |
+|   aBc   |  123   |
+|  aaabc  |  123bc |
 
 3. ```123``` replace the regular expression match with the numbers 123
 
