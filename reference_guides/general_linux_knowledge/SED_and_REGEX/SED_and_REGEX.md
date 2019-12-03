@@ -29,7 +29,7 @@ In the above command, the sections are delimited by **/**
 
 Let's break it down further.
 
-#### 1.1 Sections Breakdown
+#### 1.1 Section Breakdown
 
 1. Substitute is the most commonly used command. For the purpose of this document, this is the main command we will focus on.
 
@@ -86,3 +86,44 @@ BAR BAR BAR BAR
 ```
 </details>
 
+### 2.0 Regular Expressions
+
+Regular expressions allow us to match general cases. What's meant by "general cases" is that we may know a section of text contains upper and lower case letters, but we are not sure which order they are in. In these cases, we can use regular expressions to describe patterns.
+
+#### 2.1 Example
+
+```bash
+sed "s/[a-zA-Z]\{3\}/123/g" file.txt
+```
+
+#### 2.2 Section Breakdown
+
+1. ```sed  "s/"``` substitute using sed
+
+2. ```[a-zA-Z]\{3\}``` any letter, lower or upper case, in a group of 3
+
+	This would match the following cases:
+
+		| Before  | After  |
+		|---------|--------|
+		|   abc   |  123   |
+		|   Abc   |  123   |
+		|   aBc   |  123   |
+		|  aaabc  |  123bc |
+
+3. ```123``` replace the regular expression match with the numbers 123
+
+4. ```/g" file.txt``` make this change globally for __file.txt__
+
+#### 2.3 Try it Yourself
+
+<details>
+	<summary>Click Here for the Result</summary>
+
+```
+123 123 123 123
+123 123 123 123
+123 123 123 123
+123 123 123 123
+```
+</details>
