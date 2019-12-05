@@ -11,6 +11,9 @@ SED is a very powerful tool which can be used to filter and transform text. Occa
 	- [2.1 Example](#21-example)
 	- [2.2 Section Breakdown](#22-section-breakdown)
 	- [2.3 Try it Yourself](#23-try-it-yourself)
+- [3. Creating Match Groups](#3-creating-match-groups)
+	- [3.1 Example](#31-example)
+	- [3.2 Section Breakdown](#32-section-breakdown)
 
 ## 1. General SED Knowledge And First Example
 
