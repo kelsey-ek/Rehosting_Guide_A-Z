@@ -1,0 +1,142 @@
+### [Install Scripts Start]
+#1 [Copy OFManager License] 
+[OFManagerLicense] License copy Complete.
+#2 [Run datasource.sh]
+** Run Jeusadmin (Data-source) **
+   
+** Run Add data-source **
+Attempting to connect to ofdemo:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Successfully performed the ADD operation for data source [ds_ofm1] to domain.
+Check the results using "add-data-source"
+   
+** Run Add Data-sources to server **
+Attempting to connect to ofdemo:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Successfully performed the ADD operation for data sources to the server [ofmgr_svr].
+Check the results using "add-data-sources-to-server -server ofmgr_svr"
+   
+** End Jeusadmin (Data-source) **
+#3 [Run create_compile.sh]
+=====================================
+DB_DRV : com.tmax.tibero.jdbc.TbDriver
+DB_URL : jdbc:tibero:thin:@ofdemo:8629:TVSAM
+DB_ID  : tibero
+DB_PWD : tmax
+-------------------------------------
+DB Connect Success
+=====================================
+
+=====================================
+SQL File : create_tables.sql
+DB SQL Excute Success
+=====================================
+#4 [Run deploy.sh]
+   
+*** Server restart result :  0
+*** Run Jeusadmin (Server Stop/Start) ***
+** Run Stop Server **
+Attempting to connect to ofdemo:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Server [ofmgr_svr] was successfully stopped.
+   
+** Run Start Server **
+/opt/tmaxui/jeus7/bin
+***************************************************************
+  - JEUS Home         : /opt/tmaxui/jeus7                           
+  - JEUS Base Port    :                        
+  - Java Vendor       : Sun                         
+  - Added Java Option :                            
+***************************************************************
+
+================ JEUS LICENSE INFORMATION ================
+=== VERSION : JEUS 7.0 (Fix#4) (7.0.0.4-b214)
+=== EDITION: Enterprise (Trial License)
+=== NOTICE: This license restricts the number of allowed clients.
+=== Max. Number of Clients: 5
+==========================================================
+[2019.11.18 21:52:32][2] [launcher-1] [SERVER-0201] Successfully connected to the Domain Administration Server(ofdemo:9736).
+[2019.11.18 21:52:32][2] [launcher-1] [Launcher-0058] All local configurations are up-to-date.
+[2019.11.18 21:52:35][2] [launcher-1] [Launcher-0012] Starting the server [ofmgr_svr] with the command
+ /usr/java/jdk1.7.0_79/jre/../bin/java -Dofmgr_svr -Xmx1024m -XX:MaxPermSize=128m -server -Xbootclasspath/p:/opt/tmaxui/jeus7/lib/system/extension.jar -classpath /opt/tmaxui/jeus7/lib/system/bootstrap.jar -Djava.security.policy=/opt/tmaxui/jeus7/domains/jeus_domain/config/security/policy -Djava.library.path=/opt/tmaxui/jeus7/lib/system:/opt/tmaxapp/prosort/lib:/opt/tmaxapp/unixODBC/lib:/opt/tmaxdb/tibero6/lib:/opt/tmaxdb/tibero6/client/lib:/lib:/opt/tmaxapp/prosort/lib:/opt/tmaxapp/unixODBC/lib:/opt/tmaxdb/tibero6/lib:/opt/tmaxdb/tibero6/client/lib:/lib::/opt/tmaxapp/OpenFrame/lib:/opt/tmaxapp/OpenFrame/core/lib:/opt/tmaxapp/protrieve/lib:/opt/tmaxapp/OFCOBOL/lib:/opt/tmaxapp/OFCOBOL/cobolparser/lib:/opt/tmaxapp/OFCOBOL/llvm/lib:/opt/tmaxapp/OFPLI/lib:/opt/tmaxapp/OFASM/lib:/opt/tmaxapp/OpenFrame/lib:/opt/tmaxapp/OpenFrame/core/lib:/opt/tmaxapp/protrieve/lib:/opt/tmaxapp/OFCOBOL/lib:/opt/tmaxapp/OFCOBOL/cobolparser/lib:/opt/tmaxapp/OFCOBOL/llvm/lib:/opt/tmaxapp/OFPLI/lib:/opt/tmaxapp/OFASM/lib -Djava.endorsed.dirs=/opt/tmaxui/jeus7/lib/endorsed -Djeus.properties.replicate=jeus,sun.rmi,java.util,java.net -Djeus.jvm.version=hotspot -Djava.util.logging.config.file=/opt/tmaxui/jeus7/bin/logging.properties -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.util.logging.manager=jeus.util.logging.JeusLogManager -Djeus.home=/opt/tmaxui/jeus7 -Djava.net.preferIPv4Stack=true -Djeus.tm.checkReg=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Djeus.domain.name=jeus_domain -Djava.naming.factory.initial=jeus.jndi.JNSContextFactory -Djava.naming.factory.url.pkgs=jeus.jndi.jns.url -Djeus.server.protectmode=false -XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:LogFile=/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofmgr_svr/logs/jvm.log jeus.server.ServerBootstrapper -domain jeus_domain -server ofmgr_svr -u administrator .
+[2019.11.18 21:52:35][2] [launcher-1] [Launcher-0014] The server[ofmgr_svr] is being started ...
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0248] The JEUS server is STARTING.
+[2019.11.18 21:52:38][0] [ofmgr_svr-1] [SERVER-0000] Version information - JEUS 7.0 (Fix#4) (7.0.0.4-b214).
+[2019.11.18 21:52:38][0] [ofmgr_svr-1] [SERVER-0001] java.specification.version=[1.7], java.runtime.version=[1.7.0_79-b15], vendor=[Oracle Corporation]
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0002] Domain=[jeus_domain], Server=[ofmgr_svr], baseport=[9756], pid=[7237]
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0004] The current system time zone : sun.util.calendar.ZoneInfo[id="America/Chicago",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0571] All JEUS system properties have been confirmed.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0568] Service address='0.0.0.0:9756', hostname='ofdemo', representation ip='10.0.2.15'
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [SERVER-0561] The default RMI export port = 9763 and bind address = /0.0.0.0.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:9756.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:8828.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:9961.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [GMS-0001] Group Management Service for the group 'jeus_domain_1688848793' has been initialized.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [GMS-0004] Registering a listener 'jeus.server.Server.AdminServerLifeCycleListener'.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [JNSS-0009] The JNDI naming server has been successfully initialized.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [JNDI.Local-0001] Starting JNDI Local Client...
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [JMXR-0138] JMXConnector service URL : service:jmx:jmxmp://0.0.0.0:9756/JeusMBeanServer
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [JMXR-0138] JMXConnector service URL : service:jmx:jmxmp://0.0.0.0:9756/JEUSMP_ofmgr_svr
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [JMX-0051] JMXConnector started with the JNDI name [mgmt/rmbs/ofmgr_svr].
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [GMS-0002] Joining into the group 'jeus_domain_1688848793'.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [ShoalTransport-0001] Configuration of Network Manager for shoal transport.
+	Host: 10.0.2.15, Connection Timeout: 5000, Read Timeout 30000,
+	Multicast Address: 230.30.1.1, Multicast Port: 3030, Multicast Packet Size: 65536, Multicast Time-to-live: 4, Using Virtual Multicast: false,
+	Max Pool Size: 20, Min Pool Size: 0, Pool Queue Size: 4096
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [RMC-1015] Binding multicast socket interface to 10.0.2.15.
+[2019.11.18 21:52:38][2] [ofmgr_svr-1] [RMC-1000] ReliableMulticastServer for address 230.30.1.1, port 3030 has been started.
+[2019.11.18 21:52:38][2] [ofmgr_svr-36] [GMS-0100] Processing a JoinNotificationSignal from ofmgr_svr.
+[2019.11.18 21:52:38][2] [ofmgr_svr-36] [GMS-0105] Dump current cluster view.
+Entire server list
+    [ofmgr_svr]
+
+Sub list for group __Default__
+    [ofmgr_svr]
+
+[2019.11.18 21:52:38][2] [ofmgr_svr-40] [GMS-0100] Processing a JoinNotificationSignal from adminServer.
+[2019.11.18 21:52:38][2] [ofmgr_svr-40] [GMS-0105] Dump current cluster view.
+Entire server list
+    [adminServer, ofmgr_svr]
+
+Sub list for group __Default__
+    [adminServer, ofmgr_svr]
+
+[2019.11.18 21:52:38][2] [ofmgr_svr-41] [GMS-0100] Processing a JoinNotificationSignal from ofmgr_svr.
+[2019.11.18 21:52:39][2] [ofmgr_svr-12] [ShoalTransport-0010] Connection of SocketStream@221709cc(10.0.2.15:9756(GMS) -> 10.0.2.15:9736(GMS)) has been allowed.
+[2019.11.18 21:52:39][2] [ofmgr_svr-1] [EJB-5501] EJB engine started successfully.
+[2019.11.18 21:52:39][2] [ofmgr_svr-1] [JMS-7374] The persistence store manager for the JMS broker 'ofmgr_svr' has been started.
+[2019.11.18 21:52:39][2] [ofmgr_svr-1] [JMS-6822] The JMS engine with the broker named ofmgr_svr has started.
+[2019.11.18 21:52:39][2] [ofmgr_svr-1] [WEB-1003] Socket send buffer size of this operating system = [8192], JEUS default output buffer size = [8192]
+[2019.11.18 21:52:40][2] [ofmgr_svr-1] [WEB-1030] The web engine has started successfully.
+[2019.11.18 21:52:40][2] [ofmgr_svr-1] [SERVER-0248] The JEUS server is STANDBY.
+[2019.11.18 21:52:40][2] [ofmgr_svr-1] [SERVER-0248] The JEUS server is STARTING.
+[2019.11.18 21:52:40][2] [ofmgr_svr-1] [WEB-3413] The web engine is ready to receive requests.
+[2019.11.18 21:52:40][2] [launcher-10] [Launcher-0034] The server[ofmgr_svr] initialization completed successfully[pid : 7237].
+[2019.11.18 21:52:40][0] [launcher-1] [Launcher-0040] Successfully started the server. The server state is now RUNNING.
+   
+*** End Jeusadmin (Server Stop/Start) ***
+   
+   
+*** Run Jeusadmin (deploy) ***
+** Run deploy-application **
+Attempting to connect to ofdemo:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+deploy the application for the application [ofmanager] succeeded.
+   
+** Run application info   **
+Attempting to connect to ofdemo:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Application information for the domain [jeus_domain].
+================================================================================
++---------+-----------+---------+---------+----------+-------------------------+
+| Applicat|Application|  State  |  Target |  Target  |     Application Path    |
+| ion ID  |   Type    |         | Servers | Clusters |                         |
++---------+-----------+---------+---------+----------+-------------------------+
+|ofmanager| WAR       | RUNNING |ofmgr_svr|          | /opt/tmaxui/jeus7/domain|
+|         |           |         |         |          |s/jeus_domain/servers/ofm|
+|         |           |         |         |          |gr_svr/lib/application/of|
+|         |           |         |         |          |manager                  |
++---------+-----------+---------+---------+----------+-------------------------+
+================================================================================
+*** End Jeusadmin (deploy) ***
+### [Install Scripts End]

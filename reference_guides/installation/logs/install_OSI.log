@@ -1,0 +1,700 @@
+link_lib_osi.sh
+boot and tacflogin
+Logged-in as [ROOT]
+osi_define.sh START
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.VTAMLST,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.VTAMLST
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.VTAMLST,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.MODSTAT,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.MODSTAT
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.MODSTAT,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.MQLIB,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.MQLIB
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.MQLIB,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.DEFLIBA,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.DEFLIBA
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.DEFLIBA,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.DEFLIBB,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.DEFLIBB
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.DEFLIBB,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.DEFLIB,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.DEFLIB
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.DEFLIB,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.SECLIB,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.SECLIB
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.SECLIB,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.SECLIBA,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.SECLIBA
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.SECLIBA,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=OSI.IMSA.SECLIBB,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=OSI.IMSA.SECLIBB
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=OSI.IMSA.SECLIBB,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS OSI.IMSA.MFSLIB is created.
+
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS OSI.IMSA.MFSLIBA is created.
+
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS OSI.IMSA.MFSLIBB is created.
+
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS IMS.ACBLIBA is created.
+
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS IMS.ACBLIBB is created.
+
+pdsgen version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+PDS Dataset Generation Program
+
+pdsgen: *** PDS OSI.IMSA.STEPLIB is created.
+
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OSILOGO.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OSILOGOO.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OSILOGOI.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFSMO2.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFSMI2.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFSDF2.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFHCESN.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFHCESNI.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/DFHCESNO.mfs] create ok.
+CFL is done successfully for node(NODE1)
+SVC tables are successfully generated 
+GST is successfully done 
+20191125:145728 I OSI7801I [20:    OSIVDGEN: 0:  5428:  136] Processing result : Success[5], Error[0]
+20191125:145728 I OSI7203I [20:    OSISDGEN: 0:  5434:  183] Processing result : Success[28], Ignore[0], Error[0]
+20191125:145728 I OSI7402I [20:   OSISECGEN: 0:  5441:  211] Processing result : Success[28], Error[0]
+osi_define.sh END
+osi_ivp.sh START
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=IMS.TEST.OIVPI,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=IMS.TEST.OIVPI
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=IMS.TEST.OIVPI,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DELETE,NAME=IMS.TEST.OIVPIX,TYPE=CL,CATALOG=
+idcams: *** no such catalog entry - name=IMS.TEST.OIVPIX
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=IMS.TEST.OIVPIX,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+1
+2
+OIVPI001.cob Compile start
+1
+2
+OIVPI002.cob Compile start
+1
+2
+OIVPI003.cob Compile start
+1
+2
+OIVPI004.cob Compile start
+1
+2
+OIVPI005.cob Compile start
+1
+2
+OIVPI007.cob Compile start
+1
+2
+OIVPIL02.cob Compile start
+1
+2
+OIVPIL03.cob Compile start
+1
+2
+OIVPIL04.cob Compile start
+1
+2
+OIVPIL05.cob Compile start
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP001.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP001I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP001O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP002.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP002I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP002O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP003.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP003I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP003O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP004.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP004I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP004O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP005.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP005I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP005O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP006.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP006I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP006O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP014.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP014I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP014O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP015.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP015I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP015O.mfs] create ok.
+osimfsgen 7.1.0(65) obuild@tplinux64:ofsrc7/osi(#1) 2018-09-17 18:05:04
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP024.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP024I.mfs] create ok.
+[/opt/tmaxapp/OpenFrame/volume_default/OSI.IMSA.MFSLIB/OIVP024O.mfs] create ok.
+dbdgen version 7.1.0(27) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Database Description Block Generation Program
+
+dbdgen: 1 files are requested in total
+------------------------------------------------------------
+dbdgen: processing DBD script "OIVPIDBD"
+------------------------------------------------------------
+
+dbdgen: processing DBD "OIVPIDBD"
+dbdgen: successfully processed DBD "OIVPIDBD"
+
+dbdgen: successfully processed for the requested DBDs (total 1)
+dbdgen version 7.1.0(27) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Database Description Block Generation Program
+
+dbdgen: 1 files are requested in total
+------------------------------------------------------------
+dbdgen: processing DBD script "OIVPIX1"
+------------------------------------------------------------
+
+dbdgen: processing DBD "OIVPIX1"
+dbdgen: successfully processed DBD "OIVPIX1"
+
+dbdgen: successfully processed for the requested DBDs (total 1)
+hdgensch Version 7.1.0(13) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+HiDB Schema File Generation Program.
+
+input filename = /opt/tmaxapp/OpenFrame/hidb/hidb_cpy/OIVPIDBD/DBSEG.cpy
+scheme filename = /opt/tmaxapp/OpenFrame/schema/DBSEG.conv
+
+column information for segment DBSEG generated.
+
+copybook information generated. 
+
+ -> Segment('DBSEG') schema was merged.
+
+HiDB schema('OIVPIDBD.conv') was generated successfully.
+
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating DBD IMS.DBDLIB.OIVPIDBD(ver.0) objects
+hidbmgr: generating schema objects for the DBD segment DBSEG
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating DBD IMS.DBDLIB.OIVPIDBD(ver.0) DLI libraries
+hidbmgr: generating DLI libraries for the DBD segment DBSEG
+
+hidbmgr: successfully processed the request
+hdgensch Version 7.1.0(13) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+HiDB Schema File Generation Program.
+
+input filename = /opt/tmaxapp/OpenFrame/hidb/hidb_cpy/OIVPIX1/ACCNTIDX.cpy
+scheme filename = /opt/tmaxapp/OpenFrame/schema/ACCNTIDX.conv
+
+column information for segment ACCNTIDX generated.
+
+copybook information generated. 
+
+ -> Segment('ACCNTIDX') schema was merged.
+
+HiDB schema('OIVPIX1.conv') was generated successfully.
+
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+145734 W HDD0417W primary index segment ACCNTIDX ignored
+hidbmgr: creating DBD IMS.DBDLIB.OIVPIX1(ver.0) objects
+hidbmgr: generating schema objects for the DBD segment ACCNTIDX
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+145734 M HDM0504M primary index segment ACCNTIDX in dbd OIVPIX1 will be ignored
+hidbmgr: creating DBD IMS.DBDLIB.OIVPIX1(ver.0) DLI libraries
+hidbmgr: generating DLI libraries for the DBD segment ACCNTIDX
+
+hidbmgr: successfully processed the request
+imsdaloc version 7.1.0(1) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Dynamic Allocation Block Generation Program
+
+IMSDALOC FCOUNT=1,RESLIB=IMS.RESLIB,VOLSER=DEFVOL
+------------------------------------------------------------
+*** processing filepath="OIVPIDBD"
+------------------------------------------------------------
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** end_statement matched!
+mdaparser: *** mda_generation finished!!!
+------------------------------------------------------------
+*** ims_parse_mda("OIVPIDBD") success.
+------------------------------------------------------------
+  MDA TYPE=DATABASE,DBNAME=OIVPIDBD
+    DATASET TYPE=DATASET,DDNAME=OIVPI,DSNAME=IMS.TEST.OIVPI,DISP=
+    DATASET TYPE=DATASET,DDNAME=OIVPIX,DSNAME=IMS.TEST.OIVPIX,DISP=
+------------------------------------------------------------
+*** ims_print_mda("OIVPIDBD") success.
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+imsdaloc version 7.1.0(1) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Dynamic Allocation Block Generation Program
+
+IMSDALOC FCOUNT=1,RESLIB=IMS.RESLIB,VOLSER=DEFVOL
+------------------------------------------------------------
+*** processing filepath="OIVPIX1"
+------------------------------------------------------------
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** dfsmda_statement matched!
+mdaparser: *** end_statement matched!
+mdaparser: *** mda_generation finished!!!
+------------------------------------------------------------
+*** ims_parse_mda("OIVPIX1") success.
+------------------------------------------------------------
+  MDA TYPE=DATABASE,DBNAME=OIVPIX1
+    DATASET TYPE=DATASET,DDNAME=OIVPI,DSNAME=IMS.TEST.OIVPI,DISP=
+    DATASET TYPE=DATASET,DDNAME=OIVPIX,DSNAME=IMS.TEST.OIVPIX,DISP=
+------------------------------------------------------------
+*** ims_print_mda("OIVPIX1") success.
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI001"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI001"
+psbgen: successfully processed PSB "OIVPI001"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI002"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI002"
+psbgen: successfully processed PSB "OIVPI002"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI003"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI003"
+psbgen: successfully processed PSB "OIVPI003"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI004"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI004"
+psbgen: successfully processed PSB "OIVPI004"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI005"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI005"
+psbgen: successfully processed PSB "OIVPI005"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPI007"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPI007"
+psbgen: successfully processed PSB "OIVPI007"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPIL02"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPIL02"
+psbgen: successfully processed PSB "OIVPIL02"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPIL03"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPIL03"
+psbgen: successfully processed PSB "OIVPIL03"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPIL04"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPIL04"
+psbgen: successfully processed PSB "OIVPIL04"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+psbgen version 7.1.0(20) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Program Specification Block Generation Program
+
+psbgen: 1 files are requested in total
+------------------------------------------------------------
+psbgen Processing PSB script "OIVPIL05"
+------------------------------------------------------------
+
+psbgen: Processing PSB "OIVPIL05"
+psbgen: successfully processed PSB "OIVPIL05"
+
+psbgen: successfully processed for the requested PSBs (total 1)
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI001 DLI libraries
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI002 DLI libraries
+hidbmgr: processing PCB# 0(OIVPI002_0)
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI003 DLI libraries
+hidbmgr: processing PCB# 0(OIVPI003_0)
+hidbmgr: processing PCB# 1(OIVPI003_1)
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI004 DLI libraries
+hidbmgr: processing PCB# 0(OIVPI004_0)
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI005 DLI libraries
+hidbmgr: processing PCB# 0(OIVPI005_0)
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPI007 DLI libraries
+hidbmgr: processing PCB# 0(OIVPI007_0)
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPIL02 DLI libraries
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPIL03 DLI libraries
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPIL04 DLI libraries
+
+hidbmgr: successfully processed the request
+hidbmgr version 7.1.0(23) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Managing OpenFrame HiDB metadata tables and segment tables
+
+sacee token taken from config!
+hidbmgr: creating PSB IMS.PSBLIB.OIVPIL05 DLI libraries
+
+hidbmgr: successfully processed the request
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI001),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI001
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI001
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI002),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI002
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI002
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI003),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI003
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI003
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI004),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI004
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI004
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI005),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI005
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI005
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPI007),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPI007
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPI007
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIDBD
+*** BUILDING DBD BLOCK....... DBDNAME=OIVPIX1
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPIL02),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPIL02
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPIL02
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPIL03),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPIL03
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPIL03
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPIL04),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPIL04
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPIL04
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=OIVPIL05),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=OIVPIL05
+------------------------------------------------------------
+*** BUILDING PSB BLOCK....... PSBNAME=OIVPIL05
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=BUILD,OPERAND=(PSB=ALL),ACBLIB=IMS.ACBLIB
+------------------------------------------------------------
+*** ACBGEN DELETE PSB=ALL
+------------------------------------------------------------
+*** ACBGEN DELETE PSB=ALL SUCCESS 
+------------------------------------------------------------
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=ALL
+------------------------------------------------------------
+*** ACBGEN BUILD PSB=ALL SUCCESS 
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+acbgen version 7.1.0(6) obuild@tplinux64:ofsrc7/ims(#2) 2017-11-28 23:27:43
+Application Control Block Generation Program
+
+ACBGEN COMMAND=COPY,OPERAND=(),ACBLIB=IMS.ACBLIB
+ACBGEN COPY SUCCESS 
+------------------------------------------------------------
+*** ACBGEN DELETE PSB=ALL
+------------------------------------------------------------
+*** ACBGEN DELETE PSB=ALL SUCCESS 
+------------------------------------------------------------
+------------------------------------------------------------
+*** ACBGEN COPY PSB=ALL
+------------------------------------------------------------
+------------------------------------------------------------
+PROGRAM COMPLETED SUCCESSFULLY.
+osi_ivp.sh END
+Logged-in as [ROOT]

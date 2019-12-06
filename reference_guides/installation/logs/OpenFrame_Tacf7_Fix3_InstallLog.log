@@ -1,0 +1,253 @@
+__________________________________________________________________________
+
+Thu Oct 17 09:59:00 CDT 2019
+
+Free Memory: 8710 kB
+Total Memory: 24704 kB
+
+4 Command Line Args:
+0:  -f
+1:  tacf.properties
+2:  -m
+3:  SILENT
+
+java.class.path:
+    /tmp/install.dir.5277/InstallerData
+    /tmp/install.dir.5277/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.5277/InstallerData
+    /tmp/install.dir.5277/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.5277/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.5277/Linux/resource/jre/lib/jfr.jar
+    /tmp/install.dir.5277/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.5277/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_10 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 23.6-b04
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.5277/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.1.2.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.5277
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Thu Oct 17 09:58:50 CDT 2019
+Install End: Thu Oct 17 09:59:00 CDT 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+Summary
+-------
+
+Installation: Successful.
+
+54 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxapp/OpenFrame
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 106,012,248; Free Disk Space: 42,540,982,272
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Tacf7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Tacf7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Tacf7_Fix3/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Uninstaller:      OpenFrame_Tacf7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Tacf7_Fix3/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_Tacf7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/log/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/log/script_tacf.log
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxapp/OpenFrame/UninstallerData/Uninstall_Tacf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/tacf.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtacf.so.64.7_0_3_41
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/link_lib_tacf.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/uninst_tacf.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/create_tacf.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/tacf_init.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/TacfLibList
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/tacfinit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/tacfver
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/tacfmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/errcode_TACF.msg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/config/oframe_tacf.m
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/tmsvr
+                          Status: SUCCESSFUL
+
+Move Folder:              Destination: /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: append oframe.m
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run link_lib_tacf Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_tacf.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run create_tacf Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_tacf.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: tacf_init.sh script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_tacf.log
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+

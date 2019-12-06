@@ -1,0 +1,1879 @@
+__________________________________________________________________________
+
+Mon Nov 18 13:22:40 CST 2019
+
+Free Memory: 87521 kB
+Total Memory: 132096 kB
+
+2 Command Line Args:
+0:  -m
+1:  CONSOLE
+
+java.class.path:
+    /tmp/install.dir.6018/InstallerData
+    /tmp/install.dir.6018/InstallerData/installer.zip
+    /usr/java/jdk1.7.0_79/jre/lib/ext
+    /usr/java/jdk1.7.0_79/lib/tools.jar
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.6018/InstallerData
+    /tmp/install.dir.6018/InstallerData/installer.zip
+    /usr/java/jdk1.7.0_79/jre/lib/ext
+
+sun.boot.class.path:
+    /usr/java/jdk1.7.0_79/jre/lib/resources.jar
+    /usr/java/jdk1.7.0_79/jre/lib/rt.jar
+    /usr/java/jdk1.7.0_79/jre/lib/sunrsasign.jar
+    /usr/java/jdk1.7.0_79/jre/lib/jsse.jar
+    /usr/java/jdk1.7.0_79/jre/lib/jce.jar
+    /usr/java/jdk1.7.0_79/jre/lib/charsets.jar
+    /usr/java/jdk1.7.0_79/jre/lib/jfr.jar
+    /usr/java/jdk1.7.0_79/jre/classes
+
+java.ext.dirs:
+    /usr/java/jdk1.7.0_79/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_79 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 24.79-b02
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /usr/java/jdk1.7.0_79/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.4.1.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.6018
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Mon Nov 18 13:13:52 CST 2019
+Install End: Mon Nov 18 13:22:30 CST 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+#Choose JEUS Folder
+#------------------
+USER_INSTALL_DIR=/opt/tmaxui/jeus7
+
+#Get Jeus Information
+#--------------------
+JEUS_INFO=\"jeus_domain\",\"ofgw_svr\",\"tmax1234\",\"10.0.2.15\",\"9736\"
+
+#Get DataBase Information
+#------------------------
+USER_INPUT_DB_VENDOR=\"tibero\",\"\",\"\",\"\"
+DB_INFO=\"10.0.2.15\",\"8629\",\"TVSAM\",\"tibero\",\"tmax\"
+
+#Get Gateway Information
+#-----------------------
+GW_INFO=\"ofgw\",\"5477\",\"ofgw\",\"webterminal\"
+
+#Get Tmax Information
+#--------------------
+TMAX_INFO=\"NODE1\",\"ofdemo\",\"6623\"
+
+#Get OFGW license Path
+#---------------------
+LICENSE_PATH=\"/opt/tmaxsw/licenses/OFGWLicense\"
+
+#Restart Server
+#--------------
+USER_INPUT_SERVER_RESTART=0
+
+Summary
+-------
+
+Installation: Successful.
+
+584 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           Jeus Version Action
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: default value(JEUS Domain Name)
+                          Status: SUCCESSFUL
+
+Install Action:           ModifyString
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: TB_SID default value
+                          Status: SUCCESSFUL
+
+Install Action:           ModifyString
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: TMAX_HOST_PORT
+                          Status: SUCCESSFUL
+
+Install Action:           ModifyString
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           SetVariable
+                          Status: SUCCESSFUL
+
+Install Action:           SetVariable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxui/jeus7
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 21,296,513; Free Disk Space: 41,074,368,512
+
+Install Directory:        /opt/tmaxui/jeus7/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/lib/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/lib/datasource/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxui/jeus7/lib/datasource/tibero6-jdbc.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/lib/datasource/ojdbc7.jar
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/config/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/config/domain_ofgw_sample.xml
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/lib/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/lib/application/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/lib/application/OFLicense.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/lib/application/WebT-7.0.1.1-r10375-forJEUS7.1.jar
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/slf4j-api-1.7.10.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/webtnio7.0.0.0-r10934-forJEUS7.3.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logback-core-1.1.2.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logback-classic-1.1.2.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logback.xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgw-r8391.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/junit.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/jdom.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/gson-2.2.2.jar
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/scripts/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/scripts/datasource.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/scripts/lifecycle.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/scripts/deploy.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/scripts/undeploy.sh
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/initScreen/initScreen3.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/initScreen/initScreen.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/initScreen/initScreen2.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/ofgw.properties
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/vtam.properties
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ASCEBCJP.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM290_300.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM437.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM933.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/EBCASCFI.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ASCEBCFR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM949.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ASCEBCUS.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM037.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/EBCASCUS.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ASCEBCKR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/EBCASCKR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM1147.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/EBCASCJP.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ISO8859_15.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/EBCASCFR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/ASCEBCFI.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM1143.ucm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm/IBM943.ucm
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/OpenFrame_GW_7_Fix1/
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_GW_7_Fix1 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/OpenFrame_GW_7_Fix1/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_GW_7_Fix1 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/log/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/check_process.sh
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   check_process.sh
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/UninstallerData/OFGW_Uninstall
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/css/shortcut.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/css/webterminal.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/css/keypad.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/icons/OK.jpg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/icons/inputFieldMark.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/icons/NotOK.jpg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/META-INF/MANIFEST.MF
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/resources/webterminal.properties
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/resources/webterminal.properties.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/jquery-ui.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/keyMappingVar.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/shortcut.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/webscreen.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/protocol.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/beep.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/key.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/printThis.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/jquery-1.12.2.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/version.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/keyHandler.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/jquery.autocomplete.min.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/webterminal.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/lattice.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/mainHandler.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/scripts/keyfunction.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/package.json
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/MANIFEST
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/AUTHORS.txt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_flat_75_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-icons_454545_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-icons_666666_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_glass_65_ffffff_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-icons_ff0084_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_flat_0_eeeeee_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-icons_0073ea_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/images/ui-bg_flat_55_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/flick/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-icons_2e83ff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-icons_454545_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-icons_888888_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/smoothness/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_6da8d5_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_2e83ff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_217bc0_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_d8e7f3_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_f9bd01_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-icons_469bdd_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/redmond/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-icons_228ef1_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-lightness/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_highlight-hard_30_285c00_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_highlight-soft_33_3a8104_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_highlight-soft_50_4eb305_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_diagonals-thick_15_444444_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-icons_72b42d_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-icons_4eb305_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_inset-soft_10_285c00_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/images/ui-bg_glass_55_fbf5d0_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/le-frog/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_e0fdff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_fcd113_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_d8e7f3_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_flat_75_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_f7a50d_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_0078ae_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_glass_45_0078ae_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_flat_55_999999_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_glass_55_f8da4e_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_glass_75_79c9ec_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_f5e175_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-icons_056b93_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/start/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_fadc7a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_gloss-wave_45_817865_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_d19405_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_3d3d3d_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_bd7b00_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_ed9f26_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_eb990f_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-bg_flat_30_cccccc_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/images/ui-icons_ffe180_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/sunny/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-icons_3d80b3_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-icons_2e83ff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-icons_72a7cf_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-icons_2694e8_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/cupertino/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_dots-small_40_00498f_2x2.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_gloss-wave_20_111111_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-icons_98d2fb_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-icons_00498f_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_dots-small_20_333333_2x2.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_dots-medium_30_0b58a2_4x4.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_dots-small_30_a32d00_2x2.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-bg_flat_40_292929_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/images/ui-icons_9ccdfc_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dot-luv/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_dots-medium_80_ffff38_4x4.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_white-lines_85_f7f7ba_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_e1e463_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_diagonals-small_50_ff3853_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_flat_75_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_454545_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_flat_75_ba9217_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_diagonals-small_75_ccd232_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_88a206_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_diagonals-small_40_db4865_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_c02669_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-icons_ffeb33_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/images/ui-bg_dots-small_35_35414f_2x2.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/hot-sneaks/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_e3ddc9_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_gloss-wave_25_453326_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_add978_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_inset-soft_10_201913_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_highlight-soft_20_201913_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_gloss-wave_20_1c160d_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_gloss-wave_30_44372c_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_9bcc60_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_glass_15_5f391b_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-icons_f1fd86_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/images/ui-bg_highlight-soft_20_619226_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/mint-choc/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_flat_0_4c4c4c_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_glass_60_000000_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_gloss-wave_85_9fda58_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_glass_55_f1fbe5_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_1f1f1f_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_000000_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_diagonals-small_50_262626_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_9fda58_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_gloss-wave_55_000000_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_b8ec79_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_glass_40_0a0a0a_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_flat_0_303030_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/images/ui-bg_gloss-wave_95_f6ecd5_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/trontastic/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_4ca300_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_bbbbbb_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_diagonals-thick_8_333333_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_glass_40_111111_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_glass_55_1c1c1c_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_ffcf29_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_inset-hard_55_ffeb80_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-icons_ededed_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_inset-hard_45_cd0a0a_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/images/ui-bg_flat_65_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/black-tie/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_diagonal-maze_40_000000_10x10.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_fbdb93_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_8c291d_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_b83400_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_15_f7f3de_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_68_b83400_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_15_ffffff_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-bg_fine-grain_65_654b24_60x60.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/images/ui-icons_3572ac_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/pepper-grinder/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_glass_70_ede4d4_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_glass_100_f5f0e5_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_f35f07_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_flat_75_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_highlight-hard_65_fee4bd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_glass_25_cb842e_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_c47a23_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_ff7519_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_cb672b_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-icons_f08000_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/images/ui-bg_inset-soft_100_f4f0ec_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/humanity/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_inset-soft_50_c9c9c9_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-icons_fbc856_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-icons_3383bb_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_flat_55_eeeeee_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-icons_454545_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_glass_60_eeeeee_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-icons_70b2e1_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_flat_55_c0402a_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_inset-hard_75_999999_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_glass_35_dddddd_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-icons_999999_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_flat_0_eeeeee_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/images/ui-bg_glass_100_f8f8f8_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/overcast/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_aaaaaa_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_bbbbbb_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_glass_95_fef1ec_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_f29a00_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_highlight-soft_35_adadad_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_cccccc_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_c98000_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_inset-soft_15_121212_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_highlight-hard_55_555555_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_highlight-hard_15_888888_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-icons_666666_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_highlight-soft_60_dddddd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/images/ui-bg_gloss-wave_16_121212_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/vader/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-icons_004276_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_dots-small_65_a6a6a6_2x2.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_flat_75_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_flat_0_333333_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_glass_55_fbf8ee_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_highlight-soft_15_cc0000_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_highlight-hard_100_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-bg_flat_65_ffffff_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/images/ui-icons_cc0000_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/blitzer/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_flat_50_5c5c5c_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_glass_40_ffc73d_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_glass_40_0078a3_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-icons_4b8e0b_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-icons_cccccc_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_gloss-wave_25_333333_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_glass_20_555555_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-icons_a83300_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_flat_30_cccccc_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/images/ui-bg_highlight-soft_80_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/ui-darkness/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_inset-hard_100_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-icons_fcdd4a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_flat_0_e69700_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_diagonals-thick_20_e69700_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-icons_0a82eb_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_diagonals-thick_26_2293f7_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-icons_0b54d5_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_diagonals-small_25_c5ddfc_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_highlight-soft_100_f9f9f9_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_diagonals-thick_22_1484e6_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-bg_flat_0_e6b900_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/images/ui-icons_5fa5e3_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/excite-bike/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_8_443113_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_10_4f4221_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_25_675423_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_e8e2b5_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_f2ec64_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_25_d5ac5d_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_e9cd86_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_8_261803_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_diamond_20_372806_10x8.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_flat_75_ddd4b0_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_070603_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-bg_highlight-hard_65_fee4bd_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_f9f2bd_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_ff7519_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/images/ui-icons_efec9f_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/swanky-purse/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_flat_55_fafafa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_a8a3ae_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_highlight-soft_100_eae6ea_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_734d99_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_highlight-soft_45_5f5964_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_454545_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_flat_55_994d53_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_8d78a5_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_flat_0_aaaaaa_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-icons_ebccce_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_gloss-wave_30_3d3644_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/eggplant/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-icons_4b8e0b_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-icons_cccccc_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-icons_a83300_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_flat_30_cccccc_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/dark-hive/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-hard_95_cccccc_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-soft_25_67b021_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_glass_55_fcf0ba_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-hard_100_fafaf4_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_808080_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_847e71_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_cd0a0a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-soft_95_ffedad_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_inset-soft_15_2b2922_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_eeeeee_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-bg_gloss-wave_100_ece8da_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/images/ui-icons_8DC262_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-themes-1.11.4/themes/south-street/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.theme.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/external/jquery/jquery.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.min.js
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/index.html
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-icons_228ef1_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_diagonals-thick_20_666666_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-icons_ef8c08_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-icons_ffd27a_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_glass_100_fdf5ce_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-icons_222222_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-icons_ffffff_256x240.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_diagonals-thick_18_b81900_40x40.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_highlight-soft_75_ffe45c_1x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_glass_65_ffffff_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_flat_10_000000_40x100.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/images/ui-bg_glass_100_f6f6f6_1x400.png
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.structure.min.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.structure.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/uilib/jquery-ui-1.11.4/jquery-ui.theme.css
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/WEB-INF/classes/com/tmax/ofgw/io/WebSocketEndPoint.java
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/WEB-INF/classes/com/tmax/ofgw/io/WebSocketEndPoint.class
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/WEB-INF/classes/logback.xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/WEB-INF/jeus-web-dd.xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/WEB-INF/web.xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxui/jeus7/domains/jeus_domain/webterminal/wsgateway.html
+                          Status: SUCCESSFUL
+
+Move Folder:              Destination: /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/
+                          Status: SUCCESSFUL
+
+Set Environment Variable: OFGW_HOME = /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Copy OFGWLicense
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: run add datasource
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: run Server Restart and deploy
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+

@@ -1,0 +1,3115 @@
+__________________________________________________________________________
+
+Tue Oct 15 13:15:44 CDT 2019
+
+Free Memory: 12287 kB
+Total Memory: 24576 kB
+
+4 Command Line Args:
+0:  -f
+1:  base.properties
+2:  -m
+3:  SILENT
+
+java.class.path:
+    /tmp/install.dir.4731/InstallerData
+    /tmp/install.dir.4731/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.4731/InstallerData
+    /tmp/install.dir.4731/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.4731/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.4731/Linux/resource/jre/lib/jfr.jar
+    /tmp/install.dir.4731/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.4731/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_10 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 23.6-b04
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.4731/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.1.2.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.4731
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Tue Oct 15 13:15:19 CDT 2019
+Install End: Tue Oct 15 13:15:44 CDT 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+Summary
+-------
+
+Installation: Successful.
+
+1009 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxapp/OpenFrame
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 295,410,237; Free Disk Space: 42,901,856,256
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Base7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Base7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Base7_Fix3/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Uninstaller:      OpenFrame_Base7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_Base7_Fix3/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_Base7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/log/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/log/script_base.log
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxapp/OpenFrame/UninstallerData/Uninstall_Base
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/vtam.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/dstool.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/console.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/volume.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/unit.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ds.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/sms.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/keyseq.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/sort.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/cpm.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ofsys.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/saf.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/acs.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/cobol.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/smf.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libswdummy.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libmqnio.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvos3jcl.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsaf.so.64.7_0_3_12
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhcob85.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libspinlock.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofcee.so.64.7_0_3_7
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libams.so.64.7_0_3_21
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdsalc.so.64.7_0_3_23
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsmf.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/liboflic.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libmvsjcl.so.64.7_0_3_17
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhcob85p.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libicf.so.64.7_0_3_20
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libspio.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtdbconndummy.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofbeparm.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libswmfcob.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libmspmac.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libwebde.so.64.7_0_3_5
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtamlog.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtdbconntbr6.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcobpar.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofonline.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtcobfh.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcpm.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtacfdummy.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdsnpar.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsvrcom.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtam.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtsys.so.64.7_0_3_13
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libswntcob.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libnvsm.so.64.7_0_3_6
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libmemm.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtfcdhcob85.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofschema.so.64.7_0_3_59
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofgpar2.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/liblockm.so.64.7_0_3_16
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtdcb.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libswofcob.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libadjust.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsortcom.so.64.7_0_3_11
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtamosc.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtamdstr.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofgast.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtstbr6.so.64.7_0_3_14
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libxspmac.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdrvpro.so.64.7_0_3_9
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtcfh.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtplifh.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtammacro.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdbio.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofftp.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsms.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtfcd3.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libconbatch.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libacp.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofdlopen.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libconcli.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtamdb.so.64.7_0_3_5
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libadl.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdsio.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsortpar.so.64.7_0_3_21
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libxspjcl.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libmspjcl.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofcom.so.64.7_0_3_26
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtcobsm.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libapi3270.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcob85p.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libdscom.so.64.7_0_3_9
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtextsm2.so.64.7_0_3_5
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtextfh2.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libofgpar.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libttree.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvtamds.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libvolm.so.64.7_0_3_11
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libpgmdd.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtextsm3.so.64.7_0_3_5
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libamsx.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libjclcom.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libaschk.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtextfh3.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libtfcd2.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libsafexit.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/949_to_933.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/JEFASCK.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCJP.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/437_to_37.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCKEISK.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/943_to_290_300.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/KEISASCK.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/290_300_to_943.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCFR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCUS.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/37_to_437.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCES.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCUS.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/933_to_949.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCCA.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCKR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCES.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCIL.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCKR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCJP.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCIL.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/EBCASCFR.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCEBCCA.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/cpm/ASCJEFK.cpm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tcfh.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/errcode_saf_exit.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tfcd.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/webde.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tplism.inc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/console.inc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tsys.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tplifh.inc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/tdcb.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/amsu.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/saf_exit.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/uninst_base.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/boot.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/BaseLibList
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/create_mascat.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/create_voladd.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/link_lib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/vos3ana
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsedit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/lockm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/tconmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dscreate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/basever
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsview
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cpmmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/acp2xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/icfdump
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hcob85c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/vtamcmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/tacflogin
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/adl2xml
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/vtamdump
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cob85info
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/listcat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mspana
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/smfmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/conprt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/macroprep
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsdelete
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/vtamgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/ofversion
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/schinfo
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsmigout
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/sqlgensch
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dslist
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/enpasswd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/ofconfig
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsshm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dscopy
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsmove
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/gdgcreate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/vtamadm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/pligensch
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/idcams
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/baseinit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/gdgdelete
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/icfload
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oferror
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cobgensch
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/ikjana
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mvsana
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/voladd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dstouch
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cobolprep
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsload
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/listvol
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/spfedit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dsmigin
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cobinfo
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dssave
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/xspana
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/offile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/safp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/pdsgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/JCVKISC.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/JCVKNAC.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/errcode_base.msg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/KIS2SJIS.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/MVSJCL
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/JCVEBCC.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/toupper.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/sdl_main.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/hmsrecv.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/toupper_rq.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/cli_sq.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/toupper_conv.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/fdltoupper.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/tmax.env
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/Makefile.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/cli_ucs.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/mtmc.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/mrm_main.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/README
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/fdl_main.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/tbr_main.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/tolower.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/hmscall.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/tbr_main.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/mservice.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/mrm_main.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/Makefile.th
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/cli_rq.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/sdltolower.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/fdltolower.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/client/sdltoupper.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/sdl/demo.s
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/fdl/demo.f
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcall2v_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcall2s_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcallva2_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/Makefile.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcallva_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcall_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/callva2.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/call2s.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/call2v.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/call.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/callva.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/call2.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/client/tdlcall2_c.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/make.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/tdlcall2v_s.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/tdlcall2_s.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/Makefile.tdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/tdlcall2s_s.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v3/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v2/make.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v2/Makefile.tdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v2/tdlcallva_s.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v2/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v1/make.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v1/Makefile.tdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v1/tdlcall_s.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/tdl/server/v1/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr_rq.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.mt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.tbc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/mrmtest_ora.pc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tms_ora.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr_ucs.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tms_tbr.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/hms_ora.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tbrtest.tbc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/README
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr_conv.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/mrmtest.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.sdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tms_db2.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/msvr.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr_sq.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/dumy.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/fdltest.pc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/sdltest.pc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.pc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/mrmtest_tbr.tbc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tms_syb.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr1.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tbrtest.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.ucs
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/hms_tbr.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr2.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.mr2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/mrmtest.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr_hms.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/compile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.mr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/svr3.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/Makefile.psdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/sample/server/tms_info.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/config/oframe.m
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/siteinc/netapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/siteinc/daewoo.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/siteinc/jskim.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhmsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtz.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpctbrdbg.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtbsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCacheWrapd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liboras.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdhsvr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms_orad.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsybdbg.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtdlcall.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfls.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcbls.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.gwhd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64sd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopmd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsybdbg.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libaltbsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsvr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnodb.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/sdl.o
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblcd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libbwxasd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhmsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsvrdbg.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinflsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmc.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s_static.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsyb.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclitopd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.gwh.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwmt.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrevt.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCacheWrapd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librcah.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmt.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsmt.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtlogd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtops.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsdl.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librcahd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liborads.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmcd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclithrd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwmtd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libmqsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.gwh.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2sd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsybs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhttpgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwhdrd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libserialgw.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtbs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrevtd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liborads.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdhcli.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclid.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpccli.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtops.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdhsvrd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libmqs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCacheWrap.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsdld.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtencryptd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpctbr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsthrd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfls.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libaltbs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libmqs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librcah.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libwsgwd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCached.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclitop.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCache.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrevt.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liboradsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libswsgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liborasd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsdld.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmc.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinflsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsmtd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclid.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libentgwd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtlog.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsPfmAgent.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclithr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblc.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnodbd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libserialgwd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnonxa.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtbsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsmt.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsm.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsmd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtencrypt.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libswsgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmtd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwhdr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCache.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwmt.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclithr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwhdrd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpccli.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s_staticd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnonxa.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtms.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsmd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsmtd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcclidbg.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libserialgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s_static.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsvrdbg.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtms.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liborasd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64s_staticd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcli.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrcus.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsybsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclithrd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libmqsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtxa.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liboras.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmtd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcbls.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsm.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsqldbg.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnonxad.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclitop.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libentgw.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s_staticd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopm.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxcfl.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnonxad.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libaltbs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsybsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libexpatMT.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnodbd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsthr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libbwxas.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libbwxasd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s_staticd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblc.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtdlcall.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsybs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrevtd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libentgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpctbrdbg.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsql.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblcd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsdl.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgw.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libbwxas.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsPfmAgentd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtdlcalld.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwhdr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsvr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgw.gwhd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtlogd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtencryptd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtencrypt.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms_ora.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2sd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvr.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCacheWrap.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmaxgwmtd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtdlcalld.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms_orad.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcblsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s_static.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtbs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdhclid.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libpfmTCached.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmt.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsPfmAgent.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsyb.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libclitopd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libentgw.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtlog.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libwsgw.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/liboradsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librcahd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsthrd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsPfmAgentd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucs.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtxad.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libcli.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsql.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libserialgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2_64sd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrmcd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrrs.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhttpgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libaltbsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libhms_ora.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcclidbg.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopm.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtcpgwd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpcsqldbg.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrcusd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrucsd.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libinfsd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libdb2s_static.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libtmsthr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libnodb.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/libsvrtopmd.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/lib/librpctbr.a
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tsmk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/oraenv.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/txmk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/common.inc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/fsmk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/rpcconf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tms_ora.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/ts.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/fs_user.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/fs.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tmaxrpc_config.tmpl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tmax.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tmax.s
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tbrenv.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/dsmk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/sybenv.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/ds.tbr.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/tx.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/common.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/sdl.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tmaxrc/ds.mk
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/ctxpool.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/hmsapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/zlib.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/usignal.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tdlcall.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/zconf.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/func.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/userlog.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tlog.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/rsmt.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/rca.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/svct.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/xa.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/hlinkapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tms_main.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/wsfdl.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/WinTmax.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmadmin.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dceinc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/tmax_rpc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/transac.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dceerr.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/base_fdl.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dbcommon.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcsts.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/codesets.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ep.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcpvt.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ncastat.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/uuid.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ncastat.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ep.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/twr.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/pthread_exc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/sec_authn.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/idlbase.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/mgmt.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/idlddefs.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/convc.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/convc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/nbase.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcpvt.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/pthread.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/codesets_stub.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/mgmt.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/iovector.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/pthread_dce_exc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcbase.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcsts.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/conv.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpctypes.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/exc_handling.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/stubbase.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/pthread_dce_common.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/lbase.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ndrtypes.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcbase.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/lbase.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/twr.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpctypes.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ndrold.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/uuid.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/pthread_dce.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/conv.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/nsattrid.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ndr_rep.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/dce_utils.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/ndrold.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpcexc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/assert.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/nbase.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/codesets.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/dce.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/iovector.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/dce_error.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/idl_es.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/rpc.idl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/dce/marshall.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tmaxrpc/tmaxrpc.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/db_stub.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/wsgw_user.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tx.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/ucs.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tip.fdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/atmi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/entgw.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/fbuf.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tip.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/sdl.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tencrypt.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/usrinc/tpmiapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/topinc/toptx.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/topinc/topms.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/topinc/topapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/modes.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/nmsg.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/objset.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/revision_version.h.in
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/event.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/codetab.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/vbif.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/listener.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/webadm.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/lock.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/cfgadd.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/thread.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/scommon.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/dbinfo.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/gwconnect.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/cuslib.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/cscommon.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/shm.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/rq.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/adm_common.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/xa.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/kaicom.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/initout.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/sendfd.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/pbif.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/memleak.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/cfgio.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/sfbf.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/cetime.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/msgtype.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/errlog.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/dh.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/common.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/tp_csi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/semantics.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/config.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/shm.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/match.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/tbuffer.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/fml32.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/inforeq.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/topend.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/getopt.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/seed.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/codeconv.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/license.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/env.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/revision_version.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/errmsg.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/prodname.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/include/wildcards.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/x25gw/register.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/x25gw/custom.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/x25gw/custom.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/x25gw/x25gw_prototype.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkpwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rqs
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/xwsdlgeng
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwagd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkcli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rqsgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/topgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlseqnog
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sqsgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sdlc32g
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcakillg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tencrypt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/fdlc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sqs
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwntd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwad
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/txagwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwag
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlsync
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcastatd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/svcrpt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/xwsdlgengd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlshm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mksvrg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sdlcg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmaxlibverg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/cfl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacherestoreg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlupdate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkpw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkacl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sdlc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdrg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/clhgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacherestore
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmaxlibver
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcakillgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tsmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacheadmin
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlclean
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rqsg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwa
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkclig
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/topgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlcleang
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwagd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/cflg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/idlcg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlseqno
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmsnmpd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/topgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/clhg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlrm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdrd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmbfgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tlm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlnm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sqsg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/cas
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/clh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/wsgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmdown
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tsmgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/topgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcachecalcg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/gst
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/twagent
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlinit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacheview
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tlmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/clhd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmdowng
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwad
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/untmmbfgend
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tsmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/TIP
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcachebackupg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tperr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tlmgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcachecalc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkgrpg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tencryptg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcakill
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcakilld
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/idlc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/gstg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sdlc32
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwag
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacheviewg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/cll
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcachebackup
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/txagwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/xwsdlgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdltrace
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/untmmbfgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcastatg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmadmin
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlinitg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcastat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/uncfl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tsm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmadming
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/twagentg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/wsgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmaxlibverd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/sqsd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mksvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/wsgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdltraceg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/fdlcg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlnmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmaxlibvergd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkgrp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/uncflg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlshmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmdg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tlmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/txagwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/txagw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/casg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlrmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmbfgeng
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rqsd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmbootg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwntg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmbfgengd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwntgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/pfmtcacheadming
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/mkaclg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/rcastatgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlsyncg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/untmmbfgeng
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/svcrptg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/cllg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmapm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/xwsdlgend
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tperrg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/TIPg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmgwnt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmapmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/jeusgwa
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tuxgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmmbfgend
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/untmmbfgengd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmsnmpdg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tmboot
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/tdlupdateg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/racdrgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/bin/wsgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/fml.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/macro.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/tuxfml.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/tuxatmi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/Uunix.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/fml32.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/atmi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/fml1632.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tuxinc/Usysflds.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/tcpgwlsng
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/rcalg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/clihdrshmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/serialgw
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrsmlog
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrsasvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/tcpgwlsnd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/clihdrshmg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/TPFMAGENTg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/tcpgwlsn
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrcmsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrdsedt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrdmsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/rcal
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/rcalgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofrlhsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/tcpgwlsngd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/serialgwd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/TPFMAGENT
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/clihdrshmgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/ofruisvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/vtammgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/serialgwg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/rcald
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/serialgwgd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/clihdrshm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPTYPE.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPSVCRET.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPQUEDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPSTATUS.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TXSTATUS.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/cblstub.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPTRXLEV.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/FMLINFO.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPFORWAR.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPPRIDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPAUTDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPBCTDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPEVTDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPINFDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/cblapi.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPCMTDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPRETURN.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TMAXQDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPSVCDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TMAXSTRT.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TXINFDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/cobinc/TPTRXDEF.cbl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/fdl/oframe_fdl.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/fdl/oframe.fdl
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/fdl/oframe_fdl.java
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/snmp/tmsnmpd.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/snmp/mib/TMAXSOFT-TMAX-MIB.mib
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tcpgwthr/listener/tcphdr.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tcpgw/register.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tcpgw/custom.h
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tcpgw/custom.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/tcpgw/tcpgw_prototype.h
+                          Status: SUCCESSFUL
+
+Move Folder:              Destination: /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+
+Set Environment Variable: OPENFRAME_HOME = /opt/tmaxapp/OpenFrame
+                          Status: SUCCESSFUL
+
+Set Environment Variable: PATH = ${OPENFRAME_HOME}/bin:${OPENFRAME_HOME}/util
+                          Status: SUCCESSFUL
+
+Set Environment Variable: LD_LIBRARY_PATH = $OPENFRAME_HOME/lib
+                          Status: SUCCESSFUL
+
+Set Environment Variable: LD_LIBRARY_PATH_64 = $OPENFRAME_HOME/lib
+                          Status: SUCCESSFUL
+
+
+Set Environment Variable: TMAXDIR = /opt/tmaxapp/OpenFrame/core
+                          Status: SUCCESSFUL
+
+Set Environment Variable: TMAX_HOST_ADDR = ofdemo
+                          Status: SUCCESSFUL
+
+Set Environment Variable: TMAX_HOST_PORT = 7146
+                          Status: SUCCESSFUL
+
+Set Environment Variable: PATH = $TMAXDIR/bin
+                          Status: SUCCESSFUL
+
+Set Environment Variable: FDLFILE = $TMAXDIR/fdl/oframe.fdl
+                          Status: SUCCESSFUL
+
+Set Environment Variable: TDLDIR = $TMAXDIR/tdl
+                          Status: SUCCESSFUL
+
+Set Environment Variable: LD_LIBRARY_PATH = $TMAXDIR/lib
+                          Status: SUCCESSFUL
+
+Set Environment Variable: LD_LIBRARY_PATH_64 = $TMAXDIR/lib64
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Copy Folder:              Destination: /opt/tmaxapp/OpenFrame/license
+                          Status: SUCCESSFUL
+
+Copy File:                Destination: /opt/tmaxapp/OpenFrame/core/license/license.dat
+                          Status: SUCCESSFUL
+
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Execute link_lib.sh
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_base.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run create_mascat Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_base.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run create_voladd Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_base.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Execute boot.sh
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_base.log
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+

@@ -1,0 +1,364 @@
+__________________________________________________________________________
+
+Mon Nov 25 14:45:54 CST 2019
+
+Free Memory: 17167 kB
+Total Memory: 29952 kB
+
+4 Command Line Args:
+0:  -f
+1:  hidb.properties
+2:  -m
+3:  SILENT
+
+java.class.path:
+    /tmp/install.dir.4292/InstallerData
+    /tmp/install.dir.4292/InstallerData/installer.zip
+    /usr/java/jdk1.7.0_79/jre/lib/ext
+    /usr/java/jdk1.7.0_79/lib/tools.jar
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.4292/InstallerData
+    /tmp/install.dir.4292/InstallerData/installer.zip
+    /usr/java/jdk1.7.0_79/jre/lib/ext
+
+sun.boot.class.path:
+    /tmp/install.dir.4292/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.4292/Linux/resource/jre/lib/jfr.jar
+    /tmp/install.dir.4292/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.4292/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_10 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 23.6-b04
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.4292/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.4.1.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.4292
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Mon Nov 25 14:45:45 CST 2019
+Install End: Mon Nov 25 14:45:54 CST 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+Summary
+-------
+
+Installation: Successful.
+
+90 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxapp/OpenFrame
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 109,646,538; Free Disk Space: 40,426,328,064
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_HiDB7_1/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_HiDB7_1/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_HiDB7_1/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Uninstaller:      OpenFrame_HiDB7_1 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_HiDB7_1/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_HiDB7_1 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/log/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/log/script_hidb.log
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxapp/OpenFrame/UninstallerData/Uninstall_HiDB
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/hidb.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ims.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ssm.IMSADB2T.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhidbdmltbr.so.64.7_1_0_162
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libimscics.so.64.7_1_0_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhidbddl.so.64.7_1_0_67
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhidbtbr.so.64.7_1_0_62
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libimsbasetbr.so.64.7_1_0_57
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhidbloader.so.64.7_1_0_5
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhidbdli.so.64.7_1_0_10
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libhicom.so.64.7_1_0_82
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libimscdli.so.64.7_1_0_7
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libimsdli.so.64.7_1_0_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libimsctrl.so.64.7_1_0_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/include/dli.h
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/scripts/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/HidbLibList
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/hidb_init.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/link_lib_hidb.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/create_lib_hidb.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/uninst_hidb.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hdgensch
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbreconv
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dbdcpybkgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbcmd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/imsdaloc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/acbgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbptrmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbver
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/psbgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hidbinit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hdpcdf01
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/dbdgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/psbcpybkgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/hdload
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/errcode_imsx.msg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/hidb_proc/PSBGEN
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/hidb_proc/DBDGEN
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/DFSDDLT0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/DFSURGL0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/IIUSTART
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/DFSMVRC0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/DFSRRC00
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/util/DFSURGU0
+                          Status: SUCCESSFUL
+
+Move Folder:              Destination: /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Copy File:                Destination: /opt/tmaxapp/OpenFrame/license/lichidb.dat
+                          Status: SUCCESSFUL
+
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: MAKE HIDB DIR
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run hidb_init Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_hidb.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run link_lib_hidb Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_hidb.log
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: Run create_lib_hidb Script
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   script_hidb.log
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+

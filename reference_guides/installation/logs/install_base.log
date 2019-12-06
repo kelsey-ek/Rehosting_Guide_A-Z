@@ -1,0 +1,107 @@
+link_lib.sh START
+create_mascat START
+baseinit version 7.0.3(2) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Initialize OpenFrame Base Tables
+
+Creating OFM_BASE_CATALOG...
+ > "OFM_BASE_CATALOG" created...
+Creating OFM_BASE_CATALOG_PK...
+ > "OFM_BASE_CATALOG_PK" created...
+Creating OFM_BASE_CATALOG_IDX1...
+ > "OFM_BASE_CATALOG_IDX1" created...
+Creating OFM_BASE_CATALOG_ASSOC...
+ > "OFM_BASE_CATALOG_ASSOC" created...
+Creating OFM_BASE_CATALOG_ASSOC_PK...
+ > "OFM_BASE_CATALOG_ASSOC_PK" created...
+Creating OFM_BASE_VTOC...
+ > "OFM_BASE_VTOC" created...
+Creating OFM_BASE_VTOC_PK...
+ > "OFM_BASE_VTOC_PK" created...
+Creating OFM_BASE_VPATH...
+ > "OFM_BASE_VPATH" created...
+Creating OFM_BASE_VPATH_PK...
+ > "OFM_BASE_VPATH_PK" created...
+Creating OFM_BASE_TSAM_RBA...
+ > "OFM_BASE_TSAM_RBA" created...
+Creating TSAM_RETURN_TYPE...
+ > "TSAM_RETURN_TYPE" created...
+Creating TSAM_TABLE_TYPE...
+ > "TSAM_TABLE_TYPE" created...
+
+create_voladd START
+voladd version 7.0.3(1) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Define/Delete VTOC Table or Switch Tape Volume
+
+ams_initialize() success.
+vtoc_create_table() success. (volser=DEFVOL)
+ams_rba_table() success. (volser=DEFVOL)
+ams_finalize() success.
+boot.sh START
+CFL is done successfully for node(NODE1)
+SVC tables are successfully generated 
+GST is successfully done 
+
+TMBOOT for node(NODE1) is starting: 
+Welcome to Tmax demo system: it will expire 2019/12/3 
+Today: 2019/10/15 
+	TMBOOT: TMM is starting: Tue Oct 15 13:15:37 2019 
+	TMBOOT: CLL is starting: Tue Oct 15 13:15:37 2019 
+	TMBOOT: CLH is starting: Tue Oct 15 13:15:37 2019 
+	TMBOOT: TLM(tlm) is starting: Tue Oct 15 13:15:37 2019 
+
+TMBOOT for node(NODE1) is starting: 
+Welcome to Tmax demo system: it will expire 2019/12/3 
+Today: 2019/10/15 
+	TMBOOT: SVR(ofrsasvr) is starting: Tue Oct 15 13:15:37 2019 
+
+TMBOOT for node(NODE1) is starting: 
+Welcome to Tmax demo system: it will expire 2019/12/3 
+Today: 2019/10/15 
+	TMBOOT: SVR(ofrlhsvr) is starting: Tue Oct 15 13:15:37 2019 
+
+TMBOOT for node(NODE1) is starting: 
+Welcome to Tmax demo system: it will expire 2019/12/3 
+Today: 2019/10/15 
+	TMBOOT: SVR(ofruisvr) is starting: Tue Oct 15 13:15:37 2019 
+Logged-in as [ROOT]
+dscreate version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Create a New Dataset or a Member of PDS Dataset
+
+DSCREATE DSNAME=SMLOG1.NODE1,CATALOG=SYS1.MASTER.ICFCAT,VOLSER=,MEMBER=
+OFRUISVRDSCRE: Dataset Create OK. dsn=SMLOG1.NODE1
+COMPLETED SUCCESSFULLY.
+dscreate version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Create a New Dataset or a Member of PDS Dataset
+
+DSCREATE DSNAME=SMLOG2.NODE1,CATALOG=SYS1.MASTER.ICFCAT,VOLSER=,MEMBER=
+OFRUISVRDSCRE: Dataset Create OK. dsn=SMLOG2.NODE1
+COMPLETED SUCCESSFULLY.
+dscreate version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Create a New Dataset or a Member of PDS Dataset
+
+DSCREATE DSNAME=SMLOG3.NODE1,CATALOG=SYS1.MASTER.ICFCAT,VOLSER=,MEMBER=
+OFRUISVRDSCRE: Dataset Create OK. dsn=SMLOG3.NODE1
+COMPLETED SUCCESSFULLY.
+dscreate version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Create a New Dataset or a Member of PDS Dataset
+
+DSCREATE DSNAME=SMLOG4.NODE1,CATALOG=SYS1.MASTER.ICFCAT,VOLSER=,MEMBER=
+OFRUISVRDSCRE: Dataset Create OK. dsn=SMLOG4.NODE1
+COMPLETED SUCCESSFULLY.
+idcams version 7.0.3(3) obuild@tplinux64:ofsrc7/base(#1) 2018-09-17 12:26:40
+Access Method Services for Catalogs
+
+IDCAMS COMMAND=DEFINE,TYPE=CL,NAME=SYS1.VTAMLST,RELATE=,CATALOG=
+COMPLETED SUCCESSFULLY.
+Logged-in as [ROOT]
+Do you really want to down whole Tmax? (y : n): 
+TMDOWN for node(NODE1) is starting: 
+	TMDOWN: SERVER(ofrlhsvr:37) downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: SERVER(ofrsasvr:36) downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: SERVER(ofruisvr:41) downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: CLH downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: CLL downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: TLM downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: TMM downed: Tue Oct 15 13:15:44 2019
+	TMDOWN: TMAX is down 
+

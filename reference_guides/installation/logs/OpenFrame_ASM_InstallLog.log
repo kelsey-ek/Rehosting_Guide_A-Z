@@ -1,0 +1,275 @@
+__________________________________________________________________________
+
+Thu Oct 17 14:40:50 CDT 2019
+
+Free Memory: 9861 kB
+Total Memory: 21440 kB
+
+2 Command Line Args:
+0:  -m
+1:  CONSOLE
+
+java.class.path:
+    /tmp/install.dir.3004/InstallerData
+    /tmp/install.dir.3004/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.3004/InstallerData
+    /tmp/install.dir.3004/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.3004/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.3004/Linux/resource/jre/lib/jfr.jar
+    /tmp/install.dir.3004/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.3004/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_10 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 23.6-b04
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.3004/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.1.2.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.3004
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Thu Oct 17 14:38:36 CDT 2019
+Install End: Thu Oct 17 14:39:20 CDT 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+#Choose Install Folder
+#---------------------
+USER_INSTALL_DIR=/opt/tmaxapp/OFASM
+
+Summary
+-------
+
+Installation: Successful.
+
+62 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxapp/OFASM
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 144,426,792; Free Disk Space: 41,240,080,384
+
+Install Directory:        /opt/tmaxapp/OFASM/
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OFASM/UninstallerData/
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OFASM/UninstallerData/OpenFrame_ASM/
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_ASM (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OFASM/UninstallerData/OpenFrame_ASM/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/tmaxapp/OFASM/UninstallerData/OpenFrame_ASM/jre
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxapp/OFASM/UninstallerData/OpenFrame_ASM/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_ASM (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OFASM/UninstallerData/log/
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxapp/OFASM/UninstallerData/Uninstall_OFASM
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/IDACB2.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/GET.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/CVT.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/GETMAIN.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/WTO.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/WTOR.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/PUT.mac
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/maclib/ofmac/TIME.mac
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OFASM/config/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/config/log.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/lib/libofasmError.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/lib/libasmloader.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/lib/libofasmIFGenerator.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/lib/libofasmVM.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/lib/libofasmCommon.so
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasmpp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasmif
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/asmgencpy
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasm-miner
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasma
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasmc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/bin/ofasmMiner
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/sample/ADD/Makefile
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/sample/ADD/A01.json
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/sample/ADD/main.cpp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OFASM/sample/ADD/A01.asm
+                          Status: SUCCESSFUL
+
+Set Environment Variable: OFASM_HOME = /opt/tmaxapp/OFASM
+                          Status: SUCCESSFUL
+
+Set Environment Variable: PATH = $OFASM_HOME/bin:
+                          Status: SUCCESSFUL
+
+Set Environment Variable: LD_LIBRARY_PATH = $OFASM_HOME/lib
+                          Status: SUCCESSFUL
+
+Set Environment Variable: OFASM_MACLIB = $OFASM_HOME/maclib/ofmac:$OFASM_HOME/maclib/
+                          Status: SUCCESSFUL
+
+Install Directory:        /home/oframe/OFASM/
+                          Status: SUCCESSFUL
+
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: profile
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: bash_profile
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+

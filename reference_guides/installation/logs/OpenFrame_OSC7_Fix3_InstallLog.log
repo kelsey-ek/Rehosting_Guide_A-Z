@@ -1,0 +1,904 @@
+__________________________________________________________________________
+
+Thu Oct 17 15:11:55 CDT 2019
+
+Free Memory: 9157 kB
+Total Memory: 24576 kB
+
+4 Command Line Args:
+0:  -f
+1:  osc.properties
+2:  -m
+3:  SILENT
+
+java.class.path:
+    /tmp/install.dir.7009/InstallerData
+    /tmp/install.dir.7009/InstallerData/installer.zip
+
+ZGUtil.CLASS_PATH:
+    /tmp/install.dir.7009/InstallerData
+    /tmp/install.dir.7009/InstallerData/installer.zip
+
+sun.boot.class.path:
+    /tmp/install.dir.7009/Linux/resource/jre/lib/resources.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/rt.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/sunrsasign.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/jsse.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/jce.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/charsets.jar
+    /tmp/install.dir.7009/Linux/resource/jre/lib/jfr.jar
+    /tmp/install.dir.7009/Linux/resource/jre/classes
+
+java.ext.dirs:
+    /tmp/install.dir.7009/Linux/resource/jre/lib/ext
+    /usr/java/packages/lib/ext
+
+java.version                  == 1.7.0_10 (Java 1)
+java.vm.name                  == Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor                == Oracle Corporation
+java.vm.version               == 23.6-b04
+java.vm.specification.name    == Java Virtual Machine Specification
+java.vm.specification.vendor  == Oracle Corporation
+java.vm.specification.version == 1.7
+java.specification.name       == Java Platform API Specification
+java.specification.vendor     == Oracle Corporation
+java.specification.version    == 1.7
+java.vendor                   == Oracle Corporation
+java.vendor.url               == http://java.oracle.com/
+java.class.version            == 51.0
+java.compiler                 == null
+java.home                     == /tmp/install.dir.7009/Linux/resource/jre
+java.io.tmpdir                == /tmp
+os.name                       == Linux
+os.arch                       == amd64
+os.version                    == 3.10.0-1062.1.2.el7.x86_64
+path.separator                == :
+file.separator                == /
+file.encoding                 == UTF-8
+user.name                     == oframe
+user.home                     == /home/oframe
+user.dir                      == /tmp/install.dir.7009
+user.language                 == en
+user.region                   == null
+__________________________________________________________________________
+
+Install Begin: Thu Oct 17 15:11:20 CDT 2019
+Install End: Thu Oct 17 15:11:54 CDT 2019
+
+Installed by InstallAnywhere 9.5 Enterprise Build 3532, by Macrovision
+
+
+User Interactions
+-----------------
+
+
+Summary
+-------
+
+Installation: Successful.
+
+273 Successes
+0 Warnings
+0 NonFatalErrors
+0 FatalErrors
+
+Action Notes:
+
+None
+
+Install Log Detail:
+
+Install Action:           HostInfo
+                          Status: SUCCESSFUL
+
+Install Action:           CutHostName
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variables
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Install Action:           InstallAnywhere Variable
+                          Status: SUCCESSFUL
+
+Check Disk Space:         /opt/tmaxapp/OpenFrame
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Required Disk Space: 126,096,447; Free Disk Space: 41,099,374,592
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_OSC7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install JRE:              /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_OSC7_Fix3/jre
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_OSC7_Fix3/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install Uninstaller:      OpenFrame_OSC7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/OpenFrame_OSC7_Fix3/Uninstall.lax
+                          Status: SUCCESSFUL
+
+Install Uninstaller:      OpenFrame_OSC7_Fix3 (Install All Uninstaller Components)
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/UninstallerData/log/
+                          Status: SUCCESSFUL
+                          Additional Notes: NOTE - Directory already existed
+
+Install File:             /opt/tmaxapp/OpenFrame/UninstallerData/log/script_OSC.log
+                          Status: SUCCESSFUL
+
+Create Link:              /opt/tmaxapp/OpenFrame/UninstallerData/Uninstall_OSC
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/OSCLibList
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/DEFINE.OSC.OIVP.FILE
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_DFLTUSER.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_init.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_link_lib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_oivp.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_build_appsvr.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/DEFINE.OSC.OIVP.TDQLIB
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/unist_osc_ds.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/DEFINE.OSC.OIVP.SDLIB
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/osc_sys.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/scripts/DEFINE.OSC.OIVP.TSQLIB
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/osc/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/pli/DFHGMM.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/pli/DFHSFP.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/pli/compile.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/pli/DFHSNP.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/osc_pli.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/vtam.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/program.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/connection.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/file.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/vtam.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/terminal.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/osc.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/tdqueue.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/tsmodel.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/transaction.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/resource/journalmodel.dat.sample
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/region/OSCOIVP1/tdl/config/tdl.cfg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/resource/pivp.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/resource/oivp.dat
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPDOBR.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPBROS.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPINQR.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPINSR.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPINFO.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPQUIT.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPUPDT.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPMAIN.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/cobol/OIVPDELT.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPINQR.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPMAIN.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPQUIT.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPINSR.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPUPDT.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/compile.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPBROS.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPINFO.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/pli/PIVPDELT.pli
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM001.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM006.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM005.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM003.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM002.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM005.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM006.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM003.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM004.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM001.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM007.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM007.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/PIVPM004.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/map/OIVPM002.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/inc/PIVPREC
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/oivp/inc/PIVPINFO
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/map/CESN.map
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/dataset/idcams.osc.scsvrlib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/dataset/idcams.osc.sdlib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/dataset/idcams.osc.vdlib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/dataset/idcams.osc.tdqlib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/dataset/idcams.osc.tsqlib.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/ctg/sample/ctg.ini
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/ctg/sample/SampleTest.java
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/ctg/osc7.0.jar
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/copybook/DFHBMSCA.cpy
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/copybook/DFHAID.cpy
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/DFHSNP.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/DFHSFP.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/ocompopt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/compile.sh
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/DFHEMTA.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/DFHGMM.cob
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/cobol/DFHEMTP.cob
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.hp.32
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.hp.64
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.ibm.32
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.ibm.64
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.linux.32
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.linux.ia64
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/mk.OSC00001.sun.64
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/osc/build/OSC00001.c
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHMIRS.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicstdq.so.64.7_0_3_9
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsch.so.64.7_0_3_6
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsres.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsspi.so.64.7_0_3_11
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsterm.so.64.7_0_3_17
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicseza.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsfc.so.64.7_0_3_12
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsappc.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsdcc.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsrtsd.so.64.7_0_3_10
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcpsmapi.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsdlic.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicstc.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsncs.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsconf.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsedf.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicstsq.so.64.7_0_3_14
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsexci.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsolog.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHP3270.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsremote.so.64.7_0_3_6
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHDYP.so.64.7_0_3_0
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcics.mfcob.so.64.7_0_3_60
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicssp.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsmc.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHCSPG.so.64.7_0_3_7
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicslog.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcics.nocob.so.64.7_0_3_60
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicscmdpsr.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsctrl.so.64.7_0_3_19
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsecpi.so.64.7_0_3_10
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHADMIN.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsmsc.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsshm.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcics.ofcob.so.64.7_0_3_60
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsprep.so.64.7_0_3_15
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicswebsvc.so.64.7_0_3_1
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHWBXN.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsbms.so.64.7_0_3_32
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicscon.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicscmdprep.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/DFHSIPLT.so.64.7_0_3_6
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicscli.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsbts.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsracf.so.64.7_0_3_9
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsdb.so.64.7_0_3_12
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicscpt.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsenv.so.64.7_0_3_7
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsds.so.64.7_0_3_4
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsci.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcics.so.64.7_0_3_60
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/liboscspi.so.64.7_0_3_16
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicssd.so.64.7_0_3_13
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicssc.so.64.7_0_3_2
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/lib/libcicsjc.so.64.7_0_3_3
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/errcode_oscx.msg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/data/oscresp.dat
+                          Status: SUCCESSFUL
+
+Install Directory:        /opt/tmaxapp/OpenFrame/OpenFrame/core/
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/config/pfmtcache.cfg
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/config/oframe_osc.m
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/osctlsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscdfsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscmnsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscncsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscossvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscmcsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/osccptmr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscmgr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscolsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscjcsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/core/appbin/oscscsvr
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ofsys.seq
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/osc.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/osc.OSCOIVP1.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/osc.region.list
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/osc.lu.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/osc.OSCOIVP1TL.conf
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/config/ofosc.seq
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscbuild
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscpltc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscboot
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osctsqcheck
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mscmapc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscjct2rd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscdct2rd
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/cpsmprep
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscver
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osctdlrm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mscmapupdate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mscasmc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscsddump
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscboot.pre
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscplipp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscrtsdupdate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/excicblpp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osccblpp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscadmin
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscresp
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscrpt
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscdown.pre
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscdown.post
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscdown
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osccprep
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscrtsddump
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscappbuild
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscsdgen
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscruntran
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osctdlupdate
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osctdlinit
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscboot.post
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osctxadm
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscxltc
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osccobprep
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/osccheck
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/oscscview
+                          Status: SUCCESSFUL
+
+Install File:             /opt/tmaxapp/OpenFrame/OpenFrame/bin/mscadjust
+                          Status: SUCCESSFUL
+
+Move Folder:              Destination: /opt/tmaxapp/OpenFrame/
+                          Status: SUCCESSFUL
+
+Set Environment Variable: OFCOBCPY = ${OPENFRAME_HOME}/osc/copybook:${OPENFRAME_HOME}/osc/region/OSCOIVP1/map/symbolic
+                          Status: SUCCESSFUL
+
+Set Environment Variable: TCACHECONF = ${TMAXDIR}/config/pfmtcache.cfg
+                          Status: SUCCESSFUL
+
+Set Environment Variable: PFM_ADM_LOG_DIR = ${OPENFRAME_HOME}/log/sys
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: CHECK_NOUSE
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+Modify Text File - Single File:   No Target Chosen
+                          Status: SUCCESSFUL
+
+
+Execute Script/Batch file: CHECK SHELL
+                          Status: SUCCESSFUL
+
+
+
+Execute Script/Batch file: CHECK PROFILE
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: append oframe.m
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: osc_link_lib.sh
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: DEFINE OSC.DATASET
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: osc_build_appsvr.sh
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: osc_init.sh
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: osc_sys.sh
+                          Status: SUCCESSFUL
+
+Execute Script/Batch file: osc_oivp.sh
+                          Status: SUCCESSFUL
+
+

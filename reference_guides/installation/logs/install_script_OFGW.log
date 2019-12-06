@@ -1,0 +1,261 @@
+Copy OFGW license
+** Run Jeusadmin (Data-source) **
+   
+** Run Add data-source **
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Successfully performed the ADD operation for data source [ofgw] to domain, but some changes were non-dynamic. They will be applied after restarting.
+Check the results using "add-data-source"
+   
+** Run Add Data-sources to server **
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Successfully performed the ADD operation for data sources to the server [ofgw_svr].
+Check the results using "add-data-sources-to-server -server ofgw_svr"
+   
+** End Jeusadmin (Data-source) **
+Add lifecycleInvocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Successfully acquired a configuration lock from Domain Administration Server.
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Added a new element of type lifecycleInvocation with id [className == com.tmax.ofgw.Main] to the list at path /servers/server/ofgw_svr/lifecycleInvocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Added a new element of type invocation to the list at path /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[0]
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+The value READY is set at the specified location /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[0]/invocationType.
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Created an empty complex type of methodParam at path /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[0]
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[0]/invocationMethod
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+The value init is set at the specified location /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[0]/invocationMethod/methodName.
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Added a new element of type invocation to the list at path /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[1]
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+The value BEFORE_UNDEPLOY is set at the specified location /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[1]/invocationType.
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Created an empty complex type of methodParam at path /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[1]
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Current path is changed to /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[1]/invocationMethod
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+The value shutdown is set at the specified location /servers/server/ofgw_svr/lifecycleInvocation/com.tmax.ofgw.Main/invocation/[1]/invocationMethod/methodName.
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+The activation completed successfully, but all changes were non-dynamic. They will be applied after restarting.
+
+[Details]
+domain.xml : PENDING 
+servers.server.{? name == 'ofgw_svr' }.lifecycleInvocation : PENDING 
+
+
+result :  0
+** Run Jeusadmin (Server Stop/Start) **
+   
+** Run Stop Server **
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Server [ofgw_svr] was successfully stopped.
+   
+** Run Start Server **
+/opt/tmaxui/jeus7/bin
+***************************************************************
+  - JEUS Home         : /opt/tmaxui/jeus7                           
+  - JEUS Base Port    :                        
+  - Java Vendor       : Sun                         
+  - Added Java Option :                            
+***************************************************************
+
+================ JEUS LICENSE INFORMATION ================
+=== VERSION : JEUS 7.0 (Fix#4) (7.0.0.4-b214)
+=== EDITION: Enterprise (Trial License)
+=== NOTICE: This license restricts the number of allowed clients.
+=== Max. Number of Clients: 5
+==========================================================
+[2019.11.18 13:22:16][2] [launcher-1] [SERVER-0201] Successfully connected to the Domain Administration Server(10.0.2.15:9736).
+[2019.11.18 13:22:16][2] [launcher-1] [Launcher-0058] All local configurations are up-to-date.
+[2019.11.18 13:22:19][2] [launcher-1] [Launcher-0012] Starting the server [ofgw_svr] with the command
+ /usr/java/jdk1.7.0_79/jre/../bin/java -Dofgw_svr -Xmx1024m -XX:MaxPermSize=128m -server -Xbootclasspath/p:/opt/tmaxui/jeus7/lib/system/extension.jar -classpath /opt/tmaxui/jeus7/lib/system/bootstrap.jar -Djava.security.policy=/opt/tmaxui/jeus7/domains/jeus_domain/config/security/policy -Djava.library.path=/opt/tmaxui/jeus7/lib/system:/opt/tmaxapp/prosort/lib:/opt/tmaxapp/unixODBC/lib:/opt/tmaxdb/tibero6/lib:/opt/tmaxdb/tibero6/client/lib:/lib::/opt/tmaxapp/OpenFrame/lib:/opt/tmaxapp/OpenFrame/core/lib:/opt/tmaxapp/protrieve/lib:/opt/tmaxapp/OFCOBOL/lib:/opt/tmaxapp/OFCOBOL/cobolparser/lib:/opt/tmaxapp/OFCOBOL/llvm/lib:/opt/tmaxapp/OFPLI/lib:/opt/tmaxapp/OFASM/lib -Djava.endorsed.dirs=/opt/tmaxui/jeus7/lib/endorsed -Djeus.properties.replicate=jeus,sun.rmi,java.util,java.net -Djeus.jvm.version=hotspot -Djava.util.logging.config.file=/opt/tmaxui/jeus7/bin/logging.properties -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.util.logging.manager=jeus.util.logging.JeusLogManager -Djeus.home=/opt/tmaxui/jeus7 -Djava.net.preferIPv4Stack=true -Djeus.tm.checkReg=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Djeus.domain.name=jeus_domain -Djava.naming.factory.initial=jeus.jndi.JNSContextFactory -Djava.naming.factory.url.pkgs=jeus.jndi.jns.url -Djeus.server.protectmode=false -XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:LogFile=/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/logs/jvm.log jeus.server.ServerBootstrapper -domain jeus_domain -server ofgw_svr -u administrator .
+[2019.11.18 13:22:19][2] [launcher-1] [Launcher-0014] The server[ofgw_svr] is being started ...
+[2019.11.18 13:22:22][2] [ofgw_svr-1] [SERVER-0248] The JEUS server is STARTING.
+[2019.11.18 13:22:23][0] [ofgw_svr-1] [SERVER-0000] Version information - JEUS 7.0 (Fix#4) (7.0.0.4-b214).
+[2019.11.18 13:22:23][0] [ofgw_svr-1] [SERVER-0001] java.specification.version=[1.7], java.runtime.version=[1.7.0_79-b15], vendor=[Oracle Corporation]
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [SERVER-0002] Domain=[jeus_domain], Server=[ofgw_svr], baseport=[9746], pid=[8825]
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [SERVER-0004] The current system time zone : sun.util.calendar.ZoneInfo[id="America/Chicago",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [SERVER-0571] All JEUS system properties have been confirmed.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [SERVER-0568] Service address='0.0.0.0:9746', hostname='ofdemo', representation ip='10.0.2.15'
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [SERVER-0561] The default RMI export port = 9753 and bind address = /0.0.0.0.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:9746.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:8818.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [NET-0002] Beginning to listen to NonBlockingChannelAcceptor: /0.0.0.0:9951.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [GMS-0001] Group Management Service for the group 'jeus_domain_1688848793' has been initialized.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [GMS-0004] Registering a listener 'jeus.server.Server.AdminServerLifeCycleListener'.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [JNSS-0009] The JNDI naming server has been successfully initialized.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [JNDI.Local-0001] Starting JNDI Local Client...
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [JMXR-0138] JMXConnector service URL : service:jmx:jmxmp://0.0.0.0:9746/JeusMBeanServer
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [JMXR-0138] JMXConnector service URL : service:jmx:jmxmp://0.0.0.0:9746/JEUSMP_ofgw_svr
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [JMX-0051] JMXConnector started with the JNDI name [mgmt/rmbs/ofgw_svr].
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [GMS-0002] Joining into the group 'jeus_domain_1688848793'.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [ShoalTransport-0001] Configuration of Network Manager for shoal transport.
+	Host: 10.0.2.15, Connection Timeout: 5000, Read Timeout 30000,
+	Multicast Address: 230.30.1.1, Multicast Port: 3030, Multicast Packet Size: 65536, Multicast Time-to-live: 4, Using Virtual Multicast: false,
+	Max Pool Size: 20, Min Pool Size: 0, Pool Queue Size: 4096
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [RMC-1015] Binding multicast socket interface to 10.0.2.15.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [RMC-1000] ReliableMulticastServer for address 230.30.1.1, port 3030 has been started.
+[2019.11.18 13:22:23][2] [ofgw_svr-36] [GMS-0100] Processing a JoinNotificationSignal from ofgw_svr.
+[2019.11.18 13:22:23][2] [ofgw_svr-36] [GMS-0105] Dump current cluster view.
+Entire server list
+    [ofgw_svr]
+
+Sub list for group __Default__
+    [ofgw_svr]
+
+[2019.11.18 13:22:23][2] [ofgw_svr-40] [GMS-0100] Processing a JoinNotificationSignal from adminServer.
+[2019.11.18 13:22:23][2] [ofgw_svr-40] [GMS-0105] Dump current cluster view.
+Entire server list
+    [adminServer, ofgw_svr]
+
+Sub list for group __Default__
+    [adminServer, ofgw_svr]
+
+[2019.11.18 13:22:23][2] [ofgw_svr-41] [GMS-0100] Processing a JoinNotificationSignal from ofgw_svr.
+[2019.11.18 13:22:23][2] [ofgw_svr-12] [ShoalTransport-0010] Connection of SocketStream@4c222d19(10.0.2.15:9746(GMS) -> 10.0.2.15:9736(GMS)) has been allowed.
+[2019.11.18 13:22:23][2] [ofgw_svr-1] [EJB-5501] EJB engine started successfully.
+[2019.11.18 13:22:24][2] [ofgw_svr-1] [JMS-7374] The persistence store manager for the JMS broker 'ofgw_svr' has been started.
+[2019.11.18 13:22:24][2] [ofgw_svr-1] [JMS-6822] The JMS engine with the broker named ofgw_svr has started.
+[2019.11.18 13:22:24][2] [ofgw_svr-1] [WEB-1003] Socket send buffer size of this operating system = [8192], JEUS default output buffer size = [8192]
+[2019.11.18 13:22:25][2] [ofgw_svr-1] [WEB-1030] The web engine has started successfully.
+[2019.11.18 13:22:25][2] [ofgw_svr-1] [SERVER-0248] The JEUS server is STANDBY.
+[2019.11.18 13:22:25][2] [ofgw_svr-1] [SERVER-0248] The JEUS server is STARTING.
+[2019.11.18 13:22:25][2] [ofgw_svr-1] [WEB-3413] The web engine is ready to receive requests.
+13:22:25,505 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:22:25,506 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:22:25,506 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logback.xml]
+13:22:25,553 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:22:25,560 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeFilter scanning period to 30 seconds
+13:22:25,560 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logback.xml]] every 30 seconds. 
+13:22:25,560 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+13:22:25,561 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:22:25,564 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:22:25,584 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.PatternLayout] for [layout] property
+13:22:25,615 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+13:22:25,615 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+13:22:25,615 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+13:22:25,617 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+13:22:25,619 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ROLLING]
+13:22:25,639 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+13:22:25,641 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logs/ofgw-%d{yyyy-MM-dd}.%i.log for the active file
+13:22:25,643 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@769325b5 - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logs/ofgw-%d{yyyy-MM-dd}.%i.log'.
+13:22:25,643 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@769325b5 - Roll-over at midnight.
+13:22:25,643 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@769325b5 - Setting initial period to Mon Nov 18 13:22:25 CST 2019
+13:22:25,645 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:22:25,652 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - Active log file name: /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/logs/ofgw-2019-11-18.0.log
+13:22:25,652 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - File property is set to [null]
+13:22:25,653 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.tmax.webtnio] to OFF
+13:22:25,653 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.tmax.ofgw.io.DBConnectionThread] to INFO
+13:22:25,654 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.tmax.ofgw.io.DBChannelImpl] to INFO
+13:22:25,654 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.tmax.ofgw.work.WebProtocol] to INFO
+13:22:25,654 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.tmax.ofgw.io.TransWorkerChImpl] to INFO
+13:22:25,654 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+13:22:25,654 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ROLLING] to Logger[ROOT]
+13:22:25,654 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:22:25,654 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:22:25,655 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3690cae4 - Registering current configuration as safe fallback point
+
+[2019-11-18T13:22:25.00661] [OFGW|Main                    ] [I] OFGW1001 - initialize ofgw
+[2019-11-18T13:22:25.00665] [OFGW|OFgwProperties          ] [D] ofgw.properties = null
+[2019-11-18T13:22:25.00665] [OFGW|OFgwProperties          ] [D] getResource /ofgwconf = file:/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf
+[2019-11-18T13:22:25.00665] [OFGW|OFgwProperties          ] [D] getRootDir = /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf
+FILEPATH = [/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/ofgw.properties]
+[2019-11-18T13:22:25.00669] [OFGW|Main                    ] [D] GoodMorning file path: [/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/initScreen/initScreen.txt]
+[2019-11-18T13:22:25.00672] [OFGW|Main                    ] [I] license=[/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/license]
+[2019-11-18T13:22:25.00838] [OFGW|Main                    ] [D] checking license: true, reason: The license will expire in [46] days.
+[2019-11-18T13:22:25.00838] [OFGW|Main                    ] [D] License type : DEMO
+License Check result : OK
+License Check message : The license will expire in [46] days.
+License Information
+	Hostname  license : ofdemo	machine : ofdemo
+	CPU       license : 4	machine : 4
+	Days      license : 92	remain days  : 46
+	          beginDate : Thu Oct 03 00:00:00 CDT 2019	expireDate  : Fri Jan 03 00:00:00 CST 2020
+Allowed Module
+	WebTerminal
+
+modules : WebTerminal
+[2019-11-18T13:22:25.00839] [OFGW|CpmManager              ] [D] cpm path=/opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf/cpm
+[2019-11-18T13:22:26.00282] [OFGW|Main                    ] [D] Tn3270Thread successfully created
+[2019-11-18T13:22:26.00286] [OFGW|Main                    ] [D] MainThread successfully created
+[2019-11-18T13:22:26.00791] [OFGW|Main                    ] [D] DBConnectionThread successfully created
+root: /opt/tmaxui/jeus7/domains/jeus_domain/servers/ofgw_svr/lib/application/ofgwconf
+[2019-11-18T13:22:26.00792] [OFGW|Tn3270Thread            ] [I] OFGW1005 - start TN3270 thread
+[2019-11-18T13:22:26.00795] [OFGW|MainThread              ] [D] MainThread started
+[2019-11-18T13:22:26.00795] [OFGW|Tn3270Thread            ] [D] Tn3270Thread started
+[2019.11.18 13:22:26][2] [ofgw_svr-1] [UNIFY-0100] Listener information
+                                    BASE (plain, 0.0.0.0 : 9746) - VIRTUAL - SecurityServer
+                                                                           - FileTransfer
+                                                                           - ClassFTP
+                                                                           - JNDI
+                                                                           - JMXConnectionServer/JeusMBeanServer
+                                                                           - JMXConnectionServer/JEUSMP_ofgw_svr
+                                                                           - GMS-NetworkManager
+                                                                           - TransactionManager
+                                                                 - HTTP Listener
+                            http-server1 (plain, 0.0.0.0 : 8818) - HTTP Listener
+                           jms-internal1 (plain, 0.0.0.0 : 9951) - VIRTUAL - JMSServiceChannel-internal
+
+[2019.11.18 13:22:26][0] [ofgw_svr-1] [SERVER-0242] Successfully started the server.
+[2019.11.18 13:22:26][2] [ofgw_svr-1] [SERVER-0248] The JEUS server is RUNNING.
+[2019.11.18 13:22:26][2] [launcher-10] [Launcher-0034] The server[ofgw_svr] initialization completed successfully[pid : 8825].
+[2019.11.18 13:22:26][0] [launcher-1] [Launcher-0040] Successfully started the server. The server state is now RUNNING.
+   
+** End Jeusadmin (Server Stop/Start) **
+   
+** Run Jeusadmin  (deploy) **
+** Run deploy-application **
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+deploy the application for the application [webterminal] succeeded.
+   
+** Run application info **
+Attempting to connect to 10.0.2.15:9736.
+The connection has been established to Domain Administration Server adminServer in the domain jeus_domain.
+Application information for the domain [jeus_domain].
+================================================================================
++---------+-----------+---------+---------+----------+-------------------------+
+| Applicat|Application|  State  |  Target |  Target  |     Application Path    |
+| ion ID  |   Type    |         | Servers | Clusters |                         |
++---------+-----------+---------+---------+----------+-------------------------+
+| webtermi| WAR       | RUNNING | ofgw_svr|          | /opt/tmaxui/jeus7/domain|
+|nal      |           |         |         |          |s/jeus_domain/servers/ofg|
+|         |           |         |         |          |w_svr/lib/application/web|
+|         |           |         |         |          |terminal                 |
++---------+-----------+---------+---------+----------+-------------------------+
+================================================================================
+   
+** End Jeusadmin (deploy) **
