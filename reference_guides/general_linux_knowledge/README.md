@@ -1,6 +1,6 @@
 # General Linux Knowledge
 
-These reference guides are to help anybody knew to Linux get up and running.
+These reference guides are to help anybody new to Linux get up and running.
 
 ## Topics
 
