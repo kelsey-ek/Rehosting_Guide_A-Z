@@ -1,82 +1,85 @@
-# OpenFrame Installation Guide
+# OpenFrame Installation Guide <!-- omit in toc -->
 
-## Table of Contents
-
-- [1. Overview](#overview)
-- [2. OpenFrame Installation](#openframe-installation)
-  * [2.1 Pre-installation](#pre-installation)
-    - [2.1.1 Set Hostname](#set-hostname)
-    - [2.1.2 Create groups and users](#create-groups-and-users)
-    - [2.1.3 Create directory structure](#create-directory-structure)
-    - [2.1.4 Download licenses](#download-licenses)
-    - [2.1.5 Copy all the files](#copy-all-the-files)
-    - [2.1.6 Update kernel parameters](#update-kernel-parameters)
-    - [2.1.7 Network configuration](#network-configuration)
-    - [2.1.8 Install required packages](#install-required-packages)
-    - [2.1.9 Setup NTP](#setup-ntp)
-    - [2.1.10 Update bash profiles](#update-bash-profiles)
-  * [2.2 Install Tibero for OpenFrame](#isntall-tibero-for-openframe)
-    - [2.2.1 Scenario type](#scenario-type)
-    - [2.2.2 Installation first steps](#installation-first-steps)
-    - [2.2.3 Generate the TIP file](#generate-the-tip-file)
-    - [2.2.4 Client configuration file](#client-configuration-file)
-    - [2.2.5 Final installation and verification steps (SCENARIO A ONLY)](#final-installation-and-verification-steps-scenario-A)
-    - [2.2.6 Final installation and verification steps (SCENARIO B ONLY)](#final-installation-and-verification-steps-scenario-B)
-  * [2.3 Creating an ODBC Environment](#creating-an-odbc-environment)
-    - [2.3.1 Installation](#installation)
-    - [2.3.2 Verification steps](#verification-steps)
-  * [2.4 Base](#base)
-    - [2.4.1 Installation](#installation)
-    - [2.4.2 Verification steps](#verification-steps)
-  * [2.5 Install Batch](#install-batch)
-    - [2.5.1 Installation](#installation)
-    - [2.5.2 Verification steps](#verification-steps)
-    - [2.5.3 Script editing](#script-editing)
-  * [2.6 Install TACF](#install-tacf)
-    - [2.6.1 Installation](#installation)
-    - [2.6.2 Verification steps](#verification-steps)
-  * [2.7 Install ProSort](#install-prosort)
-    - [2.7.1 Installation](#installation)
-    - [2.7.2 Verification steps](#verification-steps)
-  * [2.8 Install ProTrieve](#install-protrieve)
-    - [2.8.1 Installation](#installation)
-    - [2.8.2 Verification steps](#verification-steps)
-  * [2.9 Install OFCOBOL](#install-ofcobol)
-    - [2.9.1 Installation](#installation)
-    - [2.9.2 Verification steps](#verification-steps)
-  * [2.10 Install OFPLI](#install-ofpli)
-    - [2.10.1 Installation](#installation)
-    - [2.10.2 Verification steps](#verification-steps)
-  * [2.11 Install OFASM](#install-ofasm)
-    - [2.11.1 Installation](#installation)
-    - [2.11.2 Verification steps](#verification-steps)
-  * [2.12 Install OSC](#install-osc)
-    - [2.12.1 Installation](#installation)
-    - [2.12.2 Verification steps](#verification-steps)
-  * [2.13 JEUS](#jeus)
-    - [2.13.1 Ant-Apache](#ant-apache)
-    - [2.13.1 Installation](#installation)
-    - [2.13.3 Duplication through the JEUS 7 webadmin](#duplication-through-the-jeus-7-webadmin)
-    - [2.13.4 Duplication through the jeusadmin console](#duplication-through-the-jeusadmin-console)     
-  * [2.14 Install OFGW](#install-ofgw)
-    - [2.14.1 Installation](#installation)
-    - [2.14.2 Verification steps](#verification-steps)
-  * [2.15 Install OFManager](#install-ofmanager)
-    - [2.15.1 Installation](#installation)
-    - [2.15.2 Verification steps](#verification-steps)
-  * [2.16 Install OFMiner](#install-ofminer)
-    - [2.16.1 Installation](#installation)
-    - [2.16.2 Verification steps](#verification-steps)
-  * [2.17 Install HiDB](#install-hidb)
-    - [2.17.1 Installation](#installation)
-    - [2.17.2 Verification steps](#verification-steps)
-  * [2.18 Install OSI](#install-osi)
-    - [2.18.1 Installation](#installation)
-    - [2.18.2 Verification steps](#verification-steps)
-  * [2.19 Install OFStudio](#install-ofstudio)
-    - [2.19.1 Server Installation](#server-installation)
-    - [2.19.2 Verification steps](#verification-steps)
-    - [2.19.3 Client Installation](#client-installation)
+## Table of Contents <!-- omit in toc -->
++ [1. Overview](#1-overview)
++ [2. OpenFrame installation](#2-openframe-installation)
+  + [2.1 Pre-installation](#21-pre-installation)
+      + [2.1.1 Set Hostname](#211-set-hostname)
+      + [2.1.2 Create groups and users](#212-create-groups-and-users)
+      + [2.1.3 Create directory structure](#213-create-directory-structure)
+      + [2.1.4 Download licenses](#214-download-licenses)
+      + [2.1.5 Copy all the files](#215-copy-all-the-files)
+      + [2.1.6 Update kernel parameters](#216-update-kernel-parameters)
+      + [2.1.7 Network configuration](#217-network-configuration)
+      + [2.1.8 Install required packages](#218-install-required-packages)
+      + [2.1.9 Setup NTP](#219-setup-ntp)
+      + [2.1.10 Update bash profiles](#2110-update-bash-profiles)
+  + [2.2 Install Tibero for OpenFrame](#22-install-tibero-for-openframe)
+      + [2.2.1 Scenario type](#221-scenario-type)
+      + [2.2.2 Installation first steps](#222-installation-first-steps)
+      + [2.2.3 Generate the TIP file](#223-generate-the-tip-file)
+      + [2.2.4 Client configuration file](#224-client-configuration-file)
+      + [2.2.5 Final installation and verification steps (SCENARIO A ONLY)](#225-final-installation-and-verification-steps-scenario-a-only)
+      + [2.2.6 Final installation and verification steps (SCENARIO B ONLY)](#226-final-installation-and-verification-steps-scenario-b-only)
+  + [2.3 Creating an ODBC Environment](#23-creating-an-odbc-environment)
+      + [2.3.1 Installation](#231-installation)
+      + [2.3.2 Verification steps](#232-verification-steps)
+  + [2.4 Base](#24-base)
+      + [2.4.1 Installation](#241-installation)
+      + [2.4.2 Verification steps](#242-verification-steps)
+  + [2.5 Install Batch](#25-install-batch)
+      + [2.5.1 Installation](#251-installation)
+      + [2.5.2 Verification steps](#252-verification-steps)
+      + [2.5.3 Script editing](#253-script-editing)
+  + [2.6 Install TACF](#26-install-tacf)
+      + [2.6.1 Installation](#261-installation)
+      + [2.6.2 Verification steps](#262-verification-steps)
+  + [2.7 Install ProSort](#27-install-prosort)
+      + [2.7.1 Installation](#271-installation)
+      + [2.7.2 Verification steps](#272-verification-steps)
+  + [2.8 Install ProTrieve](#28-install-protrieve)
+      + [2.8.1 Installation](#281-installation)
+      + [2.8.2 Verification steps](#282-verification-steps)
+  + [2.9 Install OFCOBOL](#29-install-ofcobol)
+      + [2.9.1 Installation](#291-installation)
+      + [2.9.2 Verification steps](#292-verification-steps)
+  + [2.10 Install OFPLI](#210-install-ofpli)
+      + [2.10.1 Installation](#2101-installation)
+      + [2.10.2 Verification steps](#2102-verification-steps)
+  + [2.11 Install OFASM](#211-install-ofasm)
+      + [2.11.1 Installation](#2111-installation)
+      + [2.11.2 Verification steps](#2112-verification-steps)
+  + [2.12 Install OSC](#212-install-osc)
+      + [2.12.1 Installation](#2121-installation)
+      + [2.12.2 Verification steps](#2122-verification-steps)
+  + [2.13 JEUS](#213-jeus)
+      + [2.13.1 Ant-Apache](#2131-ant-apache)
+      + [2.13.2 Installation](#2132-installation)
+      + [2.13.3 Duplication through the JEUS 7 webadmin](#2133-duplication-through-the-jeus-7-webadmin)
+      + [2.13.4 Duplication through the jeusadmin console](#2134-duplication-through-the-jeusadmin-console)
+  + [2.14 Install OFGW](#214-install-ofgw)
+      + [2.14.1 Installation WebTerminal & T3270 Terminal](#2141-installation-webterminal--t3270-terminal)
+      + [2.14.2 Verification steps](#2142-verification-steps)
+  + [2.15 Install OFManager](#215-install-ofmanager)
+      + [2.15.1 Installation](#2151-installation)
+      + [2.15.2 Verification steps](#2152-verification-steps)
+  + [2.16 Install OFMiner](#216-install-ofminer)
+      + [2.16.1 Installation](#2161-installation)
+      + [2.16.2 Verification steps](#2162-verification-steps)
+  + [2.17 Install HiDB (IMS DB)](#217-install-hidb-ims-db)
+      + [2.17.1 Installation](#2171-installation)
+      + [2.17.2 Verification steps](#2172-verification-steps)
+  + [2.18 Install OSI Online (IMS DC)](#218-install-osi-online-ims-dc)
+      + [2.18.1 Installation](#2181-installation)
+      + [2.18.2 Verification steps](#2182-verification-steps)
+  + [2.19 OFStudio](#219-ofstudio)
+      + [2.19.1 Server Installation](#2191-server-installation)
+      + [2.19.2 Verification steps](#2192-verification-steps)
+      + [2.19.3 Client Installation](#2193-client-installation)
+  + [2.20 Running additional scripts](#220-running-additional-scripts)
++ [3. Boot/shutdown process](#3-bootshutdown-process)
+  + [3.1 Boot everything](#31-boot-everything)
+  + [3.2 Shutdown everything](#32-shutdown-everything)
 
 
 
@@ -101,7 +104,7 @@ TODO Add what the user is supposed to do in this situation (raise an issue, crea
 ## 2.1 Pre-installation
 
 #### 2.1.1 Set Hostname
-__a.__ Login as root and check hostname. For the simplicity of the demo, change hostname to ofdemo (case sensitive, be careful it has to be __ofdemo__):
+__a.__ Login as root and check hostname. Change hostname to ofdemo (case sensitive, be careful it has to be __ofdemo__):
 ```bash
 su -
 # <enter root password>
@@ -115,7 +118,7 @@ Add the following line to the end of the file (replace 0.0.0.0 with the IP of th
 ```text
 0.0.0.0 ofdemo ofdemo
 ```
-![alt-text](reference_images/hosts_after_modification.png "hosts file")
+<img src="./reference_images/hosts_after_modification.png" title="hosts file">
 
 _note: On cloud VMs, the private IP should be used._
 
@@ -127,11 +130,11 @@ cat /etc/hostname
 # After checking, please reboot
 reboot
 ```
-![alt-text](reference_images/hostname_after_modification.png "hostname file")
+<img src="./reference_images/hostname_after_modification.png" title="hostname file">
 
 __Verification step.__ Run the following command to see if the changes took effect: `hostname`
 
-![alt-text](reference_images/hostname_command_result.png "hostname command result")
+<img src="./reference_images/hostname_command_result.png" title="hostname command result">
 
 _note: If not set already, set root user password with the command "passwd root". As seen in the installation package, use preferably `tmax1234` as the password._
 
@@ -172,13 +175,15 @@ To get the latest licenses specific to your machine, download them from TmaxSoft
 _note: If you don't remember the NCPU value, run the command `lscpu | grep 'CPU(s)'` and read the first output line._
 
 - Access Technet at <https://technet.tmaxsoft.com/>
-![alt-text](reference_images/technet_website.png "Technet Website")
+
+<img src="./reference_images/technet_website.png" title="Technet Website">
 
 - Login to your account, and click Demo License Request. If you don't have an account yet, you should create one. Please provide an email address that you regularly check, licenses will be sent to this address:
-![alt-text](reference_images/technet_registration.png "Technet Registration")
+<img src="./reference_images/technet_registration.png" title="Technet Registration">
 
 - Now, click on License Demo Request:
-![alt-text](reference_images/license_download.png "License Download")
+  
+<img src="./reference_images/license_download.png" title="license_download">
 
 
 - Here is a list of al licenses you need for this installation:
@@ -196,7 +201,7 @@ _note: If you don't remember the NCPU value, run the command `lscpu | grep 'CPU(
 
 For "Host Name", put __ofdemo__ and for "Purpose of Use" put __demo__.
 
-##### _note: Please DO NOT rename license files._
+### __Please DO NOT rename license files.__ <!-- omit in toc -->
 
 #### 2.1.5 Copy all the files
 
@@ -360,7 +365,8 @@ Every time you make any change to one of the bash profiles, log out/log in or ex
 If you want to install OpenFrame and Tibero on two different servers, you would need to install Tibero client/OpenFrame on one server, and Tibero client + server on the other server.
 
 The two scenarios are depicted here:
-![alt-text](reference_images/installation_scenarios.png "Installation Scenarios")
+
+<img src="./reference_images/installation_scenarios.png" title="Installation Scenarios">
 
 Make sure the two Tibero binaries installed on the separate servers are identical. This would also mean that if you patch a Tibero on one server, you would also need to patch the other.
 
@@ -384,7 +390,8 @@ tar -xzvf tibero6-bin-FS06_CS_1806-linux64-158667-opt-20180912120346-tested.tar.
 ```
 
 __b.__ You should now see a tibero6 directory in _/opt/tmaxdb_:
-![alt-text](reference_images/tmaxdb_folder.png "tmaxdb folder")
+
+<img src="./reference_images/tmaxdb_folder.png" title="tmaxdb folder">
 
 __b.__ Copy the license downloaded before to the license directory:
 ```bash
@@ -409,12 +416,13 @@ _WTHR_PER_PROC=15
 _STMT_DD_CSR_MODE=N
 ```
 You should have the same file as the screenshot below:
-![alt-text](reference_images/tip_file.png "TIP file")
+
+<img src="./reference_images/tip_file.png" title="TIP file">
 
 #### 2.2.4 Client configuration file
 Modify the Tibero client configuration file located at _$TB_HOME/client/config/tbdsn.tbr_ as shown below (local install example). For local install, you might be using 127.0.0.1 or localhost but in remote install you need to specify the remote IP address or hostname. There are no modification to _tdbsn.tbr_ in the scenario A.
 
-![alt-text](reference_images/tibero_client_configuration_file.png "Tibero client configuration file")
+<img src="./reference_images/tibero_client_config_file.png" title="Tibero client configuration file">
 
 #### 2.2.5 Final installation and verification steps (SCENARIO A ONLY)
 __a.__	Delete the existing default database instances (BE CAREFUL ONLY DO THIS IF YOU ARE SURE):
@@ -444,7 +452,8 @@ ipcs -m | grep oftibr
 ps -ef | grep tbsvr
 ```
 Output for the last command:
-![alt-text](reference_images/tibero_processes.png "Tibero Processes")
+
+<img src="./reference_images/tibero_processes.png" title="Tibero Processes">
 
 Now that we have a database created, both of our users have their updated bash profiles ready, we can create the tablespaces for the OpenFrame application. The script _dbclear.sh_ contains the necessary drop and create statements.
 
@@ -462,9 +471,11 @@ sh dbclear.sh
 ```
 
 __e.__ Try to log in the database with the command: `tbsql tibero/tmax` (or `tbsql sys/tibero` but this is the admin of the database). Then enter the same command as below on the screenshot to see if you obtain the same output:
+
+<img src="./reference_images/tbsql_first_use.png" title="Tibero Processes">
 ![alt-text](reference_images/tbsql_first_use.png "Tbsql First Use")
 
-##### _note: Please DO NOT shut down Tibero at the end of the installation. TIBERO SHOULD BE UP FOR THE FOLLOWING INSTALLATIONS TO CONTINUE._
+### __Please DO NOT shut down Tibero at the end of the installation. TIBERO SHOULD BE UP FOR THE FOLLOWING INSTALLATIONS TO CONTINUE.__ <!-- omit in toc -->
 
 #### 2.2.6 Final installation and verification steps (SCENARIO B ONLY)
 TODO This section is untested, it should be tested to check if everything is ok
@@ -519,7 +530,7 @@ __b.__ Verify if a folder is created in _/opt/tmaxapp_. There should be a unixOD
 cd /opt/tmaxapp
 ls
 ```
-![alt-text](reference_images/unixODBC.png "unixODBC")
+<img src="./reference_images/unixODBC.png" title="unixODBC">
 
 __c.__ Create symbolic link for _libodbc.so.1_ and _libodbc.so_ :
 ```bash
@@ -707,8 +718,7 @@ Today: 2019/10/15
 __c.__ Verify process ready status using `tmadmin`. Then use the command `si`, all the processes should have RDY status.
 ```text
 --- Welcome to Tmax Admin (Type "quit" to leave) ---
-
-$$1 NODE1 (tmadm): si
+$1 NODE1 (tmadm): si
 ------------------------------------------------------------------------
   clh   svrname    (svri)   status     count   qcount   qpcount  emcount
 ------------------------------------------------------------------------
@@ -721,7 +731,7 @@ $$1 NODE1 (tmadm): si
     0   ofrsmlog   (  10)      RDY         0        0         0        0
     0   vtammgr    (  11)      RDY         0        0         0        0
 
-$$2 NODE1 (tmadm): quit
+$2 NODE1 (tmadm): quit
 ADM quit for node (NODE1)
 ```
 
@@ -847,7 +857,7 @@ __c.__ Verify process ready status using `tmadmin`. Then use the command `si`, a
 ```text
 --- Welcome to Tmax Admin (Type "quit" to leave) ---
 
-   $$1 NODE1 (tmadm): si
+   $1 NODE1 (tmadm): si
 
    ------------------------------------------------------------------------
    clh   svrname    (svri)   status     count   qcount   qpcount  emcount
@@ -869,8 +879,7 @@ __c.__ Verify process ready status using `tmadmin`. Then use the command `si`, a
     0   obmtsmgr   (  18)      RDY         0        0         0        0
     0   obmjtimr   (  19)      RDY         0        0         0        0
 
-
-   $$2 NODE1 (tmadm): quit
+   $2 NODE1 (tmadm): quit
    ADM quit for node (NODE1)
 ```
 
@@ -910,10 +919,12 @@ Edit the OpenFrame configuration file _tjclrun.conf_:
 ```bash
 vi /opt/tmaxapp/OpenFrame/config/tjclrun.conf
 ```    
-Then, add the _OBCD_HOME_ lib (highlighted in red):
+Then, add the _OBCD_HOME_ lib:
+```bash
 [SYSLIB]
 BIN_PATH=${OPENFRAME_HOME}/bin:${OPENFRAME_HOME}/util:${COBDIR}/bin:/usr/local/bin:/bin
-LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib<span style="color:red">:${ODBC_HOME}/lib</span>
+LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib
+```
 
 ## 2.6 Install TACF
 
@@ -994,7 +1005,7 @@ __c.__ Verify process ready status using `tmadmin`. Then use the command `si`, a
 ```text
 --- Welcome to Tmax Admin (Type "quit" to leave) ---
 
-$$1 NODE1 (tmadm): si
+$1 NODE1 (tmadm): si
 ------------------------------------------------------------------------
 clh   svrname    (svri)   status     count   qcount   qpcount  emcount
 ------------------------------------------------------------------------
@@ -1015,7 +1026,7 @@ clh   svrname    (svri)   status     count   qcount   qpcount  emcount
 0   obmtsmgr   (  18)      RDY         0        0         0        0
 0   tmsvr      (  19)      RDY         0        0         0        0
 
-$$2 NODE1 (tmadm): quit
+$2 NODE1 (tmadm): quit
 ADM quit for node (NODE1)
 ```
 
@@ -1071,7 +1082,8 @@ __b.__ Verify if a folder is created in _/opt/tmaxsw_: `ls`. There should be a _
 mv prosort /opt/tmaxapp
 ```
 The _tmaxapp/_ folder should looks like:
-![alt-text](reference_images/prosort_folder_tmaxapp.png "Prosort folder in tmaxapp")
+
+<img src="./reference_images/prosort_folder_tmaxapp.png" title="Prosort folder in tmaxapp">
 
 __c.__	Set up license file:
 ```bash
@@ -1156,10 +1168,12 @@ __e.__ Create a backup of the OpenFrame configuration file _/opt/tmaxapp/OpenFra
 cd /opt/tmaxapp/OpenFrame/config/
 cp tjclrun.conf tjclrun.conf.bck1
 ```
-Then, add the _PROTRIEVE_HOME_ lib (highlighted in red):
+Then, add the _PROTRIEVE_HOME_ lib (two times):
+```bash
 [SYSLIB]
-BIN_PATH=${OPENFRAME_HOME}/bin:${OPENFRAME_HOME}/util:${COBDIR}/bin:/usr/local/bin:/bin:${OPENFRAME_HOME}/volume_default/SYS1.LOADLIB<span style="color:red">/bin:${PROTRIEVE_HOME}/bin</span>
-LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib<span style="color:red">:${PROTRIEVE_HOME}/lib</span>
+BIN_PATH=${OPENFRAME_HOME}/bin:${OPENFRAME_HOME}/util:${COBDIR}/bin:/usr/local/bin:/bin:${OPENFRAME_HOME}/volume_default/SYS1.LOADLIB/bin:${PROTRIEVE_HOME}/bin
+LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib
+```
 
 #### 2.8.2 Verification steps
 __a.__ Review _ProTrieve_InstallLog.log_ and verify that there are no errors:
@@ -1220,9 +1234,11 @@ __e.__ Create a backup of the OpenFrame configuration file _/opt/tmaxapp/OpenFra
 cd /opt/tmaxapp/OpenFrame/config/
 cp tjclrun.conf tjclrun.conf.bck2
 ```
-Then, add the _OFCOB_HOME_ lib (highlighted in red):
+Then, add the _OFCOB_HOME_ lib:
+```bash
 [SYSLIB]
-LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib<span style="color:red">:${OFCOB_HOME}/lib</span>
+LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib:${OFCOB_HOME}/lib
+```
 
 #### 2.9.2 Verification steps
 __a.__ Review _OpenFrame_COBOL_InstallLog.log_ and verify there are no errors:
@@ -1302,9 +1318,11 @@ __d.__ Create a backup of the OpenFrame configuration file _/opt/tmaxapp/OpenFra
 cd /opt/tmaxapp/OpenFrame/config/
 cp tjclrun.conf tjclrun.conf.bck3
 ```
-Then, add the _OFPLI_HOME_ lib (highlighted in red):
+Then, add the _OFPLI_HOME_ lib:
+```bash
 [SYSLIB]
-LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib:${OFCOB_HOME}/lib<span style="color:red">:${OFPLI_HOME}/lib</span>
+LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib:${OFCOB_HOME}/lib:${OFPLI_HOME}/lib
+```
 
 #### 2.10.2 Verification steps
 __a.__ Review _OpenFrame_PLI_InstallLog.log_ and verify there are no errors:
@@ -1378,9 +1396,11 @@ __d.__ Create a backup of the OpenFrame configuration file _/opt/tmaxapp/OpenFra
 cd /opt/tmaxapp/OpenFrame/config/
 cp tjclrun.conf tjclrun.conf.bck4
 ```
-Then, add the _OFASM_HOME_ lib (highlighted in red):
+Then, add the _OFASM_HOME_ lib:
+```bash
 [SYSLIB]
-LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib:${OFCOB_HOME}/lib:${OFPLI_HOME}/lib<span style="color:red">:${OFASM_HOME}/lib</span>
+LIB_PATH=${OPENFRAME_HOME}/lib:${OPENFRAME_HOME}/core/lib:${TB_HOME}/client/lib:${COBDIR}/lib:/usr/lib:/lib:/lib/i686:/usr/local/lib:${PROSORT_HOME}/lib:/opt/FSUNbsort/lib:${ODBC_HOME}/lib:${PROTRIEVE_HOME}/lib:${OFCOB_HOME}/lib:${OFPLI_HOME}/lib:${OFASM_HOME}/lib
+```
 
 #### 2.11.2 Verification steps
 __a.__ Review _OpenFrame_ASM_InstallLog.log_ and verify there are no errors:
@@ -1544,10 +1564,10 @@ OSCBOOT : post-processing                                             [ OK ]
 ```
 
 - Verify process ready status using `tmadmin`. Then use the command `si`, all the processes should have RDY status:
-
+```text
 --- Welcome to Tmax Admin (Type "quit" to leave) ---
 
-$$1 NODE1 (tmadm): si
+$1 NODE1 (tmadm): si
 ------------------------------------------------------------------------
   clh   svrname    (svri)   status     count   qcount   qpcount  emcount
 ------------------------------------------------------------------------
@@ -1583,8 +1603,9 @@ $$1 NODE1 (tmadm): si
     0   OSCOIVP1_TCL1 (  33)      RDY         0        0         0        0
     0   TPFMAGENT  (  34)      RDY         1        0         0        0
 
-$$2 NODE1 (tmadm): quit
+$2 NODE1 (tmadm): quit
 ADM quit for node (NODE1)
+```
 
 ## 2.13 JEUS
 
@@ -1623,7 +1644,8 @@ nodename=ofdemo
 - nodename means hostname on your computer. Please fill out the nodename field after checking, using `hostname` command.
 
 Here is a screenshot of this file after modification:
-![alt-text](reference_images/domain_config_template.png "Domain config template properties")
+
+<img src="./reference_images/domain_config_template.png" title="Domain config template properties">
 
 __c.__ Run the _ant_ commands to build the server being in _/opt/tmaxui/jeus7/setup/_:
 ```bash
@@ -1631,10 +1653,12 @@ ant clean-all
 ant install
 ```
 Output for the first command:
-![alt-text](reference_images/ant_clean-all.png "Ant clean-all command")
+
+<img src="./reference_images/ant_clean-all.png" title="Ant clean-all command">
 
 Output for the second command:
-![alt-text](reference_images/ant_install.png "Ant install command")
+
+<img src="./reference_images/ant_install.png" title="Ant install command">
 
 __d.__ The _DomainAdminServer_ can now be started by issuing the command:
 ```bash
@@ -1646,7 +1670,7 @@ startDomainAdminServer -domain jeus_domain -u administrator -p tmax1234
 
 __e.__ Connect to the JEUS admin by using your web browser. The URL is: <http://IP-address-JEUS-Server:9736/webadmin/login>. To find the IP address of the JEUS Server, just run `ifconfig`. This is the same address as your machine. The credentials are the same as these above to start the domain admin server.
 
-![alt-text](reference_images/JEUS_login_page.png "JEUS_login_page")
+<img src="./reference_images/JEUS_login_page.png" title="JEUS login page">
 
 __f.__ Stop the firewall rules using below command with root access (BE CAREFUL ONLY DO THIS IF YOU ARE SURE):
 ```bash
@@ -1660,15 +1684,15 @@ _note: This step presents a security concern, perhaps it is only a matter of ope
 
 __g.__ Change setup for server1 to bring up:
 
-![alt-text](reference_images/server_1_bring_up.png "Bring up server 1")
+<img src="./reference_images/server_1_bring_up_1.png" title="Bring up server 1">
 
 As you can see, you have to change the hostname to `ofdemo` and apply the changes. Follow the step order.
 
-![alt-text](reference_images/server_1_bring_up_2.png "Bring up server 1")
+<img src="./reference_images/server_1_bring_up_2.png" title="Bring up server 1">
 
 __h.__ Run the boot command: `startManagedServer -domain jeus_domain -server server1 -u administrator -p tmax1234`
 
-![alt-text](reference_images/managed_server_running.png "Managed server running")
+<img src="./reference_images/managed_server_running.png" title="Managed server running">
 
 #### 2.13.3 Duplication through the JEUS 7 webadmin
 As you saw, JEUS installs __server1__ by default. It is recommended that you install JEUS applications (OFGW, OFMiner, OFManager) on separate servers.
@@ -1676,24 +1700,24 @@ For this installation, we will install 3 additional managed servers: __ofgw_svr_
 
 __a.__ Turn on Edit mode by clicking of "Lock & Edit" button:
 
-![alt-text](reference_images/lock_and_edit.png "Lock & Edit")
+<img src="./reference_images/lock_and_edit.png" title="Lock & Edit">
 
 __b.__ Duplicate server1 by clicking "DUP" button:
 
-![alt-text](reference_images/server_duplication.png "Duplicate the server")
+<img src="./reference_images/server_duplication.png" title="Duplicate the server">
 
 __c.__ Put node name (ex: ofdemo) and Server name(ex: ofgw_svr), then click "OK" button:
 
-![alt-text](reference_images/duplication_window.png "Duplication window: node name, server name listen port")
+<img src="./reference_images/duplication_window.png" title="Duplication window: node name, server name listen port">
 
 __d.__ Now, server (ofgw_svr) is created. In order to avoid the conflict of port usage, change the port number as follows. In server view, double click target server (ofgw_svr):
 
-![alt-text](reference_images/change_port_number.png "Change port number to avoid conflict")
+<img src="./reference_images/change_port_number.png" title="Change port number to avoid conflict">
 
 __e.__ Double click __BASE__ and change port number. Repeat changing __HTTP__ and __JMS__ ports (port numbers must be unique for each server, please find all ports numbers in the table below). Apply changes and turn off edit mode by clicking "Apply Changes" button at the end:
 
-![alt-text](reference_images/port_number_1.png "Port number")
-![alt-text](reference_images/port_number_2.png "Port number")
+<img src="./reference_images/port_number_1.png" title="Port number">
+<img src="./reference_images/port_number_2.png" title="Port number">
 
 __f.__ In total, you have to create 3 managed servers for OpenFrame. You just need to repeat the duplication process. Their name and parameters are defined below:
 
@@ -1810,7 +1834,7 @@ Output:
    Enter requested information
 
    Gateway Name (DEFAULT: ofgw):
-   Gateway PORT (DEFAULT: 5556): *5477*  <--- Check *osc.properties* from OSC installation, should be the same as the VTAM_PORT
+   Gateway PORT (DEFAULT: 5556): *5477*  (Check *osc.properties* from OSC installation, should be the same as the VTAM_PORT)
    Datasource ID (DEFAULT: ofgw):
    Application Name (DEFAULT: webterminal):
 
@@ -1820,8 +1844,8 @@ Output:
    ($OPENFRAME_HOME/core/config/oframe.m)
 
    Tmax NODE Name (DEFAULT: NODE1):
-   Tmax NODE IP (DEFAULT: 192.168.220.99): *ofdemo* <--- Use hostname instead of IP address
-   Tmax NODE PORT (DEFAULT: 6623):                  <-- echo **$TMAX_HOST_PORT** using oframe user to be sure
+   Tmax NODE IP (DEFAULT: 192.168.220.99): *ofdemo* (Use hostname instead of IP address)
+   Tmax NODE PORT (DEFAULT: 6623):                  (echo **$TMAX_HOST_PORT** using oframe user to be sure)
 
 
    Get OFGW license Path
@@ -1887,11 +1911,11 @@ startManagedServer -domain jeus_domain -server ofgw_svr -u administrator -p tmax
 
 __c.__ Verify if the URL for OFGW is working. Open your browser and type the URL in the address bar in the following format (replace 10.0.2.15 by your IP address): <http://10.0.2.15:8818/webterminal/>
 
-![alt-text](reference_images/OFGW_working.png "OFGW working")
+<img src="./reference_images/OFGW_working.png" title="OFGW working">
 
 __d.__ Click CONNECT button on top. LU name is automatically assigned. Enter region name: `OSCOIVP1`:
 
-![alt-text](reference_images/OFGW_region_name.png "OFGW Region Name")
+<img src="./reference_images/OFGW_region_name.png" title="OFGW Region Name">
 
 _note: You can check the name of the different regions in /opt/tmaxapp/OpenFrame/osc/region_
 
@@ -1899,11 +1923,11 @@ TODO Weird screen, it seems there is a glitch don't know why
 
 __e.__ Enter transaction: _OIVP_:
 
-![alt-text](reference_images/OFGW_transaction.png "OFGW Transaction")
+<img src="./reference_images/OFGW_transaction.png" title="OFGW Transaction">
 
 __g.__ Enter code: _BROS_:
 
-![alt-text](reference_images/OGW_transaction_window.png "OFGW Transaction Window")
+<img src="./reference_images/OFGW_transaction_window.png" title="OFGW Transaction Window">
 
 TODO Is it normal I have the message "DATA DOES NOT EXIST" on my screen?
 
