@@ -19,14 +19,8 @@ Keywords: Windows10, CentOS7, VirtualBox, OpenFrame7, ofdemo
 - hidb.properties
 - compile.sh
 - dbclear.sh
-
-
 - unixODBC-2.3.4.tar.gz
-
-
 - tibero6-bin-FS06_CS_1806-linux64-158667-opt-20180912120346-tested.tar.gz
-
-
 - OpenFrame_Base7_Fix3_Linux_x86_64.bin
 - OpenFrame_Batch7_Fix3_MVS_Linux_x86_64.bin
 - OpenFrame_Tacf7_Fix3_Linux_x86_64.bin
@@ -200,6 +194,7 @@ CentOS Linux release 7.7.1908 (Core)
 Other useful characteristics:
 - Kernel version: 1062.
 - 8GB RAM, 4 virtual CPUs
+  
 TODO maybe 6 CPU is better (change the licenses accordingly)
 
 _note: There is a minimum of 2 CPUs for the virtual machine, but at least 4 for OpenFrame installation. You can put as many as you want in order to have a more efficient and smooth machine. This number is significant because it also determines some of the parameters of certain licenses when requested._
@@ -217,14 +212,18 @@ HP ProBook 650 G4:
 
 Find all the files required for the following installation in the archive VM_setup_installation_package_1.zip.
 
+## 6. Virtual machine requirements
+- Core: 4 virtual CPUs (Min)
+- Memory: 8 GB (Min)
+- virtual drive: 64 GB (Min), recommended to be dynamically allocated to not occupy too much space at the beginning
+
 ## 6. Additional information
 
 ### 6.1 Installation process
-- __CentOS installation__: select the installation with the GNOME GUI and all the following tools: Compatibility Libraries, Development Tools, Security Tools, System Administration Tools. Moreover, during the installation process you have to create the normal user and the root user. Please choose carefully the passwords (you can use `tmax1234` for the password to use the same during the whole process of installation).
+- __CentOS installation__: select the installation with the GNOME Desktop and all the following tools: Compatibility Libraries, Development Tools, Security Tools, System Administration Tools. Moreover, during the installation process you have to create the normal user and the root user. Please choose carefully the passwords (you can use `tmax1234` for the password to use the same during the whole process of installation).
 
-![alt-text](../reference_images/centos_install_1.png "Installation choices")
-![alt-text](../reference_images/centos_install_2.png "User and root account creation")
-
+<img src="../reference_images/centos_install_1.png" title="Installation choices">
+<img src="../reference_images/centos_install_2.png" title="User and root account creation">
 
 - __Additional packages installed__ (necessary for the Guest Additions installation):
  ```bash
@@ -236,16 +235,45 @@ Find all the files required for the following installation in the archive VM_set
  - __Guest Additions__: 6.0.13 revision 133546 (the actual build with the installation of VirtualBox was not working, version found on the VirtualBox test builds page)
    <https://www.virtualbox.org/wiki/Testbuilds>
 
+If the Guest Additions available in your VirtualBox buid works, do the following steps:
+
+- Open the drop down meu __Devices__ of your VM, then go to __Insert Guest Additons CD image...__
+  
+  TODO Add the corresponding screeshot
+
+- Click on the disk that appear on the CentOS Desktop
+
+TODO Add the corresponding screeshot
+
+- Click on __Run Software__ on the top right corner
+
+TODO Add the corresponding screeshot
+
+To install another Guest Additions than the one available in your VirtualBox buid, do the following steps:
+
+- Open the drop down meu __Devices__ of your VM, then __Optical Drives__ and __Choose disk image...__
+
+TODO Add the corresponding screeshot
+
+- Open the Guest Additions ISO you want to install
+- Click on the disk that appear on the CentOS Desktop
+- Click on __Run Software__ on the top right corner
+
+Verification steps:
+- You should be able to resize the window
+- You should be able to activate the shared clipboard
+- Your mouse and keyboard are no longer captured
+- There is a folder _VBoxGuestAdditions-6.0.13_ under _/opt_
 
 Reboot and that is it, you are ready for OpenFrame installation. Take a screenshot of your virtual machine in case you need to go back to this clean state. To do it, follow the steps on the following screenshot. You can give a name to the screenshot and provide a description according the state of the VM.
 
-![alt-text](reference_images/take_vm_screeshot.png "Take a screenshot of a Virtual Machine")
+<img src="../reference_images/take_vm_screenshot.png" title="Take a screenshot of a Virtual Machine">
 
 _note: In order to go faster on these first steps it is possible to provide an OVA file (exported file from a virtual machine) to be easily imported. See the following screenshots:_
 
-![alt-text](../reference_images/import_vm_1.png "Open Import Menu")
-![alt-text](../reference_images/import_vm_2.png "Look for your OVA file in the Windows Explorer")
-![alt-text](../reference_images/import_vm_3.png "Double check the import settings")
+<img src="../reference_images/import_vm_1.png" title="Open Import Menu">
+<img src="../reference_images/import_vm_2.png" title="Look for your OVA file in the Windows Explorer">
+<img src="../reference_images/import_vm_3.png" title="Double check the import settings">
 
 TODO If we use this ova file to make an installation really fast, we have to ensure that the PC where we export the file and the PC where we install the virtual machine are not necessarily the same.
 
@@ -254,20 +282,20 @@ One of the solutions to transfer files is to set up a shared folder between host
 
 - Go to the menu _Devices_ and _Shared Folder Settings..._:
 
-![alt-text](../reference_images/shared_folder_1.png "Devices > Shared Folder Settings...")
+<img src="../reference_images/shared_folder_1.png" title="Devices > Shared Folder Settings...">
 
 - Then click on _Add new shared folder_:
 
-![alt-text](../reference_images/shared_folder_2.png "Add new shared folder")
+<img src="../reference_images/shared_folder_2.png" title="Add new shared folder">
 
 - Select a folder in the host machine to be shared with the guest. Add the _Auto-mount_ value. It is optional but you can make the shared folder permanent:
 
-![alt-text](../reference_images/shared_folder_3.png "Add Share Window")
+<img src="../reference_images/shared_folder_3.png" title="Add Share Window">
 
 - Now you can see that you have a new folder available on the guest machine desktop:
 
-![alt-text](../reference_images/shared_folder_4.png "Shared folder GUI view")
+<img src="../reference_images/shared_folder_4.png" title="Shared folder GUI view">
 
 - You can also access it through the terminal with root access under _/media_:
 
-![alt-text](../reference_images/shared_folder_5.png "Shared folder Terminal view")
+<img src="../reference_images/shared_folder_5.png" title="Shared folder Terminal view">
