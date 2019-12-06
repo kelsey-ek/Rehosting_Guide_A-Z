@@ -1,0 +1,43 @@
+#!/bin/bash
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+USERID=$(whoami)
+HOSTNAME=$(hostname)
+PWD=$(pwd)
+HOME=/home/oftibr
+export PS1="${USERID}@${HOSTNAME}:${PWD} /> "
+export PATH
+#ulimit -n 16384
+
+# Choose the root folder for all OpenFrame products installation
+# {/opt, /home, /u01_t0, ...}
+export INSTALL_FOLDER=/opt
+
+#############################################################################
+#                   TSAM/TIBERO (or TIBERO VSAM)                            #
+#############################################################################
+export TB_HOME=/opt/tmaxdb/tibero6/
+export TB_SID=TVSAM
+export SEM_KEY=148050
+export TB_PROF_DIR=$TB_HOME/bin/prof/
+export PATH=$TB_HOME/script:$TB_HOME/bin:$TB_HOME/client/bin:$PATH;
+export LD_LIBRARY_PATH=$TB_HOME/lib:$TB_HOME/client/lib:/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH_64=$TB_HOME/lib:$TB_HOME/client/lib:$LD_LIBRARY_PATH_64
+export TB_NLS_DATE_FORMAT="YYYY/MM/DD HH24:MI:SS"
+export TBMON_HOME=$TB_HOME/tbmon/
+
+export AIXTHREAD_SCOPE=S
+
+export TB_CONN_TIMEOUT=10
+export TB_READ_TIMEOUT=180
+
+#Tibero_License=/opt/tmaxdb/tibero6/license/license.xml
+
+#############################################################################
+#                    Aliases                                                #
+#############################################################################
+alias tmaxdb='cd ${INSTALL_FOLDER}/tmaxdb'
