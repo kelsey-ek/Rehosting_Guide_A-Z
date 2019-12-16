@@ -4,9 +4,9 @@ The purpose of this directory is to hold all of the reference documents mentione
 
 ## Topics
 
-- copy_environment
+- copy_environment_using_VM_image
 
-	- [Copy an Environment](./copy_environment/README.md "Copy an Environment")
+	- [Copy an Environment](./copy_environment_using_VM_image/README.md "Copy an Environment")
 
 - debugging
 
