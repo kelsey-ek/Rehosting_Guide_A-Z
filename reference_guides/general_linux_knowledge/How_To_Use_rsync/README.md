@@ -7,7 +7,7 @@ rsync is a linux command that allows you to keep files and directories in sync w
 If you are syncing the TEST environment to match the PROD environment, you would run this command from the TEST environment:
 
 ```bash
-rsync -chavzP --stats ${username}@${hostname_of_PROD}:/${remote_directory_or_file}/* ${local_directory_or_file}/.
+rsync -zarvh ${username}@${hostname_of_PROD}:/${remote_directory_or_file}/* ${local_directory_or_file}/.
 ```
 
 ## Real Example
@@ -15,5 +15,5 @@ rsync -chavzP --stats ${username}@${hostname_of_PROD}:/${remote_directory_or_fil
 The below command will sync my TEST environment's volume_default with that of prod.customer.com's volume_default.
 
 ```bash
-rsync -chavzP --stats mkoziel@prod.customer.com:/opt/tmaxapp/OpenFrame/volume_default/* /opt/tmaxapp/OpenFrame/volume_default/.
+rsync -zarvh mkoziel@prod.customer.com:/opt/tmaxapp/OpenFrame/volume_default/* /opt/tmaxapp/OpenFrame/volume_default/.
 ```
