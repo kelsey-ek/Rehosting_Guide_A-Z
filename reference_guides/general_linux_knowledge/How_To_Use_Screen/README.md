@@ -30,56 +30,42 @@ All screen commands are prefixed by an escape key, by default Ctrl-a (that's Con
 
 | Description				        | Command						                        |
 |-----------------------------------|-------------------------------------------------------|
-| detach 				            | `Ctrl-a d`						                    |
-| detach and logout (quick exit) 	| `Ctrl-a D D`						                    |
-| exit screen 				        | `Ctrl-a :` quit or exit all of the programs in screen.|
-| force-exit screen 			    | `Ctrl-a C-\` (not recommended) 			            |
+| detach 				            | `Ctrl + d`						                    |
+| detach and logout (quick exit) 	| `Ctrl +  D D`						                    |
+| exit screen 				        | `Ctrl + :` quit or exit all of the programs in screen.|
+| force-exit screen 			    | `Ctrl + C-\` (not recommended) 			            |
 
 ## Help
 
 | Description	| Command			            |
 |---------------|-------------------------------|
-| See help	    | `Ctrl-a ?` (Lists keybindings)|
+| See help	    | `Ctrl + ?` (Lists keybindings)|
 
 ## Window Management
 
 | Description				            | Command								                                |
 |---------------------------------------|-----------------------------------------------------------------------|
-| Create new window 			        | `Ctrl-a c`								                            |
-| Change to last-visited active window 	| `Ctrl-a Ctrl-a` (commonly used to flip-flop between two windows)   	|
-| Change to window by number 		    | `Ctrl-a <number>` (only for windows 0 to 9)				            |
-| Change to window by number or name 	| `Ctrl-a ' <number or title>`				                    		|
-| Change to next window in list 	    | `Ctrl-a n` or `Ctrl-a <space>`			                     		|
-| Change to previous window in list 	| `Ctrl-a p` or `Ctrl-a <backspace>`			                		|
-| See window list 			            | `Ctrl-a "` (allows you to select a window to change to)	        	|
-| Show window bar 			            | `Ctrl-a w` (if you don't have window bar)		                   		|
-| Kill current window 			        | `Ctrl-a k` (not recommended)				                     		|
-| Kill all windows 			            | `Ctrl-a \` (not recommended)				                     		|
-| Rename current window 		        | `Ctrl-a A`								                            |
+| Create new window 			        | `Ctrl + c`								                            |
+| Change to last-visited active window 	| `Ctrl + Ctrl` (commonly used to flip-flop between two windows)   	|
+| Change to window by number 		    | `Ctrl + <number>` (only for windows 0 to 9)				            |
+| Change to window by number or name 	| `Ctrl + ' <number or title>`				                    		|
+| Change to next window in list 	    | `Ctrl + n` or `Ctrl + <space>`			                     		|
+| Change to previous window in list 	| `Ctrl + p` or `Ctrl + <backspace>`			                		|
+| See window list 			            | `Ctrl + "` (allows you to select a window to change to)	        	|
+| Show window bar 			            | `Ctrl + w` (if you don't have window bar)		                   		|
+| Kill current window 			        | `Ctrl + k` (not recommended)				                     		|
+| Kill all windows 			            | `Ctrl + \` (not recommended)				                     		|
+| Rename current window 		        | `Ctrl + A`								                            |
 
 ## Split screen
 
 | Description				            | Command					|
 |---------------------------------------|---------------------------|
-| Split display horizontally 		    | `Ctrl-a S`			    |
-| Split display vertically 	        	| `Ctrl-a |` or `Ctrl-a V`  |
-| Jump to next display region    		| `Ctrl-a tab`			    |
-| Remove current region 		        | `Ctrl-a X`			    |
-| Remove all regions but the current one| `Ctrl-a Q`				|
-
-## Misc
-
-| Description						                    | Command							                                	|
-|-------------------------------------------------------|-----------------------------------------------------------------------|
-| Redraw window 					                    | `Ctrl-a C-l`								                            |
-| Enter copy mode 					                    | `Ctrl-a [` or `Ctrl-a <esc>` (also used for viewing scrollback buffer)|
-| Paste 					                        	| `Ctrl-a ]`							                             	|
-| Monitor window for activity            				| `Ctrl-a M`							                            	|
-| Monitor window for silence 	            			| `Ctrl-a _`						                             		|
-| Enter digraph (for producing non-ASCII characters) 	| `Ctrl-a Ctrl-v`					                            		|
-| Lock (password protect) display 		            	| `Ctrl-a x`					                             			|
-| Enter screen command 			                  		| `Ctrl-a :`				                             				|
-| Enable logging in the screen session 		         	| `Ctrl-a H`							
+| Split display horizontally 		    | `Ctrl + S`			    |
+| Split display vertically 	        	| `Ctrl + |` or `Ctrl + V`  |
+| Jump to next display region    		| `Ctrl + tab`			    |
+| Remove current region 		        | `Ctrl + X`			    |
+| Remove all regions but the current one| `Ctrl + Q`				|					
 
 ## Examples
 
