@@ -93,4 +93,6 @@ There is a screen on:
 
 5. To reattach to the screen, type ```screen -r 14705```
 
+6. Now, even if you close the terminal, the while loop will still run. This will be ideal for commands that take a long time to run without having to worry about accidentally closing the putty terminal. 
 
+I recommend using this for Loading HiDB for example. The commands take a very long time to run, if the terminal is accidentally closed, the load may stop. Therefore, using screen is ideal for this application.
