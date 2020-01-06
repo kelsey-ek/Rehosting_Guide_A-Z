@@ -718,7 +718,7 @@ osctdlupdate <region> <module>
 
 </details>
 
-## 6. Source Compilation
+# 6. Source Compilation
 
 **Prerequisites:** 
 
@@ -755,7 +755,7 @@ osctdlupdate <region> <module>
 
 #TODO
 
-## Running Batch JOBs
+## 6.1 Running Batch JOBs
 
 **Prerequisites:**
 
@@ -781,7 +781,7 @@ osctdlupdate <region> <module>
 
 #TODO
 
-## Running Online Transactions
+## 6.2 Running Online Transactions
 
 **Prerequisites:** 
 
@@ -799,7 +799,7 @@ osctdlupdate <region> <module>
 
 #TODO
 
-## JOB Stream and Scheduler
+## 6.3 JOB Stream and Scheduler
 
 **Prerequisities:**
 
@@ -817,7 +817,7 @@ osctdlupdate <region> <module>
 
 #TODO
 
-## Operations & Maintenance
+## 6.4 Operations & Maintenance
 
 **Prerequisites:**
 
@@ -847,18 +847,18 @@ osctdlupdate <region> <module>
 
 # Operation and Administration
 
-## TACF
+## 6.5 TACF
 
 **Description:** Below are the most commonly used TACF commands. All of the commands can be run from the command line or through OFManager.
 
 [TACF Commands](./reference_guides/tacf/TACF_Commands.md "Most Common TACF Commands")
 
-## BATCH
+## 6.6 BATCH
 
-## ONLINE
+## 6.7 ONLINE
 
 ***
 
-# Applying Patches
+# 7. Applying Patches
 
-[**Reference Guide: How to Apply Patches**](./reference_guides/patch/How_to_Apply_Patches.md "Learn how to apply patches")
+[**Reference Guide: How to Apply Patches**](./reference_guides/patch/README.md "Learn how to apply patches")
