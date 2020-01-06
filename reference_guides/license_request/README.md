@@ -1,4 +1,4 @@
-#Binary requests must be handled by the TmaxSoft Licensing team internally.
+#License requests must be handled by the TmaxSoft Licensing team internally.
 
 It is the responsibility of the TmaxSoft Project Manager to delegate this portion of the project.
 
