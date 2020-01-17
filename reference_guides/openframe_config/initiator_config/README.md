@@ -23,3 +23,5 @@ The initiator configuration of OpenFrame can be matched to that of the mainframe
 /*
 //
 ```
+
+**Note**: Some minor parsing may be required after running this JCL
