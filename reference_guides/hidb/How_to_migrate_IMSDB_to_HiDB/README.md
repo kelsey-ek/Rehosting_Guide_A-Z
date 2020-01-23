@@ -51,4 +51,31 @@ usage: ```dbdgen [options] <filename>```
 
 **filename** - Name of the file that contains the DBD control statements (i.e. the DBD assembler macro). When there are multiple files to process, enter the file names one after another.
 
-Full Example: dbdgen -f ${dbdname}
+Full Example: ```dbdgen -f ${dbdname}```
+
+## Step 3. HDGENSCH
+
+ Creates data set migration schema files that are necessary for migrating Mainframe IMS DB data sets to OpenFrame HiDB data sets.
+
+ You can create schema files with cobgensch or pligensch tool and use tham as input to the data set migration tool dsmigin. In OpenFrame HiDB however, you must use the hdgensch tool to create schema files. This is because general data sets use one-to-one mapping between a segment and copybook while there can be one-to-many mappings between a segment and copybooks in OpenFrame HiDB. hdgensch internally calls cobgensch or pligensch to process copybooks for each segment and then mergest them into a single schema file. It alsos aves the cobol layout, which is used to create the tables and DML files for each segment, in the OFM_HIDB_DBD_COLUMN meta table.
+
+ After a scucessful run of hdgensch, a schema file is created with the DBD name and '.conv' extension and saved under the default schema directory set in the hdgensch ds.conf file and the cobol layout for each segment is saved in the meta table. The syntax of the schema file matches that of the cobgensch or pligensch tool.
+
+usage: ```hdgensch [command] [options] <dbd-name> <copybook-dir-name>```
+
+**commands**
+	
+| COMMAND | DESCRIPTION                                                                                         |
+|---------|-----------------------------------------------------------------------------------------------------|
+| schema  | Creates the schema file for the DBD                                                                 |
+| meta    | Saves the segment layout information of the DBD in the meta table by referencing the COBOL copybook |
+| all     | Executes both schema and meta commands                                                              |
+
+**options**
+	
+| OPTIONS  | DESCRIPTION                                                                                                     |
+|----------|-----------------------------------------------------------------------------------------------------------------|
+| -v       | Displays the hdgensch version                                                                                   |
+| -t <n|b> | Specifies how to save information about a column specified in an OCCURS clause                                  |
+|    -n    | Stands for Normal (save each column as meta data by assigning a number to it)                                   |
+|    -b    | Stands for Bulk (save all columns as a single column meta data. The total length equals the sum of all columns) |
