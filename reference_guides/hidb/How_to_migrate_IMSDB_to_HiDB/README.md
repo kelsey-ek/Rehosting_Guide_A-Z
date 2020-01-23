@@ -93,7 +93,7 @@ It is recommended that you store all DBDs in one directory. Once all the DBDs ar
 
 **NOTE** For DEDB, a different command should be used than for HDAM
 
-### 3.2 Full Example:
+### 3.2 Full Example
 
 #### DEDB
 
@@ -106,3 +106,45 @@ It is recommended that you store all DBDs in one directory. Once all the DBDs ar
 ```hdgensch meta ${dbdname} -f```
 
 ```hdgensch schema ${dbdname} -he```
+
+## Step 4. HIDBMGR
+
+Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. It also performs the following functions:
+			
+	- Prints or deletes DBD meta data, which was derived using dbdgen, or creates DLI library to use for data loading
+	
+	- Prints or deletes PSB meta data, which was derived using psbgen, or created DLI library to use in HiDB programs
+	
+	- Creates, deletes, or initializes tables for DBD segments
+
+### 4.1 General Usage 
+
+```hidbmgr <dbd|psb> <command> <dbd_name|psb_name> [options]```
+
+**Parameters**
+
+| PARAMETERS         | DESCRIPTION                        |
+|--------------------|------------------------------------|
+| dbd\|psb           | Control Block Type (DBD or PSB)    |
+| dbd_name\|psb_name | The name of the Control Block File |
+
+**Commands**
+
+| COMMAND | DESCRIPTION                                                                                                                  |
+|---------|------------------------------------------------------------------------------------------------------------------------------|
+| display | Prints information about the control block                                                                                   |
+| dligen  | Creates DLI library to load the control block for use in a program. The file is saved in the path set in the hidb.conf file. |
+| delete  | Deletes meta data of the control block                                                                                       |
+
+**Options**
+
+| OPTIONS       | DESCRIPTION                                                                                                        |
+|---------------|--------------------------------------------------------------------------------------------------------------------|
+| -vr <dbd_ver> | DBD version. (This is only applicable for DBDs)                                                                    |
+| -l <lib_name> | DBD or PSB library name. (Default: DBDLIB_NAME\|PSBLIB_NAME item in the [IMS_DEFAULT] section of the ims.conf file |
+| -f            | Option to first delete database objects before executing create on the DBD                                         |
+
+### 4.2 Full Examples
+
+```hidbmgr segm create ${dbdname} -f```
+
