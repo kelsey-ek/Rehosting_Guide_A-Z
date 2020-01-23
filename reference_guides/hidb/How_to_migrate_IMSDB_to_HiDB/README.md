@@ -27,4 +27,4 @@ options:
 | -t <tablespace> | Name of a tablespace. The name is used only when you are creating a meta table  (Required for Tibero and Oracle Databases) |
 
 
-Example usage: hidbinit create TVSAM -t DEFVOL
+Full Example: ```hidbinit create TVSAM -t DEFVOL```
