@@ -3,7 +3,8 @@
 # Table of Contents
 
 - [HIDBINIT](#step-1.-hidbinit)
-	* []
+- [DBDGEN](#step-2.-dbdgen)
+- [HDGENSCH](#step-3.-hdgensch)
 	
 ## Step 1. HIDBINIT
 
