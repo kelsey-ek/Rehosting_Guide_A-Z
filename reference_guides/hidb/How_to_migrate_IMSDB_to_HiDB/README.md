@@ -10,7 +10,9 @@
 
 To get started with OpenFrame HiDB, you need to run this tool before any other HiDB tool. This creates the 	meta tables required to operate the database.
 	
-```usage: hidbinit <command> <connection> [options]```
+### 1.1 Usage
+
+```hidbinit <command> <connection> [options]```
 	
 commands: 
 
@@ -30,7 +32,9 @@ commands:
 | -t <tablespace> | Name of a tablespace. The name is used only when you are creating a meta table  (Required for Tibero and Oracle Databases) |
 
 
-Full Example: ```hidbinit create TVSAM -t DEFVOL```
+### 1.2 Full Example 
+
+```hidbinit create TVSAM -t DEFVOL```
 
 ## Step 2. DBDGEN
 
@@ -42,7 +46,9 @@ This step needs to be done for a Physical DBD First, then any logical children n
 	
 It is recommended that you store all DBDs in one directory. Once all the DBDs are in one directory, you can create subdirectories under for Logical Childs and Secondary Indexes to more easily understand the underlying structure of the database.
 
-usage: ```dbdgen [options] <filename>```
+### 2.1 Usage 
+
+```dbdgen [options] <filename>```
 
 **options**
 
@@ -52,7 +58,9 @@ usage: ```dbdgen [options] <filename>```
 
 **filename** - Name of the file that contains the DBD control statements (i.e. the DBD assembler macro). When there are multiple files to process, enter the file names one after another.
 
-Full Example: ```dbdgen -f ${dbdname}```
+### 2.2 Full Example 
+
+```dbdgen -f ${dbdname}```
 
 ## Step 3. HDGENSCH
 
@@ -62,7 +70,9 @@ Full Example: ```dbdgen -f ${dbdname}```
 
  After a scucessful run of hdgensch, a schema file is created with the DBD name and '.conv' extension and saved under the default schema directory set in the hdgensch ds.conf file and the cobol layout for each segment is saved in the meta table. The syntax of the schema file matches that of the cobgensch or pligensch tool.
 
-usage: ```hdgensch [command] [options] <dbd-name> <copybook-dir-name>```
+### 3.1 General Usage 
+
+```hdgensch [command] [options] <dbd-name> <copybook-dir-name>```
 
 **commands**
 	
@@ -80,3 +90,19 @@ usage: ```hdgensch [command] [options] <dbd-name> <copybook-dir-name>```
 | -t <n\|b> | Specifies how to save information about a column specified in an OCCURS clause                                  |
 | &nbsp;&nbsp;&nbsp;-n    | Stands for Normal (save each column as meta data by assigning a number to it)                                   |
 | &nbsp;&nbsp;&nbsp;-b    | Stands for Bulk (save all columns as a single column meta data. The total length equals the sum of all columns) |
+
+**NOTE** For DEDB, a different command should be used than for HDAM
+
+### 3.2 Full Example:
+
+#### DEDB
+
+```hdgensch meta ${dbdname} -f```
+
+```hdgensch schema ${dbdname}```
+
+#### HDAM
+
+```hdgensch meta ${dbdname} -f```
+
+```hdgensch schema ${dbdname} -he```
