@@ -130,11 +130,12 @@ Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. I
 
 **Commands**
 
-| COMMAND | DESCRIPTION                                                                                                                  |
-|---------|------------------------------------------------------------------------------------------------------------------------------|
-| display | Prints information about the control block                                                                                   |
-| dligen  | Creates DLI library to load the control block for use in a program. The file is saved in the path set in the hidb.conf file. |
-| delete  | Deletes meta data of the control block                                                                                       |
+| COMMAND               | DESCRIPTION                                                                                                                  |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------|
+| display               | Prints information about the control block                                                                                   |
+| dligen                | Creates DLI library to load the control block for use in a program. The file is saved in the path set in the hidb.conf file. |
+| segm create <dbdname> | Creates an empty table for the given DBD                                                                                     |
+| delete                | Deletes meta data of the control block                                                                                       |
 
 **Options**
 
@@ -144,7 +145,8 @@ Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. I
 | -l <lib_name> | DBD or PSB library name. (Default: DBDLIB_NAME\|PSBLIB_NAME item in the [IMS_DEFAULT] section of the ims.conf file |
 | -f            | Option to first delete database objects before executing create on the DBD                                         |
 
-### 4.2 Full Examples
+### 4.2 Full Example
 
 ```hidbmgr segm create ${dbdname} -f```
+
 
