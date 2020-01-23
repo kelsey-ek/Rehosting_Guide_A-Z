@@ -149,4 +149,6 @@ Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. I
 
 ```hidbmgr segm create ${dbdname} -f```
 
+```hidbmgr dbd dligen ${dbdname}```
+
 
