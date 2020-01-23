@@ -77,6 +77,6 @@ usage: ```hdgensch [command] [options] <dbd-name> <copybook-dir-name>```
 | OPTIONS  | DESCRIPTION                                                                                                     |
 |----------|-----------------------------------------------------------------------------------------------------------------|
 | -v       | Displays the hdgensch version                                                                                   |
-| -t <n|b> | Specifies how to save information about a column specified in an OCCURS clause                                  |
+| -t <n\|b> | Specifies how to save information about a column specified in an OCCURS clause                                  |
 |    -n    | Stands for Normal (save each column as meta data by assigning a number to it)                                   |
 |    -b    | Stands for Bulk (save all columns as a single column meta data. The total length equals the sum of all columns) |
