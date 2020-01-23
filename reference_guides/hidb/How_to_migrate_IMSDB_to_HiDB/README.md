@@ -3,8 +3,17 @@
 # Table of Contents
 
 - [HIDBINIT](#step-1-hidbinit)
+	* [hidbinit usage](#11-usage)
+	* [hidbinit full example](#12-full-example)
 - [DBDGEN](#step-2-dbdgen)
+	* [dbdgen usage](#21-usage)
+	* [dbdgen full example](#22-full-example)
 - [HDGENSCH](#step-3-hdgensch)
+	* [hdgensch usage](#31-usage)
+	* [hdgensch full example](#32-full-example)
+- [HIDBMGR](#step-4-hidbmgr)
+	* [hidbmgr usage](#41-usage)
+	* [hidbmgr full example](#42-full-example)
 	
 ## Step 1. HIDBINIT
 
