@@ -1,5 +1,7 @@
 # How to Migrate IMS DB Database to HiDB
 
+In this guide, we will go over how to migrate an IMS DB Database to HiDB (OpenFrame High performance Hierarchical Database). If you want a shortened version, and already have a good idea of how this works, I recommend just skipping to each full example section. Otherwise, please read through each step carefully. Depending on the access type of the DBD, the steps may vary. For example, hdpcdf01 step can be skipped for anything except a DEDB. 
+
 # Table of Contents
 
 - [HIDBINIT](#step-1-hidbinit)
@@ -14,8 +16,16 @@
 - [HIDBMGR](#step-4-hidbmgr)
 	* [hidbmgr usage](#41-usage)
 	* [hidbmgr full example](#42-full-example)
-- [COMPILE](#Step-5-compile)
+- [COMPILE](#step-5-compile)
 	* [compile full example](#51-full-example)
+- [HDPCDF01](#step-6-hdpcdf01)
+	* [hdpcdf01 usage](#61-usage)
+	* [hdpcdf01 full example](#62-full-example)
+- [DSMIGIN](#step-7-dsmigin)
+	* [dsmigin full example](#71-full-example)
+- [HDLOAD](#step-8-hdload)
+	* [hdload usage](#81-usage)
+	* [hdload full example](#82-full-example)
 	
 ## Step 1. HIDBINIT
 
@@ -128,7 +138,7 @@ Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. I
 	
 	- Creates, deletes, or initializes tables for DBD segments
 
-### 4.1 General Usage 
+### 4.1 Usage 
 
 ```hidbmgr <dbd|psb> <command> <dbd_name|psb_name> [options]```
 
@@ -185,7 +195,7 @@ hdpcdf01 Takes the data sets unloaded by the IMS HD Reorganization Unload (DFSUR
 
 You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In order to reload them, you must process them with the hdpcdf01 tool, which analyzes the internal format of the DFSURGU0 created datasets, removes the header and trailer, and formats them to fit the HiDB database reload format.
 
-### 6.1 General Usage
+### 6.1 Usage
 
 ```hdpcdf01 [options] [format] if=<input-file> of=<output-file> dbd=<dbd-name>```
 
@@ -224,3 +234,64 @@ Example:
 	[DATASET_DIRECTORY]
 	SCHEMA_DIR=<schema_dir>
 ```
+
+## Step 7. DSMIGIN
+
+dsmigin is an OpenFrame tool that converts EBCDIC data to ASCII. This step takes the unloaded data from the mainframe, either preformatted from hdpcdf01 or not, and converts it to ASCII so that it can be loaded.
+
+For more information about DSMIGIN, please refer to the OpenFrame Tool Reference Guide.
+
+### 7.1 Full Example
+
+```dsmigin <input-file> <output-file> -sosi 6 -s ${dbdname}.conv -f V -C -D 2```
+
+The input file is the unloaded data from the mainframe.
+
+**If the unload file is for a DEDB, the input-file is the output from step 6**
+
+output-file can be any given name, but again, it is recommended that you use the same name as the unload file, with a different extension to signify that it is the output from dsmigin.
+
+Lastly, the schema file you pass ${dbdname}.conv, this is the converted copybook (schema file) generated from Step 3.
+
+
+
+
+
+## Step 8. HDLOAD 
+
+hdload takes data sets in the OpenFrame standard ASCII code format and loads them to the HiDB database. The input data set should be in the format described in the following figure. The format is the same as that of the unload data set created by the DFSURGU0 utility. Only use this with DEDB databases.
+
+### 8.1 Usage
+
+```hdload [options] <dbd-name> <load-data-file> <ddlist-file> [res-file]```
+
+**Options**
+
+| OPTIONS         | DESCRIPTION                                                                                                                                                                                                                                                                                               |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -v              | Displays the hdload version                                                                                                                                                                                                                                                                               |
+| -h              | Prints help for hdload                                                                                                                                                                                                                                                                                    |
+| -c \| --catalog | Name of the catalog of the data set specified in the ddlist file. The name can be up to 32 characters long. If you want to specify multiple names, use a colon(:) as a delimiter                                                                                                                          |
+| -q              | Loads data without inserting secondary index table                                                                                                                                                                                                                                                        |
+| -mk             | Creates a file in a format to load the data by using tbLoader (sqlldr in Oracle). Set a path where the file is created in HIDB_IMPORT_DIR in the HIDB_DEFAULT section of hidb.conf                                                                                                                        |
+| -im             | Loads data created with the -mk option in conventional method by using tbimport API                                                                                                                                                                                                                       |
+| -im2            | Loads data created with the -mk option in DPL method by using tbimport API                                                                                                                                                                                                                                |
+| -ld             | Loads data created with the -mk option in conventional method by using tbloader (sqlldr in Oracle).                                                                                                                                                                                                       |
+| -ld2            | Loads data created with the -mk option in DPL method by using tbloader (sqlldr in Oracle).                                                                                                                                                                                                                |
+| -md             | Merges data created with the -mk option by using tbLoader (sqlldr in Oracle). If the key field of data to load is the same as that of data already loaded, REPLACE is executed. OCC_ID is not updated. If the key field of data to load is not the same as that of dat already loaded, INSERT is executed |
+| -qmg            | Executes both -mk and -mg options. Specify dbd-name and load-data-file                                                                                                                                                                                                                                    |
+| -rmpk           | Deletes parent key data from the migrated segment data. Used with the --adpk option is specified in hdpcdf01                                                                                                                                                                                              |
+
+**Parameters**
+
+| PARAMETERS       | DESCRIPTION                                                                                                                                                                                                                                                                                               |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <dbd-name>       | Name of the DBD that contains the database definition of the input file. You must register the DBD in the DBDLIB before running hdload. The name can be up to 8 characters long. For more information about registering DBDLOG, refer to DBDGEN.                                                          |
+| <load-data-file> | Target input file to be loaded by hdload                                                                                                                                                                                                                                                                  |
+| <ddlist-file>    | Name of the ddlist file to allocate data sets of the target database to load. The name must be in the format '<DDname> + <space> + <dataset name>'                                                                                                                                                        |
+| <res-file>       | File to use for the prefix resolution task while you load a database that contains segments with logical relationships. This file is used as an input for the hdpxres tool, which is a prefix resolution tool.                                                                                            |
+| log=<log-file>   | Log file where loading will be logged. With this parameter, you can identify the cause of a reloading error because the log data set stores records of the segment sequence, name, key value, and status code for the target dataset being reloaded.                                                      |
+
+### 8.2 Full Example
+			
+```hdload <dbdname> <output_from_dsmigin> log=<log-dir>/DEDB_<line>_hdload.log``` 
