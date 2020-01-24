@@ -14,6 +14,8 @@
 - [HIDBMGR](#step-4-hidbmgr)
 	* [hidbmgr usage](#41-usage)
 	* [hidbmgr full example](#42-full-example)
+- [COMPILE](#Step-5-compile)
+	* [compile full example](#51-full-example)
 	
 ## Step 1. HIDBINIT
 
@@ -160,4 +162,65 @@ Hidbmgr manages HiDB meta data, user data, and libraries used at HiDB startup. I
 
 ```hidbmgr dbd dligen ${dbdname}```
 
+## Step 5. Compile
 
+During this step, we will compile the pc files generated in step 4.
+
+During installation, HiDB comes equipped with a compile script. Simply execute the script like so:
+
+### 5.1 Full example
+
+```bash
+cd $OPENFRAME_HOME/hidb/hidb_sch
+sh compile.sh
+```
+
+## Step 6. HDPCDF01
+
+**THIS STEP IS FOR DEDBs ONLY!!!** 
+
+If you are not migrating a DEDB in this step, skip this step and go to step 7
+
+hdpcdf01 Takes the data sets unloaded by the IMS HD Reorganization Unload (DFSURGU0) utility to create OpenFrame/HiDB standard format data sets that can be processed by the hdload tool.
+
+You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In order to reload them, you must process them with the hdpcdf01 tool, which analyzes the internal format of the DFSURGU0 created datasets, removes the header and trailer, and formats them to fit the HiDB database reload format.
+
+### 6.1 General Usage
+
+```hdpcdf01 [options] [format] if=<input-file> of=<output-file> dbd=<dbd-name>```
+
+
+| OPTIONS      | DESCRIPTION                                                                                                                                                              |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -v           | Displays the hdpcdf01 version                                                                                                                                            |
+| -h           | Prints help for hdpcdf01                                                                                                                                                 |
+| -d           | Displays the current processing position in the input file during hdpcdf01 execution                                                                                     |
+| -hp <number> | Used to specify the header length in bytes to analyze the input file format                                                                                              |
+| -dp <number> | Used to specify the segment data length in bytes to analyze the input file format                                                                                        |
+| -rdw         | Specify the input file has variable-length data sets containing 4-byte RDW                                                                                               |
+| -addpk       | Adds the key area of a parent segment to beginning of its child segment record. The added key area is referenced to convert the child segment during data set migration. |
+
+| FORMAT       | DESCRIPTION                                                                                                                                                              |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -f1          | Specify if the input file has data sets unloaded from a SHISAM database                                                                                                  |
+
+| PARAMETERS       | DESCRIPTION                                                                                                                                                                                                                                                       |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| if=<input-file>  | hdpcdf01 input file, which is the data set created by DFSURGU0 (This is the unloaded data file from the mainframe)                                                                                                                                                |
+| of=<output-file> | hdpcdf01 output file. The output file we are creating here will be the input to the dsmigin tool. (This can be any given name, but it is recommended to use the same name as the input file with a different extension to signify)                                |
+| dbd=<dbd-name>   | Name of the DBD that defines the database of the input file. You must define the DBD in the default DBDLIB before running hdpcdf01. The name of the DBD can be up to 8 characters long. For more information about defining a DBDLIB refer to the DBDGEN section. |
+
+
+
+### 6.2 Full Example
+
+```hdpcdf01 if=tmax01uld.dat of=tmaxo01uld.hdb dbd=TMAX01PD```
+
+The output will be placed in the default schema directory. The default schema directory can be found in the [DATASET_DIRECTORY] section of the ds.conf file.
+	
+Example:
+
+```
+	[DATASET_DIRECTORY]
+	SCHEMA_DIR=<schema_dir>
+```
