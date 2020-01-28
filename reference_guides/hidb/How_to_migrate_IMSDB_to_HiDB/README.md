@@ -215,10 +215,10 @@ You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In
 | -f1          | Specify if the input file has data sets unloaded from a SHISAM database                                                                                                  |
 
 | PARAMETERS       | DESCRIPTION                                                                                                                                                                                                                                                       |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if=<input-file>  | hdpcdf01 input file, which is the data set created by DFSURGU0 (This is the unloaded data file from the mainframe)                                                                                                                                                |
-| of=<output-file> | hdpcdf01 output file. The output file we are creating here will be the input to the dsmigin tool. (This can be any given name, but it is recommended to use the same name as the input file with a different extension to signify)                                |
-| dbd=<dbd-name>   | Name of the DBD that defines the database of the input file. You must define the DBD in the default DBDLIB before running hdpcdf01. The name of the DBD can be up to 8 characters long. For more information about defining a DBDLIB refer to the DBDGEN section. |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| if=\<input-file>  | hdpcdf01 input file, which is the data set created by DFSURGU0 (This is the unloaded data file from the mainframe)                                                                                                                                                |
+| of=\<output-file> | hdpcdf01 output file. The output file we are creating here will be the input to the dsmigin tool. (This can be any given name, but it is recommended to use the same name as the input file with a different extension to signify)                                |
+| dbd=\<dbd-name>   | Name of the DBD that defines the database of the input file. You must define the DBD in the default DBDLIB before running hdpcdf01. The name of the DBD can be up to 8 characters long. For more information about defining a DBDLIB refer to the DBDGEN section. |
 
 
 
