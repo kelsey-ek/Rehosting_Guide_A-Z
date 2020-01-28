@@ -85,9 +85,12 @@ It is recommended that you store all DBDs in one directory. Once all the DBDs ar
 
 ## Step 3. HDGENSCH
 
- Creates data set migration schema files that are necessary for migrating Mainframe IMS DB data sets to OpenFrame HiDB data sets.
+Performs two main tasks:
 
- You can create schema files with cobgensch or pligensch tool and use tham as input to the data set migration tool dsmigin. In OpenFrame HiDB however, you must use the hdgensch tool to create schema files. This is because general data sets use one-to-one mapping between a segment and copybook while there can be one-to-many mappings between a segment and copybooks in OpenFrame HiDB. hdgensch internally calls cobgensch or pligensch to process copybooks for each segment and then mergest them into a single schema file. It alsos aves the cobol layout, which is used to create the tables and DML files for each segment, in the OFM_HIDB_DBD_COLUMN meta table.
+1. ```hdgensch meta``` is for creating a Database Table. 
+2. ```hdgensch schema``` is for creating a .conv file which is required for ```dsmigin```
+
+ You can create schema files with cobgensch or pligensch tool and use tham as input to the data set migration tool dsmigin. In OpenFrame HiDB however, you must use the hdgensch tool to create schema files. This is because general data sets use one-to-one mapping between a segment and copybook while there can be one-to-many mappings between a segment and copybooks in OpenFrame HiDB. hdgensch internally calls cobgensch or pligensch to process copybooks for each segment and then mergest them into a single schema file. It also saves the cobol layout, which is used to create the tables and DML files for each segment, in the OFM_HIDB_DBD_COLUMN meta table.
 
  After a scucessful run of hdgensch, a schema file is created with the DBD name and '.conv' extension and saved under the default schema directory set in the hdgensch ds.conf file and the cobol layout for each segment is saved in the meta table. The syntax of the schema file matches that of the cobgensch or pligensch tool.
 
@@ -111,6 +114,12 @@ It is recommended that you store all DBDs in one directory. Once all the DBDs ar
 | -t <n\|b> | Specifies how to save information about a column specified in an OCCURS clause                                  |
 | &nbsp;&nbsp;&nbsp;-n    | Stands for Normal (save each column as meta data by assigning a number to it)                                   |
 | &nbsp;&nbsp;&nbsp;-b    | Stands for Bulk (save all columns as a single column meta data. The total length equals the sum of all columns) |
+
+**copybook-dir-name**
+
+| copybook-dir-name  |  DESCRIPTION                                                                                                    |
+|--------------------|-----------------------------------------------------------------------------------------------------------------|
+|                    | Specifies the directory name where COBOL copybooks that contain HiDB dataset field information are stored. The COBOL copybook file name must follow the following naming convention: '<Segment Name - __specified in DBD__.cpy'. The PL/I copybook file name must follow the following naming convention: '<Segment Name - __specified in DBD__.inc'.  |
 
 **NOTE** For DEDB, a different command should be used than for HDAM
 
@@ -224,7 +233,7 @@ You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In
 
 ### 6.2 Full Example
 
-```hdpcdf01 if=tmax01uld.dat of=tmaxo01uld.hdb dbd=TMAX01PD```
+```hdpcdf01 -dedb if=tmax01uld.dat of=tmaxo01uld.hdb dbd=TMAX01PD```
 
 The output will be placed in the default schema directory. The default schema directory can be found in the [DATASET_DIRECTORY] section of the ds.conf file.
 	
