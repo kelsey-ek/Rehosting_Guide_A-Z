@@ -163,7 +163,9 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
    - VSAM
 7. Security
 
-**Reference Documents:** "How to Source Code Transfer Process"
+**Reference Documents:** 
+
+![alt-text](./reference_guides/source_transfer/How\ To\ Transfer\ Source\ Code\ from\ the\ Mainframe.md)
 
 ***
 
