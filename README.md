@@ -141,7 +141,7 @@ PROCs, Programs (COBOL, Assembler), Datasets and Copybooks are in scope for
 rehosting. Utilizing TBAdmin is a great supplementary tool to help create this
 analysis document.
 
-[**Reference Documents: How to Create an OFMiner Report**](../reference_guides/ofminer/guide/How_to_Create_an_OFMiner_Report.md)
+[**Reference Documents: How to Create an OFMiner Report**](./reference_guides/ofminer/How_to_Create_an_OFMiner_Report.md)
 
 
 ***
@@ -163,7 +163,7 @@ Below is the ordered list of the assets you will need to migrate from the mainfr
    - VSAM
 7. Security
 
-[**Reference Documents: How to Source Transfer Process**](../reference_guides/source_transfer/README.md)
+[**Reference Documents: How to Source Transfer Process**](./reference_guides/source_transfer/README.md)
 
 ***
 
