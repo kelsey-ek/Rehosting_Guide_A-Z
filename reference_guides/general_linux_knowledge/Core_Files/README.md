@@ -2,7 +2,7 @@
 
 First and foremost, core files are created by the operating system (Linux in most cases for OpenFrame) rather than by the OpenFrame application itself. Core files can be maintained by a Linux Administrator. For more information on core files, it can be found here:
 
-![Link to core file manual page](man7.org/linux/man-pages/man5/core.5.html)
+![Link to core file manual page](https://man7.org/linux/man-pages/man5/core.5.html)
 
 For debugging purposes, it is important to provide Tmax with core files, and listing files so that any issues with the OpenFrame product can be resolved and patches can be delivered.
 
