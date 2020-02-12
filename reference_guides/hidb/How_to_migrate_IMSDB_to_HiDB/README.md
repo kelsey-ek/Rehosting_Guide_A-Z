@@ -121,7 +121,8 @@ Performs two main tasks:
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
 |                    | Specifies the directory name where COBOL copybooks that contain HiDB dataset field information are stored. The COBOL copybook file name must follow the following naming convention: '<Segment Name - __specified in DBD__.cpy'. The PL/I copybook file name must follow the following naming convention: '<Segment Name - __specified in DBD__.inc'.  |
 
-**NOTE** For DEDB, a different command should be used than for HDAM
+**NOTE** 
+For hdgensch schema, a different command should be used for HDAM. (with **-he**)
 
 ### 3.2 Full Example
 
