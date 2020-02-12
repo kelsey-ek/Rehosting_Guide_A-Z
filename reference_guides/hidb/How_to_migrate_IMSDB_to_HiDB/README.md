@@ -200,13 +200,15 @@ sh compile.sh
 
 If you are not migrating a DEDB in this step, skip this step and go to step 7
 
+hdpcdf01 is only for DEDB, and it should be used with **-dedb** option.
+
 hdpcdf01 Takes the data sets unloaded by the IMS HD Reorganization Unload (DFSURGU0) utility to create OpenFrame/HiDB standard format data sets that can be processed by the hdload tool.
 
-You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In order to reload them, you must process them with the hdpcdf01 tool, which analyzes the internal format of the DFSURGU0 created datasets, removes the header and trailer, and formats them to fit the HiDB database reload format.
+You **CANNOT** reload the datasets unloaded by DFSURGU0 to the HiDB database. In order to reload them, you must process them with the hdpcdf01 tool, which analyzes the internal format of the DFSURGU0 created datasets, removes the header and trailer, and formats them to fit the HiDB database reload format. 
 
 ### 6.1 Usage
 
-```hdpcdf01 [options] [format] if=<input-file> of=<output-file> dbd=<dbd-name>```
+```hdpcdf01 -dedb [options] [format] if=<input-file> of=<output-file> dbd=<dbd-name>```
 
 
 | OPTIONS      | DESCRIPTION                                                                                                                                                              |
