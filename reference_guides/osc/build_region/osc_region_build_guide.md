@@ -130,7 +130,7 @@ region_name_tranclass 	SVRNAME = region_name_tranclass
 3. Generate TSQ (KEY and DATA) dataset.
 
 <pre>
-	idcams define -t CL ${TSQ_KEY_Dataset_Name} -o KS -k 16,0 -l 64,64 -s 1024,128,128 -v DEFVOL
+	idcams define -t CL -n ${TSQ_KEY_Dataset_Name} -o KS -k 16,0 -l 64,64 -s 1024,128,128 -v DEFVOL
 
 	idcams define -t CL -n ${TSQ_DATA_Dataset_Name} -o KS -k 18,0 -l 128,32760 -b 32767 -s 1024,128,128 -v DEFVOL
 </pre>
